@@ -17,8 +17,6 @@ from langchain.output_parsers import RegexDictParser
 from openai import Model
 from streamlit_chat import message
 
-os.environ["OPENAI_API_KEY"] = "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"
-
 ### Functions
 @st.cache_resource()
 def initialize_chain(
