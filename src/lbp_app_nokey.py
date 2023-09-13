@@ -94,10 +94,15 @@ message(welcome_msg)
 
 convo = st.empty()
 query = st.empty()
+disclaimer = st.empty()
 spinner = st.empty()
 
 if "temp" not in st.session_state:
     st.session_state["temp"] = ""
+
+with disclaimer.container():
+    st.write(("DISCLAIMER: This application will send data to OpenAI API Server.\n"
+              "Please DE-IDENTIFY your patient profile before asking the assistant."))
 
 with query.container():
     user_query = get_text()
