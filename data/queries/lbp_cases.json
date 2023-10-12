@@ -1,0 +1,31 @@
+[
+    {
+        "patient_profile": "41 year old Chinese male.  No prior medical history.  Smoker.  Now coming into emergency room for road traffic accident. Patient was driving company car when rear-ended by a truck.  Car hit road divider.  On examintion, patient is alert, but power in bilateral lower limbs is 2 out of 5.  Slightly lax anal tone on digital rectal examination.  X-rays show T12 chance fracture.  MRI thoracic and lumbar spine without IV contrast to assess for neurologic injury.",
+        "scan_order": "MRI thoracic and lumbar spine without IV contrast"
+    },
+
+    {
+        "patient_profile": "48 year old Indian male.  CEO of shipping company.  Recreational cricket player.  Prior history of fatty liver, hyperlipidemia on statins.   Now presenting with low back pain for 3 days post cricket match.  No radiation to groin or lower limbs.  Able to walk.  Urination and bowel motion are ok.  No fever.  On examination, straight leg raise test is positive.  Power in bilateral lower limbs is full.  Digital rectal examination shows good anal tone.  No prior imaging.  For MRI lumbar spine with IV contrast to assess for prolapsed intervertebral disc or muscle strain. ",
+        "scan_order": "MRI lumbar spine with IV contrast"
+    },
+
+    {
+        "patient_profile": "73 year old Malay female.  Past history of cholecystectomy, fatty liver, obesity, hypertension, hyperlipidemia, osteoarthritis of bilateral knees post bilateral total knee replacement.  Now presenting with low back pain for 6 days.  No radiation to groin or lower limbs.  No difficulty passing urine or bowel motion.  On examination, mild step deformity at L2 region.  Power full in bilateral lower limbs.  Good anal tone on digital rectal examination.  No prior imaging.  For MIR lumbar spine without IV contrast to further assess low back pain.",
+        "scan_order": "MRI lumbar spine without IV contrast"
+    },
+
+    {
+        "patient_profile": "46 year old Caucasian female.  History of systemic lupus erythematosus on follow up with rheumatology.  Now presenting with 5 day history of worsening numbness and tingling in all 4 limbs, feels uncoordinated and more difficult to control continence.  On examination, reduced pinprick sensation in bilateral hands and feets, power in all 4 limbs is 3 to 4 out of 5.  Anal tone is equivocally lax.  No sensory level.  No prior imaging. For MRI whole spine without and with IV contrast to assess for myelopathy.",
+        "scan_order": "MRI spine area of interest without and with IV contrast"
+    },
+
+    {
+        "patient_profile": "73 year old Indian male, with history of end stage diabetic nephropathy on haemodialysis. Complains of lower back pain for the past 2 months with occasional night pain. Associated with radicular pain of left lower limb. no fever. Physical exam reveals mild tenderness at L3-L4 region but otherwise unremarkable. No prior imaging. MRI lumbar spine without and with IV contrast for possible spondylodiscitis.",
+        "scan_order": "MRI spine area of interest without and with IV contrast"
+    },
+
+    {
+        "patient_profile": "70 year old malay male. History of diabetes, hyperlipidemia and hypertension. Worsening neck pain for past 6 months, no radiculopathy or night pain. No recent trauma. Clinical exam reveals mild midline tenderness over the cervical spine with limited range of motion, but no focal neurological deficit. MRI cervical spine without IV contrast for initial examination. ",
+        "scan_order": "MRI cervical spine with IV contrast"
+    }
+]

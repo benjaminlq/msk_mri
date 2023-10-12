@@ -1,10 +1,10 @@
 examples = [
     {
-        "input": ("Patient with suspected acute pyelonephritis, first time presentation. "
-                  "Uncomplicated patient with no history of pyelonephritis, diabetes, immune compromise, "
-                  "no history of stones or renal obstruction, prior renal surgery, advanced age"
-                  ),
-        "output": ("Answer: NO\n" 
+        "input": {
+            "profile": "Patient with suspected acute pyelonephritis, first time presentation.",
+            "scan_ordered": 
+            },
+        "output": ("Answer: USUALLY NOT APPROPRIATE\n"
                    "Explanation: Based on guidelines, this patient has non-specific low back pain at initial presentation. "
                    "Based on recommendation 1, MRI is not recommended for this patient."
                    )
