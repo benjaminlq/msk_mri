@@ -1,0 +1,18 @@
+chain_type: compact
+chunk_overlap: 20
+chunk_size: 512
+db_type: simple
+description: BaselineExperimentRau2023NoEndingMRIInfo
+emb_model: openai
+framework: llama_index
+k: 3
+llm_model: gpt-3.5-turbo
+max_tokens: 0
+prompt: 'Case: {input_text}
+
+  Scan Ordered: {scan_order}
+
+  Question: Is this imaging modality for this case USUALLY APPROPRIATE, MAY BE APPROPRIATE,
+  USUALLY NOT APPROPRIATE or INSUFFICIENT INFORMATION. Then state precisely the most
+  appropriate imaging modality and if contrast agent is needed'
+temperature: 0

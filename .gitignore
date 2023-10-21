@@ -8,6 +8,7 @@ __pycache__/
 
 # Keys
 auth/
+models/
 
 # Distribution / packaging
 .Python
