@@ -1,0 +1,12 @@
+chunk_overlap: 20
+chunk_size: 512
+db_type: simple
+description: BaselineExperimentRau2023RemoveFinalSentence
+emb_type: openai
+index_name: msk-mri
+response_mode: compact
+similarity_top_k: 3
+synthesizer_llm: gpt-3.5-turbo
+synthesizer_max_tokens: 512
+synthesizer_temperature: 0
+vectorstore: simple

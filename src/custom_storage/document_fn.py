@@ -74,15 +74,6 @@ def generate_vectorindex(
         logger.info(f"Creating {emb_store_type} Vectorstore")
         from llama_index.vector_stores import SimpleVectorStore
         vector_store = SimpleVectorStore()
-        storage_context = StorageContext.from_defaults(vector_store=vector_store)
-        vector_index = VectorStoreIndex.from_documents(
-            documents=documents,
-            service_context=service_context,
-            storage_context=storage_context
-        )
-
-        if index_name:
-            vector_index.set_index_id(index_name)
         
     elif emb_store_type == "faiss":
         logger.info(f"Creating {emb_store_type} Vectorstore")
@@ -142,6 +133,9 @@ def generate_vectorindex(
     )
     
     if emb_store_type in ["faiss", "simple"]:
+        if emb_store_type == "simple" and index_name:
+            vector_index.set_index_id(index_name)
+            print(f"Succesfully set index name {index_name}")
         logger.info(f"Persist {emb_store_type} to local directory {output_directory}")
         vector_index.storage_context.persist(persist_dir=output_directory)
     
