@@ -6,7 +6,7 @@ from config import LOGGER
 from datetime import datetime
 
 from llama_index.embeddings.base import BaseEmbedding
-from llama_index.schema import Document
+from llama_index.schema import Document, TextNode
 from llama_index.indices.vector_store import VectorStoreIndex
 from llama_index import SimpleDirectoryReader
 from llama_index import ServiceContext
@@ -33,6 +33,7 @@ def generate_vectorindex(
     embeddings: BaseEmbedding,
     emb_size: int,
     source_directory: Optional[str] = None,
+    documents: Optional[List[TextNode]] = None,
     output_directory: Optional[str] = None,
     emb_store_type: Literal["simple", "faiss", "pinecone", "chroma", "weaviate"] = "faiss",
     chunk_size: int = 1024,
@@ -49,25 +50,23 @@ def generate_vectorindex(
         
     os.makedirs(output_directory, exist_ok=True)
 
-    logger.info(f"Loading documents from {source_directory}")
-    documents = SimpleDirectoryReader(source_directory).load_data()
-    
-    logger.info(f"Loaded {len(documents)} documents from {source_directory}")
-    
-    if exclude_pages:
-        documents = filter_by_pages(doc_list=documents, exclude_info=exclude_pages)
+    if not documents:
+        logger.info(f"Loading documents from {source_directory}")
+        documents = SimpleDirectoryReader(source_directory).load_data()
+        logger.info(f"Loaded {len(documents)} documents from {source_directory}")
         
+        if exclude_pages:
+            documents = filter_by_pages(doc_list=documents, exclude_info=exclude_pages)
+    
+    else:
+        logger.info("Processing documents from provided list.")
+    
     logger.info(f"{len(documents)} documents remained after page filtering.")
-
-    logger.info(
-        f"Total number of text chunks to create vector index store: {len(documents)}"
-    )
+    logger.info(f"Total number of documents to create vector index store: {len(documents)}")
 
     # Start here
     service_context = ServiceContext.from_defaults(
-        embed_model=embeddings,
-        chunk_size=chunk_size,
-        chunk_overlap=chunk_overlap
+        embed_model=embeddings, chunk_size=chunk_size, chunk_overlap=chunk_overlap
     )
 
     if emb_store_type == "simple":

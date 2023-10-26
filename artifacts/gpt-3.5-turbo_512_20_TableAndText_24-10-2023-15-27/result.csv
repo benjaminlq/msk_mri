@@ -1,0 +1,1574 @@
+,ACR scenario,human_gt,MRI scan ordered,Difficulty,Clinical File,queries,gpt_raw_answer,gpt_classification,gpt_recommendation,context,match
+61,Clinically suspected osteonecrosis. Normal radiographs or radiographs that show findings suspicious for osteonecrosis.  Next imaging study.,INSUFFICIENT INFORMATION,MRI area of interest without and with IV contrast,L,48 year old Caucasian male.  MRI right foot without and with IV contrast for ?osteonecrosis of navicular.  ,"Patient Profile: 48 year old Caucasian male
+Scan ordered:   MRI right foot without and with IV contrast for ?osteonecrosis of navicular","1. Relevant information from the patient profile:
+- Age: 48 years old
+- Symptoms: Not mentioned
+- Previous diagnosis: Not mentioned
+- Stage of diagnosis: Next imaging study
+
+2. Based on the provided context, the appropriateness categories for imaging recommendations for chronic foot pain are as follows:
+
+For nonradiating chronic midfoot pain of suspected osseous origin:
+- MRI foot without IV contrast: Usually Appropriate
+- CT foot without IV contrast: Usually Appropriate
+- Bone scan foot: May Be Appropriate
+- US foot: Usually Not Appropriate
+- MRI foot without and with IV contrast: Usually Not Appropriate
+- CT foot with IV contrast: Usually Not Appropriate
+- CT foot without and with IV contrast: Usually Not Appropriate
+
+3. There are no superior imaging procedures or treatments mentioned in the context.
+
+4. Recommendation:
+Based on the patient profile and the appropriateness categories, the scan order for MRI right foot without and with IV contrast for suspected osteonecrosis of the navicular is Usually Not Appropriate. 
+
+An alternative recommendation would be to consider an MRI foot without IV contrast, which is usually appropriate for nonradiating chronic midfoot pain of suspected osseous origin when there is a clinical concern for occult fracture or painful accessory ossicles.",USUALLY NOT APPROPRIATE,MRI foot without IV contrast,"Metadata: description:  Nonradiating chronic midfoot pain of suspected osseous origin. Radiographs negative or equivocal. Clinical concern includes occult fracture, or painful accessory ossicles. Next imaging study.
+variant: 5
+file_name: ACR chronic foot pain.pdf
+condition: ACR chronic foot pain
+page_label: 2
+Score: 0.2865247428417206
+
+Page Content: | Procedure | Appropriateness Category |
+|---|---|
+| MRI foot without IV contrast | Usually Appropriate |
+| CT foot without IV contrast | Usually Appropriate |
+| Bone scan foot | May Be Appropriate |
+| US foot | Usually Not Appropriate |
+| MRI foot without and with IV contrast | Usually Not Appropriate |
+| CT foot with IV contrast | Usually Not Appropriate |
+| CT foot without and with IV contrast | Usually Not Appropriate |
+
+
+
+Metadata: description:  Persistent posttraumatic foot pain. Radiographs negative or equivocal. Clinical concern includes complex regional pain syndrome type I. Next imaging study.
+variant: 2
+file_name: ACR chronic foot pain.pdf
+condition: ACR chronic foot pain
+page_label: 1
+Score: 0.292792946100235
+
+Page Content: | Procedure | Appropriateness Category |
+|---|---|
+| MRI foot without IV contrast | Usually Appropriate |
+| 3-phase bone scan foot | Usually Appropriate |
+| MRI foot without and with IV contrast | May Be Appropriate |
+| US foot | Usually Not Appropriate |
+| CT foot with IV contrast | Usually Not Appropriate |
+| CT foot without and with IV contrast | Usually Not Appropriate |
+| CT foot without IV contrast | Usually Not Appropriate |
+
+
+
+Metadata: page_label: 8
+file_name: ACR acute trauma to foot.pdf
+Score: 0.29329025745391846
+
+Page Content: CT of the foot without  IV contrast  may be appropriate  initial imaging  study  in high energy  
+polytrauma  patients.  
+• Variant  4: Radiographs  of the foot and radiographs  with weightbearing  of the foot are usually  appropriate  for 
+the initial imaging  of an adult  or child  older  than 5 years of age with acute trauma  to the foot when  Ottawa  
+rules can be evaluated  without  exclusionary  criteria  and are negative  or suspected  pathology  in an anatomic  
+area not addressed  by the Ottawa rules.  These procedures  are complementary  (ie, more  than one procedure  is 
+ordered  as a set or simultaneously  in which  each procedure  provides  unique  clinical  information  to effectively  
+manage the patient’s  care).  The panel  did not agree on recommending CT of the foot without IV contrast  for 
+the initial imaging  of patients in this clinical scenario.  There is insufficient  medical  literature  to conclude  
+whether  or not these patients  would benefit  from  CT of the foot without  IV contrast.  CT of the foot without  
+IV contrast  in this patient  population  is controversial  but can be appropriate.  
+• Variant  5: CT of the foot without  IV contrast  or MRI of the foot without  IV contrast  is usually  appropriate  
+for the next imaging  study  when  radiographs  are normal  or equivocal  of an adult  or child  older  than 5 years of 
+age with acute trauma  to the foot and suspected  Lisfranc injury, tendon injury, or occult  fracture  or 
+dislocation. These procedures  are equivalent  alternatives (ie, only one procedure  will be ordered  to provide  
+the clinical  information  to effectively  manage the patient’s  care).
+
+
+
+Metadata: page_label: 4
+file_name: ACR osteonecrosis.pdf
+Score: 0.2915998101234436
+
+Page Content: ACR Appropriateness  Criteria® 4 Osteonecrosis  CT Area  of Interest  Without and With  IV Contrast  
+There is limited  evidence to support  the use of CT without  and with IV contrast  as the initial imaging  study  for 
+clinically  suspected  osteonecrosis.  
+CT Area  of Interest  Without IV Contrast  
+There is limited  evidence to support  the use of CT without  IV contrast  as the initial imaging  study for clinically  
+suspected  osteonecrosis.  
+MRI Area  of Interest  Without  and With  IV Contrast  
+There is limited  evidence to support  the use of MRI without  and with IV contrast  as the initial imaging  study for 
+clinically  suspected  osteonecrosis.  
+MRI Area  of Interest  Without  IV Contrast  
+There is limited  evidence to support  the use of MRI without  IV contrast  as the initial imaging  study  for clinically  
+suspected  osteonecrosis.  
+Variant  2: Clinically  suspected  osteonecrosis.  Normal  radiographs  or radiographs  that show findings  
+suspicious  for osteonecrosis.  Next  imaging  study.  
+The body regions covered in this clinical scenario are chest, pelvis, hip, femur, knee, tibia/fibula, ankle, foot, 
+shoulder, humerus, elbow, forearm, wrist, and hand.  
+Bone  Scan  Area  of Interest  
+Because of  poor spatial  resolution,  low specificity,  and the inability  to quantify  the size of the necrotic lesion , bone  
+scintigraphy is not beneficial  for characterization  of osteonecrosis.  SPECT may improve  the accuracy  of bone  
+scintigraphy [30,32,33]  for detection  of osteonecrosis,  but its use has not been  widely  accepted . In addition,  few 
+studies suggest  that bone  scan may be used to screen  for multifocal osteonecrosis [34,35] .
+
+
+
+Metadata: page_label: 4
+file_name: ACR osteonecrosis.pdf
+Score: 0.2846219837665558
+
+Page Content: CT Area  of Interest  With  IV Contrast  
+There is limited  evidence to support  the use of CT with IV contrast  as the next imaging  study  for clinical ly suspected  
+osteonecrosis  following  radiographs.  
+CT Area  of Interest  Without and With  IV Contrast  
+There is limited  evidence to support  the use of CT without  and with IV contrast  as the next imaging  study for 
+clinically  suspected  osteonecrosis following  radiographs.   
+CT Area  of Interest  Without IV Contrast  
+CT is less sensitive  than bone  scintigraphy  and MRI  for the detection  of early  osteonecrosis [36]. Once an 
+insufficiency  fracture  occurs,  CT is superior  to MRI in showing  location  and extent  of articular  collapse [37,38] . 
+CT also shows osseous details  of secondary  osteoarthritis  well. 
+MRI Area  of Interest  Without  and With  IV Contrast  
+MRI with dynamic  contrast  enhancement  has been  shown  to be useful  to differentiate  osteonecrosis from  transient  
+bone  marrow  edema  syndrome  and subchondral  insufficiency  fracture  [39]. Transient  bone  marrow  edema show s 
+subchondral  spot of marked  hyperperfusion (plasma flow) , whereas osteonecrosis  shows a rim of high plasma flow 
+surrounding a subchondral  area without  flow [40]. This rim is thought  to represent  granulation  tissue.  Higher  slope  
+of enhancement  and maximum enhancement  in epiphysis  was seen in transient  bone  marrow  edema than in 
+subchondral  fracture.  Osteonecrosis showed  overall  decreased  maximal  enhancement  [41]. 
+MRI Area  of Interest  Without  IV Contrast  
+MRI is the most  sensitive and specific imaging  modality  for the diagnosis  of osteonecrosis,  with a sensitivity  and 
+specificity  nearing 100%  [24,28,42] .
+
+
+
+Metadata: page_label: 9
+file_name: ACR chronic foot pain.pdf
+Score: 0.27957528829574585
+
+Page Content: ACR Appropriateness Criteria® 9 Chronic Foot Pain  • Variant 2:  MRI foot without IV  contrast or 3 -phase bone scan foot is usually appropriate as the next imaging 
+study after negative or equivocal radiographs  in patients with pers istent posttraumatic foot pain when  clinical 
+concern includes CRPS type I. Bone scan may be useful to exclude this condition, and enhanced MRI may assist 
+in the diagnosis.  
+• Variant 3:  MRI foot without IV contrast  is usually appropriate as the next imaging study after negative or 
+equivocal radiographs in patients with chronic metat arsalgia,  including plantar great toe pain,  when clinical 
+concern includes sesamoiditis, Morton’s  neuroma, intermetatarsal bursitis, chronic plantar plate injury, or 
+Freiberg’s infraction. 
+• Variant 4:  MRI foot without IV contrast or US foot is usually appropriate as the next imaging study after 
+negative or equivocal radiographs in patients with chronic plantar heel pain w hen clinical concern includes 
+plantar fasciitis or plantar fascia tear.  
+• Variant 5:  MRI foot without IV contrast or CT foot without IV contr ast is usually appropriate as the next 
+imaging study after negative or equivocal radiographs in patients with n onradiating chronic midfoot pain of 
+suspected osseous origin when clinical concern includes occult fracture or painful accessory ossicles.  
+• Varian t 6: MRI foot without IV contrast or US foot is usually appropriate as the next imaging study after 
+negative or equivocal radiographs in patients with chronic foot pain resulting from e ntrapment syndromes  when 
+clinical concern includes Baxter’s neuropathy.  
+Supporting Documents  
+The evidence table, literature search, and appendix for this topic are available at https://acsearch.acr.org/list . The 
+appendix includes the strength of evidence assessment and the final rating round tabulations for each 
+recommendation.  
+For additional information on the Appropriateness Criteria methodology and other supporting documents go to 
+www.acr.org/ac .",False
+62,"Adult or child 5 years of age or older. Fall or acute twisting trauma to the knee. No focal
+tenderness, no effusion, able to walk. Initial imaging.",INSUFFICIENT INFORMATION,MRI knee without IV contrast,L,8 year old Indian male.  MRI left knee without IV contrast for trauma.,"Patient Profile: 8 year old Indian male
+Scan ordered:   MRI left knee without IV contrast for trauma","1. Relevant information from the patient profile:
+- Age: 8 years old
+- Symptoms: Trauma to the left knee
+
+2. Based on the provided context, the appropriate imaging recommendations for acute trauma to the knee are as follows:
+- Variant 2: Knee radiographs are usually appropriate as the initial imaging study for the evaluation of a fall or acute twisting trauma to the knee when at least one of the following is present: focal tenderness, effusion, inability to bear weight.
+- Variant 3: MRI knee without IV contrast is usually appropriate as the next imaging study, after radiographs did not show a fracture, for the evaluation of suspected occult knee fractures or internal derangement after a fall or acute twisting trauma to the knee.
+- Variant 4: MRI knee without IV contrast is usually appropriate as the next imaging study after radiographs did not show a fracture, of skeletally immature children, for the evaluation of suspected occult knee fractures or internal derangement after a fall or acute twisting trauma to the knee.
+- Variant 5: MRI knee without IV contrast or CT knee without IV contrast is usually appropriate as the next imaging study after radiographic diagnosis of tibial plateau fracture, of patients 5 years of age or older, to evaluate for the suspicion of additional bone or soft-tissue injury after a fall or acute twisting trauma to the knee.
+
+3. Superior imaging procedures or treatments with a more favorable risk-benefit ratio are not mentioned in the provided context.
+
+4. Based on the scoring criteria, the appropriateness of the scan order ""MRI left knee without IV contrast for trauma"" for the 8-year-old male patient is usually appropriate, as it aligns with Variant 2, Variant 3, and Variant 5 recommendations for the evaluation of acute trauma to the knee.",USUALLY APPROPRIATE,MRI knee without IV contrast,"Metadata: description:  Adult or child 5 years of age or older. Significant trauma to the knee (eg, motor vehicle accident, knee dislocation). Initial imaging.
+variant: 7
+file_name: ACR acute trauma to knee.pdf
+condition: ACR acute trauma to knee
+page_label: 4
+Score: 0.26471298933029175
+
+Page Content: | Procedure | Appropriateness Category |
+|---|---|
+| Radiography knee | Usually Appropriate |
+| CTA lower extremity with IV contrast | Usually Appropriate |
+| Arteriography lower extremity | May Be Appropriate |
+| CT knee with IV contrast | May Be Appropriate (Disagreement) |
+| CT knee without IV contrast | May Be Appropriate |
+| MRA knee without and with IV contrast | May Be Appropriate |
+| MRI knee without IV contrast | May Be Appropriate |
+| MRA knee without IV contrast | Usually Not Appropriate |
+| Bone scan with SPECT or SPECT/CT knee | Usually Not Appropriate |
+| CT knee without and with IV contrast | Usually Not Appropriate |
+| MR arthrography knee | Usually Not Appropriate |
+| MRI knee without and with IV contrast | Usually Not Appropriate |
+| US knee | Usually Not Appropriate |
+
+
+
+Metadata: description:  Adult or child 5 years of age or older. Fall or acute twisting trauma to the knee. Tibial plateau fracture on radiographs. Suspect additional bone or soft-tissue injury. Next study.
+variant: 5
+file_name: ACR acute trauma to knee.pdf
+condition: ACR acute trauma to knee
+page_label: 3
+Score: 0.2745543420314789
+
+Page Content: | Procedure | Appropriateness Category |
+|---|---|
+| MRI knee without IV contrast | Usually Appropriate |
+| CT knee without IV contrast | Usually Appropriate |
+| Bone scan with SPECT or SPECT/CT knee | Usually Not Appropriate |
+| CT knee with IV contrast | Usually Not Appropriate |
+| CT knee without and with IV contrast | Usually Not Appropriate |
+| MR arthrography knee | Usually Not Appropriate |
+| MRA knee without and with IV contrast | Usually Not Appropriate |
+| MRA knee without IV contrast | Usually Not Appropriate |
+| MRI knee without and with IV contrast | Usually Not Appropriate |
+| US knee | Usually Not Appropriate |
+
+
+
+Metadata: page_label: 9
+file_name: ACR chronic knee pain.pdf
+Score: 0.3024870753288269
+
+Page Content: MR Arthrography  Knee  
+MR arthrography is usually not indicated  to evaluate patients with s igns of prior (chronic) osseous knee injury.  
+US Knee  
+US is usually not indicated  to evaluate patients with signs of prior (chronic) osseous knee injury.  
+Bone Scan Knee  
+Radionuclide bone scan is usually not indicated to evaluate patients with signs of prior  (chronic) osseous knee 
+injury.  
+Image -Guided Aspiration Knee  
+Joint aspiration is usually not indicated  to evaluate patients with signs of prior (chronic) osseous knee injury.  
+Summary of Recommendations  
+• Variant 1:  Radiographs  of the knee  are usually appropriate for the initial imaging of  chronic knee pain in 
+patients greater than or equal to 5 years of age.  
+• Variant 2:  MRI knee without  IV contrast is usually appropriate in patients greater than or equal to 5 years of 
+age with chronic knee pain when initial knee  radiographs are normal or demonstrate a joint effusion.  
+• Variant 3:  MRI knee without  IV contrast is usually appropriate  in patients greater than or equal to 5 years of 
+age with chronic knee pain when initial knee radiographs demonstrate OCD,  loose bodies, or history of 
+cartilage or meniscal repair.  
+• Variant 4:  (1) MRI knee without IV contrast  or (2)  knee aspiration or (3)  CT knee without  IV contrast may 
+be appropriate  in patients greater than or equal to 5 years of age with chronic knee pain when initial 
+radiographs de monstrate degenerative changes or chondrocalcinosis. While MRI knee without  IV contrast 
+may be appropriate more often, knee aspiration and CT knee without IV contrast may be appropriate in 
+specific instances detailed in the narrative. On occasion, these ex aminations  may complement each other  with 
+more than one being appropriate .
+
+
+
+Metadata: page_label: 10
+file_name: ACR Acute trauma to ankle.pdf
+Score: 0.29469388723373413
+
+Page Content: Variant 4: MRI ankle without IV contrast or CT a nkle without IV contrast  are usually appropriate  for patients 5 
+years of age or older with acute trauma to the ankle with persistent pain for more than 1 week but less than 3 weeks 
+that had negative initial radiographs and no exclusionary criteria are present.  These procedures are equivalent 
+alternatives (ie, only one procedure will be ordered to provide the clinical information to effectively manage the 
+patient’s care).  
+Variant 5: CT ankle without IV contrast or MRI ankle without IV contrast are usuall y appropriate for patients 5 
+years of age or older with acute trauma to the ankle that had radiographs demonstrating fracture or potential 
+osteochondral injury and have no exclusionary criteria present.  These procedures are equivalent alternatives (ie, 
+only one procedure will be ordered to provide the clinical information to effectively manage the patient’s care).  CT
+
+
+
+Metadata: page_label: 13
+file_name: ACR acute trauma to knee.pdf
+Score: 0.2936638593673706
+
+Page Content: ACR Appropriateness  Criteria® 13 Acute  Trauma  to the Knee  • Variant  2: Knee radiographs  are usually  appropriate  as the initial imaging study  of patients  5 years of age or 
+older  for the evaluation  of a fall or acute twisting  trauma  to the knee  when  at least one of the following  is 
+present:  focal  tenderness,  effusion,  inability  to bear weight.  
+• Variant  3: MRI knee  without  IV contrast  is usually  appropriate  as the next imaging study , after radiographs  
+did not show  fracture , of adults  or skeletally  mature  children , for the evaluation  of suspected  occult  knee  
+fractures or internal  derangement  after a fall or acute  twisting  trauma  to the knee.  
+• Variant  4: MRI knee  without  IV contrast  is usually  appropriate  as the next imaging  study  after radiographs  did 
+not show  fracture , of skeletally  immature  children,  for the evaluation  of suspected  occult  knee  fractures  or 
+internal  derangement  after a fall or acute  twisting  trauma  to the knee.  
+• Variant  5: MRI knee  without  IV contrast  or CT knee  without  IV contrast  is usually  appropriate  as the next 
+imaging study  after radiographic  diagnosis  of tibial plateau  fracture,  of patients  5 years of age or older,  to 
+evaluate for the suspicion  of additional  bone  or soft-tissue injury  after a fall or acute twisting  trauma  to the 
+knee.  These procedures are equivalent  alternatives (ie, only 1 procedure  will be ordered  to provide  the clinical  
+information  to effectively  manage the patient’s  care).
+
+
+
+Metadata: page_label: 13
+file_name: ACR acute trauma to knee.pdf
+Score: 0.2738621234893799
+
+Page Content: • Variant  6: Knee radiographs  are usually  appropriate  as the initial imaging study  of patients  5 years of age or 
+older  for the evaluation  of acute trauma  to the knee  from  an unknown mechanism  when  at least one of the 
+following  is present:  focal  tenderness,  effusion,  ability  to walk.  
+• Variant  7: Knee radiographs  or CTA  lower  extremity  with IV contrast  is usually  appropriate  as the initial 
+imaging study,  of patients  5 years of age or older,  for the evaluation  of significant  trauma  to the knee  (eg, motor  
+vehicle accident,  knee  dislocation). These procedures  are complementary  (eg, more  than one procedure  is 
+ordered  as a set or simultaneously  where each procedure  provides  unique  clinical  information  to effectively  
+manage the patient’s  care).  The panel  did not agree on recommending  CT knee  with IV contrast  as the initial 
+imaging study  of patients  5 years of age or older  for the evaluation  of significant  trauma  to the knee.  There is 
+insufficient  medical  literature  to conclude  whether  or not these patients  would  benefit  from  CT knee  with IV 
+contrast  for the evaluation  of significant  trauma  to the knee.  CT of the knee  with IV contrast  in this patient  
+population is controversial  but may be appropriate.  
+Supporting  Documents  
+The evidence table,  literature  search,  and appendix for this topic  are available at https://acsearch.acr.org/list . The 
+appendix includes  the strength  of evidence  assessment  and the final rating  round tabulations  for each 
+recommendation.  
+For additional  information  on the Appropriateness Criteria  methodology and other  supporting documents  go to 
+www.acr.org/ac .",False
+63,"Adult or child 5 years of age or older. Fall or acute twisting trauma to the knee. Tibial plateau
+fracture on radiographs. Suspect additional bone or soft-tissue injury. Next study.",INSUFFICIENT INFORMATION,MRI knee without IV contrast,L,19 year old Chinese male. MRI right knee without IV contrast for proximal tibia fracture.,"Patient Profile: 19 year old Chinese male
+Scan ordered:  MRI right knee without IV contrast for proximal tibia fracture","1. Relevant information from the patient profile:
+- Age: 19 years old
+- Symptoms: Proximal tibia fracture
+- Previous diagnosis: None mentioned
+- Stage of diagnosis: Next study
+
+2. Based on the context information, the appropriate imaging recommendations for a patient with a proximal tibia fracture are as follows:
+- MRI knee without IV contrast: Usually Appropriate
+- CT knee without IV contrast: Usually Appropriate
+- Bone scan with SPECT or SPECT/CT knee: Usually Not Appropriate
+- CT knee with IV contrast: Usually Not Appropriate
+- CT knee without and with IV contrast: Usually Not Appropriate
+- MR arthrography knee: Usually Not Appropriate
+- MRA knee without and with IV contrast: Usually Not Appropriate
+- MRA knee without IV contrast: Usually Not Appropriate
+- MRI knee without and with IV contrast: Usually Not Appropriate
+- US knee: Usually Not Appropriate
+
+3. Based on the appropriateness categories, there are no superior imaging procedures or treatments with a more favorable risk-benefit ratio for a proximal tibia fracture.
+
+4. Based on the scoring criteria, the appropriateness of the scan order for an MRI right knee without IV contrast for a proximal tibia fracture is USUALLY APPROPRIATE.",USUALLY APPROPRIATE,MRI knee without IV contrast,"Metadata: description:  Adult or child 5 years of age or older. Fall or acute twisting trauma to the knee. Tibial plateau fracture on radiographs. Suspect additional bone or soft-tissue injury. Next study.
+variant: 5
+file_name: ACR acute trauma to knee.pdf
+condition: ACR acute trauma to knee
+page_label: 3
+Score: 0.2809198498725891
+
+Page Content: | Procedure | Appropriateness Category |
+|---|---|
+| MRI knee without IV contrast | Usually Appropriate |
+| CT knee without IV contrast | Usually Appropriate |
+| Bone scan with SPECT or SPECT/CT knee | Usually Not Appropriate |
+| CT knee with IV contrast | Usually Not Appropriate |
+| CT knee without and with IV contrast | Usually Not Appropriate |
+| MR arthrography knee | Usually Not Appropriate |
+| MRA knee without and with IV contrast | Usually Not Appropriate |
+| MRA knee without IV contrast | Usually Not Appropriate |
+| MRI knee without and with IV contrast | Usually Not Appropriate |
+| US knee | Usually Not Appropriate |
+
+
+
+Metadata: description:  Adult or child greater than or equal to 5 years of age. Chronic knee pain. Initial knee radiograph demonstrates signs of prior osseous injury (ie, Segond fracture, tibial spine avulsion, etc). Next imaging procedure.
+variant: 5
+file_name: ACR chronic knee pain.pdf
+condition: ACR chronic knee pain
+page_label: 3
+Score: 0.2948550581932068
+
+Page Content: | Procedure | Appropriateness Category |
+|---|---|
+| MRI knee without IV contrast | Usually Appropriate |
+| CT arthrography knee | May Be Appropriate |
+| CT knee without IV contrast | May Be Appropriate |
+| Image-guided aspiration knee | Usually Not Appropriate |
+| CT knee with IV contrast | Usually Not Appropriate |
+| CT knee without and with IV contrast | Usually Not Appropriate |
+| MR arthrography knee | Usually Not Appropriate |
+| MRI knee without and with IV contrast | Usually Not Appropriate |
+| Bone scan knee | Usually Not Appropriate |
+| US knee | Usually Not Appropriate |
+| Radiography hip ipsilateral | Usually Not Appropriate |
+
+
+
+Metadata: page_label: 13
+file_name: ACR acute trauma to knee.pdf
+Score: 0.31497663259506226
+
+Page Content: ACR Appropriateness  Criteria® 13 Acute  Trauma  to the Knee  • Variant  2: Knee radiographs  are usually  appropriate  as the initial imaging study  of patients  5 years of age or 
+older  for the evaluation  of a fall or acute twisting  trauma  to the knee  when  at least one of the following  is 
+present:  focal  tenderness,  effusion,  inability  to bear weight.  
+• Variant  3: MRI knee  without  IV contrast  is usually  appropriate  as the next imaging study , after radiographs  
+did not show  fracture , of adults  or skeletally  mature  children , for the evaluation  of suspected  occult  knee  
+fractures or internal  derangement  after a fall or acute  twisting  trauma  to the knee.  
+• Variant  4: MRI knee  without  IV contrast  is usually  appropriate  as the next imaging  study  after radiographs  did 
+not show  fracture , of skeletally  immature  children,  for the evaluation  of suspected  occult  knee  fractures  or 
+internal  derangement  after a fall or acute  twisting  trauma  to the knee.  
+• Variant  5: MRI knee  without  IV contrast  or CT knee  without  IV contrast  is usually  appropriate  as the next 
+imaging study  after radiographic  diagnosis  of tibial plateau  fracture,  of patients  5 years of age or older,  to 
+evaluate for the suspicion  of additional  bone  or soft-tissue injury  after a fall or acute twisting  trauma  to the 
+knee.  These procedures are equivalent  alternatives (ie, only 1 procedure  will be ordered  to provide  the clinical  
+information  to effectively  manage the patient’s  care).
+
+
+
+Metadata: page_label: 13
+file_name: ACR acute trauma to knee.pdf
+Score: 0.3141222596168518
+
+Page Content: • Variant  6: Knee radiographs  are usually  appropriate  as the initial imaging study  of patients  5 years of age or 
+older  for the evaluation  of acute trauma  to the knee  from  an unknown mechanism  when  at least one of the 
+following  is present:  focal  tenderness,  effusion,  ability  to walk.  
+• Variant  7: Knee radiographs  or CTA  lower  extremity  with IV contrast  is usually  appropriate  as the initial 
+imaging study,  of patients  5 years of age or older,  for the evaluation  of significant  trauma  to the knee  (eg, motor  
+vehicle accident,  knee  dislocation). These procedures  are complementary  (eg, more  than one procedure  is 
+ordered  as a set or simultaneously  where each procedure  provides  unique  clinical  information  to effectively  
+manage the patient’s  care).  The panel  did not agree on recommending  CT knee  with IV contrast  as the initial 
+imaging study  of patients  5 years of age or older  for the evaluation  of significant  trauma  to the knee.  There is 
+insufficient  medical  literature  to conclude  whether  or not these patients  would  benefit  from  CT knee  with IV 
+contrast  for the evaluation  of significant  trauma  to the knee.  CT of the knee  with IV contrast  in this patient  
+population is controversial  but may be appropriate.  
+Supporting  Documents  
+The evidence table,  literature  search,  and appendix for this topic  are available at https://acsearch.acr.org/list . The 
+appendix includes  the strength  of evidence  assessment  and the final rating  round tabulations  for each 
+recommendation.  
+For additional  information  on the Appropriateness Criteria  methodology and other  supporting documents  go to 
+www.acr.org/ac .
+
+
+
+Metadata: page_label: 12
+file_name: ACR acute trauma to knee.pdf
+Score: 0.3031501770019531
+
+Page Content: It is general  
+agreement  that radiographs  should be obtained  and the clinical  decision  rule should not be applied  for patients with 
+gross  deformity  [3], a palpable  mass  [10], a penetrating  injury,  prosthetic  hardware,  an unreliable  clinical  history  
+or physical  examination  secondary  to multiple  injuries  [3,10] , altered  mental  status (eg, head  injury, drug or alcohol  
+use, dementia)  [3,10] , neuropathy (eg, paraplegia,  diabetes)  [3,10] , or a history  suggesting  increased  risk of fracture.  
+Additionally , in any case scenario,  the physician’s judgment  and common  sense should supersede clinical  guidelines  
+[3]. 
+Bone  Scan  with  SPECT  or SPECT/CT  Knee  
+In patients  with significant  acute knee  trauma  with suspected/possible dislocation , Tc-99m  bone  scan with 
+SPECT/CT is not routinely  used as the initial imaging  study.  
+US Knee  
+In patients  with significant  acute knee  trauma  with suspected  or possible  dislocation , US is not routinely  used as 
+the initial imaging  study.  
+Summary  of Recommendations 
+• Variant  1: Knee radiographs  may be appropriate  for the initial imaging  of patients  5 years of age or older  for 
+the evaluation  of a fall or acute twisting  trauma  to the knee  when  there is no focal  tenderness,  no effusion,  and 
+they are able to walk .
+
+
+
+Metadata: page_label: 11
+file_name: ACR acute trauma to knee.pdf
+Score: 0.30043166875839233
+
+Page Content: Bone  Scan  with  SPECT  or SPECT/CT  Knee  
+With  a radiographic  diagnosis  of tibial  plateau  fracture,  Tc-99m  bone  scan with SPECT/CT  is not performed  as the 
+next best imaging  study  to evaluate for additional bone  or soft-tissue injury.  
+US Knee  
+With  a radiographic  diagnosis  of tibial plateau  fracture,  US is not performed  as the next best imaging study  to 
+evaluate for additional bone  or soft-tissue injury . 
+Variant  6: Adult  or child 5 years of age or older.  Acute trauma to the knee.  Mechanism  unknown. Focal  
+patellar  tenderness,  effusion,  able to walk. Initial Imaging.  
+CT Knee  
+CT is not routinely  used as the initial imaging  study  for the evaluation  of acute trauma  to the knee  but is superior  to 
+knee  radiographs  in detection  and classification  of fractures [12]. 
+MR Arth rography  Knee  
+MR arthrography  is not routinely  used as the initial imaging  study  for the evaluation  of acute trauma  to the knee.  
+MRA Knee  
+MRA  is not routinely  used as the initial imaging study  for the evaluation  of acute trauma  to the knee.  
+MRI Knee  
+MRI is not routinely  used as the initial imaging study  for the evaluation  of acute trauma  to the knee.  MRI aids in 
+diagnosis  and further characterization  of bone  and soft-tissue injuries  associated  with transient  lateral  dislocation  
+of the patella  [53-55]. 
+Radiography Knee  
+With  one or more  positive  Ottawa rule criteria , including  focal  patellar  tenderness and joint effusion,  radiographs  
+should  be the initial imaging  modality  for the evaluation  of acute trauma  to the knee  [5,6,8] .",False
+64,Superficial soft tissue mass. Initial imaging,INSUFFICIENT INFORMATION,MRI area of interest without and with IV contrast,L,31 year old Malay female.  MRI left forearm without and with IV contrast for lump.,"Patient Profile: 31 year old Malay female
+Scan ordered:   MRI left forearm without and with IV contrast for lump","1. Relevant information from the patient profile:
+- Age: 31 years old
+- Symptoms: Lump in the left forearm
+
+2. Based on the patient profile, the appropriate imaging recommendations for a lump in the left forearm are as follows:
+- MRI left forearm without IV contrast: Usually Appropriate
+- MRI left forearm without and with IV contrast: Usually Not Appropriate
+
+3. There are no superior imaging procedures or treatments with a more favorable risk-benefit ratio mentioned in the context.
+
+4. Based on the appropriateness criteria, the scan order of MRI left forearm without and with IV contrast is usually not appropriate. The usually appropriate scan order would be MRI left forearm without IV contrast.
+
+Recommendation: MRI left forearm without IV contrast is usually appropriate for evaluating a lump in the left forearm.",USUALLY NOT APPROPRIATE,MRI left forearm without IV contrast,"Metadata: description:  Suspect acute hand or wrist trauma. Initial radiographs negative or equivocal. Next imaging study.
+variant: 2
+file_name: ACR acute hand and wrist trauma.pdf
+condition: ACR acute hand and wrist trauma
+page_label: 1
+Score: 0.34999769926071167
+
+Page Content: | Procedure | Appropriateness Category |
+|---|---|
+| MRI area of interest without IV contrast | Usually Appropriate |
+| Radiography area of interest repeat in 10-14 days | Usually Appropriate |
+| CT area of interest without IV contrast | Usually Appropriate |
+| CT area of interest with IV contrast | Usually Not Appropriate |
+| CT area of interest without and with IV contrast | Usually Not Appropriate |
+| MRI area of interest without and with IV contrast | Usually Not Appropriate |
+| Bone scan area of interest | Usually Not Appropriate |
+| US area of interest | Usually Not Appropriate |
+
+
+
+Metadata: description:  Chronic wrist pain. Palpable mass or suspected occult ganglion cyst. Radiographs normal or nonspecific. Next study.
+variant: 9
+file_name: ACR chronic hand and wrist pain.pdf
+condition: ACR chronic hand and wrist pain
+page_label: 5
+Score: 0.35384535789489746
+
+Page Content: | Procedure | Appropriateness Category |
+|---|---|
+| MRI wrist without IV contrast | Usually Appropriate |
+| MRI wrist without and with IV contrast | Usually Appropriate |
+| US wrist | Usually Appropriate |
+| MR arthrography wrist | Usually Not Appropriate |
+| CT wrist without IV contrast | Usually Not Appropriate |
+| CT wrist with IV contrast | Usually Not Appropriate |
+| CT wrist without and with IV contrast | Usually Not Appropriate |
+| CT arthrography wrist | Usually Not Appropriate |
+| Radiographic arthrography wrist | Usually Not Appropriate |
+| Bone scan wrist | Usually Not Appropriate |
+
+
+
+Metadata: page_label: 13
+file_name: ACR chronic hand and wrist pain.pdf
+Score: 0.36171454191207886
+
+Page Content: In most cases, the 
+radiographic findings are diagnostic and provide the necessary information (degree of carpal collapse, ulnar 
+variance, and associated osteoarthritis) to adequately plan management. In cases in which the amount of collapse 
+or the presence and size of bone fragments is uncertain from the radiographs and is deemed clinically important, 
+noncontrast -enhanced CT may be appropriate.  CT with IV  contrast is usually not appropriate.  
+MRI Wrist  
+No recent literature addresses the role of MR I in suspected staging of Kienböck’s disease. In many cases, the 
+radiographic findings are diagnostic and provide the necessary information (degree of carpal collapse, ulnar variance, and associated osteoarthritis) to adequately plan management. In cases i n which the amount of collapse 
+or the presence and size of bone fragments is uncertain from the radiographs and is deemed clinically important, noncontrast -enhanced MRI may be appropriate.  MRI with IV  contrast is usually not appropriate.  
+MR Arthrography  Wrist 
+MR arthrography is not routinely used in the diagnosis of Kienböck’s disease.  
+CT Arthrography  Wrist  
+CT arthrography is not routinely used in the diagnosis of Kienböck’s disease.  
+US Wrist  
+US is not routinely used in the diagnosis of Kienböck’s disease.  
+Bone Scan  Wrist  
+Bone scan is not routinely used in the diagnosis of Kienböck’s disease.  
+Arthrography  Wrist  
+Radiographic arthrography  is not routinely used in the diagnosis of Kienböck’s disease.  
+Variant 9: Chronic wrist pain. Palpable mass or suspected occult gan glion cyst. Radiographs normal or 
+nonspecific. Next study. 
+MRI Wrist  
+MRI (without or without and with IV contrast) or US are alternative initial examinations that are usually 
+appropriate in this setting.
+
+
+
+Metadata: page_label: 7
+file_name: ACR soft tissue mass.pdf
+Score: 0.36106470227241516
+
+Page Content: In a multi-institutional study of 133 patients  with primary  soft tissue malignancies,  Panicek  et al [32] 
+found  no statistically  significant  difference between  MRI and contrast -enhanced  CT imaging  in determining  tumor  
+involvement  of muscle,  bone,  joint, or neurovascular  structures.  Therefore,  CT with IV contrast  remains an 
+important  adjunct  in the evaluation  of a soft tissue mass.  
+The advent  of virtual noncontrast  reconstruction  with modern dual-source CT scanners allows  for acquisition  of a 
+single  postcontrast  scan with reconstruction  of virtual noncontrast  images,  which  can preclude  the need  for a 
+separate precontrast  scan phase [31]. Similar  to CT without  IV contrast  [21, 22], virtual noncontrast  imaging  allows 
+distinction  of ossification  from  calcification  and identification  of characteristic patterns of mineralization  [29,30]  
+and is particularly  useful  in assessment  of mass  mineralization  in areas where the osseous anatomy is complex  or 
+obscured  and radiographs  would be less sensitive.  
+CT Area  of Interest  Without and With  IV Contrast  
+The advent of virtual noncontrast reconstruction with modern dual -source CT scanners allows for acquisition of a 
+single postcontrast scan with reconstruction of virtual noncontrast images, which can preclude the need for a 
+separate precontrast scan phase [31] . However, a traditional CT without and with IV contrast may be appropriate 
+for characterization of mineralization in an anatomically complex area. Although  a multi-institutional study of 133 
+patients  with primary  soft tissue malignancies by Panicek  et al [32] found  no statistically  significant  difference  
+between  MRI and contrast -enhanced  CT imaging  in determ ining  tumor  involvement  of muscle,  bone,  joint,  or 
+neurovascular  structures,  this study did not specifically  endorse  the usefulness of dual-phase CT without  and with 
+IV contrast.
+
+
+
+Metadata: page_label: 8
+file_name: ACR chronic elbow pain.pdf
+Score: 0.35178643465042114
+
+Page Content: • Variant 3 : In the setting of chronic elbow pain with normal or nonspecific radiographs,  MRI elbow without IV 
+contrast or CT elbow without IV contrast is usually appropriate as the next imaging study for suspected occult 
+stress fracture or other bone abnormality.  These procedures are equivalent alternatives (ie, only one procedure 
+will be ordered to provide the clinical information to effectively manage the patient’s care). Although the panel 
+did not agree on recommending 3-phase bone scan elbow, because there is insufficient medical literature to 
+conclude whether these patients would benefit from the procedure, its use may be appropri ate. 
+• Variant 4 : In the setting of chronic elbow pain with normal or nonspecific radiographs,  US elbow or MRI 
+elbow without IV contrast is usually appropriate  as the next imaging study for suspected chronic epicondylalgia
+
+
+
+Metadata: page_label: 11
+file_name: ACR primary bone tumours.pdf
+Score: 0.33356475830078125
+
+Page Content: The panel did not agree on recommending CT without and with IV contrast in the 
+evaluation of incidentally found bone lesions that are not clear ly benign on CT and MRI because there is 
+insufficient medical literature to co nclude whether or not these patients would benefit from CT without and 
+with IV contrast. CT without and with IV contrast in this patient population is controversial but may be 
+appropriate.",False
+65,New symptomatic VCF identified on radiographs. History of malignancy. Next imaging study.,INSUFFICIENT INFORMATION,MRi spine area of interest without and with IV contrast,L,55 year old Chinese female.  MRI thoracic and lumbar spine without and with IV contrast for ?pathological vertebral compression fracture.,"Patient Profile: 55 year old Chinese female
+Scan ordered:   MRI thoracic and lumbar spine without and with IV contrast for ?pathological vertebral compression fracture","1. Relevant information from the patient profile:
+- Age: 55 years old
+- Symptoms: ?pathological vertebral compression fracture
+- Previous diagnosis: None mentioned
+- Stage of diagnosis: Next imaging study
+
+2. Based on the provided context, the appropriate imaging recommendations for a new symptomatic vertebral compression fracture (VCF) without known malignancy are:
+- MRI spine area of interest without IV contrast (Usually Appropriate)
+- CT spine area of interest without IV contrast (Usually Appropriate)
+- Bone scan whole body (May Be Appropriate)
+- SPECT or SPECT/CT spine area of interest (May Be Appropriate)
+- CT spine area of interest with IV contrast (Usually Not Appropriate)
+- CT spine area of interest without and with IV contrast (Usually Not Appropriate)
+- MRI spine area of interest with IV contrast (Usually Not Appropriate)
+- MRI spine area of interest without and with IV contrast (Usually Not Appropriate)
+- CT myelography spine area of interest (Usually Not Appropriate)
+- FDG-PET/CT skull base to mid-thigh (Usually Not Appropriate)
+
+3. Superior imaging procedures or treatments with a more favorable risk-benefit ratio are:
+- MRI spine area of interest without IV contrast
+- CT spine area of interest without IV contrast
+
+4. Based on the scoring criteria, the appropriateness of the scan order ""MRI thoracic and lumbar spine without and with IV contrast for ?pathological vertebral compression fracture"" is usually not appropriate. An appropriate procedure would be an MRI spine area of interest without IV contrast or a CT spine area of interest without IV contrast.",USUALLY NOT APPROPRIATE,MRI spine area of interest without IV contrast or CT spine area of interest without IV contrast,"Metadata: description:  New symptomatic vertebral compression fracture (VCF) identified on radiographs. No known malignancy. Next imaging study.
+variant: 1
+file_name: ACR management of vertebral compression fracture.pdf
+condition: ACR management of vertebral compression fracture
+page_label: 1
+Score: 0.2537787854671478
+
+Page Content: | Procedure | Appropriateness Category |
+|---|---|
+| MRI spine area of interest without IV contrast | Usually Appropriate |
+| CT spine area of interest without IV contrast | Usually Appropriate |
+| Bone scan whole body | May Be Appropriate |
+| SPECT or SPECT/CT spine area of interest | May Be Appropriate |
+| CT spine area of interest with IV contrast | Usually Not Appropriate |
+| CT spine area of interest without and with IV contrast | Usually Not Appropriate |
+| MRI spine area of interest with IV contrast | Usually Not Appropriate |
+| MRI spine area of interest without and with IV contrast | Usually Not Appropriate |
+| CT myelography spine area of interest | Usually Not Appropriate |
+| FDG-PET/CT skull base to mid-thigh | Usually Not Appropriate |
+
+
+
+Metadata: description:  New symptomatic VCF identified on radiographs. History of malignancy. Next imaging study.
+variant: 2
+file_name: ACR management of vertebral compression fracture.pdf
+condition: ACR management of vertebral compression fracture
+page_label: 1
+Score: 0.25439879298210144
+
+Page Content: | Procedure | Appropriateness Category |
+|---|---|
+| MRI spine area of interest without and with IV contrast | Usually Appropriate |
+| CT spine area of interest without IV contrast | Usually Appropriate |
+| MRI spine area of interest without IV contrast | Usually Appropriate |
+| FDG-PET/CT skull base to mid-thigh | May Be Appropriate |
+| Bone scan whole body | May Be Appropriate |
+| Image-guided biopsy spine area of interest | May Be Appropriate |
+| MRI spine area of interest with IV contrast | May Be Appropriate (Disagreement) |
+| SPECT or SPECT/CT spine area of interest | May Be Appropriate |
+| CT myelography spine area of interest | May Be Appropriate |
+| CT spine area of interest with IV contrast | Usually Not Appropriate |
+| CT spine area of interest without and with IV contrast | Usually Not Appropriate |
+
+
+
+Metadata: page_label: 8
+file_name: ACR low back pain.pdf
+Score: 0.27498090267181396
+
+Page Content: One study found no 
+statistically  significant  difference in primary  outcome  after 1 year for patients  ≥65 years of age  who had spine  
+imaging  within  6 weeks after an initial visit for care for LBP versus  similar  patients who did not undergo early  
+imaging  [9]. Additionally,  patients  with new episodes of LBP and previous  MRI scans are unlikely  to detect  changes  
+in disc protrusion,  annular  fissures,  high-intensity  zones,  or end-plate  signal  changes with repeated  MRI [13]. 
+Bone  Scan  Whole  Body  with  SPECT  or SPECT/CT  Complete Spine  
+There is no relevant  literature  to support  the use of bone  scan with SPECT or SPECT/CT in the initial evaluation  
+of subacute or chronic  LBP withou t red flags or prior  management.  
+CT Lumbar Spine With IV Contrast  
+There is no relevant  literature  to support  the use of CT lumbar  spine  with IV contrast  in the initial evaluation  of 
+subacute or chronic  LBP without  red flags  or prior  management.  
+CT Lumbar Spine Without and With IV Contrast  
+There is no relevant  literature  to support  the use of CT lumbar  spine  without and with IV contrast  in the initial  
+evaluation  of subacute or chronic  LBP without  red flags  or prior  management.
+
+
+
+Metadata: page_label: 15
+file_name: ACR low back pain.pdf
+Score: 0.2743348479270935
+
+Page Content: ACR Appropriateness  Criteria® 15 Low Back  Pain MRI lumbar  spine  without  IV contrast  is useful  in determining  the acuity  of a vertebral  fracture,  as evidenced  by 
+bone  marrow  edema and in demonstrating spinal  canal  compromise,  for example from  displaced  or retropulsed  
+fractures.  For imaging  evaluation  and management  of vertebral  compression  fractures,  please see the ACR 
+Appropriateness Criteria® topic on “ Management of Vertebral  Compression  Fractures ” for guidance [57]. 
+Additionally,  the distinction  between  malignant  and benign  compression  fractures  can be assessed  on MRI.  The 
+visualization  of the convex posterior  vertebral  body  border,  extension into the posterior  elements,  and abnormal  
+marrow  signal  are suggestive  of pathologic  fracture  [58]. 
+CT myelography of the lumbar  spine  assess the patency  of the spinal  canal/thecal  sac and of the subarticular  recesses  
+and neural  foramen  [22]. It can be useful  in patients  with osteoporotic  fracture  with neurologic  deficit . This modality  
+has the disadvantage  of lumbar  puncture  and injection  of intrathecal  contrast  [22]. 
+Bone  scan with SPECT/CT is usually  not used for initial imaging  but can be useful  for radiographically occult  
+fractures and can be used to evaluate acuity  of vertebral  fracture . [59]. 
+Whole -body FDG-PET/CT is typically  not an initial imaging study,  but as a follow -up study , it can help distinguish  
+between  benign and pathologic  compression  fractures  when  other  imaging modalities  are indeterminate  [60].
+
+
+
+Metadata: page_label: 17
+file_name: ACR low back pain.pdf
+Score: 0.2695314288139343
+
+Page Content: ACR Appropriateness  Criteria® 17 Low Back  Pain CT Lumbar Spine Without IV Contrast  
+CT lumbar  spine without  IV contrast  can be performed  to evaluate  osseous integrity  (eg, pathologic  fracture)  when  
+involved with tumor.  However,  intradural  and spinal  cord pathologies  are poorly depicted  on CT, so MRI without  
+and with IV contrast  is preferred . Addition of IV contrast may be useful  to assess for epidural  abscess  in patients  
+for this clinical  scenario  and for patients  with suspected  infection . [45-47]. 
+CT Myelography Lumbar  Spine  
+CT myelography of the lumbar  spine  assesses  the patency  of the spinal  canal/thecal  sac and of the subarticular  
+recesses and neural  foramen  [22]. It can be useful  in patients  with suspected  neoplasm  and neurologic  deficit.  This 
+modality  has the disadvantage  of lumbar  puncture  and injection  of intrathecal  contrast  [22]. 
+Discography  and Post-Discography  CT Lumbar  Spine  
+There is no relevant  literature  to support  the use of discography  and post-discography  CT lumbar  spine  in this 
+clinical  scenario.  
+FDG -PET/CT  Whole  Body  
+Whole -body FDG-PET/CT is typically  not an initial imaging  study  but can be used to evaluate for widespread  
+metastatic  disease and can distinguish  benign versus malignant  compression  fractures  [65,66] . 
+MRI Lumbar Spine With IV Contrast  
+MRI lumbar  spine  with IV contrast  is not typically  performed  independently as an initial study,  as its interpretation  
+is most  informative  when  correlated  with standard  noncontrast  sequences included in MRI lumbar  spine  with and 
+without  IV contrast  [33].
+
+
+
+Metadata: page_label: 17
+file_name: ACR management of vertebral compression fracture.pdf
+Score: 0.2688491642475128
+
+Page Content: MRI of the spine  with and 
+without  IV contrast  may be useful  to assess for inflammation  but should be carefully  assessed  because it is 
+prone  to artifactual  distortion. Other  procedures including bone  scan,  SPECT or SPECT/CT of the whole  spine,  
+and FDG-PET/CT may be appropriate  in cases in which there are multiple  fractures or concern  for more  
+widespread  distribution  of fractures.  
+• Variant  4: When  an asymptomatic VCF  is identified  on radiographs  and there is a history  of malignancy,  both 
+CT of the spine  without  IV contrast,  or MRI of the spine  either  without  or with and without IV contrast  is 
+recommended  as the next imaging  study to evaluate for bone  marrow  edema,  enhancing  tumor,  or other  
+complication. Either  procedure  can be performed,  but they may also be complementary in certain  
+circumstances.  Other  procedures  including bone  scan,  SPECT or SPECT/CT of the whole  spine,  and FDG-
+PET/CT may be appropriate  in cases  in which there are multiple  fractures or concern  for more  widespread  
+distribution  of fractures.  Image -guided biopsy  may be useful  when  tissue sampling  is needed  before  treatment.  
+• Variant  5: In the setting  of an asymptomatic,  osteoporotic  VCF,  medical  management  only is usually  
+appropriate  as the initial treatment.  Other  treatments are usually  not appropriate  at this stage.  
+• Variant  6: In the setting  of a symptomatic  osteoporotic  VCF  with bone  marrow  edema or intravertebral  cleft,  
+both medical  management  and percutaneous  VA are usually  appropriate  as initial treatment  strategies.  Medical  
+management  is always appropriate  and is complementary  to VA and should never  be omitted  even  when  
+intervention  is performed.",False
+66,"Inflammatory back pain. Suspected axial spondyloarthritis. Negative radiographs and
+negative MRI of the sacroiliac joints. Next imaging study.",INSUFFICIENT INFORMATION,MRi spine area of interest without and with IV contrast,L,34 year old Indian male.  MRI lumbosacral spine without and with IV contrast for ?ankylosing spondylitis.,"Patient Profile: 34 year old Indian male
+Scan ordered:   MRI lumbosacral spine without and with IV contrast for ?ankylosing spondylitis","1. Relevant information from the patient profile:
+- Age: 34 years old
+- Symptoms: Suspected ankylosing spondylitis
+- Previous diagnosis: None mentioned
+- Stage of diagnosis: Next imaging study
+
+2. Based on the context information, the appropriate imaging recommendations for a patient with inflammatory back pain and suspected axial spondyloarthritis are as follows:
+- Usually Appropriate: MRI sacroiliac joints and spine area of interest without and with IV contrast
+- Usually Not Appropriate: US sacroiliac joints, US sacroiliac joints and spine area of interest, Bone scan with SPECT or SPECT/CT sacroiliac joints, Bone scan with SPECT or SPECT/CT sacroiliac joints and spine area of interest, CT sacroiliac joints with IV contrast, CT sacroiliac joints without and with IV contrast, Fluoride PET/CT skull base to mid-thigh, CT sacroiliac joints and spine area of interest with IV contrast, CT sacroiliac joints and spine area of interest without and with IV contrast
+
+3. Superior imaging procedures or treatments with a more favorable risk-benefit ratio:
+- MRI sacroiliac joints and spine area of interest without and with IV contrast is the most appropriate imaging procedure for evaluating suspected axial spondyloarthritis.
+
+4. Recommendation:
+Based on the patient profile and appropriateness criteria, the scan order for MRI lumbosacral spine without and with IV contrast is USUALLY NOT APPROPRIATE. The appropriate procedure would be an MRI sacroiliac joints and spine area of interest without and with IV contrast.",USUALLY NOT APPROPRIATE,MRI sacroiliac joints and spine area of interest without and with IV contrast,"Metadata: description:  Inflammatory back pain. Suspected axial spondyloarthritis. Additional imaging following radiographs. Next imaging study.
+variant: 2
+file_name: ACR inflammatory back pain.pdf
+condition: ACR inflammatory back pain
+page_label: 2
+Score: 0.25724297761917114
+
+Page Content: | Procedure | Appropriateness Category |
+|---|---|
+| MRI sacroiliac joints and spine area of interest without and with IV contrast | Usually Appropriate |
+| MRI sacroiliac joints and spine area of interest without IV contrast | Usually Appropriate |
+| MRI sacroiliac joints without and with IV contrast | Usually Appropriate |
+| MRI sacroiliac joints without IV contrast | Usually Appropriate |
+| CT sacroiliac joints without IV contrast | May Be Appropriate |
+| CT sacroiliac joints and spine area of interest without IV contrast | May Be Appropriate |
+| US sacroiliac joints | Usually Not Appropriate |
+| US sacroiliac joints and spine area of interest | Usually Not Appropriate |
+| Bone scan with SPECT or SPECT/CT sacroiliac joints | Usually Not Appropriate |
+| Bone scan with SPECT or SPECT/CT sacroiliac joints and spine area of interest | Usually Not Appropriate |
+| CT sacroiliac joints with IV contrast | Usually Not Appropriate |
+| CT sacroiliac joints without and with IV contrast | Usually Not Appropriate |
+| Fluoride PET/CT skull base to mid-thigh | Usually Not Appropriate |
+| CT sacroiliac joints and spine area of interest with IV contrast | Usually Not Appropriate |
+| CT sacroiliac joints and spine area of interest without and with IV contrast | Usually Not Appropriate |
+
+
+
+Metadata: description:  Inflammatory back pain. Suspected axial spondyloarthritis. Negative radiographs and negative MRI of the sacroiliac joints. Next imaging study.
+variant: 3
+file_name: ACR inflammatory back pain.pdf
+condition: ACR inflammatory back pain
+page_label: 2
+Score: 0.26981520652770996
+
+Page Content: | Procedure | Appropriateness Category |
+|---|---|
+| Radiography spine area of interest | Usually Appropriate |
+| MRI spine area of interest without and with IV contrast | Usually Appropriate |
+| MRI spine area of interest without IV contrast | Usually Appropriate |
+| CT spine area of interest without IV contrast | Usually Appropriate |
+| US spine area of interest | Usually Not Appropriate |
+| Bone scan with SPECT or SPECT/CT spine area of interest | Usually Not Appropriate |
+| Fluoride PET/CT skull base to mid-thigh | Usually Not Appropriate |
+| CT spine area of interest with IV contrast | Usually Not Appropriate |
+| CT spine area of interest without and with IV contrast | Usually Not Appropriate |
+
+
+
+Metadata: page_label: 16
+file_name: ACR low back pain.pdf
+Score: 0.2613787055015564
+
+Page Content: Noncontrast  and contrast -enhanced  MRI  
+has the ability  to demonstrate inflammatory, neoplastic,  and most  traumatic  lesions , as well as to show  anatomic  
+detail  not available on isotope  studies [68]. 
+Although less sensitive and specific than MRI for evaluation  for infection  or neoplasm,  CT lumbar  spine  without  
+IV contrast  can be obtained to evaluate for associated  osseous abnormalities  (eg, pathologic  fracture,  bony  
+destructive change).  In some  cases,  addition  of IV contrast may be useful  to assess for epidural  abscess  in such 
+patients  [45-47]. 
+CT myelography of the lumbar  spine  assesses  the patency  of the spinal  canal/thecal  sac and of the subarticular  
+recesses and neural  foramen  [22]. It can be useful  in patients  with suspected  neoplasm  and neurologic  deficit.  This 
+modality  has the disadvantage  of lumbar  puncture  and injection  of intrathecal  contrast  [22]. 
+Bone  Scan  Whole  Body  with  SPECT  or SPECT/CT  Complete Spine  
+SPECT or SPECT/CT is not the initial imaging  study but can be used to evaluate for widespread  osseous metastatic  
+disease.  
+CT Lumbar Spine With IV Contrast  
+CT lumbar  spine  with IV contrast  can be performed  to evaluate osseous integrity  (eg, pathologic  fracture)  when  
+involved with tumor.  However,  intradural  and spinal  cord pathologies  are poorly depicted  on CT, so MRI without  
+and with IV contrast  is preferred.  Addition of IV contrast may be useful  to assess for epidural  abscess  in patients  
+for this clinical  scenario  and for patients  with suspected  infection  [45-47].
+
+
+
+Metadata: page_label: 7
+file_name: ACR low back pain.pdf
+Score: 0.25948894023895264
+
+Page Content: Bone  Scan  Whole  Body  with  SPECT  or SPECT /CT Complete Spine  
+There is no relevant  literature  to support  the use of bone  scan with single -photon  emission  CT (SPECT) or 
+SPECT/CT in the initial evaluation  of acute  uncomplicated  LBP. 
+CT Lumbar Spine With IV Contrast  
+There is no relevant  literature  to support  the use of CT lumbar  spine  with intravenous  (IV) contrast  in the initial 
+evaluation  of acute uncomplicated  LBP. 
+CT Lumbar Spine Without and With IV Contrast  
+There is no relevant  literature  to support  the use of CT lumbar  spine  without and with IV contrast  in the initial  
+evaluation  of acute uncomplicated  LBP. 
+CT Lumbar Spine Without IV Contrast  
+There is no relevant  literature  to support  the use of CT lumbar  spine  without  IV contrast  in the initial evaluation  of 
+patients  in this group.  Acute (<4 weeks’  duration)  uncomplicated (no red flags)  LBP, with or without radiculopathy,  
+is considered a self -limiting condition, responsive to medical management and physical therapy in most patients 
+[4,6,7] . Numerous  studies have  shown  that routine  imaging  provides  no clinical benefit  in this group [6,9]  and can 
+lead to increased  health  care utilization  [6,17] . 
+CT Myelography Lumbar  Spine  
+There is no relevant  literature  to support  the use of lumbar  spine  CT myelography in the initial evaluation  of acute  
+uncomplicated LBP.
+
+
+
+Metadata: page_label: 17
+file_name: ACR low back pain.pdf
+Score: 0.25901922583580017
+
+Page Content: MRI Lumbar Spine Without and With IV Contrast  
+MRI lumbar  spine  without  and with IV contrast  is useful  for this group.  For malignant/metastatic  disease,  MRI is 
+preferred  as both bony/marrow  involvement  and neural  compression  from  epidural  tumor  are visualized  with high 
+spatial  resolution  [62]. In a patient  with suspected  spinal  infection, MRI without  and with IV contrast  is preferred  
+because of its  high sensitivity  and specificity. MRI can localize  the site of infection  and assess the extent  of 
+extradural/epidural  and paravertebral  involvement  [65,67] , and is helpful  to distinguish  abscess from  phlegmon 
+[67]. 
+MRI Lumbar Spine Without IV Contrast  
+MRI lumbar  spine  without  IV can be a sufficient  imaging  study  if there is low risk of epidural  and/or  intraspinal  
+disease.  It is highly  sensitive for bone  marrow  abnormalities , and with a combination of noncontrast  T1-weighted  
+and short tau inversion recovery sequences it can distinguish whether  they are benign or malignant  [62]. 
+Radiography Lumbar  Spine  
+Sensitivity  of radiography is markedly  limited  for metastases [64]. MRI is preferred  to radiography because of its  
+higher  sensitivity  and specificity  for osseous lesions and for its ability  to assess soft-tissue abnormalities  [69,70] . 
+Summary  of Recommendations 
+• Variant 1:  Imagi ng is usually not appropriate for  the initial imaging of patients with acute LBP with or without 
+radiculopathy, no red flags , and no prior management.  
+• Variant 2:  Imagi ng is usually not appropriate for  the initial imaging of patients with subacute or chronic LBP 
+with or without radiculopathy, no red flags , and no prior management.
+
+
+
+Metadata: page_label: 8
+file_name: ACR low back pain.pdf
+Score: 0.256521999835968
+
+Page Content: One study found no 
+statistically  significant  difference in primary  outcome  after 1 year for patients  ≥65 years of age  who had spine  
+imaging  within  6 weeks after an initial visit for care for LBP versus  similar  patients who did not undergo early  
+imaging  [9]. Additionally,  patients  with new episodes of LBP and previous  MRI scans are unlikely  to detect  changes  
+in disc protrusion,  annular  fissures,  high-intensity  zones,  or end-plate  signal  changes with repeated  MRI [13]. 
+Bone  Scan  Whole  Body  with  SPECT  or SPECT/CT  Complete Spine  
+There is no relevant  literature  to support  the use of bone  scan with SPECT or SPECT/CT in the initial evaluation  
+of subacute or chronic  LBP withou t red flags or prior  management.  
+CT Lumbar Spine With IV Contrast  
+There is no relevant  literature  to support  the use of CT lumbar  spine  with IV contrast  in the initial evaluation  of 
+subacute or chronic  LBP without  red flags  or prior  management.  
+CT Lumbar Spine Without and With IV Contrast  
+There is no relevant  literature  to support  the use of CT lumbar  spine  without and with IV contrast  in the initial  
+evaluation  of subacute or chronic  LBP without  red flags  or prior  management.",False
+67,"Traumatic shoulder pain. Radiographs show Bankart or Hill-Sachs lesion. Next imaging
+study.",INSUFFICIENT INFORMATION,MRI shoulder without IV contrast,L,24 year old Indian female.  MRI left shoulder without IV contrast for ?Hill Sachs lesion.  ,"Patient Profile: 24 year old Indian female
+Scan ordered:   MRI left shoulder without IV contrast for ?Hill Sachs lesion","1. Relevant information from the patient profile:
+- Age: 24 years old
+- Symptoms: Left shoulder pain
+- Previous diagnosis: None mentioned
+- Stage of diagnosis: Next imaging study
+
+2. Based on the context information, the appropriateness categories for imaging recommendations for traumatic shoulder pain with radiographs showing Bankart or Hill-Sachs lesion are as follows:
+- MR arthrography shoulder: Usually Appropriate
+- MRI shoulder without IV contrast: Usually Appropriate
+- CT arthrography shoulder: May Be Appropriate
+- CT shoulder without IV contrast: May Be Appropriate
+- CT shoulder with IV contrast: Usually Not Appropriate
+- CT shoulder without and with IV contrast: Usually Not Appropriate
+- FDG-PET/CT skull base to mid-thigh: Usually Not Appropriate
+- MRI shoulder without and with IV contrast: Usually Not Appropriate
+- Bone scan shoulder: Usually Not Appropriate
+- US shoulder: Usually Not Appropriate
+
+3. Superior imaging procedures or treatments with a more favorable risk-benefit ratio:
+Based on the information provided, MR arthrography shoulder and MRI shoulder without IV contrast are considered superior imaging procedures for evaluating Bankart or Hill-Sachs lesions.
+
+4. Recommendation:
+Based on the appropriateness categories and the patient's profile, the recommended scan order is MRI left shoulder without IV contrast, which is usually appropriate for evaluating traumatic shoulder pain with a suspected Hill-Sachs lesion.",USUALLY APPROPRIATE,MRI shoulder without IV contrast,"Metadata: description:  Traumatic shoulder pain. Radiographs show Bankart or Hill-Sachs lesion. Next imaging study.
+variant: 5
+file_name: ACR shoulder pain traumatic.pdf
+condition: ACR shoulder pain traumatic
+page_label: 3
+Score: 0.27641913294792175
+
+Page Content: | Procedure | Appropriateness Category |
+|---|---|
+| MR arthrography shoulder | Usually Appropriate |
+| MRI shoulder without IV contrast | Usually Appropriate |
+| CT arthrography shoulder | May Be Appropriate |
+| CT shoulder without IV contrast | May Be Appropriate |
+| CT shoulder with IV contrast | Usually Not Appropriate |
+| CT shoulder without and with IV contrast | Usually Not Appropriate |
+| FDG-PET/CT skull base to mid-thigh | Usually Not Appropriate |
+| MRI shoulder without and with IV contrast | Usually Not Appropriate |
+| Bone scan shoulder | Usually Not Appropriate |
+| US shoulder | Usually Not Appropriate |
+
+
+
+Metadata: description:  Chronic shoulder pain. Initial radiographs demonstrate osteoarthritis. Next imaging study.
+variant: 7
+file_name: ACR chronic shoulder pain.pdf
+condition: ACR chronic shoulder pain
+page_label: 4
+Score: 0.313252329826355
+
+Page Content: | Procedure | Appropriateness Category |
+|---|---|
+| MRI shoulder without IV contrast | Usually Appropriate |
+| Image-guided anesthetic +/- corticosteroid injection shoulder or surrounding structures | May Be Appropriate |
+| MR arthrography shoulder | May Be Appropriate |
+| CT shoulder without IV contrast | May Be Appropriate |
+| CT arthrography shoulder | May Be Appropriate |
+| US shoulder | Usually Not Appropriate |
+| Radiography shoulder additional views | Usually Not Appropriate |
+| MRI shoulder without and with IV contrast | Usually Not Appropriate |
+| Bone scan shoulder | Usually Not Appropriate |
+| CT shoulder with IV contrast | Usually Not Appropriate |
+| CT shoulder without and with IV contrast | Usually Not Appropriate |
+| FDG-PET/CT skull base to mid-thigh | Usually Not Appropriate |
+
+
+
+Metadata: page_label: 16
+file_name: ACR chronic shoulder pain.pdf
+Score: 0.3181321620941162
+
+Page Content: Although 
+the panel did not agree on recommending US because there is insufficient medical literature to conclude whether these patients would benefit from the procedure, its use may be appropri ate. 
+• Variant 6 : US or Image-guided anesthetic +/ - corticosteroid injection or MR arthrography or MRI without IV 
+contrast is usually appropriate as the next imaging study in the evaluation of chronic shoulder pain when 
+radiographs are normal or inconclusive  and biceps tendon abnormality is suspected.  These procedures are 
+equivalent alternatives (ie, only one procedure will be ordered to provide the clinical information to effectively 
+manage the patient’s care).  
+• Variant 7 : MRI without IV contrast is usually appropriate as the next imaging study in the evaluation of chronic 
+shoulder pain  when radiographs demonstrate osteoarthritis.
+
+
+
+Metadata: page_label: 11
+file_name: ACR shoulder pain traumatic.pdf
+Score: 0.3114817142486572
+
+Page Content: MR arthrography has been shown 
+to be equivalent to CT in the assess ment of glenoid and humeral head bone loss [ 12,18], while being superior to 
+CT in assessment of labroligamentous in juries [12]. MR arthrography is also able to delineate humeral head and 
+glenoid cartilage, which can be important because some Hill -Sachs lesions affect  cartilage only  [11]. 
+CT Shoulder  
+Noncontrast CT has historically been used to assess Hill -Sachs and bony Bankart lesions. However, MRI has 
+been shown to be equivalent to CT for a ssessing both glenoid and humeral head bone loss [ 12,18,53], and CT is 
+limited in the assessment of cartilaginous Hill -Sachs lesions [11]. In addition, CT cannot assess injury to 
+soft-tissue structures like the labroligamentous complex, which further limits its usefulness in evaluating Bankart 
+lesions. CT should be reserved for patients with a contraindication to MRI or patients in whom MRI assessment 
+of bone loss is limited.  
+CT Arthrography  Shoulder  
+CT arthrography has sho wn fair agreement between observers and is comparable to MR arthrography in 
+diagnosing Bankart and Hill -Sachs lesions [ 12,13]. However, CT arthrography is inferior to MRI in diagnosing 
+other soft -tissue pathology [ 12]. CT arthrography can be considered a reasonable imaging alterna tive in patients 
+with contraindication to MRI. 
+US Shoulder  
+There is no role for US  in assessment of Bankart or Hill -Sachs lesions. US  has been demonstrated to be inferior to 
+MRI in diagnosing both labroligamentous injury and Hill -Sachs lesions [ 17]. 
+FDG -PET/CT  Skull Base to Mid-Thigh 
+There is no role for FDG-PET/CT  in assessment of  Bankart or Hill -Sachs lesions.
+
+
+
+Metadata: page_label: 11
+file_name: ACR shoulder pain traumatic.pdf
+Score: 0.3043885827064514
+
+Page Content: ACR Appropriateness Criteria® 11 Shoulder Pain –Traumatic  Variant 5: Traumatic shoulder pain. Radiographs show Bankart  or Hill-Sachs lesion. Next imaging  study. 
+Bankart and Hill -Sachs lesions are common findings associated with transient shoulder dislocation. Bankart 
+lesions have a particularly high association with transient shoulder dislocations [50], and a transient shoulder 
+dislocation should be presumed if a Bankart lesion is present. A close association exists bet ween Bankart and 
+Hill-Sachs lesions [ 51], and one should be sought out whenever the other is identified on radiographs. Both 
+Bankart and Hill -Sachs lesions can present as nonosseous  lesions that are occult on r adiographs and noncontrast 
+CT. 
+MRI Shoulder  
+Similar to MR arthrography, noncontrast MRI is comparable to CT in evaluating glenoid and humeral head bone 
+loss [12,18]. In general, noncontrast MRI performs well in diagnosing labroligamentous injuries [ 20,52]. 
+However, noncontrast MRI is considered inferior to MR arthrography for assessing labroligamentous pathology 
+frequently associated with Bankart and Hill -Sachs lesions [ 17,19]. Noncontrast MRI is a good alternative to MR 
+arthrography in the setting of acute injury when significant glenohumeral joint effusion is present to assist in 
+visualization of intra -articular soft -tissue pathology.  
+MR Arthrography  Shoulder  
+MR arthrography is the preferred study for evaluating subacute or chronic Bankart lesions because of  its soft -
+tissue contrast. Multiple studies have shown MR arthrography to be reliable in diagnosing labroligamentous 
+injuries [12,17,52] and superior to noncontrast MRI for this indication [ 17,19].
+
+
+
+Metadata: page_label: 12
+file_name: ACR shoulder pain traumatic.pdf
+Score: 0.2992211580276489
+
+Page Content: There is a potential limited 
+role for use of dynamic US in assessing Hill -Sachs lesion engagement [ 61]. However, this is not common 
+practice, and US has been shown to be inferior to MRI in diagnosing the common structural abnormalities 
+associated with shoulder instability, such as labroligamentous injuries, Hill -Sachs lesions, and partial rotator cuff 
+tears [17]. 
+FDG -PET/CT  Skull Base to Mid-Thigh 
+There is no role for FDG-PET/CT  in assessment of shoulder instability . 
+Bone Scan  Shoulder  
+There is no role for bone scintigraphy in assessment of shoulder instability . 
+Variant 7: Traumatic shoulder pain. Radiographs normal . Physical exam ination findings consistent with 
+labral tear . Next imaging study.  
+MR Arthrography  Shoulder  
+MR arthrography  has been reported to have a high sensitivity for detection of labral injury, r anging from 86%  to 
+100% [20,59,62-65] ; however, the issue of  selection bias is inherent in the design of many of these retrospective",False
+68,"Traumatic shoulder pain. Radiographs normal. Physical examination and history consistent
+with dislocation event or instability. Next imaging study.",INSUFFICIENT INFORMATION,MRI arthrography shoulder,L,22 year old Malay male.  MRI right shoulder arthrography for ?dislocation.,"Patient Profile: 22 year old Malay male
+Scan ordered:   MRI right shoulder arthrography for ?dislocation","1. Relevant information from the patient profile:
+- Age: 22 years old
+- Symptoms: ?dislocation
+
+2. Based on the context information, the appropriate imaging recommendations for traumatic shoulder pain with a history consistent with a dislocation event or instability are:
+- MR arthrography shoulder (Usually Appropriate)
+- MRI shoulder without IV contrast (Usually Appropriate)
+- CT arthrography shoulder (May Be Appropriate)
+- CT shoulder without IV contrast (May Be Appropriate)
+- CT shoulder with IV contrast (Usually Not Appropriate)
+- CT shoulder without and with IV contrast (Usually Not Appropriate)
+- FDG-PET/CT skull base to mid-thigh (Usually Not Appropriate)
+- MRI shoulder without and with IV contrast (Usually Not Appropriate)
+- Bone scan shoulder (Usually Not Appropriate)
+- US shoulder (Usually Not Appropriate)
+
+3. Superior imaging procedures or treatments with a more favorable risk-benefit ratio are not mentioned in the context information.
+
+4. Based on the appropriateness criteria, the recommended appropriateness category for the scan order of MRI right shoulder arthrography for ?dislocation is MAY BE APPROPRIATE.",MAY BE APPROPRIATE,MRI arthrography shoulder,"Metadata: description:  Traumatic shoulder pain. Radiographs normal. Physical examination and history consistent with dislocation event or instability. Next imaging study.
+variant: 6
+file_name: ACR shoulder pain traumatic.pdf
+condition: ACR shoulder pain traumatic
+page_label: 3
+Score: 0.29633310437202454
+
+Page Content: | Procedure | Appropriateness Category |
+|---|---|
+| MR arthrography shoulder | Usually Appropriate |
+| MRI shoulder without IV contrast | Usually Appropriate |
+| CT arthrography shoulder | May Be Appropriate |
+| CT shoulder without IV contrast | May Be Appropriate |
+| CT shoulder with IV contrast | Usually Not Appropriate |
+| CT shoulder without and with IV contrast | Usually Not Appropriate |
+| FDG-PET/CT skull base to mid-thigh | Usually Not Appropriate |
+| MRI shoulder without and with IV contrast | Usually Not Appropriate |
+| Bone scan shoulder | Usually Not Appropriate |
+| US shoulder | Usually Not Appropriate |
+
+
+
+Metadata: description:  Symptomatic patient with a primary shoulder arthroplasty, infection not excluded. Additional imaging following radiographs.
+variant: 3
+file_name: ACR imaging after shoulder arthroplasty.pdf
+condition: ACR imaging after shoulder arthroplasty
+page_label: 2
+Score: 0.3269639313220978
+
+Page Content: | Procedure | Appropriateness Category |
+|---|---|
+| Image-guided aspiration shoulder | Usually Appropriate |
+| US shoulder | May Be Appropriate |
+| MRI shoulder without and with IV contrast | May Be Appropriate |
+| MRI shoulder without IV contrast | May Be Appropriate (Disagreement) |
+| 3-phase bone scan and WBC scan and sulfur colloid scan shoulder | May Be Appropriate |
+| 3-phase bone scan and WBC scan and sulfur colloid scan with SPECT or SPECT/CT shoulder | May Be Appropriate |
+| WBC scan and sulfur colloid scan shoulder | May Be Appropriate (Disagreement) |
+| 3-phase bone scan with SPECT or SPECT/CT shoulder | Usually Not Appropriate |
+| Bone scan shoulder | Usually Not Appropriate |
+| CT shoulder with IV contrast | Usually Not Appropriate |
+| CT shoulder without and with IV contrast | Usually Not Appropriate |
+| CT shoulder without IV contrast | Usually Not Appropriate |
+| Fluoride PET/CT skull base to mid-thigh | Usually Not Appropriate |
+
+
+
+Metadata: page_label: 13
+file_name: ACR shoulder pain traumatic.pdf
+Score: 0.31674715876579285
+
+Page Content: ACR Appropriateness Criteria® 13 Shoulder Pain –Traumatic  studies [60]. For example, patient groups were identified at the time of arthroscopy, which selected patients with 
+proven labral lesions as the study population instead of evaluating all patients with clinically unstable shoulders. 
+Compared to noncontrast  MRI, MR arthrography  has been shown to have increased sensitivity for detection of 
+anterior labral and SLAP tears [19]. In addition, MR arthrography has been shown to detect unsuspected labral 
+pathology in patients referred for imaging with low or no clinical suspicion of labral pathology [66]. 
+MRI Shoulder  
+MRI without contrast may be preferred to MR arthrography in the setting of acute shoulder dislocation w hen a 
+post-traumatic joint effusion is typically present to provide sufficient visualization of soft -tissue structures. In the 
+subacute or chronic setting, the glenohumeral joint effusion is usually too small to provide adequate joint 
+distention to adequat ely assess soft-tissue structures. Non contrast MRI has been shown to be inferior to MR 
+arthrography in diagnosing labroligamentous and rotator cuff injuries [ 17,19]. 
+CT Arthrography  Shoulder  
+CT arthrography provides comparable sensitivity and possibly improved specificity in detection of labral lesions 
+compared to MR arthrography  [12,67] and can provide improved visualization of the bones in cases of complex 
+trauma. However, interobserver variability in reporting of labral lesions is low [13]. CT arthrography has also 
+been shown to be inferior to MR arthrography in assessing partial -thickness rotator cuff tears [12], which makes 
+CT arthrography less desirable in patients where rotator cuff tears may be suspected. However, CT arthrography 
+may be considered in a patient with shoulder dislocation/instabili ty and contraindication to MRI.  
+CT Shoulder  
+Noncontrast CT is unable to assess rotator cuff and labroligamentous pathology.
+
+
+
+Metadata: page_label: 7
+file_name: ACR shoulder pain traumatic.pdf
+Score: 0.3115480840206146
+
+Page Content: ACR Appropriateness Criteria® 7 Shoulder Pain –Traumatic  fractures and shoulder malalignment, which are the primary concerns in the initial assessment of shoulder trauma.  
+CT is considered inferior to MRI for diagnosing essentially all soft -tissue shoulder  injuries. 
+CT Arthrography  Shoulder  
+CT arthrogram , althou gh not the initial study of choice, has the advantage of characterizing both bony lesions and 
+significant soft -tissue injuries. CT arthrograms have been shown to be comparable to magnetic resonance ( MR) 
+arthrography in diagnosing Bankart, Hill -Sachs, super ior labral anterior -to-posterior ( SLAP), and full-thickness 
+rotator cuff tears, but inferior to MR arthrography for diagnosing partial -thickness rotator cuff tears [ 12], 
+including bursal -sided tears. CT arthrography has also only demonstrated modest agreement between observers in 
+diagnosing anterior capsular laxity of the shoulder [ 13]. 
+MRI Shoulder  
+Noncontrast MR imaging ( MRI) has been shown to be effective in assessing bony morphology and bone loss in 
+patients with tr aumatic shoulder injuries [ 14-18 ], and noncontrast MRI is effective in diagnosing most traumatic 
+soft-tissue pathologies including labral, rotator cuff, and glenohumeral ligament injuries [ 17,19,20]. 
+MR Arthrography  Shoulder  
+MR arthrography is considered the gold standard for imaging traumatic shoulder pain [4,17,19,21]. MR 
+arthrography is comparable to noncontrast MRI in assessment of extra -articular soft tissues, and MR arthrography 
+has been shown to be superior to noncontrast MRI i n diagnosing intra -articular pathology like SLAP tears, 
+labroligamentous injuries, and partial rotator cuff tears [17,19]. MR arthrography is comparable to CT in 
+evaluating traumatic osseous lesions,  such as bony Bankart  and Hill -Sachs lesions [ 12,18].
+
+
+
+Metadata: page_label: 11
+file_name: ACR shoulder pain traumatic.pdf
+Score: 0.29518428444862366
+
+Page Content: Bone Scan  Shoulder  
+There is no role for bone scintigraphy in assessment of Bankart or Hill -Sachs lesions.  
+Variant 6: Traumatic shoulder pain. Radiographs normal.  Physical examination and history consistent 
+with dislocation event  or instability . Next imaging study. 
+Shoulder dislocation or instability is most co mmon in the anterior direction. Younger patients are more likely to 
+have labroligamentous injury and persistent instability after dislocation compared with older patients [54]. Older 
+patients are more likely to have rotator cuff tears in association with shoulder dislocation [ 55]. Coexisting 
+humeral avulsion of the glenohumeral ligament and significant glenoid bone loss have been found in up to 10% of 
+patients with recurrent shoulder instability [ 56], which underscores the need to assess both osseous and 
+labroligamentous pathology in patients with shoulder dislocation or instability. Glenoid morphology and bone 
+loss can play a significant factor in recurrent shoulder dislocations [15, 16,57], which may require bone grafting in 
+order to restore stability [ 57].
+
+
+
+Metadata: page_label: 12
+file_name: ACR shoulder pain traumatic.pdf
+Score: 0.27467986941337585
+
+Page Content: ACR Appropriateness Criteria® 12 Shoulder Pain –Traumatic  MR Arthrography  Shoulder  
+MR arthrography is the preferred exam ination  for the evaluation of subacute shoulder dislocations or recurrent 
+shoulder instability. MRI has been shown to have similar performance to CT in the evaluation of Hill-Sachs 
+lesions and glenoid bone loss [12,18]. MR arthrography has also been found to be reliable in diagnosi ng anterior 
+shoulder instability and labroligamentous injuries [58,59]. MR arthrography has specifically o utperformed 
+noncontrast MRI in assessment of glenohumeral ligament and anterior labral injuries [ 17,19], which ar e 
+commonly seen in shoulder instability. MR arthrogr aphy has also outperformed noncontrast MRI in diagnosis of 
+rotator cuff tears [17,19], which is a common associated finding in older patients with shoulder dislocation. 
+However, high sensitivities reported for MR arthrography in the detection of labral pathology may not be 
+applicable to patients with clinically unstable shoulders. A retrospective review of 90 patients with clinically 
+unstable shoulders selected for arthroscopy [ 60] found that MR arthrography had a sensitivity of 65% for 
+detection of labral  tears. The authors proposed that this discrepancy with prior studies was the result of different 
+patient selection criteria (clinically unstable in their study versus less-specific symptoms such as shoulder pain in 
+others) and the interpretation of MR art hrography by experienced musculoskeletal radiologists [ 60]. For this 
+document, it is assumed the procedure is performed and interpreted by an expert.  
+MRI Shoulder  
+MRI without contrast may be pre ferred to MR arthrography in the setting of acute shoulder dislocation when a 
+post-traumatic joint effusion is present to provide sufficient visualization of soft -tissue structures.",False
+69,"Acute wrist fracture on radiographs. Suspect wrist tendon or ligament trauma. Next
+imaging study.",INSUFFICIENT INFORMATION,MRI wrist without IV contrast,L,28 year old Bangladeshi male.  MRI left wrist for ?tendon injury.,"Patient Profile: 28 year old Bangladeshi male
+Scan ordered:   MRI left wrist for ?tendon injury","1. Relevant information from the patient profile:
+- Age: 28 years old
+- Symptoms: Suspected tendon injury in the left wrist
+- Previous diagnosis: None mentioned
+- Stage of diagnosis: Next imaging study
+
+2. Based on the provided context, the appropriate imaging recommendations for a patient with suspected wrist tendon or ligament trauma are:
+- MR arthrography wrist: Usually Appropriate
+- MRI wrist without IV contrast: Usually Appropriate
+- CT arthrography wrist: Usually Appropriate
+- US wrist: Usually Appropriate
+- CT wrist with IV contrast: Usually Not Appropriate
+- CT wrist without and with IV contrast: Usually Not Appropriate
+- CT wrist without IV contrast: Usually Not Appropriate
+- MRI wrist without and with IV contrast: Usually Not Appropriate
+- Bone scan wrist: Usually Not Appropriate
+
+3. Superior imaging procedures or treatments with a more favorable risk-benefit ratio are not mentioned in the provided context.
+
+4. Based on the scoring criteria, the appropriateness of the scan order for an MRI of the left wrist for a suspected tendon injury in a 28-year-old Bangladeshi male is:
+- MAY BE APPROPRIATE: The MRI of the left wrist is usually appropriate for evaluating tendon injuries and helping with surgical planning. However, other imaging options such as MR arthrography wrist, MRI wrist without IV contrast, and CT arthrography wrist are also usually appropriate for this condition.
+
+Therefore, the appropriateness of the scan order is MAY BE APPROPRIATE.",MAY BE APPROPRIATE,MRI wrist without IV contrast,"Metadata: description:  Acute wrist fracture on radiographs. Suspect wrist tendon or ligament trauma. Next imaging study.
+variant: 3
+file_name: ACR acute hand and wrist trauma.pdf
+condition: ACR acute hand and wrist trauma
+page_label: 2
+Score: 0.3223164677619934
+
+Page Content: | Procedure | Appropriateness Category |
+|---|---|
+| MR arthrography wrist | Usually Appropriate |
+| MRI wrist without IV contrast | Usually Appropriate |
+| CT arthrography wrist | Usually Appropriate |
+| US wrist | Usually Appropriate |
+| CT wrist with IV contrast | Usually Not Appropriate |
+| CT wrist without and with IV contrast | Usually Not Appropriate |
+| CT wrist without IV contrast | Usually Not Appropriate |
+| MRI wrist without and with IV contrast | Usually Not Appropriate |
+| Bone scan wrist | Usually Not Appropriate |
+
+
+
+Metadata: description:  Suspect acute hand or wrist trauma. Initial radiographs negative or equivocal. Next imaging study.
+variant: 2
+file_name: ACR acute hand and wrist trauma.pdf
+condition: ACR acute hand and wrist trauma
+page_label: 1
+Score: 0.33045876026153564
+
+Page Content: | Procedure | Appropriateness Category |
+|---|---|
+| MRI area of interest without IV contrast | Usually Appropriate |
+| Radiography area of interest repeat in 10-14 days | Usually Appropriate |
+| CT area of interest without IV contrast | Usually Appropriate |
+| CT area of interest with IV contrast | Usually Not Appropriate |
+| CT area of interest without and with IV contrast | Usually Not Appropriate |
+| MRI area of interest without and with IV contrast | Usually Not Appropriate |
+| Bone scan area of interest | Usually Not Appropriate |
+| US area of interest | Usually Not Appropriate |
+
+
+
+Metadata: page_label: 8
+file_name: ACR acute hand and wrist trauma.pdf
+Score: 0.33149099349975586
+
+Page Content: ACR Appropriateness Criteria® 8 Acute Hand and Wrist Trauma  MRI Hand  
+MRI is ideal for evaluating tendon injuries and helping with surgical planning [58, 59]. MRI is comm only used for 
+the diagnosis of  Stener lesions of the thumb [60] and the diagnosis of pulley system injuries [61]. 
+Hergan et al [62] reported a 100% sensitivity and specificity for assessment of thumb ulnar collateral ligament 
+tears. Spaeth et al [ 63] reported a sensitivity of 100% and specificity of 94% for detection of displaced ulnar 
+collateral ligament tears in 16 cadaveric specimens.  
+US Hand  
+A Stener lesion occurs when the aponeurosis of the adductor pollicis muscle becomes interposed between the 
+ruptured ulnar collateral ligament of the thumb and its site  of insertion at the base of the proximal phalanx. This 
+lesion can be identified by absence of ulnar collateral ligament and the presence of a hypoechoic mass proximal to 
+the apex of the metacarpal tubercle [64]. Dynamic examination shows the relationship of the aponeurosis to the 
+retracted ligament stump [65] . 
+US allows for diagnosis of pulley system injuries [ 66,67]. 
+Bone Scan Hand 
+Bone scan is not indicated in this clinical setting.  
+Variant 6: Initial radiographs showing metaca rpophalangeal, proximal interphalangeal, or distal 
+interphalangeal joint malalignment in the absence of fracture. Next imaging study.  
+CT Hand  
+CT has limited use for the diagnosis of soft -tissue injuries of the fingers.  
+MRI Hand  
+MRI is ideal for evaluating tendon injuries and helping with surgical planning [58]. MRI may be used to assess 
+capsule and collateral ligament injuries of the proximal interphalangeal  and metacarpophalangeal joints [68]. 
+For flexor tendon injuries, Rubin et al [ 69] reported a sensitivity of 92% and specificity of  100% in cadavers.
+
+
+
+Metadata: page_label: 9
+file_name: ACR acute hand and wrist trauma.pdf
+Score: 0.3278749883174896
+
+Page Content: US Area of Interest  
+US is superior to radiography for detection of radiolucent foreign bodies and is recommended as the first choice 
+when the foreign body is located within the superficial soft  tissues with no bone around it [ 78,79,83]. 
+US allows for  better  localization of radiopaque foreig n bodies, assessment of tendons and vascular structures, and 
+US-guided removal of the foreign body [77]. 
+Bone Scan Area of  Interest  
+Bone scan is not indicated in this clinical setting.  
+Summary of R ecommendations 
+• Variant 1: Radiographs area of interest is usually appropriate for the initial imaging of adults with acute 
+blunt or penetrating trauma to the hand or wrist.  
+• Variant 2: Repeat radiographs in 10– 14 days, MRI without IV contrast, or CT without  IV contrast is usually 
+appropriate as the next imaging study for adults with acute hand or wrist trauma when initial radiographs are 
+negative or equivocal. These procedures are equivalent alternatives.  
+• Variant 3: MR arthrography of wrist, MRI of wrist wit hout IV contrast, CT arthrography of wrist, or US  of 
+wrist  is usually appropriate as the next imaging study for adults with suspected wrist tendon or ligament 
+trauma and when radiographs show acute wrist fracture. These procedures are equivalent alternativ es. 
+• Variant 4: CT of both wrists without IV contrast, MRI of wrist without IV contrast, or MR arthrography of 
+wrist is usually appropriate as the next imaging study for adults when initial radiographs shows distal 
+radioulnar joint or carpal malalignment in  the absence of fracture. These procedures are equivalent 
+alternatives.  
+• Variant 5: MRI of hand without IV contrast or US of hand is usually appropriate as the next imaging study 
+for adults with suspect hand tendon or ligament trauma and when radiographs show acute hand fracture. 
+These procedures are equivalent alternatives.
+
+
+
+Metadata: page_label: 7
+file_name: ACR acute hand and wrist trauma.pdf
+Score: 0.32737261056900024
+
+Page Content: Bone Scan Wrist  
+Bone scan is not indicated in this clinical setting.  
+Variant 4: Initial radiographs showing distal radioulnar joint or carpal malalignment in the absence of 
+fracture. Next imaging study.  
+CT Wrist  
+CT is the modality of choice for evaluating distal  radioulnar joint stability [54]. The CT protocol should include 
+imaging of both wrists in maximal pronation, neutral position, and maximal supination.  
+CT examin ation with coronal, sagittal, and 3 -D reformed images help demonstrate the extent of injury and help in 
+treatment planning, particularly in cases of chronic perilunate dislocation [ 55]. 
+CT Arthrography  Wrist  
+Distal radioulnar joint instability and traumatic triangular f ibrocartilage injuries can be evaluated with CT 
+arthrography [56,57]. 
+MRI Wrist  
+Distal radioulnar joint instability and traumatic triangular fibrocartilage injuries are usually associated with fluid 
+in the distal radioulnar joint , which aids in the evaluation of the triangular fibrocartilage components on 
+conventional MRI.  
+MR Arthrography  Wrist  
+MR arthrograph y increases the diagnostic accuracy for proximal lamina (foveal) triangular fibrocartilage tears 
+[56,57]. 
+US Wrist  
+US is not indicated in this clinical setting. 
+Bone Scan Wrist  
+Bone scan is not indicated in this clinical setting.  
+Variant 5: Acute hand fracture on radiographs. Suspect hand tendon or ligament trauma. Next imaging 
+study. 
+CT Hand  
+CT has limited u se for the diagnosis of soft -tissue injuries of the hand.
+
+
+
+Metadata: page_label: 14
+file_name: ACR chronic hand and wrist pain.pdf
+Score: 0.31730028986930847
+
+Page Content: Bone Scan  Wrist  
+Bone scans are frequently positive for occult fractures by the time of clinical presentation , typically  1 to 2 weeks 
+before radiographs. A normal bone scan can reliably exclude an occult  scaphoid fracture [51] because,  like CT 
+and MRI, bone scan s have a high sensitivity; however, the specificity for bone scan is lower than CT and MRI 
+[52,53] because entities such as bone contusions, osteoarthritis , and other osteoblastic processes will show 
+increased up take. Scintigraphy may be a reasonable alternative to MRI in claustrophobic patients with suspected",False
+70,"Soft-tissue swelling without ulcer. Suspected osteomyelitis or early neuropathic arthropathy
+changes of the foot in patients with diabetes mellitus. Additional imaging following
+radiographs.",INSUFFICIENT INFORMATION,MRI foot without and with IV contrast,L,58 year old Chinese male.  MRI right foot for ?Charcot foot.,"Patient Profile: 58 year old Chinese male
+Scan ordered:   MRI right foot for ?Charcot foot","1. Relevant information from the patient profile:
+- Age: 58 years old
+- Symptoms: ?Charcot foot
+
+2. Analysis of appropriate imaging recommendations:
+Based on the provided context, there is no specific information regarding the appropriateness of MRI for Charcot foot. Therefore, we cannot make a recommendation based on the given information.
+
+3. Superior imaging procedures or treatments with a more favorable risk-benefit ratio:
+There is no information provided in the context regarding superior imaging procedures or treatments for Charcot foot.
+
+4. Recommendation:
+Based on the insufficient information provided, we cannot recommend the appropriateness of the MRI right foot scan for ?Charcot foot. Further evaluation and consultation with a healthcare professional specializing in foot conditions would be necessary to determine the appropriate imaging study.",INSUFFICIENT INFORMATION,None,"Metadata: description:  Adult or child older than 5 years of age. Acute trauma to the foot. Suspect penetrating trauma with a foreign body. Radiographs of the foot are negative. Next imaging study.
+variant: 6
+file_name: ACR acute trauma to foot.pdf
+condition: ACR acute trauma to foot
+page_label: 2
+Score: 0.32483571767807007
+
+Page Content: | Procedure | Appropriateness Category |
+|---|---|
+| US foot | Usually Appropriate |
+| CT foot without IV contrast | May Be Appropriate |
+| MRI foot without IV contrast | May Be Appropriate |
+| CT foot with IV contrast | Usually Not Appropriate |
+| CT foot without and with IV contrast | Usually Not Appropriate |
+| MRI foot without and with IV contrast | Usually Not Appropriate |
+
+
+
+Metadata: description:  Persistent posttraumatic foot pain. Radiographs negative or equivocal. Clinical concern includes complex regional pain syndrome type I. Next imaging study.
+variant: 2
+file_name: ACR chronic foot pain.pdf
+condition: ACR chronic foot pain
+page_label: 1
+Score: 0.3296685218811035
+
+Page Content: | Procedure | Appropriateness Category |
+|---|---|
+| MRI foot without IV contrast | Usually Appropriate |
+| 3-phase bone scan foot | Usually Appropriate |
+| MRI foot without and with IV contrast | May Be Appropriate |
+| US foot | Usually Not Appropriate |
+| CT foot with IV contrast | Usually Not Appropriate |
+| CT foot without and with IV contrast | Usually Not Appropriate |
+| CT foot without IV contrast | Usually Not Appropriate |
+
+
+
+Metadata: page_label: 9
+file_name: ACR chronic foot pain.pdf
+Score: 0.3517271876335144
+
+Page Content: ACR Appropriateness Criteria® 9 Chronic Foot Pain  • Variant 2:  MRI foot without IV  contrast or 3 -phase bone scan foot is usually appropriate as the next imaging 
+study after negative or equivocal radiographs  in patients with pers istent posttraumatic foot pain when  clinical 
+concern includes CRPS type I. Bone scan may be useful to exclude this condition, and enhanced MRI may assist 
+in the diagnosis.  
+• Variant 3:  MRI foot without IV contrast  is usually appropriate as the next imaging study after negative or 
+equivocal radiographs in patients with chronic metat arsalgia,  including plantar great toe pain,  when clinical 
+concern includes sesamoiditis, Morton’s  neuroma, intermetatarsal bursitis, chronic plantar plate injury, or 
+Freiberg’s infraction. 
+• Variant 4:  MRI foot without IV contrast or US foot is usually appropriate as the next imaging study after 
+negative or equivocal radiographs in patients with chronic plantar heel pain w hen clinical concern includes 
+plantar fasciitis or plantar fascia tear.  
+• Variant 5:  MRI foot without IV contrast or CT foot without IV contr ast is usually appropriate as the next 
+imaging study after negative or equivocal radiographs in patients with n onradiating chronic midfoot pain of 
+suspected osseous origin when clinical concern includes occult fracture or painful accessory ossicles.  
+• Varian t 6: MRI foot without IV contrast or US foot is usually appropriate as the next imaging study after 
+negative or equivocal radiographs in patients with chronic foot pain resulting from e ntrapment syndromes  when 
+clinical concern includes Baxter’s neuropathy.  
+Supporting Documents  
+The evidence table, literature search, and appendix for this topic are available at https://acsearch.acr.org/list . The 
+appendix includes the strength of evidence assessment and the final rating round tabulations for each 
+recommendation.  
+For additional information on the Appropriateness Criteria methodology and other supporting documents go to 
+www.acr.org/ac .
+
+
+
+Metadata: page_label: 4
+file_name: ACR chronic foot pain.pdf
+Score: 0.35021042823791504
+
+Page Content: ACR Appropriateness Criteria® 4 Chronic Foot Pain  Discussion of Procedures by Variant  
+Variant 1: Chronic foot pain. Unknown etiology. Initial imaging.  
+Bone Scan Foot  
+There is no relevant literature  to support t he use of nuclear medicine studies as the first imaging  study  in the 
+evaluation of chronic foot pain.  
+CT Foot  
+There is no relevant literature to support the use of CT as the first imaging  study in the e valuation of chronic foot 
+pain.  
+MRI Foot  
+There is no r elevant literature  to support the use of MRI as the first imaging  study in the e valuation of chronic foot 
+pain.  
+Radiography Foot  
+Conventional radiography can be useful to distinguish among different causes of chronic foot pain and is usually 
+the first imag ing study in evaluating patients with chronic foot pain.  
+The value of radiographs in the diagnosis of tarsal coalitions has been extensively demonstrated. Overall 
+sensitivities rang e from 80% to 100% and specificities range  from 97% to 98% have been report ed for radiographs 
+in the diagnosis of calcaneonavicular coalitions. Most calcaneonavicular coalitions are easily detected on lateral 
+and oblique radiographs of the foot and confirmed on sagittal CT or MRI scans [11]. Talocalcaneal or subtalar 
+coalition may be  overlooked on standard foot radiographs due to overlapping structures; however, secondary signs 
+on the lateral view could suggest a subtalar coalition. An overall sensitivity of 100% and a specificity of 88% have 
+been found for radiographs in the diagnosi s of talocalcaneal coalitions [12] . CT and MRI remain the most reliable 
+methods for diagnosing subtalar coalitions.  
+Radiographs are usually performed initially in the clinical setting of a suspected stress fracture. A systematic review 
+by Wright et al [13] reported sensitivities rangi ng from 12% to 56% and specificities ranging from 88% to 96% for 
+radiographs in the detection of lower -extremity stress fractures.
+
+
+
+Metadata: page_label: 5
+file_name: ACR acute trauma to foot.pdf
+Score: 0.3484329581260681
+
+Page Content: MRI Foot  
+MRI is not routinely  used as the first imaging  study  for the evaluation  of acute trauma  to the foot in the setting  of 
+peripheral  neuropathy,  penetrating  trauma , or polytrauma . 
+US Foot  
+US is not routinely  used as the first imaging  study  for the evaluation  of acute trauma  to the foot in the setting  of 
+peripheral  neuropathy or polytrauma.  Both  radiographs  and US are useful  imaging  tools  to exclude  a foreign  body  
+in the setting  of penetrating  trauma  to the foot [24]. US is the imaging  modality  of choice if the foreign  body is 
+not radiopaque  (eg, wood  or plastic) , with a reported  90% sensitivity  for visualizing  wooden  foreign  bodies  in 
+some  clinical  and experimental  studies [27,28] . US can identify  a foreign  body  and also help localize  it and 
+determine if it involves  a tendon  or a muscle and to evaluate for an abscess.  
+Variant  4: Adult  or child older  than  5 years of age. Acute trauma to the foot.  Ottawa  rules can be evaluated  
+without  exclusionary  criteria.  Ottawa  rules are negative.  Suspected  pathology  in an anatomic  area  not 
+addressed  by Ottawa  rules (not involving  the midfoot; eg, metatarsal -phalangeal  joint,  metatarsal,  toe, 
+tendon, etc). Initial imaging.  
+In clinical  situations  when  Ottawa rules  are applicable and negative , imaging may still be desired  to evaluate for 
+injuries  not assessed  by the Ottawa rules.  For example,  clinical scenarios of acute foot trauma  not directly  
+addressed  by the Ottawa rules include  trauma  to the metatarsal  heads  and toes and acute tendon injury.
+
+
+
+Metadata: page_label: 8
+file_name: ACR suspected OM foot in DM.pdf
+Score: 0.34238940477371216
+
+Page Content: • Variant 3 : MRI without IV contrast or MRI without and with IV contrast is usually appropriat e as additional 
+imaging following radiographs  of the foot , in diabetic patients with or without neuropathic arthropathy when 
+foot swelling and ulceration is present and osteomyelitis is suspected.  These procedures are equivalent 
+alternatives (ie, only one procedure will be ordered to provide the clinical information to effectively manage 
+the patient’s care) . The panel did not agree on recommending a Tc -99m 3-phase bone scan foot  in this clinical 
+scenario . There is insufficient medical literature to conclude  whether or not a Tc-99m 3- phase bone scan 
+would be of benefit . A Tc -99m 3-phase bone scan in this patient population is controversial but may be 
+appropriate.  
+Supporting Documents  
+The evidence table, literature search, and appendix for this topic are available at https://acsearch.acr.org/list . The 
+appendix includes the strength of evidence assessment and the final rating round tabulations for each 
+recommendation.  
+For additional information on the Appropriateness Criteria methodology and other supporting documents go to 
+www.acr.org/ac .",True

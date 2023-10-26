@@ -13,7 +13,7 @@ from langchain.output_parsers import RegexDictParser
 from langchain.vectorstores.base import VectorStore
 from langchain.document_transformers import LongContextReorder
 
-from custom_chains.lc_chains import ReOrderQARetrieval
+from custom.lc_chains import ReOrderQARetrieval
 from openai import Model
 from streamlit_chat import message
 
