@@ -1,0 +1,319 @@
+2023-10-17 22:05:55,804:INFO: Creating Vectorstore with OpenAI Embeddings
+2023-10-17 22:08:06,426:INFO: Creating Vectorstore with OpenAI Embeddings
+2023-10-17 22:08:06,475:INFO: Loading documents from ./data/document_sources
+2023-10-17 22:09:08,131:INFO: Loaded 554 documents from ./data/document_sources
+2023-10-17 22:09:08,133:INFO: 554 documents remained after page filtering.
+2023-10-17 22:11:38,064:INFO: Creating Vectorstore with OpenAI Embeddings
+2023-10-17 22:11:38,102:INFO: Loading documents from ./data/document_sources
+2023-10-17 22:12:36,445:INFO: Loaded 554 documents from ./data/document_sources
+2023-10-17 22:12:36,446:INFO: 554 documents remained after page filtering.
+2023-10-17 22:12:36,447:INFO: Total number of text chunks to create vector index store: 554
+2023-10-17 22:29:36,469:INFO: Creating Vectorstore with OpenAI Embeddings
+2023-10-17 22:29:36,476:INFO: --- Start generating vectorstore ---
+2023-10-17 22:29:36,516:INFO: Loading documents from ./data/document_sources
+2023-10-17 22:30:33,801:INFO: Loaded 554 documents from ./data/document_sources
+2023-10-17 22:30:33,803:INFO: 554 documents remained after page filtering.
+2023-10-17 22:30:33,804:INFO: Total number of text chunks to create vector index store: 554
+2023-10-17 22:36:45,519:INFO: Successfully created faiss vectorstore at /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_512_20
+2023-10-17 23:20:36,077:INFO: Creating Vectorstore with OpenAI Embeddings
+2023-10-17 23:20:36,089:INFO: --- Start generating vectorstore ---
+2023-10-17 23:20:36,124:INFO: Loading documents from ./data/document_sources
+2023-10-17 23:21:33,337:INFO: Loaded 554 documents from ./data/document_sources
+2023-10-17 23:21:33,338:INFO: 554 documents remained after page filtering.
+2023-10-17 23:21:33,339:INFO: Total number of text chunks to create vector index store: 554
+2023-10-17 23:27:40,540:INFO: Successfully created faiss vectorstore at /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_512_20
+2023-10-18 11:29:20,754:INFO: Creating Vectorstore with OpenAI Embeddings
+2023-10-18 11:29:20,762:INFO: --- Start generating vectorstore ---
+2023-10-18 11:29:20,781:INFO: Loading documents from ./data/document_sources
+2023-10-18 11:29:53,810:INFO: Loaded 554 documents from ./data/document_sources
+2023-10-18 11:29:53,811:INFO: 554 documents remained after page filtering.
+2023-10-18 11:29:53,811:INFO: Total number of text chunks to create vector index store: 554
+2023-10-18 11:32:02,772:INFO: Successfully created faiss vectorstore at /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_2024_128
+2023-10-18 11:32:02,928:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_2024_128.
+2023-10-18 12:26:47,855:INFO: Creating Vectorstore with OpenAI Embeddings
+2023-10-18 12:26:47,858:INFO: --- Start generating vectorstore ---
+2023-10-18 12:26:47,892:INFO: Loading documents from ./data/document_sources
+2023-10-18 12:27:21,411:INFO: Loaded 554 documents from ./data/document_sources
+2023-10-18 12:27:21,412:INFO: 554 documents remained after page filtering.
+2023-10-18 12:27:21,412:INFO: Total number of text chunks to create vector index store: 554
+2023-10-18 12:32:57,682:INFO: Successfully created simple vectorstore at /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/simple/openai_512_20
+2023-10-18 14:39:23,289:INFO: Creating Vectorstore with OpenAI Embeddings
+2023-10-18 14:39:23,297:INFO: --- Start generating vectorstore ---
+2023-10-18 14:39:23,314:INFO: Loading documents from ./data/document_sources
+2023-10-18 14:39:54,587:INFO: Loaded 554 documents from ./data/document_sources
+2023-10-18 14:39:54,587:INFO: 554 documents remained after page filtering.
+2023-10-18 14:39:54,588:INFO: Total number of text chunks to create vector index store: 554
+2023-10-18 14:45:28,300:INFO: Successfully created simple vectorstore at /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/simple/openai_512_20
+2023-10-18 20:31:55,681:INFO: Tokens Consumption: Total: 99814, Prompt: 97577, Completion: 2237, Embeddings: []
+2023-10-19 21:27:47,266:INFO: Creating Vectorstore with OpenAI Embeddings
+2023-10-19 21:27:47,287:INFO: --- Start generating vectorstore ---
+2023-10-19 21:27:47,363:INFO: Loading documents from ./data/document_sources
+2023-10-19 21:28:56,599:INFO: Loaded 554 documents from ./data/document_sources
+2023-10-19 21:28:56,602:INFO: 432 documents remained after page filtering.
+2023-10-19 21:28:56,603:INFO: Total number of text chunks to create vector index store: 432
+2023-10-19 21:34:36,753:INFO: Successfully created faiss vectorstore at /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_512_20
+2023-10-19 21:34:37,005:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_512_20.
+2023-10-19 22:25:46,311:INFO: Creating Vectorstore with OpenAI Embeddings
+2023-10-19 22:25:46,338:INFO: --- Start generating vectorstore ---
+2023-10-19 22:25:46,436:INFO: Loading documents from ./data/document_sources
+2023-10-19 22:26:48,066:INFO: Loaded 554 documents from ./data/document_sources
+2023-10-19 22:26:48,068:INFO: 432 documents remained after page filtering.
+2023-10-19 22:26:48,069:INFO: Total number of text chunks to create vector index store: 432
+2023-10-19 22:29:33,615:INFO: Successfully created faiss vectorstore at /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_20
+2023-10-19 22:29:33,853:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_20.
+2023-10-19 23:40:31,017:INFO: Creating Vectorstore with OpenAI Embeddings
+2023-10-19 23:40:31,051:INFO: --- Start generating vectorstore ---
+2023-10-19 23:40:31,117:INFO: Loading documents from ./data/document_sources
+2023-10-19 23:41:29,714:INFO: Loaded 554 documents from ./data/document_sources
+2023-10-19 23:41:29,716:INFO: 432 documents remained after page filtering.
+2023-10-19 23:41:29,717:INFO: Total number of text chunks to create vector index store: 432
+2023-10-19 23:46:53,973:INFO: Creating Vectorstore with OpenAI Embeddings
+2023-10-19 23:46:54,015:INFO: --- Start generating vectorstore ---
+2023-10-19 23:46:54,097:INFO: Loading documents from ./data/document_sources
+2023-10-19 23:47:52,870:INFO: Loaded 554 documents from ./data/document_sources
+2023-10-19 23:47:52,872:INFO: 432 documents remained after page filtering.
+2023-10-19 23:47:52,873:INFO: Total number of text chunks to create vector index store: 432
+2023-10-19 23:48:02,557:INFO: Creating faiss Vectorstore
+2023-10-19 23:50:45,842:INFO: Persist faiss to local directory /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_20
+2023-10-19 23:50:46,056:INFO: Successfully created faiss vectorstore at /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_20
+2023-10-19 23:50:46,214:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_20.
+2023-10-20 00:05:40,021:INFO: Creating Vectorstore with OpenAI Embeddings
+2023-10-20 00:05:40,038:INFO: --- Start generating vectorstore ---
+2023-10-20 00:05:40,116:INFO: Loading documents from ./data/document_sources
+2023-10-20 00:06:40,557:INFO: Loaded 554 documents from ./data/document_sources
+2023-10-20 00:06:40,559:INFO: 432 documents remained after page filtering.
+2023-10-20 00:06:40,560:INFO: Total number of text chunks to create vector index store: 432
+2023-10-20 00:06:49,851:INFO: Creating faiss Vectorstore
+2023-10-20 00:09:25,996:INFO: Persist faiss to local directory /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_20
+2023-10-20 00:09:26,239:INFO: Successfully created faiss vectorstore at /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_20
+2023-10-20 00:09:26,457:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_20.
+2023-10-20 00:46:15,031:INFO: Creating Vectorstore with OpenAI Embeddings
+2023-10-20 00:46:15,075:INFO: --- Start generating vectorstore ---
+2023-10-20 00:46:15,151:INFO: Loading documents from ./data/document_sources
+2023-10-20 00:47:14,262:INFO: Loaded 554 documents from ./data/document_sources
+2023-10-20 00:47:14,264:INFO: 432 documents remained after page filtering.
+2023-10-20 00:47:14,266:INFO: Total number of text chunks to create vector index store: 432
+2023-10-20 00:47:23,726:INFO: Creating faiss Vectorstore
+2023-10-20 00:48:53,948:INFO: Persist faiss to local directory /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_20
+2023-10-20 00:48:54,121:INFO: Successfully created faiss vectorstore at /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_20
+2023-10-20 00:48:54,259:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_20.
+2023-10-20 00:56:57,975:INFO: Creating Vectorstore with OpenAI Embeddings
+2023-10-20 00:56:58,013:INFO: --- Start generating vectorstore ---
+2023-10-20 00:56:58,078:INFO: Loading documents from ./data/document_sources
+2023-10-20 00:57:55,985:INFO: Loaded 554 documents from ./data/document_sources
+2023-10-20 00:57:55,988:INFO: 432 documents remained after page filtering.
+2023-10-20 00:57:55,989:INFO: Total number of text chunks to create vector index store: 432
+2023-10-20 00:58:05,881:INFO: Creating faiss Vectorstore
+2023-10-20 01:00:21,048:INFO: Persist faiss to local directory /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_512_20
+2023-10-20 01:00:21,284:INFO: Successfully created faiss vectorstore at /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_512_20
+2023-10-20 01:00:21,634:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_512_20.
+2023-10-20 01:05:14,758:INFO: Creating Vectorstore with OpenAI Embeddings
+2023-10-20 01:05:14,792:INFO: --- Start generating vectorstore ---
+2023-10-20 01:05:14,853:INFO: Loading documents from ./data/document_sources
+2023-10-20 01:06:13,439:INFO: Loaded 554 documents from ./data/document_sources
+2023-10-20 01:06:13,441:INFO: 432 documents remained after page filtering.
+2023-10-20 01:06:13,442:INFO: Total number of text chunks to create vector index store: 432
+2023-10-20 01:06:22,596:INFO: Creating faiss Vectorstore
+2023-10-20 01:07:59,102:INFO: Persist faiss to local directory /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_128
+2023-10-20 01:07:59,299:INFO: Successfully created faiss vectorstore at /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_128
+2023-10-20 01:07:59,506:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_128.
+2023-10-21 16:44:30,448:INFO: Creating Vectorstore with OpenAI Embeddings
+2023-10-21 16:44:30,503:INFO: --- Start generating vectorstore ---
+2023-10-21 16:44:30,567:INFO: Loading documents from ./data/document_sources
+2023-10-21 16:45:38,467:INFO: Loaded 546 documents from ./data/document_sources
+2023-10-21 16:45:38,470:INFO: 430 documents remained after page filtering.
+2023-10-21 16:45:38,471:INFO: Total number of text chunks to create vector index store: 430
+2023-10-21 16:45:54,748:INFO: Creating faiss Vectorstore
+2023-10-21 16:47:54,670:INFO: Persist faiss to local directory /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_512_20
+2023-10-21 16:47:54,973:INFO: Successfully created faiss vectorstore at /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_512_20
+2023-10-21 16:47:55,197:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_512_20.
+2023-10-21 17:28:39,215:INFO: Creating Vectorstore with OpenAI Embeddings
+2023-10-21 17:28:39,253:INFO: --- Start generating vectorstore ---
+2023-10-21 17:28:39,324:INFO: Loading documents from ./data/document_sources
+2023-10-21 17:29:41,232:INFO: Loaded 546 documents from ./data/document_sources
+2023-10-21 17:29:41,235:INFO: 430 documents remained after page filtering.
+2023-10-21 17:29:41,236:INFO: Total number of text chunks to create vector index store: 430
+2023-10-21 17:29:50,833:INFO: Creating faiss Vectorstore
+2023-10-21 17:31:05,590:INFO: Persist faiss to local directory /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_20
+2023-10-21 17:31:05,841:INFO: Successfully created faiss vectorstore at /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_20
+2023-10-21 17:31:06,052:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_20.
+2023-10-21 17:56:44,647:INFO: Creating Vectorstore with OpenAI Embeddings
+2023-10-21 17:56:44,697:INFO: --- Start generating vectorstore ---
+2023-10-21 17:56:44,772:INFO: Loading documents from ./data/document_sources
+2023-10-21 17:57:49,768:INFO: Loaded 546 documents from ./data/document_sources
+2023-10-21 17:57:49,772:INFO: 430 documents remained after page filtering.
+2023-10-21 17:57:49,773:INFO: Total number of text chunks to create vector index store: 430
+2023-10-21 17:58:00,412:INFO: Creating faiss Vectorstore
+2023-10-21 17:59:18,333:INFO: Persist faiss to local directory /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_128
+2023-10-21 17:59:18,642:INFO: Successfully created faiss vectorstore at /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_128
+2023-10-21 17:59:18,857:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_128.
+2023-10-21 18:39:04,265:INFO: Creating Vectorstore with OpenAI Embeddings
+2023-10-21 18:39:04,292:INFO: --- Start generating vectorstore ---
+2023-10-21 18:39:04,316:INFO: Loading documents from ./data/document_sources
+2023-10-21 18:39:35,802:INFO: Loaded 546 documents from ./data/document_sources
+2023-10-21 18:39:35,803:INFO: 395 documents remained after page filtering.
+2023-10-21 18:39:35,804:INFO: Total number of text chunks to create vector index store: 395
+2023-10-21 18:39:42,529:INFO: Creating faiss Vectorstore
+2023-10-21 18:41:29,646:INFO: Persist faiss to local directory /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_512_20
+2023-10-21 18:41:29,769:INFO: Successfully created faiss vectorstore at /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_512_20
+2023-10-21 18:41:29,848:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_512_20.
+2023-10-21 18:53:38,479:INFO: Creating Vectorstore with OpenAI Embeddings
+2023-10-21 18:53:38,485:INFO: --- Start generating vectorstore ---
+2023-10-21 18:53:38,514:INFO: Loading documents from ./data/document_sources
+2023-10-21 18:54:12,919:INFO: Loaded 546 documents from ./data/document_sources
+2023-10-21 18:54:12,921:INFO: 395 documents remained after page filtering.
+2023-10-21 18:54:12,921:INFO: Total number of text chunks to create vector index store: 395
+2023-10-21 18:54:16,846:INFO: Creating faiss Vectorstore
+2023-10-21 18:55:21,480:INFO: Persist faiss to local directory /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_20
+2023-10-21 18:55:21,598:INFO: Successfully created faiss vectorstore at /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_20
+2023-10-21 18:55:21,790:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_20.
+2023-10-21 18:59:20,347:INFO: Creating Vectorstore with OpenAI Embeddings
+2023-10-21 18:59:20,353:INFO: --- Start generating vectorstore ---
+2023-10-21 18:59:20,386:INFO: Loading documents from ./data/document_sources
+2023-10-21 18:59:54,580:INFO: Loaded 546 documents from ./data/document_sources
+2023-10-21 18:59:54,581:INFO: 395 documents remained after page filtering.
+2023-10-21 18:59:54,582:INFO: Total number of text chunks to create vector index store: 395
+2023-10-21 18:59:57,837:INFO: Creating faiss Vectorstore
+2023-10-21 19:01:02,923:INFO: Persist faiss to local directory /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_128
+2023-10-21 19:01:03,053:INFO: Successfully created faiss vectorstore at /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_128
+2023-10-21 19:01:03,234:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_128.
+2023-10-22 10:40:51,110:INFO: Creating Vectorstore with OpenAI Embeddings
+2023-10-22 10:40:51,176:INFO: --- Start generating vectorstore ---
+2023-10-22 10:40:51,250:INFO: Loading documents from ./data/document_sources
+2023-10-22 10:41:49,835:INFO: Loaded 546 documents from ./data/document_sources
+2023-10-22 10:41:49,836:INFO: 395 documents remained after page filtering.
+2023-10-22 10:41:49,840:INFO: Total number of text chunks to create vector index store: 395
+2023-10-22 10:42:01,847:INFO: Creating faiss Vectorstore
+2023-10-22 10:42:49,373:INFO: Persist faiss to local directory /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_2048_256
+2023-10-22 10:42:49,612:INFO: Successfully created faiss vectorstore at /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_2048_256
+2023-10-22 10:42:49,733:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_2048_256.
+2023-10-23 16:18:45,570:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_512_20.
+2023-10-24 11:17:57,795:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/full/tables.
+2023-10-24 11:17:57,981:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/full/texts.
+2023-10-24 13:18:11,686:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/full/tables.
+2023-10-24 13:18:11,767:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/full/texts.
+2023-10-24 13:31:30,511:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/full/tables.
+2023-10-24 13:31:30,643:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/full/texts.
+2023-10-24 13:37:58,507:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/full/tables.
+2023-10-24 13:37:58,582:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/full/texts.
+2023-10-24 14:19:21,584:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/full/tables.
+2023-10-24 14:19:21,662:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/full/texts.
+2023-10-24 15:25:44,484:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/full/tables.
+2023-10-24 15:25:44,568:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/full/texts.
+2023-10-24 16:01:43,291:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/full/tables.
+2023-10-24 16:01:43,359:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/full/texts.
+2023-10-24 16:13:20,723:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/full/tables.
+2023-10-24 16:13:20,795:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/full/texts.
+2023-10-24 17:43:26,506:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/descriptions/tables.
+2023-10-24 17:43:26,594:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/descriptions/texts.
+2023-10-24 17:43:30,718:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/descriptions/tables.
+2023-10-24 17:43:30,845:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/descriptions/texts.
+2023-10-24 17:56:34,476:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/full/tables.
+2023-10-24 17:56:34,551:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/full/texts.
+2023-10-24 19:10:44,213:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/descriptions/tables.
+2023-10-24 19:10:44,290:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/descriptions/texts.
+2023-10-24 19:47:26,964:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/full/tables.
+2023-10-24 19:47:27,037:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/full/texts.
+2023-10-24 19:49:19,958:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/descriptions/tables.
+2023-10-24 19:49:20,031:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/descriptions/texts.
+2023-10-24 19:49:22,074:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/descriptions/tables.
+2023-10-24 19:49:22,151:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/descriptions/texts.
+2023-10-24 19:50:58,864:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/full/tables.
+2023-10-24 19:50:58,947:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/full/texts.
+2023-10-24 19:56:09,985:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/full/tables.
+2023-10-24 19:56:10,062:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/full/texts.
+2023-10-24 20:07:20,665:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/descriptions/tables.
+2023-10-24 20:07:20,740:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/descriptions/texts.
+2023-10-24 20:26:54,654:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/descriptions/tables.
+2023-10-24 20:26:54,733:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal/descriptions/texts.
+2023-10-25 13:39:24,168:INFO: simple VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/simple/openai_512_20.
+2023-10-25 22:59:13,494:INFO: Processing documents from provided list.
+2023-10-25 22:59:13,500:INFO: 199 documents remained after page filtering.
+2023-10-25 22:59:13,505:INFO: Total number of text chunks to create vector index store: 199
+2023-10-25 22:59:59,281:INFO: Creating chroma Vectorstore
+2023-10-25 23:00:12,670:INFO: Successfully created chroma vectorstore at ../data/multimodal-chroma/descriptions/tables
+2023-10-25 23:02:39,084:INFO: Processing documents from provided list.
+2023-10-25 23:02:39,086:INFO: 293 documents remained after page filtering.
+2023-10-25 23:02:39,088:INFO: Total number of text chunks to create vector index store: 293
+2023-10-25 23:02:39,092:INFO: Creating chroma Vectorstore
+2023-10-25 23:04:43,369:INFO: Successfully created chroma vectorstore at ../data/multimodal-chroma/descriptions/texts
+2023-10-25 23:06:12,600:INFO: chroma VectorStore successfully loaded from ../data/multimodal-chroma/descriptions/tables.
+2023-10-25 23:06:21,228:INFO: chroma VectorStore successfully loaded from ../data/multimodal-chroma/descriptions/texts.
+2023-10-26 12:06:38,503:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-faiss/full/tables.
+2023-10-26 12:06:38,719:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-faiss/full/texts.
+2023-10-26 14:48:00,953:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2023-10-26 14:48:01,404:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2023-10-26 15:29:04,786:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2023-10-26 15:29:05,337:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2023-10-26 15:34:55,497:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-faiss/descriptions/tables.
+2023-10-26 15:34:55,762:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-faiss/descriptions/texts.
+2023-10-26 17:46:34,019:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2023-10-26 17:46:34,268:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2023-10-27 11:50:36,090:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2023-10-27 11:50:36,488:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2023-10-27 11:51:10,940:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2023-10-27 11:51:11,182:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2023-10-27 14:23:53,637:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2023-10-27 14:23:54,175:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2023-10-27 14:51:44,338:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-faiss/descriptions/tables.
+2023-10-27 14:51:44,473:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-faiss/descriptions/texts.
+2023-10-27 14:59:06,435:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2023-10-27 14:59:06,843:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2023-10-27 14:59:17,160:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2023-10-27 14:59:17,415:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2023-10-27 15:19:09,211:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-faiss/descriptions/tables.
+2023-10-27 15:19:09,301:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-faiss/descriptions/texts.
+2023-10-27 16:02:18,999:INFO: Processing documents from provided list.
+2023-10-27 16:02:19,001:INFO: 293 documents remained after page filtering.
+2023-10-27 16:02:19,003:INFO: Total number of text chunks to create vector index store: 293
+2023-10-27 16:02:19,006:INFO: Creating chroma Vectorstore
+2023-10-27 16:04:05,261:INFO: Successfully created chroma vectorstore at ../data/multimodal-chroma/descriptions/texts
+2023-10-27 16:04:37,978:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2023-10-27 16:04:38,219:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2023-10-27 16:09:52,810:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2023-10-27 16:09:53,327:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2023-10-27 16:18:05,305:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-faiss/full/tables.
+2023-10-27 16:18:05,540:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-faiss/full/texts.
+2023-10-27 16:34:45,723:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2023-10-27 16:34:45,982:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2023-10-27 19:08:16,388:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2023-10-27 19:08:16,814:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2023-10-27 19:09:02,757:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2023-10-27 19:09:02,913:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2023-10-27 19:09:24,046:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2023-10-27 19:09:24,213:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2023-10-27 19:22:00,588:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2023-10-27 19:22:01,090:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2023-10-28 13:55:03,180:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_512_20.
+2023-10-28 14:05:26,140:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_512_20.
+2023-10-28 14:27:22,487:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2023-10-28 14:27:22,666:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2023-10-28 14:41:17,977:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_512_20.
+2023-10-28 15:06:01,604:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_512_20.
+2023-10-28 15:07:40,068:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2023-10-28 15:07:40,223:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2023-10-28 15:08:04,602:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-faiss/full/tables.
+2023-10-28 15:08:04,739:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-faiss/full/texts.
+2023-10-28 15:10:37,380:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-faiss/full/tables.
+2023-10-28 15:10:37,452:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-faiss/full/texts.
+2023-10-28 15:12:25,044:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-faiss/full/tables.
+2023-10-28 15:12:25,117:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-faiss/full/texts.
+2023-10-28 15:16:26,026:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2023-10-28 15:16:26,164:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2023-10-28 15:27:00,813:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2023-10-28 15:27:00,990:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2023-10-28 18:08:16,789:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2023-10-28 18:08:16,949:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2023-10-28 18:31:47,652:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2023-10-28 18:31:47,803:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2023-10-28 18:34:11,916:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-faiss/full/tables.
+2023-10-28 18:34:12,034:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-faiss/full/texts.
+2023-10-28 18:35:38,787:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-faiss/full/tables.
+2023-10-28 18:35:38,865:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-faiss/full/texts.
+2023-10-28 18:39:37,318:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_512_20.
+2023-10-28 19:09:23,371:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2023-10-28 19:09:23,516:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2023-10-28 20:19:00,030:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-faiss/descriptions/tables.
+2023-10-28 20:19:00,335:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-faiss/descriptions/texts.
+2023-10-28 20:19:34,356:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-faiss/descriptions/tables.
+2023-10-28 20:19:34,432:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-faiss/descriptions/texts.
