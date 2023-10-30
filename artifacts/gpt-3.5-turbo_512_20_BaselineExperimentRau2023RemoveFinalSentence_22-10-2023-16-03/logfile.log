@@ -1,0 +1,32 @@
+2023-10-22 16:03:41,173:INFO: Loading VectorDB from /mnt/c/Users/User/Desktop/lbp_mri/data/emb_store/simple/openai_512_20
+2023-10-22 16:03:50,104:INFO: Experiment settings:
+emb_type:openai
+vectorstore:simple
+chunk_size:512
+chunk_overlap:20
+db_type:simple
+similarity_top_k:3
+index_name:msk-mri
+description:BaselineExperimentRau2023RemoveFinalSentence
+synthesizer_llm:gpt-3.5-turbo
+synthesizer_max_tokens:512
+synthesizer_temperature:0
+response_mode:compact
+2023-10-22 16:06:04,010:INFO: Tokens Consumption: Total: 97697, Prompt: 95392, Completion: 2305, Embeddings: []
+2023-10-22 16:09:45,599:INFO: ------EVALUATION-----
+2023-10-22 16:09:45,601:INFO: Accuracy score: 30.985915492957744
+2023-10-22 16:09:45,604:INFO: human_gt                  match
+ICI                       False     1
+INSUFFICIENT INFORMATION  False     9
+MAY BE APPROPRIATE        False    14
+USUALLY APPROPRIATE       True     19
+                          False     1
+USUALLY NOT APPROPRIATE   False    24
+                          True      3
+Name: match, dtype: int64
+2023-10-22 16:09:45,608:INFO: gpt_classification       match
+USUALLY APPROPRIATE      False    47
+                         True     19
+USUALLY NOT APPROPRIATE  True      3
+                         False     2
+Name: match, dtype: int64

@@ -3,8 +3,7 @@ from typing import List, Optional
 from langchain.schema import Document, BaseDocumentTransformer
 from langchain.callbacks.manager import CallbackManagerForChainRun
 
-class ReOrderQARetrieval(RetrievalQA):
-    
+class ReOrderQARetrieval(RetrievalQA):   
     reorder_fn: Optional[BaseDocumentTransformer] = None
     
     def _get_docs(

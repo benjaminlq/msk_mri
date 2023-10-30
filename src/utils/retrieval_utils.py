@@ -1,5 +1,7 @@
 from llama_index.embeddings.base import BaseEmbedding
+from config import GUIDELINES
 
+from textdistance import levenshtein
 from typing import Union, List, Literal, Sequence
 import numpy as np
 
@@ -34,3 +36,18 @@ def calculate_string_distance(
     else:
         emb2_list = embeddings.get_text_embedding_batch(str2)
         return [calculate_emb_distance(emb1, emb2) for emb2 in emb2_list]
+    
+def calculate_min_dist(
+    input_str: str,
+    text_list: List[str] = GUIDELINES,
+    return_nearest_text: bool = False
+):
+    min_dist = float("inf")
+    nearest_text = None
+
+    for ref_text in text_list:
+        dist = levenshtein.distance(input_str, ref_text)
+        if dist < min_dist:
+            min_dist = dist
+            nearest_text = ref_text
+    return (min_dist, nearest_text) if return_nearest_text else min_dist

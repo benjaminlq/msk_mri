@@ -1,0 +1,140 @@
+2023-10-22 18:07:31,261:INFO: --------------------
+Loading VectorDB from /mnt/c/Users/User/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_128
+2023-10-22 18:07:31,344:INFO: -------------
+Experiment settings:
+emb_type:openai
+vectorstore:faiss
+chunk_size:1024
+chunk_overlap:128
+similarity_top_k:7
+index_name:msk-mri
+description:Topk=7_RemoveFinalSentence
+synthesizer_llm:gpt-4
+synthesizer_max_tokens:512
+synthesizer_temperature:0
+response_mode:simple_summarize
+2023-10-22 18:07:31,350:INFO: -------------
+PROMPT: system: 
+You are a radiologist expert at providing imaging recommendations for patients with musculoskeletal conditions.
+If you do not know an answer, just say "I dont know", do not make up an answer.
+==========
+TASK:
+1. Extract from given PATIENT PROFILE relevant information for classification of imaging appropriateness.
+Important information includes AGE, SYMPTOMS, DIAGNOSIS (IF ANY), which stage of diagnosis (INITIAL IMAGING OR NEXT STUDY).
+2. Refer to the reference information given under CONTEXT to analyse the appropriate imaging recommendations given the patient profile.
+3. Given the PATIENT PROFILE and CONTEXT, refer to the SCORING CRITERIA and recommend if the image scan ordered is USUALLY APPROPRIATE, MAY BE APPROPRIATE, USUALLY NOT APPROPRIATE or there is INSUFFICIENT INFORMATION to recommend the appropriateness.  
+If the scan is not appropriate, recommend an appropriate procedure.
+
+STRICTLY answer based on the given PATIENT PROFILE and CONTEXT. 
+==========
+SCORING CRITERIA:
+- USUALLY APPROPRIATE: The imaging procedure or treatment is indicated in the specified clinical scenarios at a favorable risk-benefit ratio for patients.
+- MAY BE APPROPRIATE: The imaging procedure or treatment may be indicated in the specified clinical scenarios as an alternative to imaging procedures or treatments with a more favorable risk-benefit ratio, or the risk-benefit ratio for patients is equivocal.
+- USUALLY NOT APPROPRIATE: The imaging procedure or treatment is unlikely to be indicated in the specified clinical scenarios, or the risk-benefit ratio for patients is likely to be unfavorable.
+- INSUFFICIENT INFORMATION: There is not enough information from PATIENT PROFILE and CONTEXT information to conclude the appropriateness
+==========
+OUTPUT INSTRUCTIONS:
+Your output should contain the following:
+1. Classification of appropriateness for the ordered scan.
+2. Provide explanation for the appropriateness classification.
+3. If classification answer is USUALLY NOT APPROPRIATE, either recommend an alternative appropriate scan procedure or return NO SCAN REQUIRED.
+
+Format your output as follow:
+1. Classification: Can be one of [USUALLY APPROPRIATE, MAY BE APPROPRIATE, USUALLY NOT APPROPRIATE, INSUFFICIENT INFORMATION]
+2. Explanation:
+3. Recommendation: Can be alternative procedure, NO SCAN REQUIRED or NO CHANGE REQUIRED 
+==========
+CONTEXT:
+
+context_str
+==========
+
+user: query_str
+assistant: 
+2023-10-22 18:07:31,352:INFO: ------START RUNNING TEST CASES---------
+2023-10-22 18:17:29,279:INFO: --------------
+Tokens Consumption: Total: 387194, Prompt: 378379, Completion: 8815, Embeddings: []
+2023-10-22 18:17:29,285:INFO: ----------
+Test case Completed. Saving Artifacts into /mnt/c/Users/User/Desktop/lbp_mri/artifacts/gpt-4_1024_128_Topk=7_RemoveFinalSentence_22-10-2023-18-07
+2023-10-22 18:28:46,258:INFO: ------EVALUATION-----
+2023-10-22 18:28:46,260:INFO: Accuracy score: 46.478873239436616
+2023-10-22 18:28:46,264:INFO: gpt_classification        human_gt                  match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True      2
+                          USUALLY NOT APPROPRIATE   False     2
+MAY BE APPROPRIATE        MAY BE APPROPRIATE        True      2
+USUALLY APPROPRIATE       INSUFFICIENT INFORMATION  False     6
+                          MAY BE APPROPRIATE        False    10
+                          USUALLY APPROPRIATE       True     18
+                          USUALLY NOT APPROPRIATE   False    14
+USUALLY NOT APPROPRIATE   INSUFFICIENT INFORMATION  False     2
+                          MAY BE APPROPRIATE        False     2
+                          USUALLY APPROPRIATE       False     2
+                          USUALLY NOT APPROPRIATE   True     11
+Name: match, dtype: int64
+2023-10-22 18:28:46,268:INFO: human_gt                  gpt_classification        match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True      2
+                          USUALLY APPROPRIATE       False     6
+                          USUALLY NOT APPROPRIATE   False     2
+MAY BE APPROPRIATE        MAY BE APPROPRIATE        True      2
+                          USUALLY APPROPRIATE       False    10
+                          USUALLY NOT APPROPRIATE   False     2
+USUALLY APPROPRIATE       USUALLY APPROPRIATE       True     18
+                          USUALLY NOT APPROPRIATE   False     2
+USUALLY NOT APPROPRIATE   INSUFFICIENT INFORMATION  False     2
+                          USUALLY APPROPRIATE       False    14
+                          USUALLY NOT APPROPRIATE   True     11
+Name: match, dtype: int64
+2023-10-22 19:38:36,111:INFO: --------------------
+Loading VectorDB from /mnt/c/Users/User/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_128
+2023-10-22 19:38:36,343:INFO: -------------
+Experiment settings:
+emb_type:openai
+vectorstore:faiss
+chunk_size:1024
+chunk_overlap:128
+similarity_top_k:7
+index_name:msk-mri
+description:Topk=7_RemoveFinalSentence
+synthesizer_llm:gpt-4
+synthesizer_max_tokens:512
+synthesizer_temperature:0
+response_mode:simple_summarize
+2023-10-22 19:38:36,358:INFO: -------------
+PROMPT: system: 
+You are a radiologist expert at providing imaging recommendations for patients with musculoskeletal conditions.
+If you do not know an answer, just say "I dont know", do not make up an answer.
+==========
+TASK:
+1. Extract from given PATIENT PROFILE relevant information for classification of imaging appropriateness.
+Important information includes AGE, SYMPTOMS, DIAGNOSIS (IF ANY), which stage of diagnosis (INITIAL IMAGING OR NEXT STUDY).
+2. Refer to the reference information given under CONTEXT to analyse the appropriate imaging recommendations given the patient profile.
+3. Given the PATIENT PROFILE and CONTEXT, refer to the SCORING CRITERIA and recommend if the image scan ordered is USUALLY APPROPRIATE, MAY BE APPROPRIATE, USUALLY NOT APPROPRIATE or there is INSUFFICIENT INFORMATION to recommend the appropriateness.  
+If the scan is not appropriate, recommend an appropriate procedure.
+
+STRICTLY answer based on the given PATIENT PROFILE and CONTEXT. 
+==========
+SCORING CRITERIA:
+- USUALLY APPROPRIATE: The imaging procedure or treatment is indicated in the specified clinical scenarios at a favorable risk-benefit ratio for patients.
+- MAY BE APPROPRIATE: The imaging procedure or treatment may be indicated in the specified clinical scenarios as an alternative to imaging procedures or treatments with a more favorable risk-benefit ratio, or the risk-benefit ratio for patients is equivocal.
+- USUALLY NOT APPROPRIATE: The imaging procedure or treatment is unlikely to be indicated in the specified clinical scenarios, or the risk-benefit ratio for patients is likely to be unfavorable.
+- INSUFFICIENT INFORMATION: There is not enough information from PATIENT PROFILE and CONTEXT information to conclude the appropriateness
+==========
+OUTPUT INSTRUCTIONS:
+Your output should contain the following:
+1. Classification of appropriateness for the ordered scan.
+2. Provide explanation for the appropriateness classification.
+3. If classification answer is USUALLY NOT APPROPRIATE, either recommend an alternative appropriate scan procedure or return NO SCAN REQUIRED.
+
+Format your output as follow:
+1. Classification: Can be one of [USUALLY APPROPRIATE, MAY BE APPROPRIATE, USUALLY NOT APPROPRIATE, INSUFFICIENT INFORMATION]
+2. Explanation:
+3. Recommendation: Can be alternative procedure, NO SCAN REQUIRED or NO CHANGE REQUIRED 
+==========
+CONTEXT:
+
+context_str
+==========
+
+user: query_str
+assistant: 
+2023-10-22 19:38:36,365:INFO: ------START RUNNING TEST CASES---------
