@@ -1,0 +1,15 @@
+chunk_overlap: 20
+chunk_size: 512
+description: DescriptionsTableAndText
+emb_type: openai
+index_name: msk-mri
+metadata_filter: true
+refine_llm: gpt-3.5-turbo
+refine_profile: true
+response_mode: simple_summarize
+synthesizer_llm: gpt-3.5-turbo
+synthesizer_max_tokens: 512
+synthesizer_temperature: 0
+table_similarity_top_k: 4
+text_similarity_top_k: 5
+vectorstore: chroma

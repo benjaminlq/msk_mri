@@ -1,0 +1,116 @@
+2023-10-31 14:21:32,815:INFO: -------------
+Experiment settings:
+emb_type:openai
+vectorstore:chroma
+chunk_size:512
+chunk_overlap:20
+table_similarity_top_k:4
+text_similarity_top_k:5
+index_name:msk-mri
+description:RauDataDescriptionsTableAndTextWithMetadataFilter
+metadata_filter:True
+refine_profile:False
+refine_llm:gpt-4
+synthesizer_llm:gpt-4
+synthesizer_max_tokens:512
+synthesizer_temperature:0
+response_mode:simple_summarize
+2023-10-31 14:21:32,825:INFO: -------------
+QA PROMPT: system: 
+You are a radiologist expert at providing imaging recommendations for patients with musculoskeletal conditions.
+If you do not know an answer, just say "I dont know", do not make up an answer.
+==========
+TASK: You are given a PATIENT PROFILE and a SCAN ORDER. Your task is to evaluate the appropriateness of the SCAN ORDER based on the PATIENT PROFILE.
+Perform step-by-step the following sequence of reasoning.
+1. Extract from PATIENT PROFILE relevant information for classification of imaging appropriateness. DO NOT make any assumptions from the SCAN ORDER.
+Important information includes AGE, SYMPTOMS, PREVIOUS DIAGNOSIS (IF ANY), which stage of diagnosis (INITIAL IMAGING OR NEXT STUDY).
+2. Refer to the reference information given under CONTEXT to analyse the appropriate imaging recommendations given the patient profile.
+3. Identify there are superior imaging procedures or treatments with a more favorable risk-benefit ratio.
+4. Based on the SCORING CRITERIA, recommend if the SCAN ORDER is USUALLY APPROPRIATE, MAY BE APPROPRIATE, USUALLY NOT APPROPRIATE or there is INSUFFICIENT INFORMATION to recommend the appropriateness.  
+If the scan is not appropriate, recommend an appropriate procedure.
+
+STRICTLY answer based on the given PATIENT PROFILE and CONTEXT. 
+==========
+SCORING CRITERIA:
+- USUALLY APPROPRIATE: The imaging procedure or treatment is indicated in the specified clinical scenarios at a favorable risk-benefit ratio for patients.
+- MAY BE APPROPRIATE: The imaging procedure or treatment may be indicated in the specified clinical scenarios as an alternative to imaging procedures or treatments with a more favorable risk-benefit ratio, or the risk-benefit ratio for patients is equivocal.
+- USUALLY NOT APPROPRIATE: The imaging procedure is unlikely to be recommended in the specified clinical scenarios, or the risk-benefit ratio for patients is likely to be unfavorable
+- INSUFFICIENT INFORMATION: The imaging procedure or treatment is not mentioned under CONTEXT or not enough relevant information from the PATIENT PROFILE to recommend based on information in CONTEXT.
+==========
+CONTEXT:
+
+context_str
+
+Take note for scenarios involving IV CONTRAST there are 3 distinct scan protocols: (1) with IV CONTRAST, (2) without IV CONTRAST, (3) without and with IV CONTRAST. 
+Each of them is different and can have different appropriateness category.
+==========
+
+user: query_str
+assistant: 
+2023-10-31 14:21:32,832:INFO: ------START RUNNING TEST CASES---------
+2023-10-31 14:21:32,835:INFO: -------------
+REFINE PROMPT: System: You are a radiologist expert. Do not make up additional information.
+=========
+TASK: You are given a PATIENT PROFILE. You need to perform the following information referencing from the PATIENT PROFILE:
+1. Extract relevant information for recommendation of imaging procedure, including age, symptomps, previous diagnosis, stage of diagnosis (INITIAL IMAGING OR NEXT STUDY) and suspected conditions, if any.
+Only return information given inside the PROFILE, do not make up other information.
+2. Return one or more guidelines from the following list of guidelines potentially relevant to the recommendations of imaging procedure given patient profile. If there are no relevant guidelines, return empty list.
+- acute hand and wrist trauma
+- acute hip pain suspected fracture
+- acute trauma to ankle
+- acute trauma to foot
+- acute trauma to knee
+- aggressive primary msk tumour staging and surveillance
+- cervical neck pain radiculopathy
+- chroni extremity joint pain inflammatory arthritis
+- chronic ankle pain
+- chronic elbow pain
+- chronic foot pain
+- chronic hand and wrist pain
+- chronic hip pain
+- chronic knee pain
+- chronic shoulder pain
+- imaging after shoulder arthroplasty
+- imaging after total hip arthroplasty
+- imaging after total knee arthroplasty
+- inflammatory back pain
+- low back pain
+- management of vertebral compression fracture
+- myelopathy
+- osteonecrosis
+- primary bone tumours
+- shoulder pain traumatic
+- soft tissue mass
+- stress fracture including sacrum
+- suspected om foot in dm
+- suspected om septic arthritis soft tissue infection
+- suspected spine infection
+- suspected spine trauma
+=========
+OUTPUT INSTRUCTION:
+Output your answer as follow:
+1. Relevant information:
+2. Relevant guidelines: List of guidelines. Match the exact text given in the list. If no relevant guidelines, return [].
+=========
+
+Human: PATIENT PROFILE: query_str
+2023-10-31 14:37:59,426:INFO: --------------
+Tokens Consumption: Total: 0, Prompt: 0, Completion: 0, Embeddings: []
+2023-10-31 14:37:59,430:INFO: ----------
+Test case Completed. Saving Artifacts into /mnt/c/Users/QUAN/Desktop/lbp_mri/artifacts/gpt-4_512_20_RauDataDescriptionsTableAndTextWithMetadataFilter_31-10-2023-14-21
+2023-10-31 14:48:23,238:INFO: ------EVALUATION-----
+2023-10-31 14:48:23,241:INFO: Accuracy score: 87.5
+2023-10-31 14:48:23,246:INFO: gpt_classification       human_gt                 match
+MAY BE APPROPRIATE       MAY BE APPROPRIATE       True     1
+USUALLY APPROPRIATE      USUALLY APPROPRIATE      True     7
+                         USUALLY NOT APPROPRIATE  False    1
+USUALLY NOT APPROPRIATE  MAY BE APPROPRIATE       False    1
+                         USUALLY NOT APPROPRIATE  True     6
+Name: match, dtype: int64
+2023-10-31 14:48:23,251:INFO: human_gt                 gpt_classification       match
+MAY BE APPROPRIATE       MAY BE APPROPRIATE       True     1
+                         USUALLY NOT APPROPRIATE  False    1
+USUALLY APPROPRIATE      USUALLY APPROPRIATE      True     7
+USUALLY NOT APPROPRIATE  USUALLY APPROPRIATE      False    1
+                         USUALLY NOT APPROPRIATE  True     6
+Name: match, dtype: int64
