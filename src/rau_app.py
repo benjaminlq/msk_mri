@@ -16,11 +16,8 @@ from config import DATA_DIR, MAIN_DIR
 
 # Set the OpenAI API key. If unsure about obtaining the API key, refer to https://platform.openai.com/account/api-keys for more information.
 # For estimating costs associated with index creation and chatbot usage, please visit: https://openai.com/pricing
-with open(os.path.join(MAIN_DIR, "auth", "api_keys.json")) as f:
-    api_keys = json.load(f)
 
-openai.api_key = api_keys["OPENAI_API_KEY"]
-os.environ["OPENAI_API_KEY"] = api_keys["OPENAI_API_KEY"]
+openai.api_key = os.environ["OPENAI_API_KEY"]
 
 # Set the folder path for ACR data and the rebuild index flag. This script doesn't include
 # importing ACR guidelines or a predefined index due to license restrictions on ACR guidelines.
