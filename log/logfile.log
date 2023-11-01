@@ -359,3 +359,19 @@
 2023-10-31 14:11:34,295:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
 2023-10-31 14:11:34,450:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
 2023-10-31 15:14:26,697:INFO: simple VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/simple/openai_512_20.
+2023-11-01 15:28:37,423:INFO: Processing documents from provided list.
+2023-11-01 15:28:37,431:INFO: 199 documents remained after page filtering.
+2023-11-01 15:28:37,433:INFO: Total number of documents to create vector index store: 199
+2023-11-01 15:28:37,436:INFO: Creating chroma Vectorstore
+2023-11-01 15:28:39,513:INFO: Successfully created chroma vectorstore at ../data/multimodal-chroma-textwindow/descriptions/tables
+2023-11-01 15:30:41,592:INFO: Processing documents from provided list.
+2023-11-01 15:30:41,594:INFO: 199 documents remained after page filtering.
+2023-11-01 15:30:41,596:INFO: Total number of documents to create vector index store: 199
+2023-11-01 15:30:41,598:INFO: Creating chroma Vectorstore
+2023-11-01 15:30:44,069:INFO: Successfully created chroma vectorstore at ../data/multimodal-chroma-textwindow/descriptions/tables
+2023-11-01 16:25:30,725:INFO: chroma VectorStore successfully loaded from ../data/multimodal-chroma-textwindow/descriptions/tables.
+2023-11-01 16:25:30,920:INFO: chroma VectorStore successfully loaded from ../data/multimodal-chroma-textwindow/descriptions/texts.
+2023-11-01 16:27:22,796:INFO: chroma VectorStore successfully loaded from ../data/multimodal-chroma-textwindow/descriptions/tables.
+2023-11-01 16:27:25,373:INFO: chroma VectorStore successfully loaded from ../data/multimodal-chroma-textwindow/descriptions/texts.
+2023-11-01 16:35:28,009:INFO: chroma VectorStore successfully loaded from ../data/multimodal-chroma-textwindow/descriptions/tables.
+2023-11-01 16:35:29,841:INFO: chroma VectorStore successfully loaded from ../data/multimodal-chroma-textwindow/descriptions/texts.
