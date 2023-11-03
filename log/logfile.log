@@ -375,3 +375,6 @@
 2023-11-01 16:27:25,373:INFO: chroma VectorStore successfully loaded from ../data/multimodal-chroma-textwindow/descriptions/texts.
 2023-11-01 16:35:28,009:INFO: chroma VectorStore successfully loaded from ../data/multimodal-chroma-textwindow/descriptions/tables.
 2023-11-01 16:35:29,841:INFO: chroma VectorStore successfully loaded from ../data/multimodal-chroma-textwindow/descriptions/texts.
+2023-11-01 17:14:52,954:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma-textwindow/descriptions/tables.
+2023-11-01 17:14:53,121:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma-textwindow/descriptions/texts.
+2023-11-03 20:03:23,451:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_512_20.
