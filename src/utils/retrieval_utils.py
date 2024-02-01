@@ -3,10 +3,13 @@
 
 from llama_index.embeddings.base import BaseEmbedding
 from config import GUIDELINES
-
+from langchain.chains import LLMChain
+from llama_index.embeddings.base import BaseEmbedding
 from textdistance import levenshtein
 from typing import Union, List, Literal, Sequence, Tuple
+from typing import Union, List, Literal, Sequence, Tuple
 import numpy as np
+import re
 
 def calculate_emb_distance(
     emb1: List[float],
@@ -86,3 +89,32 @@ def calculate_min_dist(
             min_dist = dist
             nearest_text = ref_text
     return (min_dist, nearest_text) if return_nearest_text else min_dist
+
+def extract_guidelines(
+    profile: str,
+    extract_chain: LLMChain
+) -> Tuple[str, List[str]]:
+    extracted_response = extract_chain(profile)["text"]
+    if extracted_response.endswith("."):
+        extracted_response = extracted_response[:-1]
+
+    pattern = r"1. Relevant information:([\S\s]+)2. Relevant guidelines:([\S\s]*)"
+
+    profile, guidelines_str = re.findall(pattern, extracted_response)[0]
+    guidelines_str = guidelines_str.replace("- ", "")
+    guidelines_str = guidelines_str.strip()
+    guidelines_str = guidelines_str.replace("\n", ", ")
+
+    if not guidelines_str:
+        relevant_guidelines = []
+    else:
+        regex_guidelines = re.findall(r"([A-Za-z ]+)", guidelines_str)
+        relevant_guidelines = []
+        for extracted_guideline in regex_guidelines:
+            extracted_guideline = extracted_guideline.lower()
+            min_dist, nearest_text = calculate_min_dist(extracted_guideline, GUIDELINES, True)
+            if min_dist <= 1:
+                extracted_guideline = nearest_text
+                relevant_guidelines.append(extracted_guideline)
+                
+    return profile, relevant_guidelines

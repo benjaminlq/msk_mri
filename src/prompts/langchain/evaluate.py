@@ -1,6 +1,6 @@
 from langchain.prompts import PromptTemplate as LCPromptTemplate
 
-fix_prompt_template = """TASK: Extract the following information from the provided text query.
+extract_template = """TASK: Extract the following information from the provided text query.
 1. Appropropriateness of the scan ordered.
 2. Most Appropriate Imaging Modality
 ===============
@@ -11,4 +11,4 @@ Recommendation: The most appropriate imaging modality. If no appropriate imaging
 TEXT QUERY: {query}
 """
 
-FIX_PROMPT = LCPromptTemplate.from_template(fix_prompt_template)
+CLASSIFICATION_PROMPT = LCPromptTemplate.from_template(extract_template)

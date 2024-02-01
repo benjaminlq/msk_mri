@@ -2,13 +2,13 @@
 """
 import os
 from shutil import rmtree
-from typing import List, Optional, Literal, Dict
+from typing import List, Optional, Literal, Dict, Union
 from logging import Logger
 from config import LOGGER
 from datetime import datetime
 
 from llama_index.embeddings.base import BaseEmbedding
-from llama_index.schema import Document, TextNode
+from llama_index.schema import Document, TextNode, NodeWithScore
 from llama_index.indices.vector_store import VectorStoreIndex
 from llama_index import SimpleDirectoryReader
 from llama_index import ServiceContext
@@ -39,6 +39,27 @@ def filter_by_pages(
             filtered_list.append(doc)
 
     return filtered_list
+
+def convert_doc_to_dict(doc: Union[Document, NodeWithScore, Dict]) -> Dict:
+    if isinstance(doc, NodeWithScore):
+        json_doc = {
+            "page_content": doc.text,
+            "metadata": doc.metadata,
+            "score": doc.score
+            } 
+    elif isinstance(doc, Document):
+        json_doc = {
+            "page_content": doc.text,
+            "metadata": doc.metadata,
+            "score": ""
+            }
+    elif isinstance(doc, Dict):
+        json_doc = {
+            "page_content": doc["text"],
+            "metadata": doc["metadata"],
+            "score": "None"
+        }
+    return json_doc
 
 def generate_vectorindex(
     embeddings: BaseEmbedding,
@@ -244,3 +265,4 @@ def load_vectorindex(
     logger.info(f"{emb_store_type} VectorStore successfully loaded from {db_directory}.")
     
     return vector_index
+

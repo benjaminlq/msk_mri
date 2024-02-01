@@ -9,6 +9,7 @@ DATA_DIR = os.path.join(MAIN_DIR, "data")
 DOCUMENT_DIR = os.path.join(MAIN_DIR, "data", "document_sources")
 EMB_DIR = os.path.join(DATA_DIR, "emb_store")
 KG_DIR = os.path.join(DATA_DIR, "kg_store")
+ARTIFACT_DIR = os.path.join(MAIN_DIR, "artifacts")
 
 EXCLUDE_DICT = os.path.join(DATA_DIR, "exclude_pages.json")
 
