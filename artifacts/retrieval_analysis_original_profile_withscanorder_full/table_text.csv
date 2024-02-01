@@ -1,4 +1,4 @@
-,ACR scenario,Guideline,Variant,Appropriateness Category,MRI scan ordered,Clinical File,queries,Table_1,Table_2,Table_3,Table_4,Table_5,Text_1,Text_2,Text_3,Text_4,Text_5
+,ACR scenario,Guideline,Variant,Appropriateness Category,Scan Order,Clinical File,queries,Table_1,Table_2,Table_3,Table_4,Table_5,Text_1,Text_2,Text_3,Text_4,Text_5
 0,Traumatic shoulder pain. Nonlocalized shoulder pain. Negative radiographs. Next imaging study.,ACR shoulder pain traumatic.pdf,2,UA,MRI shoulder without IV contrast,"22 year old Chinese Male. No significant past medical history.  Right shoulder pain for 2 weeks after being tackled in rugby match.  On examination, reduced range of motion, tendereness.  Sulcus sign positive.  Apprehension test positive. O'Brien test positive.  Shoulder X-Ray shows no fracture or dislocation.  MRI right shoulder without IV contrast to assess for instability.","Patient Profile: 22 year old Chinese Male. No significant past medical history.  Right shoulder pain for 2 weeks after being tackled in rugby match.  On examination, reduced range of motion, tendereness.  Sulcus sign positive.  Apprehension test positive. O'Brien test positive.  Shoulder X-Ray shows no fracture or dislocation
 Scan ordered:   MRI right shoulder without IV contrast to assess for instability","description:  Traumatic shoulder pain. Radiographs normal. Physical examination and history consistent with dislocation event or instability. Next imaging study.
 condition: ACR shoulder pain traumatic
@@ -17,7 +17,7 @@ mode: tabular
 | Bone scan shoulder | Usually Not Appropriate |
 | US shoulder | Usually Not Appropriate |
 
-Score: 0.29181933403015137","description:  Traumatic shoulder pain. Radiographs normal. Physical examination findings consistent with rotator cuff tear. Next imaging study.
+Score: 0.29174065589904785","description:  Traumatic shoulder pain. Radiographs normal. Physical examination findings consistent with rotator cuff tear. Next imaging study.
 condition: ACR shoulder pain traumatic
 mode: tabular
 
@@ -34,7 +34,7 @@ mode: tabular
 | MRI shoulder without and with IV contrast | Usually Not Appropriate |
 | Bone scan shoulder | Usually Not Appropriate |
 
-Score: 0.29556506872177124","description:  Traumatic shoulder pain. Radiographs normal. Physical examination findings consistent with labral tear. Next imaging study.
+Score: 0.29555296897888184","description:  Traumatic shoulder pain. Radiographs normal. Physical examination findings consistent with labral tear. Next imaging study.
 condition: ACR shoulder pain traumatic
 mode: tabular
 
@@ -51,7 +51,7 @@ mode: tabular
 | Bone scan shoulder | Usually Not Appropriate |
 | US shoulder | Usually Not Appropriate |
 
-Score: 0.3047041893005371","description:  Chronic shoulder pain. History of prior rotator cuff repair. Suspect rotator cuff disorders or subacromial subdeltoid bursitis. Initial radiographs normal or inconclusive. Next imaging study.
+Score: 0.3046852648258209","description:  Chronic shoulder pain. History of prior rotator cuff repair. Suspect rotator cuff disorders or subacromial subdeltoid bursitis. Initial radiographs normal or inconclusive. Next imaging study.
 condition: ACR chronic shoulder pain
 mode: tabular
 
@@ -70,7 +70,7 @@ mode: tabular
 | CT shoulder without IV contrast | Usually Not Appropriate |
 | FDG-PET/CT skull base to mid-thigh | Usually Not Appropriate |
 
-Score: 0.3068525791168213","description:  Traumatic shoulder pain. Radiographs show Bankart or Hill-Sachs lesion. Next imaging study.
+Score: 0.3068386912345886","description:  Traumatic shoulder pain. Radiographs show Bankart or Hill-Sachs lesion. Next imaging study.
 condition: ACR shoulder pain traumatic
 mode: tabular
 
@@ -87,7 +87,7 @@ mode: tabular
 | Bone scan shoulder | Usually Not Appropriate |
 | US shoulder | Usually Not Appropriate |
 
-Score: 0.3082834482192993","mode: text
+Score: 0.3081766963005066","mode: text
 condition: ACR shoulder pain traumatic
 
 Bone Scan  Shoulder  
@@ -220,7 +220,7 @@ mode: tabular
 | CT sacroiliac joints and spine area of interest without and with IV contrast | Usually Not Appropriate |
 | CT sacroiliac joints and spine area of interest without IV contrast | Usually Not Appropriate |
 
-Score: 0.26518481969833374","description:  Inflammatory back pain. Suspected axial spondyloarthritis. Negative radiographs and negative MRI of the sacroiliac joints. Next imaging study.
+Score: 0.26549389958381653","description:  Inflammatory back pain. Suspected axial spondyloarthritis. Negative radiographs and negative MRI of the sacroiliac joints. Next imaging study.
 condition: ACR inflammatory back pain
 mode: tabular
 
@@ -236,7 +236,7 @@ mode: tabular
 | CT spine area of interest with IV contrast | Usually Not Appropriate |
 | CT spine area of interest without and with IV contrast | Usually Not Appropriate |
 
-Score: 0.274692177772522","description:  Inflammatory back pain. Suspected axial spondyloarthritis. Additional imaging following radiographs. Next imaging study.
+Score: 0.27507483959198","description:  Inflammatory back pain. Suspected axial spondyloarthritis. Additional imaging following radiographs. Next imaging study.
 condition: ACR inflammatory back pain
 mode: tabular
 
@@ -258,7 +258,7 @@ mode: tabular
 | CT sacroiliac joints and spine area of interest with IV contrast | Usually Not Appropriate |
 | CT sacroiliac joints and spine area of interest without and with IV contrast | Usually Not Appropriate |
 
-Score: 0.2826416492462158","description:  Inflammatory back pain. Suspected axial spondyloarthritis. Initial imaging.
+Score: 0.2829803228378296","description:  Inflammatory back pain. Suspected axial spondyloarthritis. Initial imaging.
 condition: ACR inflammatory back pain
 mode: tabular
 
@@ -282,7 +282,7 @@ mode: tabular
 | CT spine area of interest without and with IV contrast | Usually Not Appropriate |
 | CT spine area of interest without IV contrast | Usually Not Appropriate |
 
-Score: 0.2846306562423706","description:  Axial spondyloarthritis with spine ankylosis. Suspected fracture. Initial imaging.
+Score: 0.2849087119102478","description:  Axial spondyloarthritis with spine ankylosis. Suspected fracture. Initial imaging.
 condition: ACR inflammatory back pain
 mode: tabular
 
@@ -298,7 +298,7 @@ mode: tabular
 | CT spine area of interest with IV contrast | Usually Not Appropriate |
 | CT spine area of interest without and with IV contrast | Usually Not Appropriate |
 
-Score: 0.2934909462928772","mode: text
+Score: 0.29360389709472656","mode: text
 condition: ACR inflammatory back pain
 
 CT Sacroiliac  Joints  
@@ -719,7 +719,7 @@ Septic Arthritis, or Soft Tissue Infection (Excluding Spine and Diabetic Foot) �
 In cases of s uspected traumatic nerve injury of the hand and wrist, MRI with dedicated neu rography sequences 
 (eg, diffusion  weighted) ha s shown improved visualization of the injured nerves  [82].
 
-Score: 0.36064964532852173","mode: text
+Score: 0.3601788878440857","mode: text
 condition: ACR acute hand and wrist trauma
 
 US Area of Interest  
@@ -746,7 +746,7 @@ alternatives.
 for adults with suspect hand tendon or ligament trauma and when radiographs show acute hand fracture. 
 These procedures are equivalent alternatives.
 
-Score: 0.3661784529685974","mode: text
+Score: 0.3661390542984009","mode: text
 condition: ACR chronic hand and wrist pain
 
 ACR Appropriateness Criteria® 16 Chronic Wrist Pain  Arthrography  Wrist  
@@ -772,7 +772,7 @@ initial evaluation is equivocal. The MRI findings that have been reported in wri
 including nerve enlargement, nerve flattening, and retinacular bowing—may be associated with clinical severity but have limited usefulness in patients with clinically recognized carpal tunnel syndrome and low predictive value 
 in patients with nonspecific wrist pain [ 68].
 
-Score: 0.3768148422241211","mode: text
+Score: 0.37580156326293945","mode: text
 condition: ACR acute hand and wrist trauma
 
 These procedures are equivalent alternatives.  
@@ -780,7 +780,7 @@ These procedures are equivalent alternatives.
 when initial radiographs show metacarpophalangeal, proximal interphalangeal or distal interphalangeal joint 
 malalignment in the absence of fracture. These procedures are equivalent alternatives.
 
-Score: 0.38057592511177063","mode: text
+Score: 0.38017386198043823","mode: text
 condition: ACR acute hand and wrist trauma
 
 ACR Appropriateness Criteria® 5 Acute Hand and Wrist Trauma  Most fractures of the thumb are visible on a 2-view radiographic examination, although there is a slight increase 
@@ -809,7 +809,7 @@ Bone Scan Area of  Interest
 Bone scan is not indicated in this clinical setting.  
 Variant 2: Suspect acute hand or wrist trauma.
 
-Score: 0.38430365920066833"
+Score: 0.3837158679962158"
 4,"Initial radiographs showing metacarpophalangeal, proximal interphalangeal, or distal interphalangeal joint malalignment in the absence of fracture. Next imaging study.",ACR acute hand and wrist trauma.pdf,6,UA,MRI hand without IV contrast,"28 year old Chinese Female.  No significant past medical history.  Kickboxing sparring, felt pain at lateral aspect of right hand after punching opponent.  On examination: deformity over right 4th metacarpophalangeal joint, tender, swollen.  X-rays show 4th metacarpophalaneal joint dislocation.  No fracture.  MRI right hand without IV contrast to assess ligamentous/tendon injury.  ","Patient Profile: 28 year old Chinese Female.  No significant past medical history.  Kickboxing sparring, felt pain at lateral aspect of right hand after punching opponent.  On examination: deformity over right 4th metacarpophalangeal joint, tender, swollen.  X-rays show 4th metacarpophalaneal joint dislocation.  No fracture
 Scan ordered:   MRI right hand without IV contrast to assess ligamentous/tendon injury","description:  Initial radiographs showing metacarpophalangeal, proximal interphalangeal, or distal interphalangeal joint malalignment in the absence of fracture. Next imaging study.
 condition: ACR acute hand and wrist trauma
@@ -894,7 +894,7 @@ These procedures are equivalent alternatives.
 when initial radiographs show metacarpophalangeal, proximal interphalangeal or distal interphalangeal joint 
 malalignment in the absence of fracture. These procedures are equivalent alternatives.
 
-Score: 0.33734774589538574","mode: text
+Score: 0.3372173309326172","mode: text
 condition: ACR acute hand and wrist trauma
 
 ACR Appropriateness Criteria® 8 Acute Hand and Wrist Trauma  MRI Hand  
@@ -921,7 +921,7 @@ MRI is ideal for evaluating tendon injuries and helping with surgical planning [
 capsule and collateral ligament injuries of the proximal interphalangeal  and metacarpophalangeal joints [68]. 
 For flexor tendon injuries, Rubin et al [ 69] reported a sensitivity of 92% and specificity of  100% in cadavers.
 
-Score: 0.3452574610710144","mode: text
+Score: 0.3451913595199585","mode: text
 condition: ACR acute hand and wrist trauma
 
 US Hand  
@@ -930,7 +930,7 @@ the metacarpophalangeal joint [16,75].
 US helps evaluate injured flexor tendons and, in cases of completel y lacerated tendons,  helps identify the location 
 of the proximal tendon stump [76].
 
-Score: 0.3465452790260315","mode: text
+Score: 0.3465062975883484","mode: text
 condition: ACR acute hand and wrist trauma
 
 ACR Appropriateness Criteria® 5 Acute Hand and Wrist Trauma  Most fractures of the thumb are visible on a 2-view radiographic examination, although there is a slight increase 
@@ -959,7 +959,7 @@ Bone Scan Area of  Interest
 Bone scan is not indicated in this clinical setting.  
 Variant 2: Suspect acute hand or wrist trauma.
 
-Score: 0.3507339656352997","mode: text
+Score: 0.35061362385749817","mode: text
 condition: ACR acute hand and wrist trauma
 
 If associated soft -tissue injury is clinically suspected, CT, CT arthrography, MR I, MR arthrography, 
@@ -982,7 +982,7 @@ A standard 3 -view radiographic examination of the hand shows most fractures and
 and phalanges [ 13]. For phalangeal injuries, some centers include a PA examination of the entire hand, whereas 
 others limit the examination to the injured finger.
 
-Score: 0.3512454926967621"
+Score: 0.35118019580841064"
 5,Acute hip pain. Fall or minor trauma. Suspect fracture. Initial imaging.,ACR acute hip pain suspected fracture.pdf,1,UNA,MRI pelvis and affected hip without IV contrast,"78 year old Indian Female.  Past medical history of diabetes mellitus and hypertension on follow up with polyclinic.  Tripped and fell, subsequently unable to walk due to left hip pain.  On examination: left limb foreshortening, externally rotated, reduced range of motion due to pain.  Nil imaging performed thus far.  MRI pelvis and left hip without IV contrast to assess for pelvic/hip fracture and alignment.  ","Patient Profile: 78 year old Indian Female.  Past medical history of diabetes mellitus and hypertension on follow up with polyclinic.  Tripped and fell, subsequently unable to walk due to left hip pain.  On examination: left limb foreshortening, externally rotated, reduced range of motion due to pain.  Nil imaging performed thus far
 Scan ordered:   MRI pelvis and left hip without IV contrast to assess for pelvic/hip fracture and alignment","description:  Acute hip pain. Fall or minor trauma. Negative radiographs. Suspect fracture. Next imaging study.
 condition: ACR acute hip pain suspected fracture
@@ -1286,7 +1286,7 @@ As previously discussed, p atients with clinically suspected proximal femur frac
 pelvis  that includ e the sacrum and pubic rami [21,27- 30]. Moreover, these pelvic fractures may occur in isolation 
 or concomitant with a fracture of the proximal femur [28].
 
-Score: 0.3177017569541931","mode: text
+Score: 0.3178873062133789","mode: text
 condition: ACR chronic hip pain
 
 ACR Appropriateness  Criteria® 5 Chronic  Hip Pain CHRONIC  HIP PAIN  
@@ -1306,7 +1306,7 @@ conditions  is widely  discussed  in the published  literature.
 Before  imaging,  an appropriate  assessment  of a patient’s  clinical  history  and physical  examination  is essential  in 
 trying  to pare down the range  of possible etiologies  for a patient’s  symptoms.
 
-Score: 0.3179752230644226","mode: text
+Score: 0.31814971566200256","mode: text
 condition: ACR chronic hip pain
 
 Findings  on pelvic  radiographs  can result  in an imaging  diagnosis  such as 
@@ -1314,7 +1314,7 @@ osteoarthritis  or may lead to more  advanced  workups  of less common  causes o
 bone  tumors.  The results of the pelvic  radiograph can help the clinician  for the selection  of additional  imaging  
 techniques  and for comparison  with studies such as MRI,  CT, radionuclide  bone  scans,  and fluoride  PET [13-15].
 
-Score: 0.31986045837402344","mode: text
+Score: 0.32009488344192505","mode: text
 condition: ACR acute hip pain suspected fracture
 
 ACR Appropriateness Criteria® 6 Acute Hip Pain -Suspected Fracture  Bone Scan H ips 
@@ -1340,7 +1340,7 @@ The evidence table, literature search, and appendix for this topic are available
 appendix includes the strength of evidence assessment and the final rating round tabulations for each 
 recommendation.
 
-Score: 0.32140591740608215","mode: text
+Score: 0.32156187295913696","mode: text
 condition: ACR acute hip pain suspected fracture
 
 ACR Appropriateness Criteria® 2 Acute Hip Pain -Suspected Fracture  Acute Hip Pain-Suspected Fracture  
@@ -1361,7 +1361,7 @@ and long-term mortality [6-13]. Therefore, rapid diagnosis and treatment of hip 
 cannot be reliably diagnosed or excluded on the basis of physical exam ination  alone ; therefore , imaging plays a 
 key role in early  and accurate diagnosis [14] .
 
-Score: 0.3235953748226166"
+Score: 0.32379522919654846"
 7,"Adult or child 5 years of age or older. Acute trauma to the ankle. No exclusionary criteria present (eg, neurologically intact (including no peripheral neuropathy)). Patient meets the requirements for evaluation by the Ottawa Ankle Rules which are negative: No point tenderness over the malleoli, talus, or calcaneus on physical examination. Able to walk. Initial imaging.",ACR Acute trauma to ankle.pdf,2,UNA,MRI ankle without IV contrast,"50 year old Chinese male.  Past medical history of hypertension on medical treatment.  Was jogging 1 week ago when tripped on a rock and twisted right ankle.  Pain since then.  Was able to continue jogging immediately after incident. No abnormal sensation.  On examination: able to walk normally.  No point tenderness at right ankle or midfoot (lateral malleolus, medial malleolus, navicular) or base of 5th metatarsal.   Full range of motion with mild pain on foot supination. No prior imaging.  MRI right ankle without IV contrast to assess for ligamentous injury.","Patient Profile: 50 year old Chinese male.  Past medical history of hypertension on medical treatment.  Was jogging 1 week ago when tripped on a rock and twisted right ankle.  Pain since then.  Was able to continue jogging immediately after incident. No abnormal sensation.  On examination: able to walk normally.  No point tenderness at right ankle or midfoot (lateral malleolus, medial malleolus, navicular) or base of 5th metatarsal.   Full range of motion with mild pain on foot supination. No prior imaging
 Scan ordered:   MRI right ankle without IV contrast to assess for ligamentous injury","description:  Adult or child 5 years of age or older. Acute trauma to the ankle or acute trauma to the ankle with persistent pain for more than 1 week but less than 3 weeks. No exclusionary criteria present. Initial imaging. Patient meets the requirements for evaluation by the Ottawa Ankle Rules which are positive: 1. Inability to bear weight immediately after the injury, OR 2. Point tenderness over the medial malleolus, the posterior edge or inferior tip of the lateral malleolus, talus, or calcaneus, OR 3. Inability to ambulate for 4 steps in the emergency department.
 condition: ACR Acute trauma to ankle
@@ -1821,7 +1821,7 @@ craniocaudal  angulation can be added  [16,17] . Although patients  with Lisfra 
 damage  without  diastasis [18], radiography  should be the initial imaging modality  in the setting  of a suspected  
 Lisfranc injury.
 
-Score: 0.295962393283844","mode: text
+Score: 0.2958114743232727","mode: text
 condition: ACR acute trauma to foot
 
 ACR Appropriateness  Criteria® 7 Acute Trauma to the Foot  injuries  in midtarsal  (Chopart) sprains,  which  frequently  accompany  acute ankle  injuries  [52,53] . If radiographs  
@@ -1842,7 +1842,7 @@ MRI tends  to be used as a screening  tool when  one is not certain  of the spec
 osseous injury  is suspected.  Both  MRI and US have  been  shown  to be sensitive  for the diagnosis  of acute tendon  
 rupture  or dislocation  in the foot [39].
 
-Score: 0.30751699209213257","mode: text
+Score: 0.30738991498947144","mode: text
 condition: ACR acute trauma to foot
 
 Radiography Foot  with  Weightbearing  
@@ -1860,7 +1860,7 @@ MRI Foot
 MRI is not routinely used as the first imaging study  for the evaluation  of acute trauma  to the foot with positive  
 Ottawa rules .
 
-Score: 0.3134748041629791","mode: text
+Score: 0.3132525682449341","mode: text
 condition: ACR acute trauma to foot
 
 MRI  
@@ -1884,7 +1884,7 @@ Lisfranc  Injury
 CT has been  advocated  as the primary  imaging  technique  in acute hyperflexion  injury  and high-energy  
 polytrauma  (especially  if the patient is not able to bear weight)  [33,38,41- 45].
 
-Score: 0.31581735610961914","mode: text
+Score: 0.3156665861606598","mode: text
 condition: ACR Acute trauma to ankle
 
 Radiography Leg 
@@ -1909,7 +1909,7 @@ Variant 3: Ankle radiographs are usually appropriate for the initial imaging of 
 acute trauma to the ankle when exclusionary criteria are present (eg, neurologic disorder, neuropathy, or other) and 
 the patient does not meet requirements for evaluation by the OAR .
 
-Score: 0.3286277949810028"
+Score: 0.32846197485923767"
 10,"Adult or child 5 years of age or older. Significant trauma to the knee (eg, motor vehicle accident, knee dislocation). Initial imaging.",ACR acute trauma to knee.pdf,7,MBA,MRI knee without IV contrast,"62 year old Caucasian female.  Past medical history of fibroids and adenomyosis.  Was driving but lost control on wet road, swerved and hit road divider at low speed around 50km/h.  Left knee hit dashboard, swelling and pain after injury, hobbled out of car.  Otherwise no other injuries.  On examination: severe swelling and bruising of left knee, unable to accurately assess range of motion or perform stress maneuvers due to pain.  No other injury elsewhere.  No imaging performed thus far.  MRI left knee without IV contrast to assess knee for bony and soft tissue injury.","Patient Profile: 62 year old Caucasian female.  Past medical history of fibroids and adenomyosis.  Was driving but lost control on wet road, swerved and hit road divider at low speed around 50km/h.  Left knee hit dashboard, swelling and pain after injury, hobbled out of car.  Otherwise no other injuries.  On examination: severe swelling and bruising of left knee, unable to accurately assess range of motion or perform stress maneuvers due to pain.  No other injury elsewhere.  No imaging performed thus far
 Scan ordered:   MRI left knee without IV contrast to assess knee for bony and soft tissue injury","description:  Adult or child 5 years of age or older. Acute trauma to the knee. Mechanism unknown. Focal patellar tenderness, effusion, able to walk. Initial imaging.
 condition: ACR acute trauma to knee
@@ -2704,7 +2704,7 @@ mode: tabular
 | CT ankle without IV contrast | Usually Not Appropriate |
 | Bone scan ankle | Usually Not Appropriate |
 
-Score: 0.29836228489875793","description:  Chronic wrist pain. Radiographs show old scaphoid fracture. Evaluate for nonunion, malunion, osteonecrosis, or post-traumatic osteoarthritis. Next study.
+Score: 0.29813122749328613","description:  Chronic wrist pain. Radiographs show old scaphoid fracture. Evaluate for nonunion, malunion, osteonecrosis, or post-traumatic osteoarthritis. Next study.
 condition: ACR chronic hand and wrist pain
 mode: tabular
 
@@ -2721,7 +2721,7 @@ mode: tabular
 | Radiographic arthrography wrist | Usually Not Appropriate |
 | Bone scan wrist | Usually Not Appropriate |
 
-Score: 0.2998437285423279","description:  Adult or child 5 years of age or older. Acute trauma to the ankle with persistent pain for more than 1 week but less than 3 weeks. No exclusionary criteria present. Initial radiographs negative. Next study.
+Score: 0.29991522431373596","description:  Adult or child 5 years of age or older. Acute trauma to the ankle with persistent pain for more than 1 week but less than 3 weeks. No exclusionary criteria present. Initial radiographs negative. Next study.
 condition: ACR Acute trauma to ankle
 mode: tabular
 
@@ -2737,7 +2737,7 @@ mode: tabular
 | CT ankle without and with IV contrast | Usually Not Appropriate |
 | Bone scan ankle | Usually Not Appropriate |
 
-Score: 0.3034656047821045","description:  Adult or child 5 years of age or older. Acute trauma to the ankle. Radiographs negative for osseous injury and physical examination or radiographs demonstrate alignment abnormality suggesting syndesmotic/ligamentous injury or dislocation. Next study.
+Score: 0.3032837510108948","description:  Adult or child 5 years of age or older. Acute trauma to the ankle. Radiographs negative for osseous injury and physical examination or radiographs demonstrate alignment abnormality suggesting syndesmotic/ligamentous injury or dislocation. Next study.
 condition: ACR Acute trauma to ankle
 mode: tabular
 
@@ -2753,7 +2753,7 @@ mode: tabular
 | CT ankle without and with IV contrast | Usually Not Appropriate |
 | Bone scan ankle | Usually Not Appropriate |
 
-Score: 0.3115634620189667","description:  Adult or child 5 years of age or older. Acute trauma to the ankle. No exclusionary criteria present (eg, neurologically intact (including no peripheral neuropathy)). Patient meets the requirements for evaluation by the Ottawa Ankle Rules which are negative: No point tenderness over the malleoli, talus, or calcaneus on physical examination. Able to walk. Initial imaging.
+Score: 0.31164947152137756","description:  Adult or child 5 years of age or older. Acute trauma to the ankle. No exclusionary criteria present (eg, neurologically intact (including no peripheral neuropathy)). Patient meets the requirements for evaluation by the Ottawa Ankle Rules which are negative: No point tenderness over the malleoli, talus, or calcaneus on physical examination. Able to walk. Initial imaging.
 condition: ACR Acute trauma to ankle
 mode: tabular
 
@@ -2768,7 +2768,7 @@ mode: tabular
 | CT ankle without IV contrast | Usually Not Appropriate |
 | Bone scan ankle | Usually Not Appropriate |
 
-Score: 0.32418292760849","mode: text
+Score: 0.32392650842666626","mode: text
 condition: ACR chronic ankle pain
 
 ACR Appropriateness Criteria® 6 Chronic Ankle Pain  osteochondral abnormalities  [14-16], although one study found statistically significant lower sensitivity for these 
@@ -3843,7 +3843,7 @@ mode: tabular
 | CT foot with IV contrast | Usually Not Appropriate |
 | CT foot without and with IV contrast | Usually Not Appropriate |
 
-Score: 0.31932443380355835","description:  Nonradiating chronic midfoot pain of suspected osseous origin. Radiographs negative or equivocal. Clinical concern includes occult fracture, or painful accessory ossicles. Next imaging study.
+Score: 0.3192771375179291","description:  Nonradiating chronic midfoot pain of suspected osseous origin. Radiographs negative or equivocal. Clinical concern includes occult fracture, or painful accessory ossicles. Next imaging study.
 condition: ACR chronic foot pain
 mode: tabular
 
@@ -3857,7 +3857,7 @@ mode: tabular
 | CT foot with IV contrast | Usually Not Appropriate |
 | CT foot without and with IV contrast | Usually Not Appropriate |
 
-Score: 0.33160439133644104","description:  Chronic foot pain. Entrapment syndromes. Radiographs negative or equivocal. Clinical concern includes Baxter’s neuropathy. Next imaging study.
+Score: 0.3317753076553345","description:  Chronic foot pain. Entrapment syndromes. Radiographs negative or equivocal. Clinical concern includes Baxter’s neuropathy. Next imaging study.
 condition: ACR chronic foot pain
 mode: tabular
 
@@ -3871,7 +3871,7 @@ mode: tabular
 | CT foot without IV contrast | Usually Not Appropriate |
 | Bone scan with SPECT or SPECT/CT foot | Usually Not Appropriate |
 
-Score: 0.33762845396995544","description:  Persistent posttraumatic foot pain. Radiographs negative or equivocal. Clinical concern includes complex regional pain syndrome type I. Next imaging study.
+Score: 0.3380146622657776","description:  Persistent posttraumatic foot pain. Radiographs negative or equivocal. Clinical concern includes complex regional pain syndrome type I. Next imaging study.
 condition: ACR chronic foot pain
 mode: tabular
 
@@ -3885,7 +3885,7 @@ mode: tabular
 | CT foot without and with IV contrast | Usually Not Appropriate |
 | CT foot without IV contrast | Usually Not Appropriate |
 
-Score: 0.34190815687179565","description:  Chronic foot pain. Unknown etiology. Initial imaging.
+Score: 0.34230852127075195","description:  Chronic foot pain. Unknown etiology. Initial imaging.
 condition: ACR chronic foot pain
 mode: tabular
 
@@ -3900,7 +3900,7 @@ mode: tabular
 | CT foot without IV contrast | Usually Not Appropriate |
 | Bone scan foot | Usually Not Appropriate |
 
-Score: 0.34231817722320557","mode: text
+Score: 0.3424869179725647","mode: text
 condition: ACR chronic foot pain
 
 Radiographs  are useful to assess several causes of forefoot pain. Radiographs represent the first imaging  study  
@@ -4035,7 +4035,7 @@ mode: tabular
 | CT foot without IV contrast | Usually Not Appropriate |
 | Bone scan with SPECT or SPECT/CT foot | Usually Not Appropriate |
 
-Score: 0.2937813997268677","description:  Chronic metatarsalgia including plantar great toe pain. Radiographs negative or equivocal. Clinical concern includes sesamoiditis, Morton’s neuroma, intermetatarsal bursitis, chronic plantar plate injury, or Freiberg’s infraction. Next imaging study.
+Score: 0.29380470514297485","description:  Chronic metatarsalgia including plantar great toe pain. Radiographs negative or equivocal. Clinical concern includes sesamoiditis, Morton’s neuroma, intermetatarsal bursitis, chronic plantar plate injury, or Freiberg’s infraction. Next imaging study.
 condition: ACR chronic foot pain
 mode: tabular
 
@@ -4049,7 +4049,7 @@ mode: tabular
 | CT foot with IV contrast | Usually Not Appropriate |
 | CT foot without and with IV contrast | Usually Not Appropriate |
 
-Score: 0.33396676182746887","description:  Chronic foot pain. Entrapment syndromes. Radiographs negative or equivocal. Clinical concern includes Baxter’s neuropathy. Next imaging study.
+Score: 0.33403894305229187","description:  Chronic foot pain. Entrapment syndromes. Radiographs negative or equivocal. Clinical concern includes Baxter’s neuropathy. Next imaging study.
 condition: ACR chronic foot pain
 mode: tabular
 
@@ -4063,7 +4063,7 @@ mode: tabular
 | CT foot without IV contrast | Usually Not Appropriate |
 | Bone scan with SPECT or SPECT/CT foot | Usually Not Appropriate |
 
-Score: 0.3593970239162445","description:  Nonradiating chronic midfoot pain of suspected osseous origin. Radiographs negative or equivocal. Clinical concern includes occult fracture, or painful accessory ossicles. Next imaging study.
+Score: 0.3595064580440521","description:  Nonradiating chronic midfoot pain of suspected osseous origin. Radiographs negative or equivocal. Clinical concern includes occult fracture, or painful accessory ossicles. Next imaging study.
 condition: ACR chronic foot pain
 mode: tabular
 
@@ -4077,7 +4077,7 @@ mode: tabular
 | CT foot with IV contrast | Usually Not Appropriate |
 | CT foot without and with IV contrast | Usually Not Appropriate |
 
-Score: 0.35949161648750305","description:  Persistent posttraumatic foot pain. Radiographs negative or equivocal. Clinical concern includes complex regional pain syndrome type I. Next imaging study.
+Score: 0.3595818877220154","description:  Persistent posttraumatic foot pain. Radiographs negative or equivocal. Clinical concern includes complex regional pain syndrome type I. Next imaging study.
 condition: ACR chronic foot pain
 mode: tabular
 
@@ -4091,7 +4091,7 @@ mode: tabular
 | CT foot without and with IV contrast | Usually Not Appropriate |
 | CT foot without IV contrast | Usually Not Appropriate |
 
-Score: 0.3608512878417969","mode: text
+Score: 0.36094143986701965","mode: text
 condition: ACR chronic foot pain
 
 With MRI as the reference 
@@ -4222,7 +4222,7 @@ mode: tabular
 | CT wrist without and with IV contrast | Usually Not Appropriate |
 | Bone scan wrist | Usually Not Appropriate |
 
-Score: 0.3002837896347046","description:  Chronic wrist pain. Radiographs show old scaphoid fracture. Evaluate for nonunion, malunion, osteonecrosis, or post-traumatic osteoarthritis. Next study.
+Score: 0.30048614740371704","description:  Chronic wrist pain. Radiographs show old scaphoid fracture. Evaluate for nonunion, malunion, osteonecrosis, or post-traumatic osteoarthritis. Next study.
 condition: ACR chronic hand and wrist pain
 mode: tabular
 
@@ -4239,7 +4239,7 @@ mode: tabular
 | Radiographic arthrography wrist | Usually Not Appropriate |
 | Bone scan wrist | Usually Not Appropriate |
 
-Score: 0.3024992346763611","description:  Chronic wrist pain. Palpable mass or suspected occult ganglion cyst. Radiographs normal or nonspecific. Next study.
+Score: 0.3028991222381592","description:  Chronic wrist pain. Palpable mass or suspected occult ganglion cyst. Radiographs normal or nonspecific. Next study.
 condition: ACR chronic hand and wrist pain
 mode: tabular
 
@@ -4256,7 +4256,7 @@ mode: tabular
 | Radiographic arthrography wrist | Usually Not Appropriate |
 | Bone scan wrist | Usually Not Appropriate |
 
-Score: 0.3042546510696411","description:  Radial-sided chronic wrist pain. Radiographs normal or nonspecific. Next study.
+Score: 0.30434268712997437","description:  Radial-sided chronic wrist pain. Radiographs normal or nonspecific. Next study.
 condition: ACR chronic hand and wrist pain
 mode: tabular
 
@@ -4273,7 +4273,7 @@ mode: tabular
 | CT wrist without and with IV contrast | Usually Not Appropriate |
 | Bone scan wrist | Usually Not Appropriate |
 
-Score: 0.3131464719772339","description:  Chronic wrist pain. Radiographs normal or show nonspecific arthritis. Exclude infection. Next study.
+Score: 0.31327906250953674","description:  Chronic wrist pain. Radiographs normal or show nonspecific arthritis. Exclude infection. Next study.
 condition: ACR chronic hand and wrist pain
 mode: tabular
 
@@ -4291,7 +4291,7 @@ mode: tabular
 | Radiographic arthrography wrist | Usually Not Appropriate |
 | Bone scan wrist | Usually Not Appropriate |
 
-Score: 0.3176910877227783","mode: text
+Score: 0.31810450553894043","mode: text
 condition: ACR chronic hand and wrist pain
 
 Furthermore, conventional 
@@ -4301,7 +4301,7 @@ Bone Scan  Wrist
 Bone scan is not routinely used to further evaluate radial -sided chronic wrist pain when radiographs are normal or 
 nonspecific.
 
-Score: 0.30914151668548584","mode: text
+Score: 0.3090861439704895","mode: text
 condition: ACR chronic hand and wrist pain
 
 ACR Appropriateness Criteria® 11 Chronic Wrist Pain  CT Wrist  
@@ -4329,7 +4329,7 @@ with noncontrast -enhanced wrist MRI [ 12,36]. IV contrast seldom provides added
 sided wrist pain but may increase sensitivity for TFCC lesions if MR arthrography is desired but direct joint 
 injection is not feasible.
 
-Score: 0.3110904097557068","mode: text
+Score: 0.31146687269210815","mode: text
 condition: ACR chronic hand and wrist pain
 
 ACR Appropriateness Criteria® 16 Chronic Wrist Pain  Arthrography  Wrist  
@@ -4355,7 +4355,7 @@ initial evaluation is equivocal. The MRI findings that have been reported in wri
 including nerve enlargement, nerve flattening, and retinacular bowing—may be associated with clinical severity but have limited usefulness in patients with clinically recognized carpal tunnel syndrome and low predictive value 
 in patients with nonspecific wrist pain [ 68].
 
-Score: 0.3229137063026428","mode: text
+Score: 0.32313042879104614","mode: text
 condition: ACR chronic hand and wrist pain
 
 ACR Appropriateness Criteria® 7 Chronic Wrist Pain  CHRONIC WRIST PAIN
@@ -4381,7 +4381,7 @@ more oblique view [1 ,2]. The lateral view is important for demonstrating malali
 on standard radiographs [ 4]. Other nonstandard projections may be indicated for specific suspected problems. 
 Additionally, radiogra phs are necessary for accurate measurement of ulnar variance [5 ].
 
-Score: 0.32402312755584717","mode: text
+Score: 0.3241577744483948","mode: text
 condition: ACR chronic hand and wrist pain
 
 Compared to conventional MRI, CT arthrography may be more sensitive for tears of the biomechanically 
@@ -4406,7 +4406,7 @@ whether any repairable fibers remain , both of which are important features that
 Additionally, while fibrocartilage and ligament perforations are moderately associated with ulnar -sided wrist pain, 
 there is a poor correlation between ligament lesions and radial -sided pain [45].
 
-Score: 0.32648491859436035"
+Score: 0.32671085000038147"
 23,Chronic wrist pain. Radiographs normal or nonspecific. Suspect carpal tunnel syndrome. Next study.,ACR chronic hand and wrist pain.pdf,2,MBA,MRI wrist without IV contrast,"46 year old Malay female.  Clerical assistant in healthcare.  Past medical history of obesity, diabetes mellitus, hyperlipidemia.  Right handed.  Now complains of 6 month history of numbness, tingling and weakness in outer part of right hand, sometimes waking her up at night.  Perimenopausal. On examination, positive Tinel's sign and carpal tunnel compression test at the right wrist.  No significant thenar atrophy.  X-rays show no significant abnormality.  MRI right wrist without IV contrast to assess for carpal tunnel syndrome.","Patient Profile: 46 year old Malay female.  Clerical assistant in healthcare.  Past medical history of obesity, diabetes mellitus, hyperlipidemia.  Right handed.  Now complains of 6 month history of numbness, tingling and weakness in outer part of right hand, sometimes waking her up at night.  Perimenopausal. On examination, positive Tinel's sign and carpal tunnel compression test at the right wrist.  No significant thenar atrophy.  X-rays show no significant abnormality
 Scan ordered:   MRI right wrist without IV contrast to assess for carpal tunnel syndrome","description:  Chronic wrist pain. Radiographs normal or nonspecific. Suspect carpal tunnel syndrome. Next study.
 condition: ACR chronic hand and wrist pain
@@ -5018,7 +5018,7 @@ mode: tabular
 | CT hip without IV contrast | Usually Not Appropriate |
 | Fluoride PET/CT skull base to mid-thigh | Usually Not Appropriate |
 
-Score: 0.30787503719329834","description:  Chronic hip pain. Suspect labral tear. Radiographs negative or nondiagnostic. Next imaging study.
+Score: 0.3084442615509033","description:  Chronic hip pain. Suspect labral tear. Radiographs negative or nondiagnostic. Next imaging study.
 condition: ACR chronic hip pain
 mode: tabular
 
@@ -5036,7 +5036,7 @@ mode: tabular
 | CT hip without IV contrast | Usually Not Appropriate |
 | Fluoride PET/CT skull base to mid-thigh | Usually Not Appropriate |
 
-Score: 0.3243815302848816","description:  Chronic hip pain with low back or knee pathology or pain. Radiographs demonstrate hip osteoarthritis. Want to quantify amount of pain related to the hip. Next imaging study.
+Score: 0.3248499035835266","description:  Chronic hip pain with low back or knee pathology or pain. Radiographs demonstrate hip osteoarthritis. Want to quantify amount of pain related to the hip. Next imaging study.
 condition: ACR chronic hip pain
 mode: tabular
 
@@ -5054,7 +5054,7 @@ mode: tabular
 | CT hip without IV contrast | Usually Not Appropriate |
 | Fluoride PET/CT skull base to mid-thigh | Usually Not Appropriate |
 
-Score: 0.3257785141468048","description:  Hip arthroplasty patient with trochanteric pain. Suspect abductor injury, or trochanteric bursitis, or other soft tissue abnormality. Additional imaging following radiographs.
+Score: 0.32611948251724243","description:  Hip arthroplasty patient with trochanteric pain. Suspect abductor injury, or trochanteric bursitis, or other soft tissue abnormality. Additional imaging following radiographs.
 condition: ACR imaging after total hip arthroplasty
 mode: tabular
 
@@ -5069,7 +5069,7 @@ mode: tabular
 | CT hip without and with IV contrast | Usually Not Appropriate |
 | CT hip without IV contrast | Usually Not Appropriate |
 
-Score: 0.32591140270233154","description:  Chronic hip pain. Radiographs equivocal or positive for mild osteoarthritis. Evaluate articular cartilage integrity. Next imaging study.
+Score: 0.3268120586872101","description:  Chronic hip pain. Radiographs equivocal or positive for mild osteoarthritis. Evaluate articular cartilage integrity. Next imaging study.
 condition: ACR chronic hip pain
 mode: tabular
 
@@ -5087,7 +5087,7 @@ mode: tabular
 | CT hip without IV contrast | Usually Not Appropriate |
 | Fluoride PET/CT skull base to mid-thigh | Usually Not Appropriate |
 
-Score: 0.3393913507461548","mode: text
+Score: 0.3397492468357086","mode: text
 condition: ACR chronic hip pain
 
 Within  the limitation  of the contrast  resolution  of CT, some  extra-
@@ -5217,7 +5217,7 @@ mode: tabular
 | CT hip without IV contrast | Usually Not Appropriate |
 | Fluoride PET/CT skull base to mid-thigh | Usually Not Appropriate |
 
-Score: 0.3246946930885315","description:  Chronic hip pain. Suspect noninfectious extra-articular abnormality, such as tendonitis or bursitis. Radiographs negative or nondiagnostic. Next imaging study.
+Score: 0.32467788457870483","description:  Chronic hip pain. Suspect noninfectious extra-articular abnormality, such as tendonitis or bursitis. Radiographs negative or nondiagnostic. Next imaging study.
 condition: ACR chronic hip pain
 mode: tabular
 
@@ -5235,7 +5235,7 @@ mode: tabular
 | CT hip without IV contrast | Usually Not Appropriate |
 | Fluoride PET/CT skull base to mid-thigh | Usually Not Appropriate |
 
-Score: 0.3255380094051361","description:  Chronic elbow pain with mechanical symptoms such as locking, clicking, or limited range of motion. Suspect intra-articular pathology such as osteocartilaginous body, osteochondral lesion, or synovial abnormality. Radiographs normal or nonspecific. Next imaging study.
+Score: 0.32558342814445496","description:  Chronic elbow pain with mechanical symptoms such as locking, clicking, or limited range of motion. Suspect intra-articular pathology such as osteocartilaginous body, osteochondral lesion, or synovial abnormality. Radiographs normal or nonspecific. Next imaging study.
 condition: ACR chronic elbow pain
 mode: tabular
 
@@ -5251,7 +5251,7 @@ mode: tabular
 | CT elbow without and with IV contrast | Usually Not Appropriate |
 | 3-phase bone scan elbow | Usually Not Appropriate |
 
-Score: 0.33914095163345337","description:  Chronic hip pain with low back or knee pathology or pain. Radiographs demonstrate hip osteoarthritis. Want to quantify amount of pain related to the hip. Next imaging study.
+Score: 0.3391605019569397","description:  Chronic hip pain with low back or knee pathology or pain. Radiographs demonstrate hip osteoarthritis. Want to quantify amount of pain related to the hip. Next imaging study.
 condition: ACR chronic hip pain
 mode: tabular
 
@@ -5269,7 +5269,7 @@ mode: tabular
 | CT hip without IV contrast | Usually Not Appropriate |
 | Fluoride PET/CT skull base to mid-thigh | Usually Not Appropriate |
 
-Score: 0.33945149183273315","description:  Hip arthroplasty patient with trochanteric pain. Suspect abductor injury, or trochanteric bursitis, or other soft tissue abnormality. Additional imaging following radiographs.
+Score: 0.3395235240459442","description:  Hip arthroplasty patient with trochanteric pain. Suspect abductor injury, or trochanteric bursitis, or other soft tissue abnormality. Additional imaging following radiographs.
 condition: ACR imaging after total hip arthroplasty
 mode: tabular
 
@@ -5284,7 +5284,7 @@ mode: tabular
 | CT hip without and with IV contrast | Usually Not Appropriate |
 | CT hip without IV contrast | Usually Not Appropriate |
 
-Score: 0.34150975942611694","mode: text
+Score: 0.34157419204711914","mode: text
 condition: ACR chronic hip pain
 
 ACR Appropriateness  Criteria® 5 Chronic  Hip Pain CHRONIC  HIP PAIN  
@@ -5604,7 +5604,7 @@ mode: tabular
 | US knee | Usually Not Appropriate |
 | Radiography hip ipsilateral | Usually Not Appropriate |
 
-Score: 0.34488970041275024","description:  Adult or child greater than or equal to 5 years of age. Chronic knee pain. Initial knee radiograph negative or demonstrates joint effusion. Next imaging procedure.
+Score: 0.34492623805999756","description:  Adult or child greater than or equal to 5 years of age. Chronic knee pain. Initial knee radiograph negative or demonstrates joint effusion. Next imaging procedure.
 condition: ACR chronic knee pain
 mode: tabular
 
@@ -5623,7 +5623,7 @@ mode: tabular
 | CT knee without and with IV contrast | Usually Not Appropriate |
 | Bone scan knee | Usually Not Appropriate |
 
-Score: 0.3466598093509674","description:  Adult or child greater than or equal to 5 years of age. Chronic knee pain. Initial knee radiograph demonstrates degenerative changes or chondrocalcinosis. Next imaging procedure.
+Score: 0.3467674255371094","description:  Adult or child greater than or equal to 5 years of age. Chronic knee pain. Initial knee radiograph demonstrates degenerative changes or chondrocalcinosis. Next imaging procedure.
 condition: ACR chronic knee pain
 mode: tabular
 
@@ -5641,7 +5641,7 @@ mode: tabular
 | Bone scan knee | Usually Not Appropriate |
 | Radiography hip ipsilateral | Usually Not Appropriate |
 
-Score: 0.35051876306533813","description:  Adult or child greater than or equal to 5 years of age. Chronic knee pain. Initial knee radiograph demonstrates osteochondritis dissecans (OCD), loose bodies, or history of cartilage or meniscal repair. Next imaging procedure.
+Score: 0.35061341524124146","description:  Adult or child greater than or equal to 5 years of age. Chronic knee pain. Initial knee radiograph demonstrates osteochondritis dissecans (OCD), loose bodies, or history of cartilage or meniscal repair. Next imaging procedure.
 condition: ACR chronic knee pain
 mode: tabular
 
@@ -5659,7 +5659,7 @@ mode: tabular
 | Bone scan knee | Usually Not Appropriate |
 | Radiography hip ipsilateral | Usually Not Appropriate |
 
-Score: 0.36260607838630676","description:  Adult or child greater than or equal to 5 years of age. Chronic knee pain. Initial imaging.
+Score: 0.36269983649253845","description:  Adult or child greater than or equal to 5 years of age. Chronic knee pain. Initial imaging.
 condition: ACR chronic knee pain
 mode: tabular
 
@@ -5678,7 +5678,7 @@ mode: tabular
 | US knee | Usually Not Appropriate |
 | Radiography hip ipsilateral | Usually Not Appropriate |
 
-Score: 0.36286693811416626","mode: text
+Score: 0.3629401922225952","mode: text
 condition: ACR chronic knee pain
 
 ACR Appropriateness Criteria® 6 Chronic Knee Pain  of age having an asymptomatic meniscal tear , and the likelihood of a meniscal tear being present in either a 
@@ -5700,7 +5700,7 @@ Some patients with normal knee radiographs and anterior knee pain have abnormal 
 quantitative imaging [29].  In particular, patients 45 to 55 years of age with knee pain but normal radiographs 
 exhibited elevated T2 mapping values on 3 T MRI [20 ].
 
-Score: 0.33989962935447693","mode: text
+Score: 0.33990365266799927","mode: text
 condition: ACR chronic knee pain
 
 ACR Appropriateness Criteria® 4 Chronic Knee Pain  CHRONIC  KNEE PAIN
@@ -5722,7 +5722,7 @@ that approximately 20% of patients with chronic knee pain have had an MRI perfor
 prior year) radiographs [2 ]. 
 This document  discusses 5 variants for imaging chronic pain in a native knee in patients  ≥5 years of age.
 
-Score: 0.3445347845554352","mode: text
+Score: 0.34454792737960815","mode: text
 condition: ACR chronic knee pain
 
 The 
@@ -5744,7 +5744,7 @@ radiograph [9,10].
 Discussion of Pro cedures by Variant  
 Variant 1:  Adult or child greater than or equal to 5  year s of age . Chronic knee pain. Initial imaging.
 
-Score: 0.3538610339164734","mode: text
+Score: 0.35387155413627625","mode: text
 condition: ACR chronic knee pain
 
 Patellofemoral car tilage loss is also associated with chronic knee pain , with active knee pain correlated with 
@@ -5764,7 +5764,7 @@ capsulitis [15].  In particular, enh ancing synovitis thicker than 2 mm in Hoffa
 pain [46]. Contrast -enhanced MRI is also useful in quantifying the degree of synovitis and in evaluating 
 conditions such as pigmented villonodular synovitis [ 17,42,47,48].
 
-Score: 0.35718971490859985","mode: text
+Score: 0.3572825789451599","mode: text
 condition: ACR chronic knee pain
 
 MR Arthrography  Knee  
@@ -5791,7 +5791,7 @@ may be appropriate more often, knee aspiration and CT knee without IV contrast m
 specific instances detailed in the narrative. On occasion, these ex aminations  may complement each other  with 
 more than one being appropriate .
 
-Score: 0.36049696803092957"
+Score: 0.3605402112007141"
 30,"Adult or child greater than or equal to 5 years of age. Chronic knee pain. Initial knee radiograph demonstrates signs of prior osseous injury (ie, Segond fracture, tibial spine avulsion, etc). Next imaging procedure.",ACR chronic knee pain.pdf,5,UA,MRI knee without IV contrast,"16 year old Caucasian female.  Soccer player.  Now presenting with 6 month history of right knee pain.  Had episode of bad right knee sprain 6 months ago after being tackled during soccer game.  Felt a pop and swelling, but treated with ice, compression and over the counter medication.  Since then, has right knee pain, and feeling of instability.  Pain worsens on activity.  No night pain, no fever, no loss of weight/appetitie.  On examination, right knee anterior drawer positive, medial and lateral joint line tenderness.  No joint effusion.  X-rays shows suggestion of old Segond fracture.  MRI knee without IV contrast to assess for ACL and meniscal injury.  ","Patient Profile: 16 year old Caucasian female.  Soccer player.  Now presenting with 6 month history of right knee pain.  Had episode of bad right knee sprain 6 months ago after being tackled during soccer game.  Felt a pop and swelling, but treated with ice, compression and over the counter medication.  Since then, has right knee pain, and feeling of instability.  Pain worsens on activity.  No night pain, no fever, no loss of weight/appetitie.  On examination, right knee anterior drawer positive, medial and lateral joint line tenderness.  No joint effusion.  X-rays shows suggestion of old Segond fracture
 Scan ordered:   MRI knee without IV contrast to assess for ACL and meniscal injury","description:  Adult or child greater than or equal to 5 years of age. Chronic knee pain. Initial knee radiograph demonstrates signs of prior osseous injury (ie, Segond fracture, tibial spine avulsion, etc). Next imaging procedure.
 condition: ACR chronic knee pain
@@ -5811,7 +5811,7 @@ mode: tabular
 | US knee | Usually Not Appropriate |
 | Radiography hip ipsilateral | Usually Not Appropriate |
 
-Score: 0.2933798134326935","description:  Adult or child 5 years of age or older. Acute trauma to the knee. Mechanism unknown. Focal patellar tenderness, effusion, able to walk. Initial imaging.
+Score: 0.29362088441848755","description:  Adult or child 5 years of age or older. Acute trauma to the knee. Mechanism unknown. Focal patellar tenderness, effusion, able to walk. Initial imaging.
 condition: ACR acute trauma to knee
 mode: tabular
 
@@ -5829,7 +5829,7 @@ mode: tabular
 | MRI knee without IV contrast | Usually Not Appropriate |
 | US knee | Usually Not Appropriate |
 
-Score: 0.29549404978752136","description:  Adult or child 5 years of age or older. Fall or acute twisting trauma to the knee. No focal tenderness, no effusion, able to walk. Initial imaging.
+Score: 0.2956146001815796","description:  Adult or child 5 years of age or older. Fall or acute twisting trauma to the knee. No focal tenderness, no effusion, able to walk. Initial imaging.
 condition: ACR acute trauma to knee
 mode: tabular
 
@@ -5847,7 +5847,7 @@ mode: tabular
 | MRI knee without IV contrast | Usually Not Appropriate |
 | US knee | Usually Not Appropriate |
 
-Score: 0.30258893966674805","description:  Adult or child 5 years of age or older. Fall or acute twisting trauma to the knee. One or more of the following: focal tenderness, effusion, inability to bear weight. Initial imaging.
+Score: 0.3026886284351349","description:  Adult or child 5 years of age or older. Fall or acute twisting trauma to the knee. One or more of the following: focal tenderness, effusion, inability to bear weight. Initial imaging.
 condition: ACR acute trauma to knee
 mode: tabular
 
@@ -5865,7 +5865,7 @@ mode: tabular
 | MRI knee without IV contrast | Usually Not Appropriate |
 | US knee | Usually Not Appropriate |
 
-Score: 0.30522090196609497","description:  Adult or child greater than or equal to 5 years of age. Chronic knee pain. Initial knee radiograph negative or demonstrates joint effusion. Next imaging procedure.
+Score: 0.30533087253570557","description:  Adult or child greater than or equal to 5 years of age. Chronic knee pain. Initial knee radiograph negative or demonstrates joint effusion. Next imaging procedure.
 condition: ACR chronic knee pain
 mode: tabular
 
@@ -5884,7 +5884,7 @@ mode: tabular
 | CT knee without and with IV contrast | Usually Not Appropriate |
 | Bone scan knee | Usually Not Appropriate |
 
-Score: 0.32111889123916626","mode: text
+Score: 0.3213081359863281","mode: text
 condition: ACR chronic knee pain
 
 Variant 5:  Adult or child greater than or equal to 5 years of age.  Chronic knee pain. Initial knee 
@@ -6099,7 +6099,7 @@ with a history  of prior  rotator  cuff repair  when  rotator  cuff disorder  or
 CT Arthrography  Shoulder  
 As in the native  shoulder,  CT arthrography can be used to evaluate for rotator  cuff tear after surgery .
 
-Score: 0.3156200647354126","mode: text
+Score: 0.31551843881607056","mode: text
 condition: ACR chronic shoulder pain
 
 ACR Appropriateness Criteria® 7 Chronic Shoulder Pain  Variant  2: Chronic  shoulder  pain. Suspect  rotator  cuff disorders or subacromial  subdeltoid bursitis  (no prior  
@@ -6119,7 +6119,7 @@ CT Shoulder  With  IV Contrast
 There is insufficient  evidence to support  the use of CT shoulder  with IV contrast  in the evaluation  of chronic  
 shoulder  pain when  rotator  cuff disorder  or subacromial  subdeltoid bursitis  is suspected.
 
-Score: 0.31596896052360535","mode: text
+Score: 0.3158777356147766","mode: text
 condition: ACR chronic shoulder pain
 
 Although evaluation  of glenoid bony integrity  is typically  better  with CT imaging,  some  practitioners have  used 
@@ -6144,7 +6144,7 @@ CT Arthrography  Shoulder
 There is insufficient  evidence to support  the use of CT arthrography  shoulder  in the evaluation  of chronic  shoulder  
 pain when  adhesive capsulitis is suspected.
 
-Score: 0.31721609830856323","mode: text
+Score: 0.3171733319759369","mode: text
 condition: ACR chronic shoulder pain
 
 ACR Appropriateness Criteria® 10 Chronic Shoulder Pain  US Shoulder  
@@ -6165,7 +6165,7 @@ setting  may be better  with CT arthrography than MRI  in patients  with metalli
 used to evaluate for healing  after superior  labrum  anterior -to-posterior  (SLAP)  repair  [74]. Dual -energy  CT 
 arthrography  has a similar  diagnostic  performance  as MR arthrography  [75].
 
-Score: 0.3180849254131317","mode: text
+Score: 0.3179522156715393","mode: text
 condition: ACR chronic shoulder pain
 
 ACR Appropriateness Criteria® 5 Chronic Shoulder Pain  CHRONIC  SHOULDER PAIN  
@@ -6185,7 +6185,7 @@ measures such as physical  therapy  and cortico steroid  injections  to more  in
 surgery . This document  focuses on the imaging approach  to patients  with suspected  chronic  mechanical  shoulder  
 pain.
 
-Score: 0.31835412979125977"
+Score: 0.3182676434516907"
 32,Chronic shoulder pain. Suspect adhesive capsulitis. Initial radiographs normal or inconclusive. Next imaging study.,ACR chronic shoulder pain.pdf,5,MBA,MR arthrography shoulder,"53 year old Malay female.  Home maker. Past medical history of diabetes mellitus, hyperlipidemia, left breast fibroadenoma.  Right handed.  Now presenting with 8 month history of left shoulder pain, worsening over time with associated stiffness.  No inciting event. No night pain or fever.  Unable to sleep on left side.  On examination, significant reduced range of motion of left shoulder due to pain and/or stiffness.  X-rays show minimal acromiohumeral degeneration, otherwise unremarakable.  MRI arthrography of the left shoulder to evaluated for adhesive capsulitis.","Patient Profile: 53 year old Malay female.  Home maker. Past medical history of diabetes mellitus, hyperlipidemia, left breast fibroadenoma.  Right handed.  Now presenting with 8 month history of left shoulder pain, worsening over time with associated stiffness.  No inciting event. No night pain or fever.  Unable to sleep on left side.  On examination, significant reduced range of motion of left shoulder due to pain and/or stiffness.  X-rays show minimal acromiohumeral degeneration, otherwise unremarakable
 Scan ordered:   MRI arthrography of the left shoulder to evaluated for adhesive capsulitis","description:  Chronic shoulder pain. Suspect adhesive capsulitis. Initial radiographs normal or inconclusive. Next imaging study.
 condition: ACR chronic shoulder pain
@@ -6206,7 +6206,7 @@ mode: tabular
 | CT arthrography shoulder | Usually Not Appropriate |
 | FDG-PET/CT skull base to mid-thigh | Usually Not Appropriate |
 
-Score: 0.30162084102630615","description:  Chronic shoulder pain. History of prior rotator cuff repair. Suspect rotator cuff disorders or subacromial subdeltoid bursitis. Initial radiographs normal or inconclusive. Next imaging study.
+Score: 0.3012358248233795","description:  Chronic shoulder pain. History of prior rotator cuff repair. Suspect rotator cuff disorders or subacromial subdeltoid bursitis. Initial radiographs normal or inconclusive. Next imaging study.
 condition: ACR chronic shoulder pain
 mode: tabular
 
@@ -6225,7 +6225,7 @@ mode: tabular
 | CT shoulder without IV contrast | Usually Not Appropriate |
 | FDG-PET/CT skull base to mid-thigh | Usually Not Appropriate |
 
-Score: 0.32114535570144653","description:  Chronic shoulder pain. Radiographs demonstrate calcific tendinopathy or calcific bursitis. Next imaging study.
+Score: 0.3210862874984741","description:  Chronic shoulder pain. Radiographs demonstrate calcific tendinopathy or calcific bursitis. Next imaging study.
 condition: ACR chronic shoulder pain
 mode: tabular
 
@@ -6244,7 +6244,7 @@ mode: tabular
 | CT arthrography shoulder | Usually Not Appropriate |
 | FDG-PET/CT skull base to mid-thigh | Usually Not Appropriate |
 
-Score: 0.32124415040016174","description:  Chronic shoulder pain. Suspect rotator cuff disorders or subacromial subdeltoid bursitis (no prior surgery). Initial radiographs normal or inconclusive. Next imaging study.
+Score: 0.3212698698043823","description:  Chronic shoulder pain. Suspect rotator cuff disorders or subacromial subdeltoid bursitis (no prior surgery). Initial radiographs normal or inconclusive. Next imaging study.
 condition: ACR chronic shoulder pain
 mode: tabular
 
@@ -6263,7 +6263,7 @@ mode: tabular
 | CT shoulder without IV contrast | Usually Not Appropriate |
 | FDG-PET/CT skull base to mid-thigh | Usually Not Appropriate |
 
-Score: 0.32684364914894104","description:  Traumatic shoulder pain. Radiographs normal. Physical examination and history consistent with dislocation event or instability. Next imaging study.
+Score: 0.32675912976264954","description:  Traumatic shoulder pain. Radiographs normal. Physical examination and history consistent with dislocation event or instability. Next imaging study.
 condition: ACR shoulder pain traumatic
 mode: tabular
 
@@ -6280,7 +6280,7 @@ mode: tabular
 | Bone scan shoulder | Usually Not Appropriate |
 | US shoulder | Usually Not Appropriate |
 
-Score: 0.33002203702926636","mode: text
+Score: 0.3300178050994873","mode: text
 condition: ACR chronic shoulder pain
 
 ACR Appropriateness Criteria® 5 Chronic Shoulder Pain  CHRONIC  SHOULDER PAIN  
@@ -6300,7 +6300,7 @@ measures such as physical  therapy  and cortico steroid  injections  to more  in
 surgery . This document  focuses on the imaging approach  to patients  with suspected  chronic  mechanical  shoulder  
 pain.
 
-Score: 0.30369824171066284","mode: text
+Score: 0.30379927158355713","mode: text
 condition: ACR chronic shoulder pain
 
 Thickening of the coracohumeral  ligament, increased  rotator  interval  soft tissue,  and decrease d external  
@@ -6321,7 +6321,7 @@ specificity  for complete biceps ruptures . However,  Rol et al [119]  reported 
 subsequent  arthroscopy  in a study  consisting  mostly  of patients  who underwent  CT arthrography.  CT arthrography  
 diagnosis  of biceps tendinopathy is primarily  based  off the change in tendon  caliber.
 
-Score: 0.31377261877059937","mode: text
+Score: 0.31369587779045105","mode: text
 condition: ACR chronic shoulder pain
 
 ACR Appropriateness Criteria® 10 Chronic Shoulder Pain  US Shoulder  
@@ -6342,7 +6342,7 @@ setting  may be better  with CT arthrography than MRI  in patients  with metalli
 used to evaluate for healing  after superior  labrum  anterior -to-posterior  (SLAP)  repair  [74]. Dual -energy  CT 
 arthrography  has a similar  diagnostic  performance  as MR arthrography  [75].
 
-Score: 0.3259768486022949","mode: text
+Score: 0.3260423243045807","mode: text
 condition: ACR chronic shoulder pain
 
 However,  
@@ -6367,7 +6367,7 @@ US in the setting  of potential adhesive capsulitis  is often  used to exclude r
 US findings  that can be seen in patients  with adhesive capsulitis,  US is not typically  performed  specifically  for this 
 indication.
 
-Score: 0.3283541798591614","mode: text
+Score: 0.32827872037887573","mode: text
 condition: ACR shoulder pain traumatic
 
 However, this is not common 
@@ -6384,7 +6384,7 @@ MR Arthrography  Shoulder
 MR arthrography  has been reported to have a high sensitivity for detection of labral injury, r anging from 86%  to 
 100% [20,59,62-65] ; however, the issue of  selection bias is inherent in the design of many of these retrospective
 
-Score: 0.3319401741027832"
+Score: 0.33192962408065796"
 33,Chronic shoulder pain. History of prior rotator cuff repair. Suspect rotator cuff disorders or subacromial subdeltoid bursitis. Initial radiographs normal or inconclusive. Next imaging study.,ACR chronic shoulder pain.pdf,8,UNA,MRI shoulder without and with IV contrast,"41 year old Malay male.  Badminton player, representing club.  Right handed.  History of right shoulder arthroscopic rotator cuff repair 2 years ago.  Now presenting with 8 month history of right shoulder pain, limiting ability to participate in competitions.  Grip strength ok.  No night pain or fever.  On examination, impingement test is positive.  Reduced abduction due to pain.  X-rays show post repair changes but otherwise unremarkable.  MRI shoulder without and with IV contrast for further assessment.  ","Patient Profile: 41 year old Malay male.  Badminton player, representing club.  Right handed.  History of right shoulder arthroscopic rotator cuff repair 2 years ago.  Now presenting with 8 month history of right shoulder pain, limiting ability to participate in competitions.  Grip strength ok.  No night pain or fever.  On examination, impingement test is positive.  Reduced abduction due to pain.  X-rays show post repair changes but otherwise unremarkable
 Scan ordered:   MRI shoulder without and with IV contrast for further assessment","description:  Chronic shoulder pain. History of prior rotator cuff repair. Suspect rotator cuff disorders or subacromial subdeltoid bursitis. Initial radiographs normal or inconclusive. Next imaging study.
 condition: ACR chronic shoulder pain
@@ -6405,7 +6405,7 @@ mode: tabular
 | CT shoulder without IV contrast | Usually Not Appropriate |
 | FDG-PET/CT skull base to mid-thigh | Usually Not Appropriate |
 
-Score: 0.262042760848999","description:  Traumatic shoulder pain. Radiographs normal. Physical examination findings consistent with rotator cuff tear. Next imaging study.
+Score: 0.2618972063064575","description:  Traumatic shoulder pain. Radiographs normal. Physical examination findings consistent with rotator cuff tear. Next imaging study.
 condition: ACR shoulder pain traumatic
 mode: tabular
 
@@ -6422,7 +6422,7 @@ mode: tabular
 | MRI shoulder without and with IV contrast | Usually Not Appropriate |
 | Bone scan shoulder | Usually Not Appropriate |
 
-Score: 0.28480264544487","description:  Chronic shoulder pain. Suspect rotator cuff disorders or subacromial subdeltoid bursitis (no prior surgery). Initial radiographs normal or inconclusive. Next imaging study.
+Score: 0.28475505113601685","description:  Chronic shoulder pain. Suspect rotator cuff disorders or subacromial subdeltoid bursitis (no prior surgery). Initial radiographs normal or inconclusive. Next imaging study.
 condition: ACR chronic shoulder pain
 mode: tabular
 
@@ -6441,7 +6441,7 @@ mode: tabular
 | CT shoulder without IV contrast | Usually Not Appropriate |
 | FDG-PET/CT skull base to mid-thigh | Usually Not Appropriate |
 
-Score: 0.2862607538700104","description:  Symptomatic patient with a primary shoulder arthroplasty, infection excluded. Suspected rotator cuff tear or other soft-tissue abnormality. Additional imaging following radiographs.
+Score: 0.28608939051628113","description:  Symptomatic patient with a primary shoulder arthroplasty, infection excluded. Suspected rotator cuff tear or other soft-tissue abnormality. Additional imaging following radiographs.
 condition: ACR imaging after shoulder arthroplasty
 mode: tabular
 
@@ -6458,7 +6458,7 @@ mode: tabular
 | CT shoulder without IV contrast | Usually Not Appropriate |
 | Fluoride PET/CT skull base to mid-thigh | Usually Not Appropriate |
 
-Score: 0.30182114243507385","description:  Traumatic shoulder pain. Radiographs normal. Physical examination and history consistent with dislocation event or instability. Next imaging study.
+Score: 0.30175575613975525","description:  Traumatic shoulder pain. Radiographs normal. Physical examination and history consistent with dislocation event or instability. Next imaging study.
 condition: ACR shoulder pain traumatic
 mode: tabular
 
@@ -6475,7 +6475,7 @@ mode: tabular
 | Bone scan shoulder | Usually Not Appropriate |
 | US shoulder | Usually Not Appropriate |
 
-Score: 0.30610406398773193","mode: text
+Score: 0.3061184287071228","mode: text
 condition: ACR chronic shoulder pain
 
 ACR Appropriateness Criteria® 7 Chronic Shoulder Pain  Variant  2: Chronic  shoulder  pain. Suspect  rotator  cuff disorders or subacromial  subdeltoid bursitis  (no prior  
@@ -6610,7 +6610,7 @@ mode: tabular
 | CT shoulder without and with IV contrast | Usually Not Appropriate |
 | FDG-PET/CT skull base to mid-thigh | Usually Not Appropriate |
 
-Score: 0.3089134097099304","description:  Symptomatic patient with a primary shoulder arthroplasty. Initial imaging.
+Score: 0.30895936489105225","description:  Symptomatic patient with a primary shoulder arthroplasty. Initial imaging.
 condition: ACR imaging after shoulder arthroplasty
 mode: tabular
 
@@ -6627,7 +6627,7 @@ mode: tabular
 | CT shoulder without IV contrast | Usually Not Appropriate |
 | Fluoride PET/CT skull base to mid-thigh | Usually Not Appropriate |
 
-Score: 0.31298184394836426","description:  Routine follow-up of the asymptomatic patient with a primary shoulder arthroplasty.
+Score: 0.3129642903804779","description:  Routine follow-up of the asymptomatic patient with a primary shoulder arthroplasty.
 condition: ACR imaging after shoulder arthroplasty
 mode: tabular
 
@@ -6644,7 +6644,7 @@ mode: tabular
 | CT shoulder without IV contrast | Usually Not Appropriate |
 | Fluoride PET/CT skull base to mid-thigh | Usually Not Appropriate |
 
-Score: 0.3213590383529663","description:  Chronic shoulder pain. History of prior rotator cuff repair. Suspect rotator cuff disorders or subacromial subdeltoid bursitis. Initial radiographs normal or inconclusive. Next imaging study.
+Score: 0.3213353753089905","description:  Chronic shoulder pain. History of prior rotator cuff repair. Suspect rotator cuff disorders or subacromial subdeltoid bursitis. Initial radiographs normal or inconclusive. Next imaging study.
 condition: ACR chronic shoulder pain
 mode: tabular
 
@@ -6663,7 +6663,7 @@ mode: tabular
 | CT shoulder without IV contrast | Usually Not Appropriate |
 | FDG-PET/CT skull base to mid-thigh | Usually Not Appropriate |
 
-Score: 0.3234387934207916","description:  Chronic shoulder pain. Initial imaging.
+Score: 0.3233740031719208","description:  Chronic shoulder pain. Initial imaging.
 condition: ACR chronic shoulder pain
 mode: tabular
 
@@ -6682,7 +6682,7 @@ mode: tabular
 | CT arthrography shoulder | Usually Not Appropriate |
 | FDG-PET/CT skull base to mid-thigh | Usually Not Appropriate |
 
-Score: 0.3255544900894165","mode: text
+Score: 0.3255305886268616","mode: text
 condition: ACR imaging after shoulder arthroplasty
 
 Postoperative  abnormalities  and associated  conditions  include  patients’  dissatisfaction,  prosthetic  
@@ -7077,7 +7077,7 @@ from  81% to 88% and 50% to 74% versus 81% to 85% and 74% to 85%, respectively ,
 reported that an abnormal scan could not differentiate aseptic loosening from infection. Although a normal result 
 excluded aseptic loosening and infection, the ability of the bone scan to identify or exclude other conditions such as wear, osteolysis, and soft tissue abnormalities as the cause of the patient’s symptoms was not addressed.
 
-Score: 0.3152253031730652","mode: text
+Score: 0.31477776169776917","mode: text
 condition: ACR chronic hip pain
 
 ACR Appropriateness  Criteria® 5 Chronic  Hip Pain CHRONIC  HIP PAIN  
@@ -7097,7 +7097,7 @@ conditions  is widely  discussed  in the published  literature.
 Before  imaging,  an appropriate  assessment  of a patient’s  clinical  history  and physical  examination  is essential  in 
 trying  to pare down the range  of possible etiologies  for a patient’s  symptoms.
 
-Score: 0.32895904779434204","mode: text
+Score: 0.327674925327301","mode: text
 condition: ACR imaging after total hip arthroplasty
 
 In a review,  Fritz  et al [18] noted  that radiographs  are usual ly the first imaging  modality  for patients  with 
@@ -7115,7 +7115,7 @@ Component  position  can be assessed  [65].
 Mathar u et al [54] found hips with resurfacing  arthroplasties and symptomatic  pseudotumors  were more  likely  than 
 those  without  pseudotumors  to have  abnormal  radiographs  (80.0%  compared  with 63.4%).  Radiographic  features
 
-Score: 0.33550119400024414","mode: text
+Score: 0.3358045816421509","mode: text
 condition: ACR imaging after total hip arthroplasty
 
 ACR Appropriateness Criteria® 12 Imaging After Total Hip Arthroplasty  demonstrated  that for lesions of all sizes,  CT was less sensitive than MRI (CT, 74.7%  sensitive and MRI,  95.4%  
@@ -7136,7 +7136,7 @@ Intraarticular  anesthetic has been  used to evaluate painful  THAs,  primarily 
 from  the spine)  from  pain originating  in the hip [127] . Significant pain relief  after intraarticular  anesthetic injection  
 suggests an intraarticular  cause [128,129] .
 
-Score: 0.3381918966770172","mode: text
+Score: 0.33836719393730164","mode: text
 condition: ACR imaging after total hip arthroplasty
 
 ACR Appropriateness Criteria® 9 Imaging After Total Hip Arthroplasty  Fluoride  PET/CT Skull Base To Mid-Thigh 
@@ -7162,7 +7162,7 @@ Ong et al [74] found the incidence of infection  after THA  in the Medicare popu
 within  2 years and 0.59%  between  2 and 10 years.  The identification  of periprosthetic  infection  is critical  to choosing  
 appropriate  treatment  but diagnosis  can be challenging  [75].
 
-Score: 0.34041228890419006"
+Score: 0.34034836292266846"
 37,"Symptomatic hip arthroplasty patient, history of acute injury. Additional imaging following radiographs.",ACR imaging after total hip arthroplasty.pdf,3,MBA,MRI hip without IV contrast,"80 year old Caucasian male.  Post right total hip replacement for severe osteoarthritis 3 years ago.  History of hypertension on medications.  Now presenting with 2 day history of right hip pain post fall.  On examination, no obvious hip or limb deformity.  Range of motion assessment is limited by pain.  X-rays show no periprosthetic fracture or loosening.  For MRI right hip without IV contrast for further assessment.","Patient Profile: 80 year old Caucasian male.  Post right total hip replacement for severe osteoarthritis 3 years ago.  History of hypertension on medications.  Now presenting with 2 day history of right hip pain post fall.  On examination, no obvious hip or limb deformity.  Range of motion assessment is limited by pain.  X-rays show no periprosthetic fracture or loosening
 Scan ordered:   For MRI right hip without IV contrast for further assessment","description:  Chronic hip pain with low back or knee pathology or pain. Radiographs demonstrate hip osteoarthritis. Want to quantify amount of pain related to the hip. Next imaging study.
 condition: ACR chronic hip pain
@@ -7267,7 +7267,7 @@ Component  position  can be assessed  [65].
 Mathar u et al [54] found hips with resurfacing  arthroplasties and symptomatic  pseudotumors  were more  likely  than 
 those  without  pseudotumors  to have  abnormal  radiographs  (80.0%  compared  with 63.4%).  Radiographic  features
 
-Score: 0.30753231048583984","mode: text
+Score: 0.3075108528137207","mode: text
 condition: ACR imaging after total hip arthroplasty
 
 ACR Appropriateness Criteria® 11 Imaging After Total Hip Arthroplasty  hip replacements and 33 patients  who had pain in the hip after arthroplasty  and radiologic  findings  consistent  with 
@@ -7288,7 +7288,7 @@ from  81% to 88% and 50% to 74% versus 81% to 85% and 74% to 85%, respectively ,
 reported that an abnormal scan could not differentiate aseptic loosening from infection. Although a normal result 
 excluded aseptic loosening and infection, the ability of the bone scan to identify or exclude other conditions such as wear, osteolysis, and soft tissue abnormalities as the cause of the patient’s symptoms was not addressed.
 
-Score: 0.3088889718055725","mode: text
+Score: 0.3091563582420349","mode: text
 condition: ACR imaging after total hip arthroplasty
 
 ACR Appropriateness Criteria® 9 Imaging After Total Hip Arthroplasty  Fluoride  PET/CT Skull Base To Mid-Thigh 
@@ -7314,7 +7314,7 @@ Ong et al [74] found the incidence of infection  after THA  in the Medicare popu
 within  2 years and 0.59%  between  2 and 10 years.  The identification  of periprosthetic  infection  is critical  to choosing  
 appropriate  treatment  but diagnosis  can be challenging  [75].
 
-Score: 0.3144184947013855","mode: text
+Score: 0.3148568272590637","mode: text
 condition: ACR imaging after total hip arthroplasty
 
 ACR Appropriateness Criteria® 12 Imaging After Total Hip Arthroplasty  demonstrated  that for lesions of all sizes,  CT was less sensitive than MRI (CT, 74.7%  sensitive and MRI,  95.4%  
@@ -7335,28 +7335,28 @@ Intraarticular  anesthetic has been  used to evaluate painful  THAs,  primarily 
 from  the spine)  from  pain originating  in the hip [127] . Significant pain relief  after intraarticular  anesthetic injection  
 suggests an intraarticular  cause [128,129] .
 
-Score: 0.32215750217437744","mode: text
-condition: ACR imaging after total hip arthroplasty
+Score: 0.32284319400787354","mode: text
+condition: ACR acute hip pain suspected fracture
 
-ACR Appropriateness Criteria® 4 Imaging After Total Hip Arthroplasty  IMAGING  AFTER  TOTAL  HIP ARTHROPLASTY  
-Expert  Panel  on Musculoskeletal  Imaging:  Barbara  N. Weissman,  MDa; Christopher J. Palestro, MDb;  
-Michael G. Fox, MD, MBAc; Angela M. Bell, MDd; Donna G. Blankenbaker, MDe; Matthew A. Frick, MDf;  
-Shari T. Jawetz, MDg; Phillip H. Kuo, MD, PhDh; Nicholas Said, MD, MBAi; J. Derek Stensby, MDj;  
-Naveen Subhas, MD, MPHk; Kat herine M. Tynus, MDl; Eric A. Walker, MD, MHAm; Mark J. Kransdorf, MD.n 
-Summary  of Literature Review  
+ACR Appropriateness Criteria® 2 Acute Hip Pain -Suspected Fracture  Acute Hip Pain-Suspected Fracture  
+Expert Panel on Musculoskeletal Imaging: Andrew B. Ross,  MD, MPHa; Kenneth  S. Lee, MD, MBAb;  
+Eric Y. Chang,  MDc; Behrang  Amini, MD, PhDd; Jennifer  K. Bussell,  MDe; Tetyana Gorbachova,  MDf;  
+Alice S. Ha, MDg; Bharti  Khurana,  MDh; Alan  Klitzke,  MDi; Pekka  A. Mooar,  MDj; Nehal  A. Shah,  MDk;  
+Adam  D. Singer, MDl; Stacy  E. Smith, MDm; Mihra  S. Taljanovic,  MD, PhDn; Mark  J. Kransdorf,  MD.o  
+Summary of Literature Review  
 Introduction/Background 
-It has been  approximately  60 years since Sir John Charnl ey introduced the modern era of hip replacement  surgery  
-[1]. Approximately  370,000 primary  total hip arthroplasties (THAs)  were performed  in the United  States in 2014  
-[2]. Sloan  et al [2] estimated  that the volume of primary  THAs  would  increase to 635,000 procedure s annually by 
-2030.  
-Over  the years,  modifications  have  been  made  to attempt  to decrease  complications  such as loosening and wear  
-with additional  fixation  techniques  (eg, osseointegration ) and articular  surfaces  (eg, metal  on highly  cross -linked  
-polyethylene , antioxidant  doped polyethylene  liners,  metal -on-metal  [MoM], ceramic on polyethylene , and ceramic  
-on ceramic articulations)  [3-5]. 
-Second -generation  MoM prostheses were introduced in the late 1990s  [6]. These  prostheses were preferentially  
-used for younger  patients  with osteoarthritis  [7].
+Fractures of the proximal femur (commonly referred to as hip fractures)  are a frequent  source of morbidity and 
+mortality in elderly osteoporotic patients [1]. Typically the result of a ground -level fall, fractures of this type 
+result in approximately 300,000 hospitalizations per year  and are nearly twice as common in women as in men 
+[2,3] . As the United States population continues to age, the incidence of hip fractures and associated medical costs 
+will continue to rise, predicted to reach $18 billion by 2025 [4]. Patients suffer a substantial decline in quality of 
+life following a hip fracture [5] as well as a 1-year mortality  rate of 22% for women and 33% for men [1]. Delays 
+in diagnosis and treatment are associated with increased cost, complication rate, length of hospital stay, and short -
+and long-term mortality [6-13]. Therefore, rapid diagnosis and treatment of hip fractures is critical. Hip fractures 
+cannot be reliably diagnosed or excluded on the basis of physical exam ination  alone ; therefore , imaging plays a 
+key role in early  and accurate diagnosis [14] .
 
-Score: 0.32289570569992065"
+Score: 0.322953999042511"
 38,"Symptomatic hip arthroplasty patient, infection not excluded. Additional imaging following radiographs.",ACR imaging after total hip arthroplasty.pdf,4,UA,MRI hip without IV contrast,"67 year old Malay male.  Post left hip bipolar hemiarthroplasty post neck of femur fracture.  Past medical history of poorly controlled diabetes, end stage renal failure on peritoneal dialysis, prior intestinal obstruction post small bowel resection due to adhesions, ischemic heart disease on optimal medical treatment.  Now presenting 1 month post left hip hemiarthroplasty with hip pain and fever for 1 week.  On examination, no obvious discharging skin sinus.  Limited range of motion due to pain.  X-rays show no obvious periprosthetic fracture or loosening, no destructive bone lesion or soft tissue gas.  Total white blood cell count and CRP are elevated.  For MRI of the left hip without IV contrast to assess for implant infection.  ","Patient Profile: 67 year old Malay male.  Post left hip bipolar hemiarthroplasty post neck of femur fracture.  Past medical history of poorly controlled diabetes, end stage renal failure on peritoneal dialysis, prior intestinal obstruction post small bowel resection due to adhesions, ischemic heart disease on optimal medical treatment.  Now presenting 1 month post left hip hemiarthroplasty with hip pain and fever for 1 week.  On examination, no obvious discharging skin sinus.  Limited range of motion due to pain.  X-rays show no obvious periprosthetic fracture or loosening, no destructive bone lesion or soft tissue gas.  Total white blood cell count and CRP are elevated
 Scan ordered:   For MRI of the left hip without IV contrast to assess for implant infection","description:  Evaluation of symptomatic hip arthroplasty patient with metal-on-metal prosthesis or findings suggesting trunnionosis. Question of adverse reaction to metal debris. Additional imaging following radiographs.
 condition: ACR imaging after total hip arthroplasty
@@ -7476,7 +7476,7 @@ Ong et al [74] found the incidence of infection  after THA  in the Medicare popu
 within  2 years and 0.59%  between  2 and 10 years.  The identification  of periprosthetic  infection  is critical  to choosing  
 appropriate  treatment  but diagnosis  can be challenging  [75].
 
-Score: 0.283846378326416","mode: text
+Score: 0.28338587284088135","mode: text
 condition: ACR imaging after total hip arthroplasty
 
 Guidelines  for patient evaluation  have  been  developed  
@@ -7498,7 +7498,7 @@ Schweizer  et al [83] retrospectively  studied  58 total hip prostheses,  includ
 prostheses,  with bone  scan with SPECT/CT. SPECT/CT identified  the cause of pain in 19 (61%)  of the 31 
 symptomatic  devices.  No pathology-specific uptake  pattern  was observed.
 
-Score: 0.3012508153915405","mode: text
+Score: 0.3011276125907898","mode: text
 condition: ACR imaging after total hip arthroplasty
 
 ACR Appropriateness Criteria® 11 Imaging After Total Hip Arthroplasty  hip replacements and 33 patients  who had pain in the hip after arthroplasty  and radiologic  findings  consistent  with 
@@ -7519,7 +7519,7 @@ from  81% to 88% and 50% to 74% versus 81% to 85% and 74% to 85%, respectively ,
 reported that an abnormal scan could not differentiate aseptic loosening from infection. Although a normal result 
 excluded aseptic loosening and infection, the ability of the bone scan to identify or exclude other conditions such as wear, osteolysis, and soft tissue abnormalities as the cause of the patient’s symptoms was not addressed.
 
-Score: 0.3042695224285126","mode: text
+Score: 0.30407804250717163","mode: text
 condition: ACR imaging after total hip arthroplasty
 
 Evaluation  
@@ -7538,7 +7538,7 @@ Radiographic  Arthrography  Hip
 There is no recent  literature  to support  the current  use of conventional  arthrography of the hip in the evaluation  of 
 periprosthetic  infection .
 
-Score: 0.30464792251586914","mode: text
+Score: 0.30471858382225037","mode: text
 condition: ACR imaging after total hip arthroplasty
 
 Fluoride  PET/CT Skull Base To Mid-Thigh 
@@ -7560,7 +7560,7 @@ marrow  edema,  and periosteal  reaction  [72,109-112] .
 IV contrast  can be used to differentiate  phlegmon from  abscess and to define  sinus  tracts and communicating fluid  
 collections  [72]. However,  IV contrast  is generally  not necessary  to make  the diagnosis  of infection  [72].
 
-Score: 0.3166453540325165"
+Score: 0.31611019372940063"
 39,"Hip arthroplasty patient with trochanteric pain. Suspect abductor injury, or trochanteric bursitis, or other soft tissue abnormality. Additional imaging following radiographs.",ACR imaging after total hip arthroplasty.pdf,7,UA,MRI hip without IV contrast,"64 year old Chinese female.  Post right hip bipolar hemiarthroplasty post neck of femur fracture.  Now presenting 3 months after operation due to right lateral hip pain.  Painful to sleep on right hip.  No fever.  On examination, tender over right greater trochanter.  Pain on forced abduction of right hip.  X-rays show no periprosthetic fracture or loosening, no obvious myositis ossificans.  For MRI right hip without IV contrast to assess for trochanteric bursitis.","Patient Profile: 64 year old Chinese female.  Post right hip bipolar hemiarthroplasty post neck of femur fracture.  Now presenting 3 months after operation due to right lateral hip pain.  Painful to sleep on right hip.  No fever.  On examination, tender over right greater trochanter.  Pain on forced abduction of right hip.  X-rays show no periprosthetic fracture or loosening, no obvious myositis ossificans
 Scan ordered:   For MRI right hip without IV contrast to assess for trochanteric bursitis","description:  Hip arthroplasty patient with trochanteric pain. Suspect abductor injury, or trochanteric bursitis, or other soft tissue abnormality. Additional imaging following radiographs.
 condition: ACR imaging after total hip arthroplasty
@@ -8154,7 +8154,7 @@ mode: tabular
 | US knee | Usually Not Appropriate |
 | Radiography hip ipsilateral | Usually Not Appropriate |
 
-Score: 0.3564313054084778","description:  Adult or child greater than or equal to 5 years of age. Chronic knee pain. Initial knee radiograph demonstrates osteochondritis dissecans (OCD), loose bodies, or history of cartilage or meniscal repair. Next imaging procedure.
+Score: 0.3563152551651001","description:  Adult or child greater than or equal to 5 years of age. Chronic knee pain. Initial knee radiograph demonstrates osteochondritis dissecans (OCD), loose bodies, or history of cartilage or meniscal repair. Next imaging procedure.
 condition: ACR chronic knee pain
 mode: tabular
 
@@ -8172,7 +8172,7 @@ mode: tabular
 | Bone scan knee | Usually Not Appropriate |
 | Radiography hip ipsilateral | Usually Not Appropriate |
 
-Score: 0.35689252614974976","description:  Skeletally immature child. Fall or acute twisting trauma to the knee. No fracture seen on radiographs. Suspect occult fracture or internal derangement. Next study.
+Score: 0.3567303419113159","description:  Skeletally immature child. Fall or acute twisting trauma to the knee. No fracture seen on radiographs. Suspect occult fracture or internal derangement. Next study.
 condition: ACR acute trauma to knee
 mode: tabular
 
@@ -8189,7 +8189,7 @@ mode: tabular
 | MRI knee without and with IV contrast | Usually Not Appropriate |
 | US knee | Usually Not Appropriate |
 
-Score: 0.358014851808548","description:  Adult or skeletally mature child. Fall or acute twisting trauma to the knee. No fracture seen on radiographs. Suspect occult fracture or internal derangement. Next study.
+Score: 0.35787713527679443","description:  Adult or skeletally mature child. Fall or acute twisting trauma to the knee. No fracture seen on radiographs. Suspect occult fracture or internal derangement. Next study.
 condition: ACR acute trauma to knee
 mode: tabular
 
@@ -8206,7 +8206,7 @@ mode: tabular
 | MRI knee without and with IV contrast | Usually Not Appropriate |
 | US knee | Usually Not Appropriate |
 
-Score: 0.3730727434158325","description:  Malignant or aggressive primary musculoskeletal tumor with no suspected or known recurrence. Surveillance for pulmonary metastasis.
+Score: 0.37292951345443726","description:  Malignant or aggressive primary musculoskeletal tumor with no suspected or known recurrence. Surveillance for pulmonary metastasis.
 condition: ACR aggressive primary msk tumour staging and surveillance
 mode: tabular
 
@@ -8219,7 +8219,7 @@ mode: tabular
 | CT chest without and with IV contrast | Usually Not Appropriate |
 | FDG-PET/MRI whole body | Usually Not Appropriate |
 
-Score: 0.37449976801872253","mode: text
+Score: 0.3745361268520355","mode: text
 condition: ACR aggressive primary msk tumour staging and surveillance
 
 Local  recurrence  rates  of bone  sarcomas  are reported  to be approximately  10% to 15% 
@@ -8537,7 +8537,7 @@ mode: tabular
 | US knee | Usually Not Appropriate |
 | Radiography hip ipsilateral | Usually Not Appropriate |
 
-Score: 0.30059775710105896","description:  Adult or child 5 years of age or older. Acute trauma to the knee. Mechanism unknown. Focal patellar tenderness, effusion, able to walk. Initial imaging.
+Score: 0.30025339126586914","description:  Adult or child 5 years of age or older. Acute trauma to the knee. Mechanism unknown. Focal patellar tenderness, effusion, able to walk. Initial imaging.
 condition: ACR acute trauma to knee
 mode: tabular
 
@@ -8555,7 +8555,7 @@ mode: tabular
 | MRI knee without IV contrast | Usually Not Appropriate |
 | US knee | Usually Not Appropriate |
 
-Score: 0.31216394901275635","description:  Adult or child greater than or equal to 5 years of age. Chronic knee pain. Initial knee radiograph negative or demonstrates joint effusion. Next imaging procedure.
+Score: 0.31173306703567505","description:  Adult or child greater than or equal to 5 years of age. Chronic knee pain. Initial knee radiograph negative or demonstrates joint effusion. Next imaging procedure.
 condition: ACR chronic knee pain
 mode: tabular
 
@@ -8574,7 +8574,7 @@ mode: tabular
 | CT knee without and with IV contrast | Usually Not Appropriate |
 | Bone scan knee | Usually Not Appropriate |
 
-Score: 0.312478244304657","description:  Adult or child 5 years of age or older. Fall or acute twisting trauma to the knee. No focal tenderness, no effusion, able to walk. Initial imaging.
+Score: 0.31212949752807617","description:  Adult or child 5 years of age or older. Fall or acute twisting trauma to the knee. No focal tenderness, no effusion, able to walk. Initial imaging.
 condition: ACR acute trauma to knee
 mode: tabular
 
@@ -8592,7 +8592,7 @@ mode: tabular
 | MRI knee without IV contrast | Usually Not Appropriate |
 | US knee | Usually Not Appropriate |
 
-Score: 0.32234111428260803","description:  Adult or child greater than or equal to 5 years of age. Chronic knee pain. Initial imaging.
+Score: 0.321922242641449","description:  Adult or child greater than or equal to 5 years of age. Chronic knee pain. Initial imaging.
 condition: ACR chronic knee pain
 mode: tabular
 
@@ -8611,7 +8611,7 @@ mode: tabular
 | US knee | Usually Not Appropriate |
 | Radiography hip ipsilateral | Usually Not Appropriate |
 
-Score: 0.32606348395347595","mode: text
+Score: 0.3258141577243805","mode: text
 condition: ACR chronic knee pain
 
 Variant 5:  Adult or child greater than or equal to 5 years of age.  Chronic knee pain. Initial knee 
@@ -8620,7 +8620,29 @@ imaging procedure .
 When associated with acute injury, recommendations are covered in the  ACR Appropriateness Criteria® topic on 
 “Acute Trauma to the Knee”  [4].
 
-Score: 0.3020920753479004","mode: text
+Score: 0.3018641471862793","mode: text
+condition: ACR chronic knee pain
+
+ACR Appropriateness Criteria® 6 Chronic Knee Pain  of age having an asymptomatic meniscal tear , and the likelihood of a meniscal tear being present in either a 
+painful or asymptomatic knee not significantly different in patients 45 to 55 years of age [20,21]. 
+Bone marrow lesions (BML) are readily depicted on MRI as areas of increased edema-like signal in the 
+subchondral bone.  New or increasing BMLs are associated with increased knee pain, especially in males or 
+patients with family history of osteoarthritis [22].  Conversely, decreasing BMLs are associated with reduced knee 
+pain [23]. A systematic review of 22 articles concluded that both BMLs and synovitis/effusion may indicate the 
+origin of knee pain in patients with osteoarthritis [24- 26]. 
+Subchondral insufficiency fractures, now recognized as the underlying cause of what was previously termed 
+spontaneous osteonecrosis of the knee,  most commonly i nvolve the medial femoral condyle in middle -aged to 
+elderly females. MRI can identify subchondral insufficiency fractures earlier than radiographs with radiographs 
+often initially normal [27]. Radiographs may later reveal articular surface fragmentation, subchondral collapse, 
+and progressive osteoarthritis sometimes requiring total knee arthroplasty [27]. Even when a subchondral insufficiency fracture is diagnosed on a conventional radiograph, MRI may be indicated if an additional injury is 
+suspected clinically.  MRI can also detect tibial stress fractures as discussed in the AC R Appropriateness Criteria
+® 
+topic on “ Stress (Fatigue/Insufficiency) Fracture, Including Sacrum, Excluding Other Vertebrae ” [28]. 
+Some patients with normal knee radiographs and anterior knee pain have abnormal cartilage on 3 T MRI using 
+quantitative imaging [29].  In particular, patients 45 to 55 years of age with knee pain but normal radiographs 
+exhibited elevated T2 mapping values on 3 T MRI [20 ].
+
+Score: 0.3152044713497162","mode: text
 condition: ACR chronic knee pain
 
 MR Arthrography  Knee  
@@ -8647,29 +8669,7 @@ may be appropriate more often, knee aspiration and CT knee without IV contrast m
 specific instances detailed in the narrative. On occasion, these ex aminations  may complement each other  with 
 more than one being appropriate .
 
-Score: 0.31542888283729553","mode: text
-condition: ACR chronic knee pain
-
-ACR Appropriateness Criteria® 6 Chronic Knee Pain  of age having an asymptomatic meniscal tear , and the likelihood of a meniscal tear being present in either a 
-painful or asymptomatic knee not significantly different in patients 45 to 55 years of age [20,21]. 
-Bone marrow lesions (BML) are readily depicted on MRI as areas of increased edema-like signal in the 
-subchondral bone.  New or increasing BMLs are associated with increased knee pain, especially in males or 
-patients with family history of osteoarthritis [22].  Conversely, decreasing BMLs are associated with reduced knee 
-pain [23]. A systematic review of 22 articles concluded that both BMLs and synovitis/effusion may indicate the 
-origin of knee pain in patients with osteoarthritis [24- 26]. 
-Subchondral insufficiency fractures, now recognized as the underlying cause of what was previously termed 
-spontaneous osteonecrosis of the knee,  most commonly i nvolve the medial femoral condyle in middle -aged to 
-elderly females. MRI can identify subchondral insufficiency fractures earlier than radiographs with radiographs 
-often initially normal [27]. Radiographs may later reveal articular surface fragmentation, subchondral collapse, 
-and progressive osteoarthritis sometimes requiring total knee arthroplasty [27]. Even when a subchondral insufficiency fracture is diagnosed on a conventional radiograph, MRI may be indicated if an additional injury is 
-suspected clinically.  MRI can also detect tibial stress fractures as discussed in the AC R Appropriateness Criteria
-® 
-topic on “ Stress (Fatigue/Insufficiency) Fracture, Including Sacrum, Excluding Other Vertebrae ” [28]. 
-Some patients with normal knee radiographs and anterior knee pain have abnormal cartilage on 3 T MRI using 
-quantitative imaging [29].  In particular, patients 45 to 55 years of age with knee pain but normal radiographs 
-exhibited elevated T2 mapping values on 3 T MRI [20 ].
-
-Score: 0.3154807984828949","mode: text
+Score: 0.31557682156562805","mode: text
 condition: ACR chronic knee pain
 
 ACR Appropriateness Criteria® 4 Chronic Knee Pain  CHRONIC  KNEE PAIN
@@ -8691,7 +8691,7 @@ that approximately 20% of patients with chronic knee pain have had an MRI perfor
 prior year) radiographs [2 ]. 
 This document  discusses 5 variants for imaging chronic pain in a native knee in patients  ≥5 years of age.
 
-Score: 0.32275694608688354","mode: text
+Score: 0.3223307728767395","mode: text
 condition: ACR chronic knee pain
 
 The 
@@ -8713,7 +8713,7 @@ radiograph [9,10].
 Discussion of Pro cedures by Variant  
 Variant 1:  Adult or child greater than or equal to 5  year s of age . Chronic knee pain. Initial imaging.
 
-Score: 0.33396634459495544"
+Score: 0.33355003595352173"
 45,Suspect primary bone tumor. Radiographs or clinical presentation suggest osteoid osteoma. Next imaging study.,ACR primary bone tumours.pdf,4,MBA,MRI area of interest without and with IV contrast,"17 year old Malay female.  No prior medical history.  Does Malay dance as co-curricular activity in school. Now presenting with 2 month history of right thigh dull pain, sometimes worse at night.  Affects her ability do dance.  Pain improves on naproxen.  No fever, no loss of weight or appetiite.  On examination: antalgic gait.  No gross mass palpated at right thigh.  Right hip and knee full range of motion.  No limb length discrepancy.  X-rays raise possiblity of osteoid osteoma at right femur shaft.  MRI right thigh without and with IV contrast to confirm finding of osteoid osteoma.","Patient Profile: 17 year old Malay female.  No prior medical history.  Does Malay dance as co-curricular activity in school. Now presenting with 2 month history of right thigh dull pain, sometimes worse at night.  Affects her ability do dance.  Pain improves on naproxen.  No fever, no loss of weight or appetiite.  On examination: antalgic gait.  No gross mass palpated at right thigh.  Right hip and knee full range of motion.  No limb length discrepancy.  X-rays raise possiblity of osteoid osteoma at right femur shaft
 Scan ordered:   MRI right thigh without and with IV contrast to confirm finding of osteoid osteoma","description:  Chronic hip pain with low back or knee pathology or pain. Radiographs demonstrate hip osteoarthritis. Want to quantify amount of pain related to the hip. Next imaging study.
 condition: ACR chronic hip pain
@@ -8733,7 +8733,7 @@ mode: tabular
 | CT hip without IV contrast | Usually Not Appropriate |
 | Fluoride PET/CT skull base to mid-thigh | Usually Not Appropriate |
 
-Score: 0.3448293209075928","description:  Adult or child greater than or equal to 5 years of age. Chronic knee pain. Initial knee radiograph demonstrates signs of prior osseous injury (ie, Segond fracture, tibial spine avulsion, etc). Next imaging procedure.
+Score: 0.34465622901916504","description:  Adult or child greater than or equal to 5 years of age. Chronic knee pain. Initial knee radiograph demonstrates signs of prior osseous injury (ie, Segond fracture, tibial spine avulsion, etc). Next imaging procedure.
 condition: ACR chronic knee pain
 mode: tabular
 
@@ -8751,7 +8751,7 @@ mode: tabular
 | US knee | Usually Not Appropriate |
 | Radiography hip ipsilateral | Usually Not Appropriate |
 
-Score: 0.3617900013923645","description:  Chronic hip pain. Suspect noninfectious extra-articular abnormality, such as tendonitis or bursitis. Radiographs negative or nondiagnostic. Next imaging study.
+Score: 0.361735463142395","description:  Chronic hip pain. Suspect noninfectious extra-articular abnormality, such as tendonitis or bursitis. Radiographs negative or nondiagnostic. Next imaging study.
 condition: ACR chronic hip pain
 mode: tabular
 
@@ -8769,7 +8769,7 @@ mode: tabular
 | CT hip without IV contrast | Usually Not Appropriate |
 | Fluoride PET/CT skull base to mid-thigh | Usually Not Appropriate |
 
-Score: 0.36193597316741943","description:  Chronic hip pain. Radiographs equivocal or positive for mild osteoarthritis. Evaluate articular cartilage integrity. Next imaging study.
+Score: 0.361738920211792","description:  Chronic hip pain. Radiographs equivocal or positive for mild osteoarthritis. Evaluate articular cartilage integrity. Next imaging study.
 condition: ACR chronic hip pain
 mode: tabular
 
@@ -8787,7 +8787,7 @@ mode: tabular
 | CT hip without IV contrast | Usually Not Appropriate |
 | Fluoride PET/CT skull base to mid-thigh | Usually Not Appropriate |
 
-Score: 0.36684226989746094","description:  Acute hip pain. Fall or minor trauma. Negative radiographs. Suspect fracture. Next imaging study.
+Score: 0.3666684031486511","description:  Acute hip pain. Fall or minor trauma. Negative radiographs. Suspect fracture. Next imaging study.
 condition: ACR acute hip pain suspected fracture
 mode: tabular
 
@@ -8801,7 +8801,7 @@ mode: tabular
 | Bone scan hips | Usually Not Appropriate |
 | US hip | Usually Not Appropriate |
 
-Score: 0.3686511814594269","mode: text
+Score: 0.36841392517089844","mode: text
 condition: ACR chronic hip pain
 
 Within  the limitation  of the contrast  resolution  of CT, some  extra-
@@ -9598,7 +9598,7 @@ complex regional pain syndrome type I. Next imaging study.
 A 3-phase bone scan may be useful in cases of suspected complex regional pain syndrome (CRPS) type I reflex 
 sympathetic dystrophy , and several imaging findings have been described.
 
-Score: 0.342992901802063","mode: text
+Score: 0.3428363502025604","mode: text
 condition: ACR chronic foot pain
 
 ACR Appropriateness Criteria® 4 Chronic Foot Pain  Discussion of Procedures by Variant  
@@ -9627,7 +9627,7 @@ Radiographs are usually performed initially in the clinical setting of a suspect
 by Wright et al [13] reported sensitivities rangi ng from 12% to 56% and specificities ranging from 88% to 96% for 
 radiographs in the detection of lower -extremity stress fractures.
 
-Score: 0.3568347692489624","mode: text
+Score: 0.3566986620426178","mode: text
 condition: ACR acute trauma to foot
 
 A recent  consensus paper  from  the European Society  
@@ -9648,7 +9648,7 @@ craniocaudal  angulation can be added  [16,17] . Although patients  with Lisfra 
 damage  without  diastasis [18], radiography  should be the initial imaging modality  in the setting  of a suspected  
 Lisfranc injury.
 
-Score: 0.35861584544181824","mode: text
+Score: 0.3585004508495331","mode: text
 condition: ACR chronic foot pain
 
 Although there is no relevant literature  to support the routine clinical use of US in the 
@@ -9672,7 +9672,7 @@ CT Foot
 CT may be useful to confirm suspected sesamoid stress fractures on radiographs and to distinguish between a stress 
 fracture and a bipartite sesamoid with more precision than conventional radiography [28] .
 
-Score: 0.3627789616584778","mode: text
+Score: 0.36264950037002563","mode: text
 condition: ACR suspected OM foot in DM
 
 Soft-tissue swelling  and obscuration  of the fat planes will precede osseous  
@@ -9692,7 +9692,7 @@ Radiologist, Weston, Connecticut. lSpecialty Chair, Mayo Clinic, Jacksonville, F
  The American College of Radiology seeks and encourages collaboration with other organizations on the development of the ACR Appropriateness 
 Criteria through society representation on expert panels.
 
-Score: 0.3645777404308319"
+Score: 0.364491730928421"
 50,"Suspected stress (fatigue) fracture, excluding vertebrae. First imaging study.",ACR stress fracture including sacrum.pdf,1,UNA,MRI area of interest without IV contrast,"18 year old Eurasian male.  Full time national service, in guards battalion.  No prior medical history.  Now presents with severe right foot pain after fast march.  Cannot walk without assistance.  On examination, mildly swollen right foot.  Tender on deep palpation of 2nd and 3rd metatarsals.  No prior imaging.  For MRI of mid and forefoot without IV contrast to assess for stress fracture.  ","Patient Profile: 18 year old Eurasian male.  Full time national service, in guards battalion.  No prior medical history.  Now presents with severe right foot pain after fast march.  Cannot walk without assistance.  On examination, mildly swollen right foot.  Tender on deep palpation of 2nd and 3rd metatarsals.  No prior imaging
 Scan ordered:   For MRI of mid and forefoot without IV contrast to assess for stress fracture","description:  Chronic metatarsalgia including plantar great toe pain. Radiographs negative or equivocal. Clinical concern includes sesamoiditis, Morton’s neuroma, intermetatarsal bursitis, chronic plantar plate injury, or Freiberg’s infraction. Next imaging study.
 condition: ACR chronic foot pain
@@ -10362,7 +10362,7 @@ hematoma, and nerve root avulsions, that can cause neur ologic deficits and requ
 [40,41,43,57]. Therefore, CT should not be considered ad equate for excluding significant soft-tissue pathology in 
 patients presenting with signs or symptoms of cervical spinal cord or  nerve root injury.
 
-Score: 0.29171493649482727","mode: text
+Score: 0.291612446308136","mode: text
 condition: ACR suspected spine trauma
 
 Furthermore, MRI has been found to have low (64% to 77%) specificity in identifying clinically significant 
@@ -10387,7 +10387,7 @@ There is no role for arteriography in assessment of obtunded patients without tr
 the absence of clinical findings con cerning for cervical vascular injury. 
 Variant 7: Age greater than or equal to 16 years. Susp ected acute cervical spine blunt trauma.
 
-Score: 0.29657164216041565","mode: text
+Score: 0.2964664101600647","mode: text
 condition: ACR suspected spine trauma
 
 ACR Appropriateness Criteria® 12 Suspected Spine Trauma However, there are no widely accepted criteria for grading th e severity of cervical spine soft-tissue injury on MRI, 
@@ -10409,7 +10409,7 @@ presentation [65] and not develop stroke-like symptoms for 48 to 72 hours after 
 Screening for BCVI is ideally performed  to appropriately initiate anticoagul ation therapy prior to the patient 
 developing neurologic deficits.
 
-Score: 0.29847395420074463","mode: text
+Score: 0.2983279228210449","mode: text
 condition: ACR suspected spine trauma
 
 These procedures are complementary in the assessment 
@@ -10422,7 +10422,7 @@ spine CT. These procedures are equivalent alternatives.
 cervical spine without IV c ontrast for obtunded patients ≥16 years of age with suspected acute blunt trauma of 
 the cervical spine and no traumatic in jury identified on cervical spine CT.
 
-Score: 0.29996442794799805","mode: text
+Score: 0.2998400330543518","mode: text
 condition: ACR suspected spine trauma
 
 Table 5. 2011 Revised Denver Screening Criteria [65] 
@@ -10451,7 +10451,7 @@ significant swelling, pain, or altered mental status
  Blunt cardiac rupture 
  Upper rib fractures
 
-Score: 0.3004229962825775"
+Score: 0.30025145411491394"
 54,Age greater than or equal to 16 years. Acute thoracic or lumbar spine injury detected on radiographs or noncontrast CT. Neurologic abnormalities. Next imaging study.,ACR suspected spine trauma.pdf,0,UA,MRI thoracic and lumbar spine without IV contrast ,"41 year old Chinese male.  No prior medical history.  Smoker.  Now coming into emergency room for road traffic accident. Patient was driving company car when rear-ended by a truck.  Car hit road divider.  On examintion, patient is alert, but power in bilateral lower limbs is 2 out of 5.  Slightly lax anal tone on digital rectal examination.  X-rays show T12 chance fracture.  MRI thoracic and lumbar spine without IV contrast to assess for neurologic injury.  ","Patient Profile: 41 year old Chinese male.  No prior medical history.  Smoker.  Now coming into emergency room for road traffic accident. Patient was driving company car when rear-ended by a truck.  Car hit road divider.  On examintion, patient is alert, but power in bilateral lower limbs is 2 out of 5.  Slightly lax anal tone on digital rectal examination.  X-rays show T12 chance fracture
 Scan ordered:   MRI thoracic and lumbar spine without IV contrast to assess for neurologic injury","description:  Age greater than or equal to 16 years. Acute thoracic or lumbar spine injury detected on radiographs or noncontrast CT. Neurologic abnormalities. Next imaging study.
 condition: ACR suspected spine trauma
@@ -10872,7 +10872,7 @@ mode: tabular
 | CT lumbar spine without and with IV contrast | Usually Not Appropriate |
 | FDG-PET/CT whole body | Usually Not Appropriate |
 
-Score: 0.3174467384815216","description:  Subacute or chronic low back pain with or without radiculopathy. Surgery or intervention candidate with persistent or progressive symptoms during or following 6 weeks of optimal medical management. Initial imaging.
+Score: 0.3176553249359131","description:  Subacute or chronic low back pain with or without radiculopathy. Surgery or intervention candidate with persistent or progressive symptoms during or following 6 weeks of optimal medical management. Initial imaging.
 condition: ACR low back pain
 mode: tabular
 
@@ -10890,7 +10890,7 @@ mode: tabular
 | CT lumbar spine without and with IV contrast | Usually Not Appropriate |
 | FDG-PET/CT whole body | Usually Not Appropriate |
 
-Score: 0.31989070773124695","description:  Chronic hip pain with low back or knee pathology or pain. Radiographs demonstrate hip osteoarthritis. Want to quantify amount of pain related to the hip. Next imaging study.
+Score: 0.3201083540916443","description:  Chronic hip pain with low back or knee pathology or pain. Radiographs demonstrate hip osteoarthritis. Want to quantify amount of pain related to the hip. Next imaging study.
 condition: ACR chronic hip pain
 mode: tabular
 
@@ -10908,7 +10908,7 @@ mode: tabular
 | CT hip without IV contrast | Usually Not Appropriate |
 | Fluoride PET/CT skull base to mid-thigh | Usually Not Appropriate |
 
-Score: 0.3226754665374756","description:  Low back pain with or without radiculopathy. One or more of the following: low-velocity trauma, osteoporosis, elderly individual, or chronic steroid use. Initial imaging.
+Score: 0.3228188455104828","description:  Low back pain with or without radiculopathy. One or more of the following: low-velocity trauma, osteoporosis, elderly individual, or chronic steroid use. Initial imaging.
 condition: ACR low back pain
 mode: tabular
 
@@ -10926,7 +10926,7 @@ mode: tabular
 | CT lumbar spine without and with IV contrast | Usually Not Appropriate |
 | FDG-PET/CT whole body | Usually Not Appropriate |
 
-Score: 0.3232783079147339","description:  Subacute or chronic low back pain with or without radiculopathy. No red flags. No prior management. Initial imaging.
+Score: 0.32346591353416443","description:  Subacute or chronic low back pain with or without radiculopathy. No red flags. No prior management. Initial imaging.
 condition: ACR low back pain
 mode: tabular
 
@@ -10944,7 +10944,7 @@ mode: tabular
 | CT myelography lumbar spine | Usually Not Appropriate |
 | FDG-PET/CT whole body | Usually Not Appropriate |
 
-Score: 0.34760981798171997","mode: text
+Score: 0.3478344678878784","mode: text
 condition: ACR low back pain
 
 ACR Appropriateness  Criteria® 6 Low Back  Pain Table  1. Red Flags : Indications  of a more  complicated  status  include  back  pain/radiculopathy  in the following  
@@ -11080,7 +11080,7 @@ mode: tabular
 | CT lumbar spine without and with IV contrast | Usually Not Appropriate |
 | FDG-PET/CT whole body | Usually Not Appropriate |
 
-Score: 0.39845091104507446","description:  Suspected spine infection (such as epidural abscess or discitis osteomyelitis), with new or worsening back or neck pain, with or without fever, who may have one or more of the following red flags (diabetes mellitus, IV drug use, cancer, HIV, or dialysis) or abnormal lab values. Initial imaging.
+Score: 0.3985357880592346","description:  Suspected spine infection (such as epidural abscess or discitis osteomyelitis), with new or worsening back or neck pain, with or without fever, who may have one or more of the following red flags (diabetes mellitus, IV drug use, cancer, HIV, or dialysis) or abnormal lab values. Initial imaging.
 condition: ACR suspected spine infection
 mode: tabular
 
@@ -11098,7 +11098,7 @@ mode: tabular
 | FDG-PET/CT whole body | Usually Not Appropriate |
 | CT spine area of interest without and with IV contrast | Usually Not Appropriate |
 
-Score: 0.3989028334617615","description:  Subacute or chronic low back pain with or without radiculopathy. Surgery or intervention candidate with persistent or progressive symptoms during or following 6 weeks of optimal medical management. Initial imaging.
+Score: 0.3989526331424713","description:  Subacute or chronic low back pain with or without radiculopathy. Surgery or intervention candidate with persistent or progressive symptoms during or following 6 weeks of optimal medical management. Initial imaging.
 condition: ACR low back pain
 mode: tabular
 
@@ -11116,7 +11116,7 @@ mode: tabular
 | CT lumbar spine without and with IV contrast | Usually Not Appropriate |
 | FDG-PET/CT whole body | Usually Not Appropriate |
 
-Score: 0.4032106101512909","description:  Suspected spine infection (such as epidural abscess or discitis osteomyelitis), with new neurologic deficit or cauda equina syndrome. Initial imaging.
+Score: 0.40329980850219727","description:  Suspected spine infection (such as epidural abscess or discitis osteomyelitis), with new neurologic deficit or cauda equina syndrome. Initial imaging.
 condition: ACR suspected spine infection
 mode: tabular
 
@@ -11134,7 +11134,7 @@ mode: tabular
 | Gallium scan whole body | Usually Not Appropriate |
 | CT spine area of interest without and with IV contrast | Usually Not Appropriate |
 
-Score: 0.40511542558670044","description:  Chronic foot pain. Entrapment syndromes. Radiographs negative or equivocal. Clinical concern includes Baxter’s neuropathy. Next imaging study.
+Score: 0.40514492988586426","description:  Chronic foot pain. Entrapment syndromes. Radiographs negative or equivocal. Clinical concern includes Baxter’s neuropathy. Next imaging study.
 condition: ACR chronic foot pain
 mode: tabular
 
@@ -11148,7 +11148,7 @@ mode: tabular
 | CT foot without IV contrast | Usually Not Appropriate |
 | Bone scan with SPECT or SPECT/CT foot | Usually Not Appropriate |
 
-Score: 0.40697890520095825","mode: text
+Score: 0.4070357382297516","mode: text
 condition: ACR myelopathy
 
 In patients  who have  undergone  spinal  surgery,  late complications  (eg, adjacent  level  degenerative  disease with 
@@ -11159,7 +11159,7 @@ disease and is characterized  by lesions affecting  the spinal  cord (and brain)
 space and time [61]. Spinal cord involvement  is seen in 80% to 90% of patients  with MS, most  commonly affecting  
 the cervical  cord [62]. Patients  with primary  progressive  MS tend to have  more  spinal  cord involvement  than
 
-Score: 0.35643377900123596","mode: text
+Score: 0.3564721941947937","mode: text
 condition: ACR low back pain
 
 Initial imaging.  
@@ -11177,7 +11177,7 @@ etiologies  with some  overlapping clinical  features.  Please see the ACR Appro
 The imaging  study of choice in the evaluation  of suspected  CES, multifocal deficit, or progres sive neurologic  deficit  
 is MRI because of its  ability to accurately  depict  soft-tissue pathology,  assess  vertebral  marrow,  and assess the
 
-Score: 0.35901549458503723","mode: text
+Score: 0.3591741919517517","mode: text
 condition: ACR myelopathy
 
 ACR Appropriateness  Criteria® 6 Myelopathy patients  with relapsing -remitting  MS [12]. When myelopathy due to MS is suspected,  MRI detection  of spinal  cord 
@@ -11197,7 +11197,7 @@ along the dorsal  surface of the spinal  cord.  There may be patchy  intramedull
 the blood-cord  barrier.  In some  cases,  abnormal  vasculature may be identified  that may be useful  to guide  spinal  
 arteriography  and intervention [5,89-91] .
 
-Score: 0.36341962218284607","mode: text
+Score: 0.3635016083717346","mode: text
 condition: ACR myelopathy
 
 Non-neoplastic causes include  demyelinating  diseases  such 
@@ -11216,7 +11216,7 @@ for neurosurgical  outcome  [21,37-41] . IV contrast  is typically  not required
 myel opathy,  but characteristic patterns of enhancement  can be seen immediately  at and below  a level  of stenosis  
 [42,43] .
 
-Score: 0.3742716908454895","mode: text
+Score: 0.37431108951568604","mode: text
 condition: ACR low back pain
 
 ACR Appropriateness  Criteria® 12 Low Back  Pain spinal  canal  patency.  MRI lumbar  spine  without  IV contrast  is most  useful  in the evaluation  of suspected  CES, 
@@ -11235,7 +11235,7 @@ review of 151 patients  with clinically  suspected  CES showed  that ≥50%  the
 significant  spinal  stenosis,  and <50%  thecal  sac effacement  reliably  excluded  cauda equina  impingement,  using 
 MRI as the reference standard  [27].
 
-Score: 0.378223180770874"
+Score: 0.37832754850387573"
 58,"Suspected spine infection (such as epidural abscess or discitis osteomyelitis), with new or worsening back or neck pain, with or without fever, who may have one or more of the following red flags (diabetes mellitus, IV drug use, cancer, HIV, or dialysis) or abnormal lab values. Initial imaging.",ACR suspected spine infection.pdf,1,UA,MRI spine area of interest without and with IV contrast,"73 year old Indian male, with history of end stage diabetic nephropathy on haemodialysis. Complains of lower back pain for the past 2 months with occasional night pain. Associated with radicular pain of left lower limb. no fever. Physical exam reveals mild tenderness at L3-L4 region but otherwise unremarkable. No prior imaging. MRI lumbar spine without and with IV contrast for possible spondylodiscitis.","Patient Profile: 73 year old Indian male, with history of end stage diabetic nephropathy on haemodialysis. Complains of lower back pain for the past 2 months with occasional night pain. Associated with radicular pain of left lower limb. no fever. Physical exam reveals mild tenderness at L3-L4 region but otherwise unremarkable. No prior imaging
 Scan ordered:  MRI lumbar spine without and with IV contrast for possible spondylodiscitis","description:  Low back pain with or without radiculopathy. One or more of the following: low-velocity trauma, osteoporosis, elderly individual, or chronic steroid use. Initial imaging.
 condition: ACR low back pain
@@ -11255,7 +11255,7 @@ mode: tabular
 | CT lumbar spine without and with IV contrast | Usually Not Appropriate |
 | FDG-PET/CT whole body | Usually Not Appropriate |
 
-Score: 0.29715579748153687","description:  Subacute or chronic low back pain with or without radiculopathy. Surgery or intervention candidate with persistent or progressive symptoms during or following 6 weeks of optimal medical management. Initial imaging.
+Score: 0.29732707142829895","description:  Subacute or chronic low back pain with or without radiculopathy. Surgery or intervention candidate with persistent or progressive symptoms during or following 6 weeks of optimal medical management. Initial imaging.
 condition: ACR low back pain
 mode: tabular
 
@@ -11273,7 +11273,7 @@ mode: tabular
 | CT lumbar spine without and with IV contrast | Usually Not Appropriate |
 | FDG-PET/CT whole body | Usually Not Appropriate |
 
-Score: 0.29909947514533997","description:  Low back pain with history of prior lumbar surgery and with or without radiculopathy. New or progressing symptoms or clinical findings. Initial imaging.
+Score: 0.2993648052215576","description:  Low back pain with history of prior lumbar surgery and with or without radiculopathy. New or progressing symptoms or clinical findings. Initial imaging.
 condition: ACR low back pain
 mode: tabular
 
@@ -11291,7 +11291,7 @@ mode: tabular
 | CT lumbar spine without and with IV contrast | Usually Not Appropriate |
 | FDG-PET/CT whole body | Usually Not Appropriate |
 
-Score: 0.3082523047924042","description:  Low back pain with or without radiculopathy. One or more of the following: suspicion of cancer, infection, or immunosuppression. Initial imaging.
+Score: 0.30857744812965393","description:  Low back pain with or without radiculopathy. One or more of the following: suspicion of cancer, infection, or immunosuppression. Initial imaging.
 condition: ACR low back pain
 mode: tabular
 
@@ -11309,7 +11309,7 @@ mode: tabular
 | CT lumbar spine without and with IV contrast | Usually Not Appropriate |
 | FDG-PET/CT whole body | Usually Not Appropriate |
 
-Score: 0.3096928596496582","description:  Subacute or chronic low back pain with or without radiculopathy. No red flags. No prior management. Initial imaging.
+Score: 0.31000810861587524","description:  Subacute or chronic low back pain with or without radiculopathy. No red flags. No prior management. Initial imaging.
 condition: ACR low back pain
 mode: tabular
 
@@ -11327,7 +11327,7 @@ mode: tabular
 | CT myelography lumbar spine | Usually Not Appropriate |
 | FDG-PET/CT whole body | Usually Not Appropriate |
 
-Score: 0.3157743215560913","mode: text
+Score: 0.31597769260406494","mode: text
 condition: ACR low back pain
 
 ACR Appropriateness  Criteria® 6 Low Back  Pain Table  1. Red Flags : Indications  of a more  complicated  status  include  back  pain/radiculopathy  in the following  
@@ -12459,7 +12459,7 @@ mode: tabular
 | Radiographic arthrography wrist | Usually Not Appropriate |
 | Bone scan wrist | Usually Not Appropriate |
 
-Score: 0.3498404622077942","description:  Suspect acute hand or wrist trauma. Initial radiographs negative or equivocal. Next imaging study.
+Score: 0.3498684763908386","description:  Suspect acute hand or wrist trauma. Initial radiographs negative or equivocal. Next imaging study.
 condition: ACR acute hand and wrist trauma
 mode: tabular
 
@@ -12474,7 +12474,7 @@ mode: tabular
 | Bone scan area of interest | Usually Not Appropriate |
 | US area of interest | Usually Not Appropriate |
 
-Score: 0.3603382110595703","description:  Soft tissue mass. Nondiagnostic radiograph and noncontrast-enhanced ultrasound. MRI contraindicated. Next imaging study.
+Score: 0.36022457480430603","description:  Soft tissue mass. Nondiagnostic radiograph and noncontrast-enhanced ultrasound. MRI contraindicated. Next imaging study.
 condition: ACR soft tissue mass
 mode: tabular
 
@@ -12488,7 +12488,7 @@ mode: tabular
 | FDG-PET/CT area of interest | Usually Not Appropriate |
 | CT area of interest without IV contrast | Usually Not Appropriate |
 
-Score: 0.3609205484390259","description:  Soft-tissue swelling without ulcer. Suspected osteomyelitis or early neuropathic arthropathy changes of the foot in patients with diabetes mellitus. Additional imaging following radiographs.
+Score: 0.36090630292892456","description:  Soft-tissue swelling without ulcer. Suspected osteomyelitis or early neuropathic arthropathy changes of the foot in patients with diabetes mellitus. Additional imaging following radiographs.
 condition: ACR suspected OM foot in DM
 mode: tabular
 
@@ -12508,7 +12508,7 @@ mode: tabular
 | 3-phase bone scan foot | Usually Not Appropriate |
 | US foot | Usually Not Appropriate |
 
-Score: 0.36247003078460693","description:  Suspect primary bone tumor. Lesion on radiographs. Indeterminate or aggressive appearance for malignancy. Next imaging study.
+Score: 0.3623693883419037","description:  Suspect primary bone tumor. Lesion on radiographs. Indeterminate or aggressive appearance for malignancy. Next imaging study.
 condition: ACR primary bone tumours
 mode: tabular
 
@@ -12525,7 +12525,7 @@ mode: tabular
 | Radiography skeletal survey | Usually Not Appropriate |
 | US area of interest | Usually Not Appropriate |
 
-Score: 0.3629957437515259","mode: text
+Score: 0.36283808946609497","mode: text
 condition: ACR chronic elbow pain
 
 • Variant 3 : In the setting of chronic elbow pain with normal or nonspecific radiographs,  MRI elbow without IV 
@@ -12709,28 +12709,6 @@ mode: tabular
 | MRI thoracic and lumbar spine without and with IV contrast | Usually Not Appropriate |
 
 Score: 0.26772159337997437","mode: text
-condition: ACR management of vertebral compression fracture
-
-Summary  of Highlights  
-• Variant  1: When  a new,  symptomatic  VCF  is identified  on radiographs  with no history  of malignancy,  either  
-CT or MRI of the spine  without  IV contrast  is recommended  as the next imaging  study to differentiate  between  
-acute/subacute and chronic  fractures and to evaluate for complications . Either  procedure  can be performed,  but 
-they may be complementary  when  knowledge  of bony anatomy  is relevant  to treatment  planning.  Bone  scan,  
-SPECT, or SPECT/CT of the whole  spine  may be appropriate  as complementary  alternatives  in cases in which 
-there are multiple  fractures or concern  for more  widespread  distribution  of fractures.  
-• Variant  2: When  a new,  symptomatic  VCF  is identified  on radiographs  with a history  of malignancy,  both CT 
-of the spine  without  IV contrast,  or MRI  of the spine  either  without  or with and without  IV contrast  is 
-recommended  as the next imaging  study to differentiate  between  acute/subacute and chronic  fractures , 
-enhancing tumor,  and to evaluate for complications . Either  procedure  can be performed,  but they may also be 
-complementary  when  knowledge  of bony anatomy  is relevant  to treatment  planning.  Other  procedures including  
-bone  scan,  SPECT or SPECT/CT of the whole  spine,  and FDG-PET/CT may be appropriate  in cases in which 
-there are multiple  fractures or concern  for more  widespread  distribution  of fractures.  
-• Variant  3: In the setting  of new back  pain and either  previously treated  VCF  or multiple  VCFs,  either  CT or 
-MRI of the spine  without  IV contrast  is recommended  as the initial imaging  study.  MRI of the spine  with and 
-without  IV contrast  may be useful  to assess for inflammation  but should be carefully  assessed  because it is 
-prone  to artifactual  distortion.
-
-Score: 0.2813822627067566","mode: text
 condition: ACR low back pain
 
 ACR Appropriateness  Criteria® 17 Low Back  Pain CT Lumbar Spine Without IV Contrast  
@@ -12753,7 +12731,29 @@ MRI lumbar  spine  with IV contrast  is not typically  performed  independently 
 is most  informative  when  correlated  with standard  noncontrast  sequences included in MRI lumbar  spine  with and 
 without  IV contrast  [33].
 
-Score: 0.28194504976272583","mode: text
+Score: 0.2811114192008972","mode: text
+condition: ACR management of vertebral compression fracture
+
+Summary  of Highlights  
+• Variant  1: When  a new,  symptomatic  VCF  is identified  on radiographs  with no history  of malignancy,  either  
+CT or MRI of the spine  without  IV contrast  is recommended  as the next imaging  study to differentiate  between  
+acute/subacute and chronic  fractures and to evaluate for complications . Either  procedure  can be performed,  but 
+they may be complementary  when  knowledge  of bony anatomy  is relevant  to treatment  planning.  Bone  scan,  
+SPECT, or SPECT/CT of the whole  spine  may be appropriate  as complementary  alternatives  in cases in which 
+there are multiple  fractures or concern  for more  widespread  distribution  of fractures.  
+• Variant  2: When  a new,  symptomatic  VCF  is identified  on radiographs  with a history  of malignancy,  both CT 
+of the spine  without  IV contrast,  or MRI  of the spine  either  without  or with and without  IV contrast  is 
+recommended  as the next imaging  study to differentiate  between  acute/subacute and chronic  fractures , 
+enhancing tumor,  and to evaluate for complications . Either  procedure  can be performed,  but they may also be 
+complementary  when  knowledge  of bony anatomy  is relevant  to treatment  planning.  Other  procedures including  
+bone  scan,  SPECT or SPECT/CT of the whole  spine,  and FDG-PET/CT may be appropriate  in cases in which 
+there are multiple  fractures or concern  for more  widespread  distribution  of fractures.  
+• Variant  3: In the setting  of new back  pain and either  previously treated  VCF  or multiple  VCFs,  either  CT or 
+MRI of the spine  without  IV contrast  is recommended  as the initial imaging  study.  MRI of the spine  with and 
+without  IV contrast  may be useful  to assess for inflammation  but should be carefully  assessed  because it is 
+prone  to artifactual  distortion.
+
+Score: 0.28191572427749634","mode: text
 condition: ACR low back pain
 
 One study found no 
@@ -12771,7 +12771,7 @@ CT Lumbar Spine Without and With IV Contrast
 There is no relevant  literature  to support  the use of CT lumbar  spine  without and with IV contrast  in the initial  
 evaluation  of subacute or chronic  LBP without  red flags  or prior  management.
 
-Score: 0.2858944237232208","mode: text
+Score: 0.2850705087184906","mode: text
 condition: ACR low back pain
 
 ACR Appropriateness  Criteria® 15 Low Back  Pain MRI lumbar  spine  without  IV contrast  is useful  in determining  the acuity  of a vertebral  fracture,  as evidenced  by 
@@ -12789,7 +12789,7 @@ fractures and can be used to evaluate acuity  of vertebral  fracture . [59].
 Whole -body FDG-PET/CT is typically  not an initial imaging study,  but as a follow -up study , it can help distinguish  
 between  benign and pathologic  compression  fractures  when  other  imaging modalities  are indeterminate  [60].
 
-Score: 0.2875903248786926","mode: text
+Score: 0.28756994009017944","mode: text
 condition: ACR management of vertebral compression fracture
 
 ACR Appropriateness  Criteria® 6 Vertebral Compression Fractures  CT Myelography Spine  Area  of Interest  
@@ -12809,7 +12809,7 @@ osteoporotic  compression  fracture  is often  not known  with certainty.  Bone 
 1 to 3 months  [50,51]. IV contrast  is not useful  because it does not add information in the setting  of recent  
 osteoporotic  VCF .
 
-Score: 0.2921745181083679"
+Score: 0.2927151322364807"
 66,Inflammatory back pain. Suspected axial spondyloarthritis. Negative radiographs and negative MRI of the sacroiliac joints. Next imaging study.,ACR inflammatory back pain.pdf,3,ICI,MRi spine area of interest without and with IV contrast,34 year old Indian male.  MRI lumbosacral spine without and with IV contrast for ?ankylosing spondylitis.,"Patient Profile: 34 year old Indian male
 Scan ordered:   MRI lumbosacral spine without and with IV contrast for ?ankylosing spondylitis","description:  Inflammatory back pain. Suspected axial spondyloarthritis. Additional imaging following radiographs. Next imaging study.
 condition: ACR inflammatory back pain
@@ -12833,7 +12833,7 @@ mode: tabular
 | CT sacroiliac joints and spine area of interest with IV contrast | Usually Not Appropriate |
 | CT sacroiliac joints and spine area of interest without and with IV contrast | Usually Not Appropriate |
 
-Score: 0.2581987977027893","description:  Inflammatory back pain. Suspected axial spondyloarthritis. Negative radiographs and negative MRI of the sacroiliac joints. Next imaging study.
+Score: 0.2588841915130615","description:  Inflammatory back pain. Suspected axial spondyloarthritis. Negative radiographs and negative MRI of the sacroiliac joints. Next imaging study.
 condition: ACR inflammatory back pain
 mode: tabular
 
@@ -12849,7 +12849,7 @@ mode: tabular
 | CT spine area of interest with IV contrast | Usually Not Appropriate |
 | CT spine area of interest without and with IV contrast | Usually Not Appropriate |
 
-Score: 0.2680125832557678","description:  Known axial spondyloarthritis. Follow-up for treatment response or disease progression.
+Score: 0.2685893476009369","description:  Known axial spondyloarthritis. Follow-up for treatment response or disease progression.
 condition: ACR inflammatory back pain
 mode: tabular
 
@@ -12873,7 +12873,7 @@ mode: tabular
 | CT sacroiliac joints and spine area of interest without and with IV contrast | Usually Not Appropriate |
 | CT sacroiliac joints and spine area of interest without IV contrast | Usually Not Appropriate |
 
-Score: 0.2715526819229126","description:  Inflammatory back pain. Suspected axial spondyloarthritis. Initial imaging.
+Score: 0.2720717489719391","description:  Inflammatory back pain. Suspected axial spondyloarthritis. Initial imaging.
 condition: ACR inflammatory back pain
 mode: tabular
 
@@ -12897,7 +12897,7 @@ mode: tabular
 | CT spine area of interest without and with IV contrast | Usually Not Appropriate |
 | CT spine area of interest without IV contrast | Usually Not Appropriate |
 
-Score: 0.2772909998893738","description:  Axial spondyloarthritis with spine ankylosis. Suspected fracture. Initial imaging.
+Score: 0.2779769003391266","description:  Axial spondyloarthritis with spine ankylosis. Suspected fracture. Initial imaging.
 condition: ACR inflammatory back pain
 mode: tabular
 
@@ -12913,7 +12913,7 @@ mode: tabular
 | CT spine area of interest with IV contrast | Usually Not Appropriate |
 | CT spine area of interest without and with IV contrast | Usually Not Appropriate |
 
-Score: 0.28480446338653564","mode: text
+Score: 0.28474271297454834","mode: text
 condition: ACR low back pain
 
 One study found no 
@@ -13429,7 +13429,7 @@ mode: tabular
 | MRI wrist without and with IV contrast | Usually Not Appropriate |
 | Bone scan wrist | Usually Not Appropriate |
 
-Score: 0.3205338418483734","description:  Chronic wrist pain. Radiographs show old scaphoid fracture. Evaluate for nonunion, malunion, osteonecrosis, or post-traumatic osteoarthritis. Next study.
+Score: 0.320385217666626","description:  Chronic wrist pain. Radiographs show old scaphoid fracture. Evaluate for nonunion, malunion, osteonecrosis, or post-traumatic osteoarthritis. Next study.
 condition: ACR chronic hand and wrist pain
 mode: tabular
 
@@ -13446,7 +13446,7 @@ mode: tabular
 | Radiographic arthrography wrist | Usually Not Appropriate |
 | Bone scan wrist | Usually Not Appropriate |
 
-Score: 0.3314015567302704","description:  Suspect penetrating trauma with a foreign body in the soft tissues in the hand or wrist. Initial radiographs are negative. Next imaging study.
+Score: 0.33120664954185486","description:  Suspect penetrating trauma with a foreign body in the soft tissues in the hand or wrist. Initial radiographs are negative. Next imaging study.
 condition: ACR acute hand and wrist trauma
 mode: tabular
 
@@ -13460,7 +13460,7 @@ mode: tabular
 | CT area of interest without and with IV contrast | Usually Not Appropriate |
 | Bone scan area of interest | Usually Not Appropriate |
 
-Score: 0.33885592222213745","description:  Chronic wrist pain. Radiographs normal or nonspecific. Suspect carpal tunnel syndrome. Next study.
+Score: 0.3386346101760864","description:  Chronic wrist pain. Radiographs normal or nonspecific. Suspect carpal tunnel syndrome. Next study.
 condition: ACR chronic hand and wrist pain
 mode: tabular
 
@@ -13477,7 +13477,7 @@ mode: tabular
 | Radiographic arthrography wrist | Usually Not Appropriate |
 | Bone scan wrist | Usually Not Appropriate |
 
-Score: 0.34439173340797424","description:  Acute hand fracture on radiographs. Suspect hand tendon or ligament trauma. Next imaging study.
+Score: 0.34435808658599854","description:  Acute hand fracture on radiographs. Suspect hand tendon or ligament trauma. Next imaging study.
 condition: ACR acute hand and wrist trauma
 mode: tabular
 
@@ -13491,7 +13491,7 @@ mode: tabular
 | MRI hand without and with IV contrast | Usually Not Appropriate |
 | Bone scan hand | Usually Not Appropriate |
 
-Score: 0.3448900878429413","mode: text
+Score: 0.344643235206604","mode: text
 condition: ACR chronic hand and wrist pain
 
 Bone Scan  Wrist  

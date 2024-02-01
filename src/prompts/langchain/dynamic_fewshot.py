@@ -4,6 +4,7 @@ import os
 import json
 from typing import List
 
+from langchain.schema.embeddings import Embeddings
 from langchain.vectorstores import FAISS
 from langchain.vectorstores.base import VectorStore
 from langchain.prompts.few_shot import FewShotChatMessagePromptTemplate
@@ -40,11 +41,22 @@ example_prompt = ChatPromptTemplate.from_messages(
 )
 
 def get_prompt(
-    embeddings,
+    embeddings: Embeddings,
     vectorstore: VectorStore = FAISS,
     k: int = 2,
     examples: List = examples   
 ) -> ChatPromptTemplate:
+    """Function for dynamic retrieval of few-shot examples based on maximum marginal relevance score.
+
+    Args:
+        embeddings (BaseEmbedding): Embedding model.
+        vectorstore (VectorStore, optional): Vectorstore for example. Defaults to FAISS.
+        k (int, optional): Number of few-shot examples. Defaults to 2.
+        examples (List, optional): List of examples to be used to generate example vectorstore. Defaults to examples.
+
+    Returns:
+        ChatPromptTemplate: _description_
+    """
     example_selector = MaxMarginalRelevanceExampleSelector.from_examples(
         examples = examples,
         embeddings = embeddings,

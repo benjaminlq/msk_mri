@@ -1,3 +1,5 @@
+"""Custom Query Engine for Text & Table hybrid retrieval
+"""
 from typing import Optional, List, Sequence
 
 from llama_index import QueryBundle
@@ -8,12 +10,25 @@ from llama_index.response.schema import RESPONSE_TYPE
 from llama_index.schema import  NodeWithScore
 
 class CustomRetrieverQueryEngine(RetrieverQueryEngine):
+    """Custom Query Engine for Text & Table hybrid retrieval
+    """
     def query(
         self,
         str_or_query_bundle: QueryType,
         table_filter: Optional[Sequence[str]] = None,
         text_filter: Optional[Sequence[str]] = None
         ) -> RESPONSE_TYPE:
+        """RAG main query function. Retrieve documents from database(s) and generate prompt grounded
+        on retrieved documents
+
+        Args:
+            str_or_query_bundle (QueryType): Input query
+            table_filter (Optional[Sequence[str]], optional): Metadata Filtering on table retriever. Defaults to None.
+            text_filter (Optional[Sequence[str]], optional): Metadata Filtering on text retriever. Defaults to None.
+
+        Returns:
+            RESPONSE_TYPE: RAG response
+        """
         with self.callback_manager.as_trace("query"):
             if isinstance(str_or_query_bundle, str):
                 str_or_query_bundle = QueryBundle(str_or_query_bundle)
@@ -25,6 +40,16 @@ class CustomRetrieverQueryEngine(RetrieverQueryEngine):
         table_filter: Optional[Sequence[str]] = None,
         text_filter: Optional[Sequence[str]] = None
         ) -> RESPONSE_TYPE:
+        """For asynchrorous query calls
+
+        Args:
+            str_or_query_bundle (QueryType): Input query
+            table_filter (Optional[Sequence[str]], optional): Metadata Filtering on table retriever. Defaults to None.
+            text_filter (Optional[Sequence[str]], optional): Metadata Filtering on text retriever. Defaults to None.
+
+        Returns:
+            RESPONSE_TYPE: RAG response
+        """
         with self.callback_manager.as_trace("query"):
             if isinstance(str_or_query_bundle, str):
                 str_or_query_bundle = QueryBundle(str_or_query_bundle)
@@ -36,7 +61,17 @@ class CustomRetrieverQueryEngine(RetrieverQueryEngine):
         table_filter: Optional[Sequence[str]] = None,
         text_filter: Optional[Sequence[str]] = None
         ) -> RESPONSE_TYPE:
-        """Answer a query."""
+        """RAG main query function. Retrieve documents from database(s) and generate prompt grounded
+        on retrieved documents
+
+        Args:
+            str_or_query_bundle (QueryType): Input query
+            table_filter (Optional[Sequence[str]], optional): Metadata Filtering on table retriever. Defaults to None.
+            text_filter (Optional[Sequence[str]], optional): Metadata Filtering on text retriever. Defaults to None.
+
+        Returns:
+            RESPONSE_TYPE: RAG response
+        """
         with self.callback_manager.event(
             CBEventType.QUERY, payload={EventPayload.QUERY_STR: query_bundle.query_str}
         ) as query_event:
@@ -65,7 +100,16 @@ class CustomRetrieverQueryEngine(RetrieverQueryEngine):
         table_filter: Optional[Sequence[str]] = None,
         text_filter: Optional[Sequence[str]] = None
         ) -> RESPONSE_TYPE:
-        """Answer a query."""
+        """For asynchrorous query calls
+
+        Args:
+            str_or_query_bundle (QueryType): Input query
+            table_filter (Optional[Sequence[str]], optional): Metadata Filtering on table retriever. Defaults to None.
+            text_filter (Optional[Sequence[str]], optional): Metadata Filtering on text retriever. Defaults to None.
+
+        Returns:
+            RESPONSE_TYPE: RAG response
+        """
         with self.callback_manager.event(
             CBEventType.QUERY, payload={EventPayload.QUERY_STR: query_bundle.query_str}
         ) as query_event:
@@ -94,6 +138,16 @@ class CustomRetrieverQueryEngine(RetrieverQueryEngine):
         table_filter: Optional[Sequence[str]] = None,
         text_filter: Optional[Sequence[str]] = None
         ) -> List[NodeWithScore]:
+        """Retrieve document from databases with metadata filtering
+
+        Args:
+            str_or_query_bundle (QueryType): Input query
+            table_filter (Optional[Sequence[str]], optional): Metadata Filtering on table retriever. Defaults to None.
+            text_filter (Optional[Sequence[str]], optional): Metadata Filtering on text retriever. Defaults to None.
+
+        Returns:
+            List[NodeWithScore]: List of retrieved nodes
+        """
         nodes = self._retriever.retrieve(query_bundle, table_filter, text_filter)
         return self._apply_node_postprocessors(nodes, query_bundle=query_bundle)
 
@@ -103,5 +157,15 @@ class CustomRetrieverQueryEngine(RetrieverQueryEngine):
         table_filter: Optional[Sequence[str]] = None,
         text_filter: Optional[Sequence[str]] = None
         ) -> List[NodeWithScore]:
+        """Asynchronously retrieve document from databases with metadata filtering
+
+        Args:
+            str_or_query_bundle (QueryType): Input query
+            table_filter (Optional[Sequence[str]], optional): Metadata Filtering on table retriever. Defaults to None.
+            text_filter (Optional[Sequence[str]], optional): Metadata Filtering on text retriever. Defaults to None.
+
+        Returns:
+            List[NodeWithScore]: List of retrieved nodes
+        """
         nodes = await self._retriever.aretrieve(query_bundle, table_filter, text_filter)
         return self._apply_node_postprocessors(nodes, query_bundle=query_bundle)

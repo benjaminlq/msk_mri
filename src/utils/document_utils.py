@@ -1,3 +1,5 @@
+"""Utility Functions for parsing and handling documents
+"""
 import os
 from shutil import rmtree
 from typing import List, Optional, Literal, Dict
@@ -17,6 +19,15 @@ def filter_by_pages(
     doc_list: List[Document],
     exclude_info: Dict[str, List]
 ) -> List[Document]:
+    """Filter out document by page number
+
+    Args:
+        doc_list (List[Document]): List of Documents
+        exclude_info (Dict[str, List]): Dictionary contains file_name and pages to be excluded
+
+    Returns:
+        List[Document]: List of filtered Documents
+    """
     filtered_list = []
     for doc in doc_list:
         file_name = doc.metadata["file_name"]
@@ -44,6 +55,26 @@ def generate_vectorindex(
     pinecone_api_key: Optional[str] = None,
     pinecone_env: Optional[str] = None
 ) -> VectorStoreIndex:
+    """Generic function for generating VectorStore Index
+
+    Args:
+        embeddings (BaseEmbedding): Embedding Model
+        emb_size (int): Size of embeddings
+        source_directory (Optional[str], optional): Directory of original documents to be ingested. Defaults to None.
+        documents (Optional[List[TextNode]], optional): List of Documents to be ingested. Defaults to None.
+        output_directory (Optional[str], optional): Local output folder to store vector db artifacts. Defaults to None.
+        emb_store_type (Literal[simple, faiss, pinecone;, chroma, weaviate], optional): Type of Vectostore. Defaults to "faiss".
+        chunk_size (int, optional): Chunk Size. Defaults to 1024.
+        chunk_overlap (int, optional): Chunk Overlap. Defaults to 20.
+        exclude_pages (Optional[Dict[str, str]], optional): Dictionary of pages to be excluded. Defaults to None.
+        logger (Logger, optional): logging function. Defaults to LOGGER.
+        index_name (Optional[str], optional): Name of the index. Defaults to None.
+        pinecone_api_key (Optional[str], optional): Pinecone API Key. Defaults to None.
+        pinecone_env (Optional[str], optional): Pinecone environment Name. Defaults to None.
+
+    Returns:
+        VectorStoreIndex: Ingested Vectorstore Index
+    """
     
     if os.path.exists(output_directory):
         rmtree(output_directory)
@@ -147,7 +178,20 @@ def load_vectorindex(
     index_name: Optional[str] = None,
     pinecone_api_key: Optional[str] = None,
     pinecone_env: Optional[str] = None
-):
+) -> VectorStoreIndex:
+    """Load vectorstore from local directory
+
+    Args:
+        db_directory (str): Folder containing db artifacts
+        emb_store_type (Literal[simple, faiss, pinecone;, chroma, weaviate], optional): Type of Vectostore. Defaults to "faiss".
+        logger (Logger, optional): logging function. Defaults to LOGGER.
+        index_name (Optional[str], optional): Name of the index. Defaults to None.
+        pinecone_api_key (Optional[str], optional): Pinecone API Key. Defaults to None.
+        pinecone_env (Optional[str], optional): Pinecone environment Name. Defaults to None.
+
+    Returns:
+        VectorStoreIndex: Vectorstore Index
+    """
     assert os.path.exists(db_directory), f"Database does not exist at path {db_directory}"
     
     if emb_store_type == "simple":

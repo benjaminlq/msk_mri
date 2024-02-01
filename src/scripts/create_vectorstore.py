@@ -9,7 +9,7 @@ from llama_index.embeddings import OpenAIEmbedding, LangchainEmbedding
 
 from langchain.embeddings import HuggingFaceEmbeddings
 from config import LOGGER, MAIN_DIR, DATA_DIR
-from custom_storage import generate_vectorindex, load_vectorindex
+from utils import generate_vectorindex, load_vectorindex
 
 def get_argument_parser():
     """Argument Parser

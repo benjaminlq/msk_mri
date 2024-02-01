@@ -1,9 +1,13 @@
+"""Custom Generic Langchain Module for context docs reorder
+"""
 from langchain.chains import RetrievalQA
 from typing import List, Optional
 from langchain.schema import Document, BaseDocumentTransformer
 from langchain.callbacks.manager import CallbackManagerForChainRun
 
-class ReOrderQARetrieval(RetrievalQA):   
+class ReOrderQARetrieval(RetrievalQA):
+    """Custom Generic Langchain Module for context docs reorder
+    """
     reorder_fn: Optional[BaseDocumentTransformer] = None
     
     def _get_docs(
@@ -13,7 +17,6 @@ class ReOrderQARetrieval(RetrievalQA):
         run_manager: CallbackManagerForChainRun,
     ) -> List[Document]:
         """Get docs."""
-        print(question)
         docs = self.retriever.get_relevant_documents(
             question, callbacks=run_manager.get_child()
         )
