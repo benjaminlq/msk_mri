@@ -8,6 +8,8 @@ __pycache__/
 
 # Keys
 auth/
+models/
+data/multimodal-chroma-textwindow/
 
 # Distribution / packaging
 .Python
@@ -59,7 +61,7 @@ cover/
 *.pot
 
 # Django stuff:
-*.log
+# *.log
 local_settings.py
 db.sqlite3
 db.sqlite3-journal

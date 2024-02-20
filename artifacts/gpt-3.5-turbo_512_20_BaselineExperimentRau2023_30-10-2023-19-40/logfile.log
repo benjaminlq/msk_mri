@@ -1,0 +1,222 @@
+2023-10-30 19:40:46,316:INFO: --------------------
+Loading VectorDB from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/simple/openai_512_20
+2023-10-30 19:40:54,031:INFO: -------------
+Experiment settings:
+emb_type:openai
+vectorstore:simple
+chunk_size:512
+chunk_overlap:20
+similarity_top_k:3
+index_name:msk-mri
+description:BaselineExperimentRau2023
+synthesizer_llm:gpt-3.5-turbo
+synthesizer_max_tokens:512
+synthesizer_temperature:0
+response_mode:compact
+2023-10-30 19:40:54,039:INFO: -------------
+QA PROMPT: Context information is below.
+---------------------
+context_str
+---------------------
+Given the context information and not prior knowledge, answer the query.
+Query: query_str
+Answer: 
+2023-10-30 19:40:54,043:INFO: ------START RUNNING TEST CASES---------
+2023-10-30 19:53:26,497:INFO: --------------
+Tokens Consumption: Total: 100059, Prompt: 97365, Completion: 2694, Embeddings: []
+2023-10-30 19:53:26,506:INFO: ----------
+Test case Completed. Saving Artifacts into /mnt/c/Users/QUAN/Desktop/lbp_mri/artifacts/gpt-3.5-turbo_512_20_BaselineExperimentRau2023_30-10-2023-19-40
+2023-10-30 19:54:51,028:INFO: ------EVALUATION-----
+2023-10-30 19:54:51,031:INFO: Accuracy score: 33.80281690140845
+2023-10-30 19:54:51,139:INFO: gpt_classification        human_gt                  match
+INSUFFICIENT INFORMATION  MAY BE APPROPRIATE        False     1
+USUALLY APPROPRIATE       INSUFFICIENT INFORMATION  False    10
+                          MAY BE APPROPRIATE        False    12
+                          USUALLY APPROPRIATE       True     19
+                          USUALLY NOT APPROPRIATE   False    22
+USUALLY NOT APPROPRIATE   MAY BE APPROPRIATE        False     1
+                          USUALLY APPROPRIATE       False     1
+                          USUALLY NOT APPROPRIATE   True      5
+Name: match, dtype: int64
+2023-10-30 19:54:51,144:INFO: human_gt                  gpt_classification        match
+INSUFFICIENT INFORMATION  USUALLY APPROPRIATE       False    10
+MAY BE APPROPRIATE        INSUFFICIENT INFORMATION  False     1
+                          USUALLY APPROPRIATE       False    12
+                          USUALLY NOT APPROPRIATE   False     1
+USUALLY APPROPRIATE       USUALLY APPROPRIATE       True     19
+                          USUALLY NOT APPROPRIATE   False     1
+USUALLY NOT APPROPRIATE   USUALLY APPROPRIATE       False    22
+                          USUALLY NOT APPROPRIATE   True      5
+Name: match, dtype: int64
+2023-10-31 13:43:29,932:INFO: --------------------
+Loading VectorDB from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/simple/openai_512_20
+2023-10-31 13:43:37,376:INFO: -------------
+Experiment settings:
+emb_type:openai
+vectorstore:simple
+chunk_size:512
+chunk_overlap:20
+similarity_top_k:3
+index_name:msk-mri
+description:BaselineExperimentRau2023
+synthesizer_llm:gpt-3.5-turbo
+synthesizer_max_tokens:512
+synthesizer_temperature:0
+response_mode:compact
+2023-10-31 13:43:37,389:INFO: -------------
+QA PROMPT: Context information is below.
+---------------------
+context_str
+---------------------
+Given the context information and not prior knowledge, answer the query.
+Query: query_str
+Answer: 
+2023-10-31 13:43:37,396:INFO: ------START RUNNING TEST CASES---------
+2023-10-31 13:44:56,134:INFO: --------------------
+Loading VectorDB from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/simple/openai_512_20
+2023-10-31 13:45:03,359:INFO: -------------
+Experiment settings:
+emb_type:openai
+vectorstore:simple
+chunk_size:512
+chunk_overlap:20
+similarity_top_k:3
+index_name:msk-mri
+description:BaselineExperimentRau2023
+synthesizer_llm:gpt-3.5-turbo
+synthesizer_max_tokens:512
+synthesizer_temperature:0
+response_mode:compact
+2023-10-31 13:45:03,368:INFO: -------------
+QA PROMPT: Context information is below.
+---------------------
+context_str
+---------------------
+Given the context information and not prior knowledge, answer the query.
+Query: query_str
+Answer: 
+2023-10-31 13:45:03,374:INFO: ------START RUNNING TEST CASES---------
+2023-10-31 13:45:33,806:INFO: --------------
+Tokens Consumption: Total: 24643, Prompt: 24087, Completion: 556, Embeddings: []
+2023-10-31 13:45:33,814:INFO: ----------
+Test case Completed. Saving Artifacts into /mnt/c/Users/QUAN/Desktop/lbp_mri/artifacts/gpt-3.5-turbo_512_20_BaselineExperimentRau2023_31-10-2023-13-44
+2023-10-31 13:49:44,151:INFO: --------------------
+Loading VectorDB from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/simple/openai_512_20
+2023-10-31 13:49:51,356:INFO: -------------
+Experiment settings:
+emb_type:openai
+vectorstore:simple
+chunk_size:512
+chunk_overlap:20
+similarity_top_k:3
+index_name:msk-mri
+description:BaselineExperimentRau2023
+synthesizer_llm:gpt-3.5-turbo
+synthesizer_max_tokens:512
+synthesizer_temperature:0
+response_mode:compact
+2023-10-31 13:49:51,368:INFO: -------------
+QA PROMPT: Context information is below.
+---------------------
+context_str
+---------------------
+Given the context information and not prior knowledge, answer the query.
+Query: query_str
+Answer: 
+2023-10-31 13:49:51,376:INFO: ------START RUNNING TEST CASES---------
+2023-10-31 13:50:22,107:INFO: --------------
+Tokens Consumption: Total: 24636, Prompt: 23996, Completion: 640, Embeddings: []
+2023-10-31 13:50:22,123:INFO: ----------
+Test case Completed. Saving Artifacts into /mnt/c/Users/QUAN/Desktop/lbp_mri/artifacts/gpt-3.5-turbo_512_20_BaselineExperimentRau2023_31-10-2023-13-49
+2023-10-31 13:57:55,485:INFO: --------------------
+Loading VectorDB from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/simple/openai_512_20
+2023-10-31 13:58:02,756:INFO: -------------
+Experiment settings:
+emb_type:openai
+vectorstore:simple
+chunk_size:512
+chunk_overlap:20
+similarity_top_k:3
+index_name:msk-mri
+description:BaselineExperimentRau2023
+synthesizer_llm:gpt-3.5-turbo
+synthesizer_max_tokens:512
+synthesizer_temperature:0
+response_mode:compact
+2023-10-31 13:58:02,767:INFO: -------------
+QA PROMPT: Context information is below.
+---------------------
+context_str
+---------------------
+Given the context information and not prior knowledge, answer the query.
+Query: query_str
+Answer: 
+2023-10-31 13:58:02,773:INFO: ------START RUNNING TEST CASES---------
+2023-10-31 13:58:33,908:INFO: --------------
+Tokens Consumption: Total: 24643, Prompt: 24087, Completion: 556, Embeddings: []
+2023-10-31 13:58:33,926:INFO: ----------
+Test case Completed. Saving Artifacts into /mnt/c/Users/QUAN/Desktop/lbp_mri/artifacts/gpt-3.5-turbo_512_20_BaselineExperimentRau2023_31-10-2023-13-57
+2023-10-31 13:58:51,827:INFO: ------EVALUATION-----
+2023-10-31 13:58:51,836:INFO: Accuracy score: 68.75
+2023-10-31 13:58:51,847:INFO: gpt_classification       human_gt                 match
+MAY BE APPROPRIATE       MAY BE APPROPRIATE       True     1
+USUALLY APPROPRIATE      MAY BE APPROPRIATE       False    1
+                         USUALLY APPROPRIATE      True     7
+                         USUALLY NOT APPROPRIATE  False    4
+USUALLY NOT APPROPRIATE  USUALLY NOT APPROPRIATE  True     3
+Name: match, dtype: int64
+2023-10-31 13:58:51,856:INFO: human_gt                 gpt_classification       match
+MAY BE APPROPRIATE       MAY BE APPROPRIATE       True     1
+                         USUALLY APPROPRIATE      False    1
+USUALLY APPROPRIATE      USUALLY APPROPRIATE      True     7
+USUALLY NOT APPROPRIATE  USUALLY APPROPRIATE      False    4
+                         USUALLY NOT APPROPRIATE  True     3
+Name: match, dtype: int64
+2023-10-31 15:14:19,516:INFO: --------------------
+Loading VectorDB from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/simple/openai_512_20
+2023-10-31 15:14:26,700:INFO: -------------
+Experiment settings:
+emb_type:openai
+vectorstore:simple
+chunk_size:512
+chunk_overlap:20
+similarity_top_k:3
+index_name:msk-mri
+description:BaselineExperimentRau2023
+synthesizer_llm:gpt-4
+synthesizer_max_tokens:512
+synthesizer_temperature:0
+response_mode:compact
+2023-10-31 15:14:26,718:INFO: -------------
+QA PROMPT: Context information is below.
+---------------------
+context_str
+---------------------
+Given the context information and not prior knowledge, answer the query.
+Query: query_str
+Answer: 
+2023-10-31 15:14:26,730:INFO: ------START RUNNING TEST CASES---------
+2023-10-31 15:18:56,566:INFO: --------------
+Tokens Consumption: Total: 25728, Prompt: 24087, Completion: 1641, Embeddings: []
+2023-10-31 15:18:56,577:INFO: ----------
+Test case Completed. Saving Artifacts into /mnt/c/Users/QUAN/Desktop/lbp_mri/artifacts/gpt-4_512_20_BaselineExperimentRau2023_31-10-2023-15-14
+2023-10-31 15:19:19,077:INFO: ------EVALUATION-----
+2023-10-31 15:19:19,086:INFO: Accuracy score: 68.75
+2023-10-31 15:19:19,097:INFO: gpt_classification       human_gt                 match
+MAY BE APPROPRIATE       USUALLY APPROPRIATE      False    1
+                         USUALLY NOT APPROPRIATE  False    1
+USUALLY APPROPRIATE      MAY BE APPROPRIATE       False    1
+                         USUALLY APPROPRIATE      True     6
+                         USUALLY NOT APPROPRIATE  False    1
+USUALLY NOT APPROPRIATE  MAY BE APPROPRIATE       False    1
+                         USUALLY NOT APPROPRIATE  True     5
+Name: match, dtype: int64
+2023-10-31 15:19:19,106:INFO: human_gt                 gpt_classification       match
+MAY BE APPROPRIATE       USUALLY APPROPRIATE      False    1
+                         USUALLY NOT APPROPRIATE  False    1
+USUALLY APPROPRIATE      MAY BE APPROPRIATE       False    1
+                         USUALLY APPROPRIATE      True     6
+USUALLY NOT APPROPRIATE  MAY BE APPROPRIATE       False    1
+                         USUALLY APPROPRIATE      False    1
+                         USUALLY NOT APPROPRIATE  True     5
+Name: match, dtype: int64

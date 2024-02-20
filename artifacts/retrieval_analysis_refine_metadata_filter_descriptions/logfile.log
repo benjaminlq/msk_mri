@@ -1,0 +1,14 @@
+2023-10-28 18:09:28,921:INFO: Successfully loaded table database k=5 and text database k=5
+2023-10-28 18:09:28,968:INFO: Table Node Retrieval Precision: 75.593
+2023-10-28 18:09:28,971:INFO: Table Node Retrieval Recall: 90.141
+2023-10-28 18:09:28,978:INFO: Text Node Retrieval Precision: 76.721
+2023-10-28 18:09:28,981:INFO: Text Node Retrieval Recall: 87.324
+2023-10-28 18:09:28,986:INFO: Total Node Retrieval Precision: 76.167
+2023-10-28 18:09:28,989:INFO: Total Node Retrieval Recall: 90.141
+2023-10-28 18:09:29,004:INFO: Mean Table Distance (L2): 0.744
+2023-10-28 18:09:29,007:INFO: STD Table Distance (L2): 0.023
+2023-10-28 18:09:29,012:INFO: Mean Text Distance (L2): 0.747
+2023-10-28 18:09:29,014:INFO: STD Text Distance (L2): 0.020
+2023-10-28 18:09:29,019:INFO: Mean Overall Distance (L2): 0.746
+2023-10-28 18:09:29,022:INFO: STD Overall Distance (L2): 0.020
+2023-10-28 18:09:32,165:INFO: Exact Retrieved Table Nodes Hit Rate: 0.831

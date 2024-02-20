@@ -1,0 +1,10 @@
+2023-10-28 18:40:42,492:INFO: Successfully loaded table database k=0 and text database k=5
+2023-10-28 18:40:42,492:INFO: Successfully loaded table database k=0 and text database k=5
+2023-10-28 18:40:42,558:INFO: Text Node Retrieval Precision: 72.676
+2023-10-28 18:40:42,558:INFO: Text Node Retrieval Precision: 72.676
+2023-10-28 18:40:42,560:INFO: Text Node Retrieval Recall: 88.732
+2023-10-28 18:40:42,560:INFO: Text Node Retrieval Recall: 88.732
+2023-10-28 18:40:42,571:INFO: Mean Text Distance (L2): 0.316
+2023-10-28 18:40:42,571:INFO: Mean Text Distance (L2): 0.316
+2023-10-28 18:40:42,574:INFO: STD Text Distance (L2): 0.028
+2023-10-28 18:40:42,574:INFO: STD Text Distance (L2): 0.028

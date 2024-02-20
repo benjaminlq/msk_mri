@@ -1,0 +1,160 @@
+2023-10-30 22:42:08,067:INFO: -------------
+Experiment settings:
+emb_type:openai
+vectorstore:chroma
+chunk_size:512
+chunk_overlap:20
+table_similarity_top_k:4
+text_similarity_top_k:5
+index_name:msk-mri
+description:DescriptionsTableAndTextWithMetadataFilter
+metadata_filter:True
+refine_profile:False
+refine_llm:gpt-4
+synthesizer_llm:gpt-3.5-turbo
+synthesizer_max_tokens:512
+synthesizer_temperature:0
+response_mode:simple_summarize
+2023-10-30 22:42:08,074:INFO: -------------
+QA PROMPT: system: 
+You are a radiologist expert at providing imaging recommendations for patients with musculoskeletal conditions.
+If you do not know an answer, just say "I dont know", do not make up an answer.
+==========
+TASK: You are given a PATIENT PROFILE and a SCAN ORDER. Your task is to evaluate the appropriateness of the SCAN ORDER based on the PATIENT PROFILE.
+Perform step-by-step the following sequence of reasoning.
+1. Extract from PATIENT PROFILE relevant information for classification of imaging appropriateness. DO NOT make any assumptions from the SCAN ORDER.
+Important information includes AGE, SYMPTOMS, PREVIOUS DIAGNOSIS (IF ANY), which stage of diagnosis (INITIAL IMAGING OR NEXT STUDY).
+2. Refer to the reference information given under CONTEXT to analyse the appropriate imaging recommendations given the patient profile.
+3. Identify there are superior imaging procedures or treatments with a more favorable risk-benefit ratio.
+4. Based on the SCORING CRITERIA, recommend if the SCAN ORDER is USUALLY APPROPRIATE, MAY BE APPROPRIATE, USUALLY NOT APPROPRIATE or there is INSUFFICIENT INFORMATION to recommend the appropriateness.  
+If the scan is not appropriate, recommend an appropriate procedure.
+
+STRICTLY answer based on the given PATIENT PROFILE and CONTEXT. 
+==========
+SCORING CRITERIA:
+- USUALLY APPROPRIATE: The imaging procedure or treatment is indicated in the specified clinical scenarios at a favorable risk-benefit ratio for patients.
+- MAY BE APPROPRIATE: The imaging procedure or treatment may be indicated in the specified clinical scenarios as an alternative to imaging procedures or treatments with a more favorable risk-benefit ratio, or the risk-benefit ratio for patients is equivocal.
+- USUALLY NOT APPROPRIATE: The imaging procedure is unlikely to be recommended in the specified clinical scenarios, or the risk-benefit ratio for patients is likely to be unfavorable
+- INSUFFICIENT INFORMATION: The imaging procedure or treatment is not mentioned under CONTEXT or not enough relevant information from the PATIENT PROFILE to recommend based on information in CONTEXT.
+==========
+CONTEXT:
+
+context_str
+
+Take note for scenarios involving IV CONTRAST there are 3 distinct scan protocols: (1) with IV CONTRAST, (2) without IV CONTRAST, (3) without and with IV CONTRAST. 
+Each of them is different and can have different appropriateness category.
+==========
+
+user: query_str
+assistant: 
+2023-10-30 22:42:08,076:INFO: ------START RUNNING TEST CASES---------
+2023-10-30 22:50:28,256:INFO: --------------
+Tokens Consumption: Total: 0, Prompt: 0, Completion: 0, Embeddings: []
+2023-10-30 22:50:28,259:INFO: ----------
+Test case Completed. Saving Artifacts into /mnt/c/Users/QUAN/Desktop/lbp_mri/artifacts/gpt-3.5-turbo_512_20_DescriptionsTableAndTextWithMetadataFilter_30-10-2023-22-42
+2023-10-30 23:02:02,487:INFO: ------EVALUATION-----
+2023-10-30 23:02:02,488:INFO: Accuracy score: 59.154929577464785
+2023-10-30 23:02:02,490:INFO: gpt_classification        human_gt                  match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True     10
+                          MAY BE APPROPRIATE        False     2
+                          USUALLY NOT APPROPRIATE   False     2
+MAY BE APPROPRIATE        MAY BE APPROPRIATE        True      4
+                          USUALLY APPROPRIATE       False     2
+                          USUALLY NOT APPROPRIATE   False     4
+USUALLY APPROPRIATE       MAY BE APPROPRIATE        False     8
+                          USUALLY APPROPRIATE       True     17
+                          USUALLY NOT APPROPRIATE   False    10
+USUALLY NOT APPROPRIATE   USUALLY APPROPRIATE       False     1
+                          USUALLY NOT APPROPRIATE   True     11
+Name: match, dtype: int64
+2023-10-30 23:02:02,492:INFO: human_gt                  gpt_classification        match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True     10
+MAY BE APPROPRIATE        INSUFFICIENT INFORMATION  False     2
+                          MAY BE APPROPRIATE        True      4
+                          USUALLY APPROPRIATE       False     8
+USUALLY APPROPRIATE       MAY BE APPROPRIATE        False     2
+                          USUALLY APPROPRIATE       True     17
+                          USUALLY NOT APPROPRIATE   False     1
+USUALLY NOT APPROPRIATE   INSUFFICIENT INFORMATION  False     2
+                          MAY BE APPROPRIATE        False     4
+                          USUALLY APPROPRIATE       False    10
+                          USUALLY NOT APPROPRIATE   True     11
+Name: match, dtype: int64
+2023-10-31 00:51:15,272:INFO: -------------
+Experiment settings:
+emb_type:openai
+vectorstore:chroma
+chunk_size:512
+chunk_overlap:20
+table_similarity_top_k:4
+text_similarity_top_k:5
+index_name:msk-mri
+description:DescriptionsTableAndTextWithMetadataFilter
+metadata_filter:True
+refine_profile:False
+refine_llm:gpt-4
+synthesizer_llm:gpt-4
+synthesizer_max_tokens:512
+synthesizer_temperature:0
+response_mode:simple_summarize
+2023-10-31 00:51:15,286:INFO: -------------
+QA PROMPT: system: 
+You are a radiologist expert at providing imaging recommendations for patients with musculoskeletal conditions.
+If you do not know an answer, just say "I dont know", do not make up an answer.
+==========
+TASK: You are given a PATIENT PROFILE and a SCAN ORDER. Your task is to evaluate the appropriateness of the SCAN ORDER based on the PATIENT PROFILE.
+Perform step-by-step the following sequence of reasoning.
+1. Extract from PATIENT PROFILE relevant information for classification of imaging appropriateness. DO NOT make any assumptions from the SCAN ORDER.
+Important information includes AGE, SYMPTOMS, PREVIOUS DIAGNOSIS (IF ANY), which stage of diagnosis (INITIAL IMAGING OR NEXT STUDY).
+2. Refer to the reference information given under CONTEXT to analyse the appropriate imaging recommendations given the patient profile.
+3. Identify there are superior imaging procedures or treatments with a more favorable risk-benefit ratio.
+4. Based on the SCORING CRITERIA, recommend if the SCAN ORDER is USUALLY APPROPRIATE, MAY BE APPROPRIATE, USUALLY NOT APPROPRIATE or there is INSUFFICIENT INFORMATION to recommend the appropriateness.  
+If the scan is not appropriate, recommend an appropriate procedure.
+
+STRICTLY answer based on the given PATIENT PROFILE and CONTEXT. 
+==========
+SCORING CRITERIA:
+- USUALLY APPROPRIATE: The imaging procedure or treatment is indicated in the specified clinical scenarios at a favorable risk-benefit ratio for patients.
+- MAY BE APPROPRIATE: The imaging procedure or treatment may be indicated in the specified clinical scenarios as an alternative to imaging procedures or treatments with a more favorable risk-benefit ratio, or the risk-benefit ratio for patients is equivocal.
+- USUALLY NOT APPROPRIATE: The imaging procedure is unlikely to be recommended in the specified clinical scenarios, or the risk-benefit ratio for patients is likely to be unfavorable
+- INSUFFICIENT INFORMATION: The imaging procedure or treatment is not mentioned under CONTEXT or not enough relevant information from the PATIENT PROFILE to recommend based on information in CONTEXT.
+==========
+CONTEXT:
+
+context_str
+
+Take note for scenarios involving IV CONTRAST there are 3 distinct scan protocols: (1) with IV CONTRAST, (2) without IV CONTRAST, (3) without and with IV CONTRAST. 
+Each of them is different and can have different appropriateness category.
+==========
+
+user: query_str
+assistant: 
+2023-10-31 00:51:15,289:INFO: ------START RUNNING TEST CASES---------
+2023-10-31 01:34:16,691:INFO: --------------
+Tokens Consumption: Total: 0, Prompt: 0, Completion: 0, Embeddings: []
+2023-10-31 01:34:16,697:INFO: ----------
+Test case Completed. Saving Artifacts into /mnt/c/Users/QUAN/Desktop/lbp_mri/artifacts/gpt-4_512_20_DescriptionsTableAndTextWithMetadataFilter_31-10-2023-00-51
+2023-10-31 01:45:42,185:INFO: ------EVALUATION-----
+2023-10-31 01:45:42,189:INFO: Accuracy score: 83.09859154929578
+2023-10-31 01:45:42,196:INFO: gpt_classification        human_gt                  match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True     10
+                          MAY BE APPROPRIATE        False     2
+                          USUALLY NOT APPROPRIATE   False     2
+MAY BE APPROPRIATE        MAY BE APPROPRIATE        True      9
+                          USUALLY NOT APPROPRIATE   False     3
+USUALLY APPROPRIATE       MAY BE APPROPRIATE        False     3
+                          USUALLY APPROPRIATE       True     20
+                          USUALLY NOT APPROPRIATE   False     2
+USUALLY NOT APPROPRIATE   USUALLY NOT APPROPRIATE   True     20
+Name: match, dtype: int64
+2023-10-31 01:45:42,202:INFO: human_gt                  gpt_classification        match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True     10
+MAY BE APPROPRIATE        INSUFFICIENT INFORMATION  False     2
+                          MAY BE APPROPRIATE        True      9
+                          USUALLY APPROPRIATE       False     3
+USUALLY APPROPRIATE       USUALLY APPROPRIATE       True     20
+USUALLY NOT APPROPRIATE   INSUFFICIENT INFORMATION  False     2
+                          MAY BE APPROPRIATE        False     3
+                          USUALLY APPROPRIATE       False     2
+                          USUALLY NOT APPROPRIATE   True     20
+Name: match, dtype: int64

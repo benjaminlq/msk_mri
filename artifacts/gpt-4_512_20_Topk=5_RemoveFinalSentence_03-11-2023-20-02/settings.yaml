@@ -1,0 +1,11 @@
+chunk_overlap: 20
+chunk_size: 512
+description: Topk=5_RemoveFinalSentence
+emb_type: openai
+index_name: msk-mri
+response_mode: simple_summarize
+similarity_top_k: 5
+synthesizer_llm: gpt-4
+synthesizer_max_tokens: 512
+synthesizer_temperature: 0
+vectorstore: faiss

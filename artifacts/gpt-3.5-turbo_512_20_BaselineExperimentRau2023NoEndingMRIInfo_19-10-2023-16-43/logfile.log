@@ -1,0 +1,16 @@
+2023-10-19 16:43:15,032:INFO: Experiment settings:
+llm_model:gpt-3.5-turbo
+emb_model:openai
+framework:llama_index
+prompt:Case: {input_text}
+Scan Ordered: {scan_order}
+Question: Is this imaging modality for this case USUALLY APPROPRIATE, MAY BE APPROPRIATE, USUALLY NOT APPROPRIATE or INSUFFICIENT INFORMATION. Then state precisely the most appropriate imaging modality and if contrast agent is needed
+chunk_size:512
+chunk_overlap:20
+description:BaselineExperimentRau2023NoEndingMRIInfo
+max_tokens:0
+k:3
+chain_type:compact
+db_type:simple
+temperature:0
+2023-10-19 16:46:26,464:INFO: Tokens Consumption: Total: 99283, Prompt: 96997, Completion: 2286, Embeddings: []

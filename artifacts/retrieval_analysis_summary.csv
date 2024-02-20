@@ -1,0 +1,9 @@
+No,Separate Tables,Scan Order,Metadata Filter,Embeddings Content,LLM Refine,Table Precision,Table Recall,Text Precision,Text Recall,Total Precision,Total Recall,Table Dist,Text Dist,Overall Dist,Table HIT Rate,,
+1,NO,YES,NO,Text + Descriptions,NO,,,72.676,88.732,,,,0.316,,,,
+2,YES,YES,NO,Text + Descriptions,NO,60,87.324,67.606,87.324,63.803,90.141,0.322,0.331,0.327,0.69,,
+3,YES,NO,NO,Descriptions,NO,53.521,87.324,57.746,85.915,55.634,91.549,0.696,0.684,0.69,0.775,,FAISS L2
+4,YES,YES,NO,Descriptions,NO,66.479,91.549,70.704,88.732,68.592,92.958,0.729,0.73,0.73,0.803,,CHROMA
+5,YES,NO,NO,Descriptions,YES,52.394,88.732,58.028,90.141,55.211,91.549,0.722,0.712,0.717,0.775,,
+6,YES,YES,NO,Descriptions,YES,62.535,90.141,67.606,88.732,65.07,92.958,0.745,0.747,0.746,0.831,,
+7,YES,YES,YES,Descriptions,NO,76.271,88.732,79.344,87.324,77.833,88.732,0.728,0.728,0.728,0.803,,
+8,YES,YES,YES,Descriptions,YES,75.593,90.141,76.721,87.324,76.167,90.141,0.744,0.747,0.746,0.831,,

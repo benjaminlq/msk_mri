@@ -1,0 +1,385 @@
+2023-10-22 16:21:36,469:INFO: --------------------
+Loading VectorDB from /mnt/c/Users/User/Desktop/lbp_mri/data/emb_store/faiss/openai_512_20
+2023-10-22 16:21:40,913:INFO: -------------
+Experiment settings:
+emb_type:openai
+vectorstore:faiss
+chunk_size:512
+chunk_overlap:20
+similarity_top_k:5
+index_name:msk-mri
+description:Topk=5_RemoveFinalSentence
+synthesizer_llm:gpt-4
+synthesizer_max_tokens:512
+synthesizer_temperature:0
+response_mode:simple_summarize
+2023-10-22 16:21:40,921:INFO: -------------
+PROMPT: 
+2023-10-22 16:43:03,713:INFO: --------------
+Tokens Consumption: Total: 188694, Prompt: 178426, Completion: 10268, Embeddings: []
+2023-10-22 16:59:46,781:INFO: ------EVALUATION-----
+2023-10-22 16:59:46,784:INFO: Accuracy score: 50.70422535211267
+2023-10-22 16:59:46,788:INFO: human_gt                  match
+ICI                       False     1
+INSUFFICIENT INFORMATION  False     8
+                          True      1
+MAY BE APPROPRIATE        False    12
+                          True      2
+USUALLY APPROPRIATE       True     19
+                          False     1
+USUALLY NOT APPROPRIATE   True     14
+                          False    13
+Name: match, dtype: int64
+2023-10-22 16:59:46,809:INFO: gpt_classification        human_gt                  match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True      1
+MAY BE APPROPRIATE        INSUFFICIENT INFORMATION  False     1
+                          MAY BE APPROPRIATE        True      2
+USUALLY APPROPRIATE       ICI                       False     1
+                          INSUFFICIENT INFORMATION  False     6
+                          MAY BE APPROPRIATE        False     9
+                          USUALLY APPROPRIATE       True     19
+                          USUALLY NOT APPROPRIATE   False    13
+USUALLY NOT APPROPRIATE   INSUFFICIENT INFORMATION  False     1
+                          MAY BE APPROPRIATE        False     3
+                          USUALLY APPROPRIATE       False     1
+                          USUALLY NOT APPROPRIATE   True     14
+Name: match, dtype: int64
+2023-10-22 17:08:34,344:INFO: --------------------
+Loading VectorDB from /mnt/c/Users/User/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_20
+2023-10-22 17:08:34,556:INFO: -------------
+Experiment settings:
+emb_type:openai
+vectorstore:faiss
+chunk_size:1024
+chunk_overlap:20
+similarity_top_k:5
+index_name:msk-mri
+description:Topk=5_RemoveFinalSentence
+synthesizer_llm:gpt-3.5-turbo
+synthesizer_max_tokens:512
+synthesizer_temperature:0
+response_mode:simple_summarize
+2023-10-22 17:08:34,560:INFO: -------------
+PROMPT: system: 
+You are a radiologist expert at providing imaging recommendations for patients with musculoskeletal conditions.
+If you do not know an answer, just say "I dont know", do not make up an answer.
+==========
+TASK:
+1. Extract from given PATIENT PROFILE relevant information for classification of imaging appropriateness.
+Important information includes AGE, SYMPTOMS, DIAGNOSIS (IF ANY), which stage of diagnosis (INITIAL IMAGING OR NEXT STUDY).
+2. Refer to the reference information given under CONTEXT to analyse the appropriate imaging recommendations given the patient profile.
+3. Given the PATIENT PROFILE and CONTEXT, refer to the SCORING CRITERIA and recommend if the image scan ordered is USUALLY APPROPRIATE, MAY BE APPROPRIATE, USUALLY NOT APPROPRIATE or there is INSUFFICIENT INFORMATION to recommend the appropriateness.  
+If the scan is not appropriate, recommend an appropriate procedure.
+
+STRICTLY answer based on the given PATIENT PROFILE and CONTEXT. 
+==========
+SCORING CRITERIA:
+- USUALLY APPROPRIATE: The imaging procedure or treatment is indicated in the specified clinical scenarios at a favorable risk-benefit ratio for patients.
+- MAY BE APPROPRIATE: The imaging procedure or treatment may be indicated in the specified clinical scenarios as an alternative to imaging procedures or treatments with a more favorable risk-benefit ratio, or the risk-benefit ratio for patients is equivocal.
+- USUALLY NOT APPROPRIATE: The imaging procedure or treatment is unlikely to be indicated in the specified clinical scenarios, or the risk-benefit ratio for patients is likely to be unfavorable.
+- INSUFFICIENT INFORMATION: There is not enough information from PATIENT PROFILE and CONTEXT information to conclude the appropriateness
+==========
+OUTPUT INSTRUCTIONS:
+Your output should contain the following:
+1. Classification of appropriateness for the ordered scan.
+2. Provide explanation for the appropriateness classification.
+3. If classification answer is USUALLY NOT APPROPRIATE, either recommend an alternative appropriate scan procedure or return NO SCAN REQUIRED.
+
+Format your output as follow:
+1. Classification: Can be one of [USUALLY APPROPRIATE, MAY BE APPROPRIATE, USUALLY NOT APPROPRIATE, INSUFFICIENT INFORMATION]
+2. Explanation:
+3. Recommendation: Can be alternative procedure, NO SCAN REQUIRED or NO CHANGE REQUIRED 
+==========
+CONTEXT:
+
+context_str
+==========
+
+user: query_str
+assistant: 
+2023-10-22 17:08:34,562:INFO: ------START RUNNING TEST CASES---------
+2023-10-22 17:12:19,759:INFO: --------------------
+Loading VectorDB from /mnt/c/Users/User/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_20
+2023-10-22 17:12:19,871:INFO: -------------
+Experiment settings:
+emb_type:openai
+vectorstore:faiss
+chunk_size:1024
+chunk_overlap:20
+similarity_top_k:5
+index_name:msk-mri
+description:Topk=5_RemoveFinalSentence
+synthesizer_llm:gpt-3.5-turbo
+synthesizer_max_tokens:512
+synthesizer_temperature:0
+response_mode:simple_summarize
+2023-10-22 17:12:19,878:INFO: -------------
+PROMPT: system: 
+You are a radiologist expert at providing imaging recommendations for patients with musculoskeletal conditions.
+If you do not know an answer, just say "I dont know", do not make up an answer.
+==========
+TASK:
+1. Extract from given PATIENT PROFILE relevant information for classification of imaging appropriateness.
+Important information includes AGE, SYMPTOMS, DIAGNOSIS (IF ANY), which stage of diagnosis (INITIAL IMAGING OR NEXT STUDY).
+2. Refer to the reference information given under CONTEXT to analyse the appropriate imaging recommendations given the patient profile.
+3. Given the PATIENT PROFILE and CONTEXT, refer to the SCORING CRITERIA and recommend if the image scan ordered is USUALLY APPROPRIATE, MAY BE APPROPRIATE, USUALLY NOT APPROPRIATE or there is INSUFFICIENT INFORMATION to recommend the appropriateness.  
+If the scan is not appropriate, recommend an appropriate procedure.
+
+STRICTLY answer based on the given PATIENT PROFILE and CONTEXT. 
+==========
+SCORING CRITERIA:
+- USUALLY APPROPRIATE: The imaging procedure or treatment is indicated in the specified clinical scenarios at a favorable risk-benefit ratio for patients.
+- MAY BE APPROPRIATE: The imaging procedure or treatment may be indicated in the specified clinical scenarios as an alternative to imaging procedures or treatments with a more favorable risk-benefit ratio, or the risk-benefit ratio for patients is equivocal.
+- USUALLY NOT APPROPRIATE: The imaging procedure or treatment is unlikely to be indicated in the specified clinical scenarios, or the risk-benefit ratio for patients is likely to be unfavorable.
+- INSUFFICIENT INFORMATION: There is not enough information from PATIENT PROFILE and CONTEXT information to conclude the appropriateness
+==========
+OUTPUT INSTRUCTIONS:
+Your output should contain the following:
+1. Classification of appropriateness for the ordered scan.
+2. Provide explanation for the appropriateness classification.
+3. If classification answer is USUALLY NOT APPROPRIATE, either recommend an alternative appropriate scan procedure or return NO SCAN REQUIRED.
+
+Format your output as follow:
+1. Classification: Can be one of [USUALLY APPROPRIATE, MAY BE APPROPRIATE, USUALLY NOT APPROPRIATE, INSUFFICIENT INFORMATION]
+2. Explanation:
+3. Recommendation: Can be alternative procedure, NO SCAN REQUIRED or NO CHANGE REQUIRED 
+==========
+CONTEXT:
+
+context_str
+==========
+
+user: query_str
+assistant: 
+2023-10-22 17:12:19,883:INFO: ------START RUNNING TEST CASES---------
+2023-10-22 17:17:58,663:INFO: --------------
+Tokens Consumption: Total: 205120, Prompt: 194174, Completion: 10946, Embeddings: []
+2023-10-22 17:17:58,678:INFO: ----------
+Test case Completed. Saving Artifacts into /mnt/c/Users/User/Desktop/lbp_mri/artifacts/gpt-3.5-turbo_1024_20_Topk=5_RemoveFinalSentence_22-10-2023-17-12
+2023-10-22 17:29:26,318:INFO: --------------------
+Loading VectorDB from /mnt/c/Users/User/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_20
+2023-10-22 17:29:26,420:INFO: -------------
+Experiment settings:
+emb_type:openai
+vectorstore:faiss
+chunk_size:1024
+chunk_overlap:20
+similarity_top_k:5
+index_name:msk-mri
+description:Topk=5_RemoveFinalSentence
+synthesizer_llm:gpt-3.5-turbo
+synthesizer_max_tokens:512
+synthesizer_temperature:0
+response_mode:simple_summarize
+2023-10-22 17:29:26,431:INFO: -------------
+PROMPT: system: 
+You are a radiologist expert at providing imaging recommendations for patients with musculoskeletal conditions.
+If you do not know an answer, just say "I dont know", do not make up an answer.
+==========
+TASK:
+1. Extract from given PATIENT PROFILE relevant information for classification of imaging appropriateness.
+Important information includes AGE, SYMPTOMS, DIAGNOSIS (IF ANY), which stage of diagnosis (INITIAL IMAGING OR NEXT STUDY).
+2. Refer to the reference information given under CONTEXT to analyse the appropriate imaging recommendations given the patient profile.
+3. Given the PATIENT PROFILE and CONTEXT, refer to the SCORING CRITERIA and recommend if the image scan ordered is USUALLY APPROPRIATE, MAY BE APPROPRIATE, USUALLY NOT APPROPRIATE or there is INSUFFICIENT INFORMATION to recommend the appropriateness.  
+If the scan is not appropriate, recommend an appropriate procedure.
+
+STRICTLY answer based on the given PATIENT PROFILE and CONTEXT. 
+==========
+SCORING CRITERIA:
+- USUALLY APPROPRIATE: The imaging procedure or treatment is indicated in the specified clinical scenarios at a favorable risk-benefit ratio for patients.
+- MAY BE APPROPRIATE: The imaging procedure or treatment may be indicated in the specified clinical scenarios as an alternative to imaging procedures or treatments with a more favorable risk-benefit ratio, or the risk-benefit ratio for patients is equivocal.
+- USUALLY NOT APPROPRIATE: The imaging procedure or treatment is unlikely to be indicated in the specified clinical scenarios, or the risk-benefit ratio for patients is likely to be unfavorable.
+- INSUFFICIENT INFORMATION: There is not enough information from PATIENT PROFILE and CONTEXT information to conclude the appropriateness
+==========
+OUTPUT INSTRUCTIONS:
+Your output should contain the following:
+1. Classification of appropriateness for the ordered scan.
+2. Provide explanation for the appropriateness classification.
+3. If classification answer is USUALLY NOT APPROPRIATE, either recommend an alternative appropriate scan procedure or return NO SCAN REQUIRED.
+
+Format your output as follow:
+1. Classification: Can be one of [USUALLY APPROPRIATE, MAY BE APPROPRIATE, USUALLY NOT APPROPRIATE, INSUFFICIENT INFORMATION]
+2. Explanation:
+3. Recommendation: Can be alternative procedure, NO SCAN REQUIRED or NO CHANGE REQUIRED 
+==========
+CONTEXT:
+
+context_str
+==========
+
+user: query_str
+assistant: 
+2023-10-22 17:29:26,438:INFO: ------START RUNNING TEST CASES---------
+2023-10-22 17:30:32,335:INFO: --------------------
+Loading VectorDB from /mnt/c/Users/User/Desktop/lbp_mri/data/emb_store/faiss/openai_1024_20
+2023-10-22 17:30:32,474:INFO: -------------
+Experiment settings:
+emb_type:openai
+vectorstore:faiss
+chunk_size:1024
+chunk_overlap:20
+similarity_top_k:5
+index_name:msk-mri
+description:Topk=5_RemoveFinalSentence
+synthesizer_llm:gpt-3.5-turbo
+synthesizer_max_tokens:512
+synthesizer_temperature:0
+response_mode:simple_summarize
+2023-10-22 17:30:32,487:INFO: -------------
+PROMPT: system: 
+You are a radiologist expert at providing imaging recommendations for patients with musculoskeletal conditions.
+If you do not know an answer, just say "I dont know", do not make up an answer.
+==========
+TASK:
+1. Extract from given PATIENT PROFILE relevant information for classification of imaging appropriateness.
+Important information includes AGE, SYMPTOMS, DIAGNOSIS (IF ANY), which stage of diagnosis (INITIAL IMAGING OR NEXT STUDY).
+2. Refer to the reference information given under CONTEXT to analyse the appropriate imaging recommendations given the patient profile.
+3. Given the PATIENT PROFILE and CONTEXT, refer to the SCORING CRITERIA and recommend if the image scan ordered is USUALLY APPROPRIATE, MAY BE APPROPRIATE, USUALLY NOT APPROPRIATE or there is INSUFFICIENT INFORMATION to recommend the appropriateness.  
+If the scan is not appropriate, recommend an appropriate procedure.
+
+STRICTLY answer based on the given PATIENT PROFILE and CONTEXT. 
+==========
+SCORING CRITERIA:
+- USUALLY APPROPRIATE: The imaging procedure or treatment is indicated in the specified clinical scenarios at a favorable risk-benefit ratio for patients.
+- MAY BE APPROPRIATE: The imaging procedure or treatment may be indicated in the specified clinical scenarios as an alternative to imaging procedures or treatments with a more favorable risk-benefit ratio, or the risk-benefit ratio for patients is equivocal.
+- USUALLY NOT APPROPRIATE: The imaging procedure or treatment is unlikely to be indicated in the specified clinical scenarios, or the risk-benefit ratio for patients is likely to be unfavorable.
+- INSUFFICIENT INFORMATION: There is not enough information from PATIENT PROFILE and CONTEXT information to conclude the appropriateness
+==========
+OUTPUT INSTRUCTIONS:
+Your output should contain the following:
+1. Classification of appropriateness for the ordered scan.
+2. Provide explanation for the appropriateness classification.
+3. If classification answer is USUALLY NOT APPROPRIATE, either recommend an alternative appropriate scan procedure or return NO SCAN REQUIRED.
+
+Format your output as follow:
+1. Classification: Can be one of [USUALLY APPROPRIATE, MAY BE APPROPRIATE, USUALLY NOT APPROPRIATE, INSUFFICIENT INFORMATION]
+2. Explanation:
+3. Recommendation: Can be alternative procedure, NO SCAN REQUIRED or NO CHANGE REQUIRED 
+==========
+CONTEXT:
+
+context_str
+==========
+
+user: query_str
+assistant: 
+2023-10-22 17:30:32,498:INFO: ------START RUNNING TEST CASES---------
+2023-10-22 17:35:53,279:INFO: --------------
+Tokens Consumption: Total: 204882, Prompt: 194174, Completion: 10708, Embeddings: []
+2023-10-22 17:35:53,299:INFO: ----------
+Test case Completed. Saving Artifacts into /mnt/c/Users/User/Desktop/lbp_mri/artifacts/gpt-3.5-turbo_1024_20_Topk=5_RemoveFinalSentence_22-10-2023-17-30
+2023-10-22 17:37:12,009:INFO: ------EVALUATION-----
+2023-10-22 17:37:12,014:INFO: Accuracy score: 0.0
+2023-10-22 17:37:12,021:INFO: gpt_classification  human_gt                  match
+                    INSUFFICIENT INFORMATION  False    10
+                    MAY BE APPROPRIATE        False    14
+                    USUALLY APPROPRIATE       False    20
+                    USUALLY NOT APPROPRIATE   False    27
+Name: match, dtype: int64
+2023-10-22 17:37:12,029:INFO: human_gt                  gpt_classification  match
+INSUFFICIENT INFORMATION                      False    10
+MAY BE APPROPRIATE                            False    14
+USUALLY APPROPRIATE                           False    20
+USUALLY NOT APPROPRIATE                       False    27
+Name: match, dtype: int64
+2023-10-22 17:56:36,173:INFO: ------EVALUATION-----
+2023-10-22 17:56:36,181:INFO: Accuracy score: 40.845070422535215
+2023-10-22 17:56:36,188:INFO: gpt_classification        human_gt                  match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True      4
+                          MAY BE APPROPRIATE        False     1
+                          USUALLY APPROPRIATE       False     1
+MAY BE APPROPRIATE        MAY BE APPROPRIATE        True      4
+                          USUALLY APPROPRIATE       False     3
+                          USUALLY NOT APPROPRIATE   False     3
+USUALLY APPROPRIATE       INSUFFICIENT INFORMATION  False     6
+                          MAY BE APPROPRIATE        False     8
+                          USUALLY APPROPRIATE       True     13
+                          USUALLY NOT APPROPRIATE   False    16
+USUALLY NOT APPROPRIATE   MAY BE APPROPRIATE        False     1
+                          USUALLY APPROPRIATE       False     3
+                          USUALLY NOT APPROPRIATE   True      8
+Name: match, dtype: int64
+2023-10-22 17:56:36,197:INFO: human_gt                  gpt_classification        match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True      4
+                          USUALLY APPROPRIATE       False     6
+MAY BE APPROPRIATE        INSUFFICIENT INFORMATION  False     1
+                          MAY BE APPROPRIATE        True      4
+                          USUALLY APPROPRIATE       False     8
+                          USUALLY NOT APPROPRIATE   False     1
+USUALLY APPROPRIATE       INSUFFICIENT INFORMATION  False     1
+                          MAY BE APPROPRIATE        False     3
+                          USUALLY APPROPRIATE       True     13
+                          USUALLY NOT APPROPRIATE   False     3
+USUALLY NOT APPROPRIATE   MAY BE APPROPRIATE        False     3
+                          USUALLY APPROPRIATE       False    16
+                          USUALLY NOT APPROPRIATE   True      8
+Name: match, dtype: int64
+2023-10-23 00:11:28,982:INFO: --------------------
+Loading VectorDB from /mnt/c/Users/User/Desktop/lbp_mri/data/emb_store/faiss/openai_512_20
+2023-10-23 00:11:29,250:INFO: -------------
+Experiment settings:
+emb_type:openai
+vectorstore:faiss
+chunk_size:512
+chunk_overlap:20
+similarity_top_k:5
+index_name:msk-mri
+description:Topk=5_RemoveFinalSentence
+synthesizer_llm:gpt-4
+synthesizer_max_tokens:512
+synthesizer_temperature:0
+response_mode:simple_summarize
+2023-10-23 00:11:29,265:INFO: -------------
+PROMPT: system: 
+You are a radiologist expert at providing imaging recommendations for patients with musculoskeletal conditions.
+If you do not know an answer, just say "I dont know", do not make up an answer.
+==========
+TASK: You are given a PATIENT PROFILE and a SCAN ORDER. Your task is to evaluate if the appropriateness of the SCAN ORDER based on the PATIENT PROFILE.
+Perform step-by-step the following sequence of reasoning.
+1. Extract from given PATIENT PROFILE relevant information including AGE, SYMPTOMS, previous DIAGNOSIS (IF ANY), which stage of diagnosis (INITIAL IMAGING OR NEXT STUDY).
+2. Refer to the reference information given under CONTEXT to analyse the appropriate imaging recommendations given the patient profile.
+3. Based on the SCORING CRITERIA, recommend if the image scan ordered is USUALLY APPROPRIATE, MAY BE APPROPRIATE, USUALLY NOT APPROPRIATE or there is INSUFFICIENT INFORMATION to recommend the appropriateness.  
+If the scan is not appropriate, recommend an appropriate procedure.
+
+STRICTLY answer based on the given PATIENT PROFILE and CONTEXT. 
+==========
+SCORING CRITERIA:
+- USUALLY APPROPRIATE: The imaging procedure or treatment is indicated in the specified clinical scenarios at a favorable risk-benefit ratio for patients.
+- MAY BE APPROPRIATE: The imaging procedure or treatment may be indicated in the specified clinical scenarios as an alternative to imaging procedures or treatments with a more favorable risk-benefit ratio, or the risk-benefit ratio for patients is equivocal.
+- USUALLY NOT APPROPRIATE: The imaging procedure or treatment is unlikely to be indicated in the specified clinical scenarios, or the risk-benefit ratio for patients is likely to be unfavorable.
+- INSUFFICIENT INFORMATION: There is not enough information from PATIENT PROFILE and CONTEXT information to conclude the appropriateness
+==========
+CONTEXT:
+
+context_str
+==========
+
+user: query_str
+assistant: 
+2023-10-23 00:11:29,272:INFO: ------START RUNNING TEST CASES---------
+2023-10-23 00:18:08,276:INFO: --------------
+Tokens Consumption: Total: 62529, Prompt: 56166, Completion: 6363, Embeddings: []
+2023-10-23 00:18:08,301:INFO: ----------
+Test case Completed. Saving Artifacts into /mnt/c/Users/User/Desktop/lbp_mri/artifacts/gpt-4_512_20_Topk=5_RemoveFinalSentence_23-10-2023-00-11
+2023-10-23 00:18:37,579:INFO: ------EVALUATION-----
+2023-10-23 00:18:37,585:INFO: Accuracy score: 37.5
+2023-10-23 00:18:37,604:INFO: gpt_classification        human_gt                  match
+                          MAY BE APPROPRIATE        False    1
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True     5
+                          MAY BE APPROPRIATE        False    1
+MAY BE APPROPRIATE        INSUFFICIENT INFORMATION  False    1
+                          MAY BE APPROPRIATE        True     4
+USUALLY APPROPRIATE       INSUFFICIENT INFORMATION  False    4
+                          MAY BE APPROPRIATE        False    7
+USUALLY NOT APPROPRIATE   MAY BE APPROPRIATE        False    1
+Name: match, dtype: int64
+2023-10-23 00:18:37,615:INFO: human_gt                  gpt_classification        match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True     5
+                          MAY BE APPROPRIATE        False    1
+                          USUALLY APPROPRIATE       False    4
+MAY BE APPROPRIATE                                  False    1
+                          INSUFFICIENT INFORMATION  False    1
+                          MAY BE APPROPRIATE        True     4
+                          USUALLY APPROPRIATE       False    7
+                          USUALLY NOT APPROPRIATE   False    1
+Name: match, dtype: int64
