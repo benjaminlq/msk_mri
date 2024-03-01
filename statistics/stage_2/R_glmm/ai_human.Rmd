@@ -1,0 +1,450 @@
+---
+title: "glmm"
+author: "Ben"
+date: "2/24/2024"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse) # data wrangling and visualization
+library(sjPlot) # to visualizing mixed-effects models
+library(effects) # to visualizing mixed-effects models
+library(psycho)
+library(broom)
+library(lme4) # "golden standard" for mixed-effects modelling in R (no p-values)
+library(lmerTest) # p-values for MEMs based on the Satterthwaite approximation
+library(report) # mainly for an "report" function
+library(emmeans) # post-hoc analysis
+library(knitr) # beautifying tables
+library(sjstats) # ICC - intraclass-correlation coefficient
+library(caret) # ML, model comparison & utility functions
+library(Gmisc)
+library(lattice)
+library(optimx)
+```
+
+# Directories and data
+```{r}
+MAIN_DIR = getwd()
+DATA_DIR = pathJoin(MAIN_DIR, "aihuman.csv") 
+df = read.csv(DATA_DIR)
+df
+```
+
+# Logistic Regression
+lr1: Fixed effects = AI
+lr2: Fixed effects = AI + Seniority
+lr3: Fixed effects = AI + AI Correctness
+lr4: Fixed effects = AI + Seniority + AI Correctness
+
+```{r}
+lr_v1 <- glm(human_correctness ~ ai_usage, data = df, family = binomial)
+lr_v2 <- glm(human_correctness ~ ai_usage + seniority, data = df, family = binomial)
+lr_v3 <- glm(human_correctness ~ ai_usage + ai_correctness, data = df, family = binomial)
+lr_v4 <- glm(human_correctness ~ ai_usage + seniority + ai_correctness, data = df, family = binomial)
+lr_v5 <- glm(human_correctness ~ ai_usage * ai_correctness + seniority, data = df, family = binomial)
+
+print("Model 1 Summary:")
+summary(lr_v1)
+print("Model 2 Summary:")
+summary(lr_v2)
+print("Model 3 Summary:")
+summary(lr_v3)
+print("Model 4 Summary:")
+summary(lr_v4)
+print("Model 5 Summary:")
+summary(lr_v5)
+```
+
+```{r}
+tab_model(lr_v5, lr_v4, lr_v3, lr_v2, lr_v1,  p.style = "scientific" , show.aic = T)
+```
+
+```{r}
+anova(lr_v5, lr_v4, lr_v3, lr_v1, test='LR')
+```
+
+```{r}
+anova(lr_v5, lr_v4, lr_v2, lr_v1, test='LR')
+```
+
+# Mixed Effects Models
+```{r}
+
+#control_method <- glmerControl(optimizer="bobyqa",optCtrl=list(maxfun=2e5))
+control_method <- glmerControl(optCtrl = list(maxfun = 1e6))
+
+lmm_v1 <- glmer(human_correctness ~ ai_usage * ai_correctness + seniority # Fixed
+                + (1 | participant), # Random
+                data = df, family = binomial,
+                control = control_method
+                )
+print("Model 1 Summary:")
+summary(lmm_v1)
+
+lmm_v2 <- glmer(human_correctness ~ ai_usage * ai_correctness + seniority # Fixed
+                + (1 | question_no), # Random
+                data = df, family = binomial,
+                control = control_method
+                )
+print("Model 2 Summary:")
+summary(lmm_v2)
+
+lmm_v3 <- glmer(human_correctness ~ ai_usage * ai_correctness + seniority # Fixed
+                + (1 | participant) + (1 | question_no), # Random
+                data = df, family = binomial,
+                control = control_method
+                )
+print("Model 3 Summary:")
+summary(lmm_v3)
+
+lmm_v4 <- glmer(human_correctness ~ ai_usage * ai_correctness + seniority # Fixed
+                + (seniority | participant) + (1 | question_no), # Random
+                data = df, family = binomial,
+                control = control_method
+                )
+print("Model 4 Summary:")
+summary(lmm_v4)
+
+lmm_v5 <- glmer(human_correctness ~ ai_usage * ai_correctness + seniority # Fixed
+                + (1 | participant) + (ai_correctness | question_no), # Random
+                data = df, family = binomial,
+                control = control_method
+                )
+print("Model 5 Summary:")
+summary(lmm_v5)
+
+lmm_v6 <- glmer(human_correctness ~ ai_usage * ai_correctness + seniority # Fixed
+                + (seniority | participant) + (ai_correctness | question_no), # Random
+                data = df, family = binomial,
+                control = control_method
+                )
+print("Model 6 Summary:")
+summary(lmm_v6)
+```
+
+```{r}
+anova(lmm_v3, lmm_v2, lr_v5, test='LR')
+```
+
+```{r}
+anova(lmm_v6, lmm_v5, lmm_v3, lmm_v1, lr_v5, test='LR')
+```
+
+# Compare All Models
+```{r}
+tab_model(lmm_v6, lmm_v5, lmm_v4, lmm_v3, lmm_v2, lmm_v1,
+          lr_v5, lr_v4, lr_v3, lr_v2, lr_v1,
+          p.style = "scientific" , show.aic = T)
+```
+
+# Models of interests:
+## Best Model
+
+```{r}
+best_model <- glmer(human_correctness ~ ai_usage * ai_correctness + seniority # Fixed
+                 + (1 | participant) + (1 | question_no), # Random
+                data = df, family = binomial,
+                control = glmerControl(
+                    optimizer = "optimx",
+                    optCtrl = list(method = "L-BFGS-B")
+                    )
+                )
+summary(best_model)
+```
+
+```{r}
+report(best_model)
+```
+
+```{r}
+tab_model(best_model, p.style = "scientific" , show.aic = T)
+```
+
+```{r}
+plot_model(best_model, type = "re", show.values = TRUE)
+```
+
+## Flat
+```{r}
+flat_model_v1 <- glmer(human_correctness ~ ai_usage + ai_correctness + seniority # Fixed
+                 + (1 | participant) + (1 | question_no), # Random
+                data = df, family = binomial,
+                control = glmerControl(
+                    optimizer = "optimx",
+                    optCtrl = list(method = "L-BFGS-B")
+                    )
+                )
+summary(flat_model_v1)
+```
+
+```{r}
+report(flat_model_v1)
+```
+
+```{r}
+tab_model(flat_model_v1, p.style = "scientific" , show.aic = T)
+```
+
+## Flat Model V2
+```{r}
+flat_model_v2 <- glmer(human_correctness ~ ai_usage + seniority # Fixed
+                 + (1 | participant) + (1 | question_no), # Random
+                data = df, family = binomial,
+                control = glmerControl(
+                    optimizer = "optimx",
+                    optCtrl = list(method = "L-BFGS-B")
+                    )
+                )
+summary(flat_model_v2)
+```
+
+```{r}
+report(flat_model_v2)
+```
+
+```{r}
+tab_model(flat_model_v2, p.style = "scientific" , show.aic = T)
+```
+
+```{r}
+anova(best_model, flat_model_v1, flat_model_v2)
+```
+
+# Sub Group Analysis
+```{r}
+expert_df <- df %>% filter(df$seniority=="Expert")
+novice_df <- df %>% filter(df$seniority=="Novice")
+correct_df <- df %>% filter(df$ai_correctness==1)
+wrong_df <- df %>% filter(df$ai_correctness==0)
+```
+
+## Expert
+```{r}
+expert_model_v1 <- glmer(human_correctness ~ ai_usage # Fixed
+                 + (1 | question_no), # Random
+                data = expert_df, family = binomial,
+                control = glmerControl(
+                    optimizer = "optimx",
+                    optCtrl = list(method = "L-BFGS-B")
+                    )
+                )
+summary(expert_model_v1)
+```
+
+
+```{r}
+report(expert_model_v1)
+```
+
+```{r}
+tab_model(expert_model_v1, p.style = "scientific" , show.aic = T)
+```
+
+
+```{r}
+expert_model_v2 <- glmer(human_correctness ~ ai_usage + ai_correctness # Fixed
+                 + (1 | question_no), # Random
+                data = expert_df, family = binomial,
+                control = glmerControl(
+                    optimizer = "optimx",
+                    optCtrl = list(method = "L-BFGS-B")
+                    )
+                )
+summary(expert_model_v2)
+```
+
+```{r}
+report(expert_model_v2)
+```
+
+```{r}
+tab_model(expert_model_v2, p.style = "scientific" , show.aic = T)
+```
+
+```{r}
+expert_model_v3 <- glmer(human_correctness ~ ai_usage * ai_correctness # Fixed
+                 + (1 | question_no), # Random
+                data = expert_df, family = binomial,
+                control = glmerControl(
+                    optimizer = "optimx",
+                    optCtrl = list(method = "L-BFGS-B")
+                    )
+                )
+summary(expert_model_v3)
+```
+
+```{r}
+report(expert_model_v3)
+```
+
+```{r}
+tab_model(expert_model_v3, p.style = "scientific" , show.aic = T)
+```
+
+```{r}
+anova(expert_model_v1, expert_model_v2, expert_model_v3)
+```
+
+## Novice
+```{r}
+novice_model_v1 <- glmer(human_correctness ~ ai_usage # Fixed
+                 + (1 | question_no), # Random
+                data = novice_df, family = binomial,
+                control = glmerControl(
+                    optimizer = "optimx",
+                    optCtrl = list(method = "L-BFGS-B")
+                    )
+                )
+summary(novice_model_v1)
+```
+
+
+```{r}
+report(novice_model_v1)
+```
+
+```{r}
+tab_model(novice_model_v1, p.style = "scientific" , show.aic = T)
+```
+
+
+```{r}
+novice_model_v2 <- glmer(human_correctness ~ ai_usage + ai_correctness # Fixed
+                 + (1 | question_no), # Random
+                data = novice_df, family = binomial,
+                control = glmerControl(
+                    optimizer = "optimx",
+                    optCtrl = list(method = "L-BFGS-B")
+                    )
+                )
+summary(novice_model_v2)
+```
+
+```{r}
+report(novice_model_v2)
+```
+
+```{r}
+tab_model(novice_model_v2, p.style = "scientific" , show.aic = T)
+```
+
+```{r}
+novice_model_v3 <- glmer(human_correctness ~ ai_usage * ai_correctness # Fixed
+                 + (1 | question_no), # Random
+                data = novice_df, family = binomial,
+                control = glmerControl(optimizer = "bobyqa")
+                    )
+summary(novice_model_v3)
+```
+
+```{r}
+report(novice_model_v3)
+```
+
+```{r}
+tab_model(novice_model_v3, p.style = "scientific" , show.aic = T)
+```
+
+```{r}
+anova(novice_model_v1, novice_model_v2, novice_model_v3)
+```
+
+## CORRECT
+```{r}
+correct_model_v1 <- glmer(human_correctness ~ ai_usage + seniority # Fixed
+                 + (1 | question_no), # Random
+                data = correct_df, family = binomial,
+                control = glmerControl(
+                    optimizer = "optimx",
+                    optCtrl = list(method = "L-BFGS-B")
+                    )
+                )
+summary(correct_model_v1)
+```
+
+
+```{r}
+report(correct_model_v1)
+```
+
+```{r}
+tab_model(correct_model_v1, p.style = "scientific" , show.aic = T)
+```
+
+```{r}
+correct_model_v2 <- glmer(human_correctness ~ ai_usage # Fixed
+                 + (1 | question_no), # Random
+                data = correct_df, family = binomial,
+                control = glmerControl(
+                    optimizer = "optimx",
+                    optCtrl = list(method = "L-BFGS-B")
+                    )
+                )
+summary(correct_model_v2)
+```
+
+```{r}
+report(correct_model_v2)
+```
+
+```{r}
+tab_model(correct_model_v2, p.style = "scientific" , show.aic = T)
+```
+
+```{r}
+anova(correct_model_v1, correct_model_v2)
+```
+
+
+## WRONG
+```{r}
+wrong_model_v1 <- glmer(human_correctness ~ ai_usage + seniority # Fixed
+                 + (1 | question_no), # Random
+                data = wrong_df, family = binomial,
+                control = glmerControl(
+                    optimizer = "optimx",
+                    optCtrl = list(method = "L-BFGS-B")
+                    )
+                )
+summary(wrong_model_v1)
+```
+
+
+```{r}
+report(wrong_model_v1)
+```
+
+```{r}
+tab_model(wrong_model_v1, p.style = "scientific" , show.aic = T)
+```
+
+```{r}
+wrong_model_v2 <- glmer(human_correctness ~ ai_usage # Fixed
+                 + (1 | question_no), # Random
+                data = wrong_df, family = binomial,
+                control = glmerControl(
+                    optimizer = "optimx",
+                    optCtrl = list(method = "L-BFGS-B")
+                    )
+                )
+summary(wrong_model_v2)
+```
+
+```{r}
+report(wrong_model_v2)
+```
+
+```{r}
+tab_model(wrong_model_v2, p.style = "scientific" , show.aic = T)
+```
+
+```{r}
+anova(wrong_model_v1, wrong_model_v2)
+```

@@ -1,0 +1,211 @@
+---
+title: "test_glmm.Rmd"
+author: "Ben"
+date: "2/25/2024"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Install Packages
+```{r install packages}
+packages = c(
+    "tidyverse",
+    "sjPlot",
+    "lme4",
+    "lmerTest",
+    "psycho",
+    "broom",
+    "knitr",
+    "effects",
+    "report",
+    "emmeans"
+)
+
+for (package in packages) {
+    if(!require(package)) install.packages(package)
+}
+```
+
+```{r}
+library(tidyverse) # data wrangling and visualization
+library(sjPlot) # to visualizing mixed-effects models
+library(effects) # to visualizing mixed-effects models
+library(psycho)
+library(broom)
+library(lme4) # "golden standard" for mixed-effects modelling in R (no p-values)
+library(lmerTest) # p-values for MEMs based on the Satterthwaite approximation
+library(report) # mainly for an "report" function
+library(emmeans) # post-hoc analysis
+library(knitr) # beautifying tables
+library(sjstats) # ICC - intraclass-correlation coefficient
+library(caret) # ML, model comparison & utility functions
+library(Gmisc)
+library(lattice)
+```
+
+# Define directories
+```{r}
+MAIN_DIR = getwd()
+```
+
+```{r}
+DATA_PATH1 = pathJoin(MAIN_DIR, "politeness_data.csv") 
+polite_df = read.csv(DATA_PATH1)
+```
+
+# Analysis
+
+## Base Logistic Regression
+```{r}
+politeness_lr = lm(frequency ~ attitude, data=polite_df)
+summary(politeness_lr)
+```
+```{r}
+report(politeness_lr)
+```
+
+```{r}
+plot(allEffects(politeness_lr))
+```
+
+## Base Linear Mixed Model
+```{r}
+politeness_lmer <- lmer(frequency ~ attitude + (1|subject), data = polite_df, REML = F)
+summary(politeness_lmer)
+```
+
+```{r}
+report(politeness_lmer)
+```
+
+```{r}
+ranef(politeness_lmer, condVar=T)
+```
+
+```{r}
+fixef(politeness_lmer, condVar=T)
+```
+
+```{r}
+coef(politeness_lmer)
+```
+
+```{r}
+dotplot(ranef(politeness_lmer, condVar=T))
+```
+
+```{r}
+plot(allEffects(politeness_lr))
+```
+
+## Additional random intercept
+```{r}
+politeness_lmer_v2 <- lmer(frequency ~ attitude + 
+                           (1|subject) + (1|scenario), data=polite_df, REML = F)
+summary(politeness_lmer_v2)
+```
+
+```{r}
+report(politeness_lmer_v2)
+```
+
+```{r}
+coef(politeness_lmer_v2)
+```
+
+## Compare models
+```{r}
+anova(politeness_lmer_v2, politeness_lmer)
+```
+
+```{r}
+anova(politeness_lmer_v2, politeness_lr, politeness_lmer)
+```
+
+## Add Gender
+
+```{r}
+politeness_lmer_v3 <- lmer(frequency ~ attitude + gender +
+                           (1|subject) + (1|scenario), data=polite_df, REML = F)
+summary(politeness_lmer_v3)
+```
+
+```{r}
+report(politeness_lmer_v3)
+```
+
+```{r}
+plot(allEffects(politeness_lmer_v3))
+```
+
+```{r}
+anova(politeness_lmer_v3, politeness_lmer_v2)
+```
+
+```{r}
+tab_model(politeness_lmer_v3, p.style ="scientific")
+```
+
+```{r}
+emmeans(politeness_lmer_v3, pairwise ~ gender * attitude, adjust =
+            "bonferroni")$contrasts %>% tidy() %>%
+    mutate_if(is.numeric, ~round(., 4))
+```
+
+```{r}
+plot(fitted(politeness_lmer_v3), residuals(politeness_lmer_v3),
+     xlab = "Fitted Values", ylab = "Residuals")
+abline(h = 0, lty = 2)
+lines(smooth.spline(fitted(politeness_lmer_v3), residuals(politeness_lmer_v3)))
+```
+
+```{r}
+plot(politeness_lmer_v3)
+```
+
+```{r}
+plot_model(politeness_lmer_v3, type = "diag")
+```
+
+```{r}
+car::vif(politeness_lmer_v3)
+```
+
+```{r}
+car::influencePlot(politeness_lmer_v3)
+```
+
+## Single Random Slope Model
+```{r}
+rirsm = lmer(frequency ~ attitude + (1+attitude|subject), data=polite_df, REML=F)
+coef(rirsm)
+```
+
+```{r}
+summary(rirsm)
+```
+
+## Multiple random slopes model
+```{r}
+politeness_lmer_v4 = lmer(frequency ~ attitude + (attitude|subject) + (attitude|scenario),
+                          data=polite_df, REML = F)
+coef(politeness_lmer_v4)
+```
+
+```{r}
+summary(politeness_lmer_v4)
+```
+
+```{r}
+anova(politeness_lmer_v4, politeness_lmer_v2)
+```
+
+
+```{r}
+tab_model(politeness_lmer_v2, politeness_lmer_v3, politeness_lmer_v4, p.style ="scientific")
+```

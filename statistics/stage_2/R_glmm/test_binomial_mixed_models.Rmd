@@ -1,0 +1,97 @@
+---
+title: "Testing Bionomial Mixed Model"
+author: "Ben"
+date: "2024-02-26"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<!-- # Install Packages -->
+<!-- ```{r install packages} -->
+<!-- packages = c( -->
+<!--     "tidyverse", -->
+<!--     "sjPlot", -->
+<!--     "lme4", -->
+<!--     "lmerTest", -->
+<!--     "psycho", -->
+<!--     "broom", -->
+<!--     "knitr", -->
+<!--     "effects", -->
+<!--     "report", -->
+<!--     "emmeans" -->
+<!-- ) -->
+
+<!-- for (package in packages) { -->
+<!--     if(!require(package)) install.packages(package) -->
+<!-- } -->
+<!-- ``` -->
+
+```{r}
+library(tidyverse) # data wrangling and visualization
+library(sjPlot) # to visualizing mixed-effects models
+library(effects) # to visualizing mixed-effects models
+library(psycho)
+library(broom)
+library(lme4) # "golden standard" for mixed-effects modelling in R (no p-values)
+library(lmerTest) # p-values for MEMs based on the Satterthwaite approximation
+library(report) # mainly for an "report" function
+library(emmeans) # post-hoc analysis
+library(knitr) # beautifying tables
+library(sjstats) # ICC - intraclass-correlation coefficient
+library(caret) # ML, model comparison & utility functions
+library(Gmisc)
+library(lattice)
+```
+
+# Directories and data
+```{r}
+MAIN_DIR = getwd()
+DATA_DIR = pathJoin(MAIN_DIR, "hdp.csv") 
+df = read.csv(DATA_DIR)
+df
+```
+
+# Modelling
+## Linear Baseline
+```{r}
+lr_model <- glm(remission ~ CancerStage * Experience, data = df, family = binomial)
+summary(lr_model)
+```
+## Mixed Model
+```{r}
+mixed_binom_model_v1 <- glmer(remission ~ CancerStage * Experience + (1 | DID), data = df, family = binomial,
+              control = glmerControl(optimizer = "bobyqa"))
+summary(mixed_binom_model_v1)
+```
+
+Check Singularity
+```{r}
+isSingular(mixed_binom_model_v1)
+```
+
+Check correlation
+```{r}
+VarCorr(mixed_binom_model_v1)
+```
+
+## Model with random slopes
+```{r}
+mixed_binom_model_v2 <- glmer(remission ~ CancerStage * Experience + (CancerStage | DID),
+                              data = df, family = binomial,
+                              control = glmerControl(optimizer = "bobyqa")
+                              )
+summary(mixed_binom_model_v2)
+```
+## Compare
+```{r}
+anova(mixed_binom_model_v2, mixed_binom_model_v1, lr_model)
+```
+
+```{r}
+tab_model(mixed_binom_model_v1, mixed_binom_model_v2, p.style = "scientific" , show.aic = T)
+```
