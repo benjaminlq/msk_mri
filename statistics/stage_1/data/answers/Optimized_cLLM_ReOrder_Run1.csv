@@ -1,0 +1,778 @@
+﻿Clinical File, Approp Score ,"If UNA, recommend imaging modality (state without and/or with IV contrast if applicable)",GPT Raw Answer,ANSKEY1,ANSKEY2,Marker 1,Marker 2,LLM ANS EVALUATION,COMMENTS
+"22 year old Chinese Male. No significant past medical history.  Right shoulder pain for 2 weeks after being tackled in rugby match.  On examination, reduced range of motion, tendereness.  Sulcus sign positive.  Apprehension test positive. O'Brien test positive.  Shoulder X-Ray shows no fracture or dislocation.  MRI right shoulder without IV contrast to assess for instability.",USUALLY APPROPRIATE,MRI shoulder without IV contrast,"1. Relevant information from the patient profile includes: 
+   - Age: 22 years old
+   - Symptoms: Right shoulder pain for 2 weeks after a rugby match, reduced range of motion, tenderness
+   - Physical examination: Positive Sulcus sign, positive Apprehension test, positive O'Brien test, indicating possible shoulder instability
+   - Previous diagnosis: Shoulder X-Ray shows no fracture or dislocation
+   - Stage of diagnosis: Next imaging study
+
+2. According to the context, for a patient with traumatic shoulder pain, normal radiographs, and physical examination and history consistent with dislocation event or instability, the next imaging study recommended is either MR arthrography shoulder or MRI shoulder without IV contrast, both of which are usually appropriate.
+
+3. There are no superior imaging procedures or treatments with a more favorable risk-benefit ratio mentioned in the context.
+
+4. Based on the scoring criteria, the scan order of MRI right shoulder without IV contrast is USUALLY APPROPRIATE for this patient.",UA,,,,,
+"43 year old Indian Male.  Known ankylosing spondylitis on infliximab.  No breakthrough symptom.  No fever, loss of weight/appetite, abnormal sensation/weakness, shortness of breath.  Baseline MRI done pre treatment.  MRI sacroiliac joints with and without IV contrast to assess disease activity/response. ",MAY BE APPROPRIATE,MRI sacroiliac joints without and with IV contrast,"1. Relevant information from the patient profile includes: 
+   - Age: 43 years old
+   - Symptoms: No fever, loss of weight/appetite, abnormal sensation/weakness, shortness of breath
+   - Previous Diagnosis: Known ankylosing spondylitis
+   - Stage of Diagnosis: Follow-up for treatment response or disease progression
+   - Treatment: Infliximab
+
+2. According to the context provided, for a patient with known axial spondyloarthritis (ankylosing spondylitis in this case) who is being followed up for treatment response or disease progression, the appropriateness of different imaging procedures is as follows:
+   - MRI sacroiliac joints and spine area of interest without and with IV contrast: May Be Appropriate
+   - MRI sacroiliac joints without and with IV contrast: May Be Appropriate
+
+3. There are no superior imaging procedures mentioned in the context for this specific scenario. 
+
+4. Based on the scoring criteria, the ordered scan (MRI sacroiliac joints with and without IV contrast) is MAY BE APPROPRIATE for this patient. This is because the scan may be indicated in this clinical scenario as an alternative to imaging procedures or treatments with a more favorable risk-benefit ratio, or the risk-benefit ratio for patients is equivocal.",MBA,,,,,
+"38 year old Bangladeshi Male.  No significant past medical history.   Was using power drill when it slipped and penetrated right wrist.  On examination: oozing wound on dorsum of right wrist, no obvious bone visualised.  Wrist swelling. Unable to assess range of motion due to pain.  Nil imaging performed thus far.   MRI right wrist without IV contrast to assess soft tissue and bony injury.  ",USUALLY NOT APPROPRIATE,Radiography of the right wrist,"1. Relevant information from the patient profile includes: 
+- Age: 38 years old
+- Symptoms: oozing wound on the dorsum of the right wrist, wrist swelling, pain
+- Previous diagnosis: None
+- Stage of diagnosis: Initial imaging
+
+2. Referring to the context, the patient's condition can be classified under ""acute hand and wrist trauma"". The patient has a penetrating trauma to the hand or wrist, and no initial imaging has been performed yet.
+
+3. According to the context, for acute blunt or penetrating trauma to the hand or wrist, the initial imaging procedure that is usually appropriate is radiography of the area of interest. MRI without IV contrast is usually not appropriate as an initial imaging procedure in this scenario.
+
+4. Based on the scoring criteria, the scan order of MRI right wrist without IV contrast is USUALLY NOT APPROPRIATE for this patient at this stage. An appropriate procedure would be radiography of the right wrist.",UNA,X-ray right wrist,,,,
+58 year old Chinese male.  MRI right foot without and with IV contrast for ?Charcot foot.,INSUFFICIENT INFORMATION,0,Empty Response,ICI,,,,,
+"17 year old Malay Female.  No significant past medical history.  Was in wood crafting workshop 1 week ago.  Felt ?splinter penetrating left hand.  Pain is persistent.  On examination: mild swelling at left thenar eminence, no significant erythema or obvious foreign body.  Mildly tender.  X-rays is unremarkable.  MRI left hand without IV contrast to assess for foreign body. ",MAY BE APPROPRIATE,US area of interest or CT area of interest without IV contrast,"1. Relevant information from the patient profile includes: 
+   - Age: 17 years old
+   - Symptoms: Mild swelling at left thenar eminence, mildly tender, persistent pain
+   - Previous Diagnosis: None, X-rays unremarkable
+   - Stage of Diagnosis: Next imaging study after initial X-rays
+   - Other relevant information: Suspected foreign body (splinter) from wood crafting workshop
+
+2. According to the context provided, the patient's condition falls under the scenario of ""Suspect penetrating trauma with a foreign body in the soft tissues in the hand or wrist. Initial radiographs are negative. Next imaging study.""
+
+3. The context suggests that for this scenario, the following imaging procedures are recommended:
+   - US area of interest: Usually Appropriate
+   - CT area of interest without IV contrast: Usually Appropriate
+   - MRI area of interest without IV contrast: May Be Appropriate
+
+4. Based on the scoring criteria, the ordered scan (MRI left hand without IV contrast) is classified as ""May Be Appropriate"". However, there are superior imaging procedures with a more favorable risk-benefit ratio, such as US area of interest and CT area of interest without IV contrast, which are classified as ""Usually Appropriate"". Therefore, while the ordered scan is not inappropriate, it may not be the most suitable choice for this patient.",MBA,,,,,
+"28 year old Chinese Female.  No significant past medical history.  Kickboxing sparring, felt pain at lateral aspect of right hand after punching opponent.  On examination: deformity over right 4th metacarpophalangeal joint, tender, swollen.  X-rays show 4th metacarpophalaneal joint dislocation.  No fracture.  MRI right hand without IV contrast to assess ligamentous/tendon injury.  ",USUALLY APPROPRIATE,MRI hand without IV contrast,"1. Relevant information from the patient profile includes: 
+   - Age: 28 years old
+   - Symptoms: Pain, deformity, tenderness, and swelling over the right 4th metacarpophalangeal joint
+   - Previous Diagnosis: X-rays show 4th metacarpophalangeal joint dislocation without fracture
+   - Stage of Diagnosis: Next imaging study after initial X-rays
+
+2. According to the context provided, the patient's condition falls under the description of ""Initial radiographs showing metacarpophalangeal, proximal interphalangeal, or distal interphalangeal joint malalignment in the absence of fracture. Next imaging study.""
+
+3. The context suggests that MRI of the hand without IV contrast or US of the hand are usually appropriate as the next imaging study when initial radiographs show metacarpophalangeal, proximal interphalangeal, or distal interphalangeal joint malalignment in the absence of fracture. These procedures are equivalent alternatives.
+
+4. Based on the scoring criteria, the scan order of MRI right hand without IV contrast is USUALLY APPROPRIATE. It aligns with the recommendations given the patient's profile and the context provided.",UA,,,,,
+"45 year old Malay Female.  Past medical history of end stage renal failure due to membranous glomerulonephritis, anemia, hypertension, chronic headache.  Slipped in bathroom, subsequently unable to get up due to right hip pain.  On examination: no significant right limb foreshortening or external rotation.  Minor abrasions over thigh and calf.  Reduced range of motion of right hip due to pain.  X-rays show no obvious hip fracture or dislocation.  MRI pelvis and right hip without IV contrast to asssess for radiographically occult pelvic/hip fracture.",USUALLY APPROPRIATE,MRI pelvis and affected hip without IV contrast,"1. Relevant information from the patient profile includes:
+   - Age: 45 years old
+   - Symptoms: Right hip pain, reduced range of motion of right hip
+   - Previous Diagnosis: End stage renal failure, anemia, hypertension, chronic headache
+   - Initial Imaging: X-rays show no obvious hip fracture or dislocation
+   - Stage of Diagnosis: Next study after initial imaging (X-ray)
+
+2. According to the reference information given under CONTEXT, for acute hip pain with suspected fracture after a fall or minor trauma, the initial imaging should be radiography of the hip, pelvis, or both. If the radiographs are negative but a fracture is still suspected, the next imaging study should be an MRI of the pelvis and affected hip without IV contrast or a CT of the pelvis and hips without IV contrast.
+
+3. Given the patient's history of end stage renal failure, a CT scan with IV contrast would not be recommended due to the risk of contrast-induced nephropathy. Therefore, the MRI without IV contrast is a superior imaging procedure in this case.
+
+4. Based on the SCORING CRITERIA, the ordered scan (MRI pelvis and right hip without IV contrast) is USUALLY APPROPRIATE. This is because it aligns with the recommendations for next imaging study in cases of acute hip pain with suspected fracture after negative radiographs.",UA,,,,,
+"50 year old Chinese male.  Past medical history of hypertension on medical treatment.  Was jogging 1 week ago when tripped on a rock and twisted right ankle.  Pain since then.  Was able to continue jogging immediately after incident. No abnormal sensation.  On examination: able to walk normally.  No point tenderness at right ankle or midfoot (lateral malleolus, medial malleolus, navicular) or base of 5th metatarsal.   Full range of motion with mild pain on foot supination. No prior imaging.  MRI right ankle without IV contrast to assess for ligamentous injury.",USUALLY NOT APPROPRIATE,Nothing,"1. Relevant information from the patient profile includes:
+   - Age: 50 years old
+   - Symptoms: Mild pain on foot supination, able to walk normally, no point tenderness at right ankle or midfoot (lateral malleolus, medial malleolus, navicular) or base of 5th metatarsal.
+   - Previous Diagnosis: None
+   - Stage of Diagnosis: Initial Imaging
+   - Other: Patient was able to continue jogging immediately after the incident.
+
+2. According to the context, for an adult patient with acute trauma to the ankle, who is able to walk and has no point tenderness over the malleoli, talus, or calcaneus on physical examination (negative Ottawa Ankle Rules), the appropriateness categories for different procedures are as follows:
+   - MRI ankle without IV contrast: Usually Not Appropriate
+   - Radiography ankle: Usually Not Appropriate
+   - CT ankle without IV contrast: Usually Not Appropriate
+   - US ankle: Usually Not Appropriate
+   - Bone scan ankle: Usually Not Appropriate
+   - CT ankle with IV contrast: Usually Not Appropriate
+   - CT ankle without and with IV contrast: Usually Not Appropriate
+   - MRI ankle without and with IV contrast: Usually Not Appropriate
+
+3. Based on the context, there are no superior imaging procedures or treatments with a more favorable risk-benefit ratio for this patient's condition.
+
+4. Based on the scoring criteria, the ordered scan (MRI right ankle without IV contrast) is USUALLY NOT APPROPRIATE for this patient's condition. Given the patient's ability to walk and lack of point tenderness, imaging is generally not indicated. If symptoms persist or worsen, a re-evaluation may be necessary.",UNA,No imaging,,,,
+"17 year old Indian male.  No significant past medical history.  Was playing soccer when another player tackled him, twisting right ankle.  Unable to walk for about 10 mins after that.  Subsequently able to weight bear with assistance.  On examination: Point tenderness at tip of lateral malleolus.  Abnormal widening of lateral ankle on varus stress.  X-rays: no fracture or dislocation or osteochondral injury.  MRI right ankle without IV contrast to assess for ligamentous injury.  ",USUALLY APPROPRIATE,MRI ankle without IV contrast,"1. Relevant information from the patient profile includes:
+   - Age: 17 years old
+   - Symptoms: Twisted right ankle during a soccer game, unable to walk for about 10 minutes after the injury, able to weight bear with assistance, point tenderness at the tip of the lateral malleolus, abnormal widening of the lateral ankle on varus stress.
+   - Previous Diagnosis: X-rays showed no fracture, dislocation, or osteochondral injury.
+   - Stage of Diagnosis: Next study, after initial X-rays.
+
+2. According to the reference information, the patient's profile aligns with the description of an adult or child 5 years of age or older who has experienced acute trauma to the ankle. The initial radiographs were negative for osseous injury, and physical examination suggests a ligamentous injury.
+
+3. The reference information suggests that MRI without IV contrast is usually appropriate for this scenario, as it is the most sensitive for evaluation of occult fractures with associated bone marrow edema patterns, particularly in inversion injuries and persistent lateral ankle pain, as well as the presence and extent of soft-tissue injuries. MRI is also the reference standard for ligamentous injury and assessment of stability.
+
+4. Based on the scoring criteria, the scan order of an MRI right ankle without IV contrast is USUALLY APPROPRIATE. This imaging procedure is indicated in the specified clinical scenario at a favorable risk-benefit ratio for the patient.",UA,,,,,
+"24 year old Bangladeshi male, construction worker.  No significant past medical history.  Large trolley carrying metal poles rolled over left foot.  Severe pain, unable to walk without assistance.  On examination: tender over midfoot/base of forefoot.  Severe foot swelling.  X-rays: equivocal widening of interval between base of 1st and 2nd metatarsals.  no definite fracture.  MRI left foot without IV contrast to assess for Lis Franc injury.",USUALLY APPROPRIATE,MRI foot without IV contrast,"1. Relevant information from the patient profile includes: 
+- Age: 24 years old
+- Symptoms: Severe pain, unable to walk without assistance, tender over midfoot/base of forefoot, severe foot swelling
+- Previous Diagnosis: X-rays show equivocal widening of interval between base of 1st and 2nd metatarsals, no definite fracture
+- Stage of Diagnosis: Next imaging study, as X-rays have already been performed
+
+2. According to the reference information given under CONTEXT, for an adult or child older than 5 years of age with acute trauma to the foot, suspecting Lisfranc injury, tendon injury, or occult fracture or dislocation, and where radiographs are normal or equivocal, the next imaging study recommendations are as follows:
+
+- CT foot without IV contrast: Usually Appropriate
+- MRI foot without IV contrast: Usually Appropriate
+- US foot: May Be Appropriate
+- CT foot with IV contrast: Usually Not Appropriate
+- CT foot without and with IV contrast: Usually Not Appropriate
+- MRI foot without and with IV contrast: Usually Not Appropriate
+
+3. Based on the given information, there are no superior imaging procedures or treatments with a more favorable risk-benefit ratio. Both CT foot without IV contrast and MRI foot without IV contrast are usually appropriate.
+
+4. Based on the SCORING CRITERIA, the ordered scan, MRI left foot without IV contrast, is USUALLY APPROPRIATE for this patient's condition. This is because the patient has acute trauma to the foot, with a suspicion of Lisfranc injury, and the radiographs are equivocal. The MRI without IV contrast is indicated in this specified clinical scenario at a favorable risk-benefit ratio for the patient.",UA,,,,,
+"62 year old Caucasian female.  Past medical history of fibroids and adenomyosis.  Was driving but lost control on wet road, swerved and hit road divider at low speed around 50km/h.  Left knee hit dashboard, swelling and pain after injury, hobbled out of car.  Otherwise no other injuries.  On examination: severe swelling and bruising of left knee, unable to accurately assess range of motion or perform stress maneuvers due to pain.  No other injury elsewhere.  No imaging performed thus far.  MRI left knee without IV contrast to assess knee for bony and soft tissue injury.",MAY BE APPROPRIATE,Radiography knee or CTA lower extremity with IV contrast,"1. Relevant information from the patient profile includes:
+   - Age: 62 years old
+   - Symptoms: Severe swelling and bruising of left knee, pain, unable to accurately assess range of motion or perform stress maneuvers due to pain
+   - Previous Diagnosis: Fibroids and adenomyosis
+   - Stage of Diagnosis: Initial imaging
+
+2. According to the context provided, the patient has experienced significant trauma to the knee due to a motor vehicle accident. The appropriate imaging recommendations for this scenario are:
+
+   - Radiography knee: Usually Appropriate
+   - CTA lower extremity with IV contrast: Usually Appropriate
+   - Arteriography lower extremity: May Be Appropriate
+   - CT knee with IV contrast: May Be Appropriate (Disagreement)
+   - CT knee without IV contrast: May Be Appropriate
+   - MRA knee without and with IV contrast: May Be Appropriate
+   - MRI knee without IV contrast: May Be Appropriate
+   - MRA knee without IV contrast: Usually Not Appropriate
+   - Bone scan with SPECT or SPECT/CT knee: Usually Not Appropriate
+   - CT knee without and with IV contrast: Usually Not Appropriate
+   - MR arthrography knee: Usually Not Appropriate
+   - MRI knee without and with IV contrast: Usually Not Appropriate
+   - US knee: Usually Not Appropriate
+
+3. Based on the context, the superior imaging procedures for this patient would be Radiography knee and CTA lower extremity with IV contrast. These procedures have a more favorable risk-benefit ratio and are usually appropriate for this scenario.
+
+4. The ordered scan, MRI knee without IV contrast, is classified as ""May Be Appropriate"" for this patient's scenario. Therefore, the scan order is not the most appropriate choice but can still provide useful information. However, considering the patient's severe symptoms and the nature of the accident, a Radiography knee or CTA lower extremity with IV contrast would be more appropriate as initial imaging procedures.",MBA,,,,,
+"48 year old Malay female.  No significant past medical history.  Was jogging when felt sharp pain in right knee.  No known inciting event.  Pain for 2 weeks since then, still able to walk.  On examination: antalgic gait, mild anterior knee tenderness, small knee effusion.  Anterior drawer positive.  No imaging performed thus far. MRI right knee without IV contrast to assess knee for ACL injury.  ",USUALLY NOT APPROPRIATE,Radiography of the knee,"1. Relevant information from the patient profile includes:
+   - Age: 48 years old
+   - Symptoms: Sharp pain in right knee for 2 weeks, antalgic gait, mild anterior knee tenderness, small knee effusion, positive anterior drawer test
+   - Previous diagnosis: None
+   - Stage of diagnosis: Initial imaging
+
+2. Referring to the reference information given under CONTEXT, the patient's profile aligns with the description of an adult who has experienced a fall or acute twisting trauma to the knee, with focal tenderness, effusion, and ability to bear weight. 
+
+3. According to the appropriateness categories for this condition, the recommended initial imaging procedure is Radiography of the knee. MRI without IV contrast is usually not appropriate as an initial imaging study for this condition.
+
+4. Based on the scoring criteria, the ordered scan (MRI right knee without IV contrast) is USUALLY NOT APPROPRIATE as an initial imaging study for this patient. An appropriate procedure would be Radiography of the knee. If the radiography does not provide a clear diagnosis, further imaging studies such as MRI may be considered.",UNA,X-ray right knee,,,,
+"15 year old Indonesian male.  No significant past medical history.  Was playing soccer, tripped on pothole in field and twisted left knee.  Felt a pop sensation.  On examination:  Knee swelling and effusion.  Mild medial joint line tenderness.  Anterior drawer equivocal.  X-rays show no fracture or dislocation.  MRI left knee without IV contrast to assess for ligamentous and meniscal injury.  ",MAY BE APPROPRIATE,MRI without IV contrast,"1. Relevant information from the patient profile includes:
+   - Age: 15 years old
+   - Symptoms: Knee swelling and effusion, mild medial joint line tenderness, felt a pop sensation
+   - Previous diagnosis: None, X-rays show no fracture or dislocation
+   - Stage of diagnosis: Initial imaging (X-ray) has been done, this is the next study
+   - Mechanism of injury: Acute twisting trauma to the knee while playing soccer
+
+2. Referring to the context information, the patient falls under the category of ""Adult or child 5 years of age or older. Fall or acute twisting trauma to the knee. One or more of the following: focal tenderness, effusion, inability to bear weight. Initial imaging."" However, since initial imaging (X-ray) has already been done and showed no fracture or dislocation, the patient could also fall under the category of ""Skeletally immature child. Fall or acute twisting trauma to the knee. No fracture seen on radiographs. Suspect occult fracture or internal derangement. Next study.""
+
+3. According to the context, MRI knee without IV contrast is ""Usually Not Appropriate"" for the first category but there is no specific mention of its appropriateness for the second category. However, it is mentioned that ""MRI is superior to CT in evaluation of bone marrow lesions, meniscal and ligamentous injuries, and may be subsequently performed as clinically indicated.""
+
+4. Based on the scoring criteria, the scan order of MRI left knee without IV contrast is ""May Be Appropriate"". It is not the first line of imaging but given the patient's symptoms and negative X-ray, it could be useful for further evaluation of potential ligamentous and meniscal injury.",UA,,,,,
+"65 year old Chinese male.  Past medical history of diabetes, hypertension, ascending colon cancer post right hemicolectomy.  Complains of right ankle pain for years, worsening recently with stiffness and particularly when floor is not smooth/even.   Works as an odd job labourer.  On examination:  pes planus.  stiff when rocking hindfoot. no significant tenderness.  X-rays show moderate tibiotalar, subtalar and talonavicular degeneration.  MRI right ankle and hindfoot without IV contrast to further assess degeneration.",MAY BE APPROPRIATE,MRI ankle and hindfoot without IV contrast,"1. Relevant information from the patient profile includes the patient's age (65 years old), symptoms (chronic right ankle pain, worsening recently with stiffness, particularly when the floor is not smooth/even), previous diagnosis (moderate tibiotalar, subtalar and talonavicular degeneration detected by X-rays), and the stage of diagnosis (next study after X-rays).
+
+2. According to the context provided, for chronic ankle pain with multiple sites of degenerative joint disease in the hindfoot detected by ankle radiographs, an MRI of the ankle and hindfoot without IV contrast may be appropriate as the next study.
+
+3. There are no superior imaging procedures or treatments with a more favorable risk-benefit ratio mentioned in the context for this specific patient profile.
+
+4. Based on the scoring criteria, the scan order of an MRI of the right ankle and hindfoot without IV contrast is MAY BE APPROPRIATE for this patient. This is because the imaging procedure is indicated in the specified clinical scenario as an alternative to imaging procedures or treatments with a more favorable risk-benefit ratio, or the risk-benefit ratio for patients is equivocal.",MBA,,,,,
+"49 year old Malay male.  Past medical history of right wrist fracture post open reduction and internal fixation.  Senior warrant officer in Army, logistics.  8 month history of left ankle pain, no inciting event, sometimes feels that ankle is stuck but feeling goes away after a while. On examination: no significant abnormality.   X-ray shows no fracture or dislocation, mild ankle degeneration, talar dome is smooth.  MRI right ankle without IV contrast to assess for osteochondral lesion.",USUALLY APPROPRIATE,MRI ankle without IV contrast,"1. Relevant information from the patient profile includes:
+   - Age: 49 years old
+   - Symptoms: Chronic left ankle pain for 8 months, sometimes feels that ankle is stuck but feeling goes away after a while
+   - Previous Diagnosis: Mild ankle degeneration, talar dome is smooth, no fracture or dislocation
+   - Stage of Diagnosis: Next study, as the patient has already undergone an X-ray
+
+2. Referring to the context, the patient's condition aligns with the description: ""Chronic ankle pain. Ankle radiographs normal, suspected osteochondral lesion. Next study.""
+
+3. According to the reference information, the following imaging procedures are recommended for this condition:
+   - MRI ankle without IV contrast: Usually Appropriate
+   - CT arthrography ankle: May Be Appropriate
+   - MR arthrography ankle: May Be Appropriate
+   - Bone scan with SPECT or SPECT/CT ankle: May Be Appropriate (Disagreement)
+   - CT ankle without IV contrast: May Be Appropriate
+
+4. Based on the scoring criteria, the ordered scan (MRI right ankle without IV contrast) is USUALLY APPROPRIATE for this patient's condition. It aligns with the recommended imaging procedures for a patient with chronic ankle pain, normal ankle radiographs, and a suspected osteochondral lesion.",UA,,,,,
+48 year old Caucasian male.  MRI right foot without and with IV contrast for ?osteonecrosis of navicular.  ,INSUFFICIENT INFORMATION,0,Empty Response,ICI,,,,,
+"70 year old Malay female.  Past medical history of diabetes, left breast cancer post simple mastectomy and axillary clearance 5 years ago.  Works as a dishwasher.  Left handed.  1 year history of left elbow pain, worsening over the past few months.  No trauma.  No other joint pain/stiffness.  Worse at end of day.  On examination, crepitus felt on otherwise full range of motion.  No point tenderness or obvious effusion.  No prior imaging.  MRI left elbow without IV contrast to assess for degeneration.  ",USUALLY NOT APPROPRIATE,Radiography of the elbow,"1. Relevant information from the patient profile includes:
+   - Age: 70 years old
+   - Symptoms: Left elbow pain for 1 year, worsening over the past few months, worse at end of day, crepitus felt on full range of motion
+   - Previous Diagnosis: Diabetes, left breast cancer post simple mastectomy and axillary clearance 5 years ago
+   - Stage of Diagnosis: Initial imaging
+
+2. According to the context provided, for chronic elbow pain, the initial imaging recommended is radiography of the elbow. MRI without IV contrast is usually not appropriate as the initial imaging study for the evaluation of chronic elbow pain.
+
+3. Given the patient's symptoms and the fact that this is the initial imaging, a superior imaging procedure would be radiography of the elbow.
+
+4. Based on the scoring criteria, the scan order of MRI left elbow without IV contrast is USUALLY NOT APPROPRIATE for this patient at this stage. The recommended procedure would be radiography of the elbow.",UNA,X-ray left elbow,,,,
+"33 year old Indian male.  Professional tennis player.  History of right ankle degeneration, left knee lateral meniscal tear post arthroscopic repair. Right handed.  On and off right elbow pain, worsening over the past month.  Worse during tennis, with weakening grip on racquet.  On examination, exquisitely tender at lateral epicondyle.  X-rays show no fracture, dislocation or elbow effusion.  MRI right elbow without and with IV contrast to evaluate for lateral epicondylitis.     ",USUALLY NOT APPROPRIATE,MRI elbow without IV contrast or ultrasound (US) of the elbow,"1. Relevant information from the patient profile includes: 
+- Age: 33 years old
+- Symptoms: On and off right elbow pain, worsening over the past month, worse during tennis, with weakening grip on racquet, tender at lateral epicondyle
+- Previous diagnosis: Right ankle degeneration, left knee lateral meniscal tear post arthroscopic repair
+- Stage of diagnosis: Next imaging study, as X-rays have already been performed and showed no fracture, dislocation or elbow effusion.
+
+2. According to the context, for chronic elbow pain suspected to be due to chronic epicondylalgia or tendon tear, and refractory to empirical treatment with normal or nonspecific radiographs, the next imaging study recommended is either an ultrasound (US) of the elbow or an MRI of the elbow without IV contrast. Both are classified as usually appropriate. 
+
+3. The scan ordered, an MRI of the elbow without and with IV contrast, is usually not appropriate for this patient's condition according to the context provided. There are superior imaging procedures, namely an ultrasound (US) of the elbow or an MRI of the elbow without IV contrast.
+
+4. Based on the scoring criteria, the scan order of an MRI right elbow without and with IV contrast is USUALLY NOT APPROPRIATE for this patient's condition. An appropriate procedure would be an MRI right elbow without IV contrast or an ultrasound (US) of the right elbow.",UNA,"US right elbow
+MRI right elbow without IV contrast",,,,
+"64 year old Chinese female.  Secretary.  Right handed.  Hyperlipidemia on statins.  Presenting with worsening numbness and tingling along the ulnar aspect of right hand.  On examination, mild wasting at 4th interosseous and hypothenar eminence.  Tinel's positive at cubital tunnel.  X-rays show no significant abnormality at elbow or hand apart from mild degeneration.  MRI right elbow without IV contrast to assess for ulnar nerve entrapment.  ",INSUFFICIENT INFORMATION,MRI with IV contrast for ulnar nerve entrapment at the elbow,"1. Relevant information from the patient profile includes: 
+   - Age: 64 years old
+   - Symptoms: Worsening numbness and tingling along the ulnar aspect of the right hand, mild wasting at 4th interosseous and hypothenar eminence, Tinel's positive at cubital tunnel
+   - Previous Diagnosis: Hyperlipidemia on statins
+   - Stage of Diagnosis: Next study, as X-rays have been performed and show no significant abnormality at elbow or hand apart from mild degeneration.
+
+2. The context provided does not specifically mention ulnar nerve entrapment at the elbow. However, it does provide information on chronic hand and wrist pain, which may be related to the patient's symptoms. 
+
+3. Based on the context, MRI without IV contrast is usually appropriate for chronic wrist pain with normal or nonspecific radiographs. However, the patient's symptoms suggest ulnar nerve entrapment at the elbow, not the wrist. 
+
+4. Based on the scoring criteria, there is INSUFFICIENT INFORMATION to recommend the appropriateness of the scan order. The context does not provide information on imaging recommendations for ulnar nerve entrapment at the elbow.",UA,,,,,
+22 year old Malay male.  MRI right shoulder arthrography for ?dislocation.,INSUFFICIENT INFORMATION,0,Empty Response,ICI,,,,,
+"46 year old Chinese male.  Businessman, sales.  Frequent drinker due to job, about 1-2 beers/day.  Past medical history of fatty liver, acute cholecystitis post cholecystectomy.  Now presenting with severe pain at right big toe for 2 weeks, pain on and off improves with paracetamol and ibuprofen.  On examination: swelling and erythema at right big toe 1st metatarsophalangeal joint.  No prior imaging.  MRI right forefoot with and without IV contrast for evaluation of gout.  ",USUALLY NOT APPROPRIATE,Radiography of the foot,"1. Relevant information from the patient profile includes: 
+- Age: 46 years old
+- Symptoms: Severe pain at right big toe for 2 weeks, swelling and erythema at right big toe 1st metatarsophalangeal joint
+- Previous Diagnosis: Fatty liver, acute cholecystitis post cholecystectomy
+- Stage of diagnosis: Initial imaging
+
+2. The context provided does not specifically mention gout as a condition. However, the patient's symptoms and history suggest a possible diagnosis of gout, which is a form of inflammatory arthritis. The patient's lifestyle factors such as frequent alcohol consumption may also contribute to the development of gout. 
+
+3. According to the context, for initial imaging of chronic foot pain of unknown etiology, radiography of the foot is usually appropriate. Other imaging procedures such as MRI foot without and with IV contrast, CT foot with IV contrast, CT foot without and with IV contrast, CT foot without IV contrast, and bone scan foot are usually not appropriate. 
+
+4. Based on the scoring criteria, the scan order of MRI right forefoot with and without IV contrast is USUALLY NOT APPROPRIATE for this patient at this stage of diagnosis. An appropriate procedure would be radiography of the foot, which is usually appropriate for initial imaging of chronic foot pain of unknown etiology.",UNA,X-ray right foot,,,,
+"55 year old Philipino female.  Domestic helper.  No significant past medical history.  Bilateral finger joint pain, swelling and stiffness worse in the morning for 4 months, worsening recently.  No eye redness, shortness of breath, fever, loss of weight/appetite.  No other joint involvement.  On examination: Heberden's nodes bilateral distal interphalangeal joints, mild swelling, no significant tenderness.  X-rays show degenerative changes in bilateral hand interphalangeal joints with equivocal gull-wing deformity.  MRI of bilateral hands with and without IV contrast to assess for erosive osteoarthritis. ",INSUFFICIENT INFORMATION,MRI of the wrist without and with IV contrast,"1. Relevant information from the patient profile includes:
+   - Age: 55 years old
+   - Symptoms: Bilateral finger joint pain, swelling, and stiffness worse in the morning for 4 months, worsening recently
+   - Previous Diagnosis: X-rays show degenerative changes in bilateral hand interphalangeal joints with equivocal gull-wing deformity
+   - Stage of Diagnosis: Next study, as the patient has already undergone X-rays
+
+2. The context provided discusses the appropriateness of various imaging procedures for chronic hand and wrist pain. The patient's symptoms and previous diagnosis suggest a suspicion of inflammatory arthritis, possibly erosive osteoarthritis.
+
+3. According to the context, for chronic wrist pain with a suspicion of inflammatory arthritis, an MRI of the wrist without and with IV contrast is usually appropriate. However, the patient's symptoms are localized to the finger joints, not the wrist. The context does not provide specific recommendations for imaging of the hand or finger joints in cases of suspected inflammatory arthritis.
+
+4. Based on the scoring criteria, there is INSUFFICIENT INFORMATION to recommend the appropriateness of the ordered scan (MRI of bilateral hands with and without IV contrast) as the context does not provide specific recommendations for this scenario. Further consultation with a rheumatologist or hand specialist may be necessary to determine the most appropriate next steps for imaging.",MBA,,,,,
+"80 year old Indonesian female.  Prior total hysterectomy and bilateral salpingo-oophrectomy for endometrial cancer 20 years ago.  Now presenting with right foot pain for 6 months, worse after exercise.  Does a lot of brisk walking.  On examination, tenderness over metatarsal head/neck regions.  No prior imaging.  MRI right foot without IV contrast to assess for stress fracture/injury.  ",USUALLY NOT APPROPRIATE,Radiography of the foot,"1. Relevant information from the patient profile includes the patient's age (80 years old), symptoms (right foot pain for 6 months, worse after exercise), and the fact that this is the initial imaging study for this condition. The patient's history of endometrial cancer and total hysterectomy and bilateral salpingo-oophrectomy is not directly relevant to the current condition. The patient's physical activity (brisk walking) and the physical examination findings (tenderness over metatarsal head/neck regions) are also relevant.
+
+2. According to the context provided, for chronic foot pain of unknown etiology, the initial imaging study recommended is usually a radiography of the foot. MRI foot without IV contrast is usually not appropriate as the initial imaging study in the evaluation of chronic foot pain.
+
+3. Based on the context, a more appropriate initial imaging procedure would be radiography of the foot. This can help distinguish among different causes of chronic foot pain and is usually the first imaging study in evaluating patients with chronic foot pain.
+
+4. Based on the scoring criteria, the ordered scan (MRI right foot without IV contrast) is USUALLY NOT APPROPRIATE as the initial imaging study for this patient's condition. The recommended procedure would be a radiography of the foot.",UNA,X-ray right foot,,,,
+"49 year old Indian female.  Past medical history of fibroids, endometriosis, gestational diabetes, bilateral breast fibroadenomas.  Now presenting with bilateral heel pain and stiffness for 5 months, worse on the left.  Perimenopausal.  Worse when just waking up.  On examination, bilateral pes planus, tender at insertion of plantar fascia on calcaneum.  X-rays show no significant abnormality, in particular no plantar calcaneal spur.  MRI bilateral feet without IV contrast to assess for plantar fasciiitis.  ",USUALLY APPROPRIATE,MRI foot without IV contrast,"1. Relevant information from the patient profile includes:
+   - Age: 49 years old
+   - Symptoms: Bilateral heel pain and stiffness for 5 months, worse on the left, worse when just waking up
+   - Previous Diagnosis: X-rays show no significant abnormality, in particular no plantar calcaneal spur
+   - Stage of Diagnosis: Next imaging study, as X-rays have already been performed
+
+2. According to the reference information given under CONTEXT, the patient's symptoms and previous diagnosis suggest a clinical concern for plantar fasciitis. The next imaging study for chronic plantar heel pain with negative or equivocal radiographs, where the clinical concern includes plantar fasciitis or plantar fascia tear, is either an US foot or an MRI foot without IV contrast, both of which are usually appropriate.
+
+3. There are no superior imaging procedures or treatments with a more favorable risk-benefit ratio mentioned in the CONTEXT.
+
+4. Based on the SCORING CRITERIA, the SCAN ORDER of an MRI bilateral feet without IV contrast to assess for plantar fasciitis is USUALLY APPROPRIATE. This is in line with the recommendations given in the CONTEXT for the patient's profile.",UA,,,,,
+"52 year old Chinese male.  Shipyard supervisor.  Past medical history of appendicectomy, cholecystectomy, Hep B carrier on follow up with polyclinic.  Right handed.  Now complains of 1 year history of right wrist ulnar sided pain and reduced grip strength.  Pain not worsening but pain score is about 6 out of 10 consistently, worse on activities.  Unable to play badminton properly.  On examination, right wrist positive fovea sign, pain elicited on ulnar deviation of wrist.    X-rays show non mild specific degenerative changes in the wrist.  MRI arthrography of the right wrist to assess for triangular fibrocartilage complex injury.  ",USUALLY APPROPRIATE,MRI arthrography wrist,"1. Relevant information from the patient profile includes: 
+- Age: 52 years old
+- Symptoms: 1 year history of right wrist ulnar-sided pain and reduced grip strength
+- Previous Diagnosis: X-rays show mild non-specific degenerative changes in the wrist
+- Stage of Diagnosis: Next study, as the patient has already undergone X-rays
+
+2. Referring to the context information, the patient's condition aligns with the description of ""Ulnar-sided chronic wrist pain. Radiographs normal or nonspecific. Next study.""
+
+3. According to the reference information, the following imaging procedures are recommended for this condition:
+- MRI wrist without IV contrast: Usually Appropriate
+- MR arthrography wrist: Usually Appropriate
+- CT arthrography wrist: May Be Appropriate
+- MRI wrist without and with IV contrast: Usually Not Appropriate
+- US wrist: Usually Not Appropriate
+- Radiographic arthrography wrist: Usually Not Appropriate
+- CT wrist without IV contrast: Usually Not Appropriate
+- CT wrist with IV contrast: Usually Not Appropriate
+- CT wrist without and with IV contrast: Usually Not Appropriate
+- Bone scan wrist: Usually Not Appropriate
+
+4. Based on the scoring criteria, the ordered scan, MRI arthrography of the right wrist, is USUALLY APPROPRIATE for this patient's condition. This procedure is indicated in the specified clinical scenario at a favorable risk-benefit ratio for the patient.",UA,,,,,
+"46 year old Malay female.  Clerical assistant in healthcare.  Past medical history of obesity, diabetes mellitus, hyperlipidemia.  Right handed.  Now complains of 6 month history of numbness, tingling and weakness in outer part of right hand, sometimes waking her up at night.  Perimenopausal. On examination, positive Tinel's sign and carpal tunnel compression test at the right wrist.  No significant thenar atrophy.  X-rays show no significant abnormality.  MRI right wrist without IV contrast to assess for carpal tunnel syndrome.",MAY BE APPROPRIATE,MRI wrist without IV contrast,"1. Relevant information from the patient profile includes:
+   - Age: 46 years old
+   - Symptoms: 6 month history of numbness, tingling and weakness in outer part of right hand, sometimes waking her up at night
+   - Previous Diagnosis: Obesity, diabetes mellitus, hyperlipidemia
+   - Stage of diagnosis: Next study (X-rays show no significant abnormality)
+   - Suspected condition: Carpal tunnel syndrome
+
+2. According to the context provided, for a patient with chronic wrist pain, normal or nonspecific radiographs, and suspected carpal tunnel syndrome, the next study could be an MRI of the wrist without IV contrast or a US of the wrist. Both are considered ""May Be Appropriate"". 
+
+3. There are no superior imaging procedures or treatments with a more favorable risk-benefit ratio mentioned in the context for this specific scenario.
+
+4. Based on the scoring criteria and the context provided, the scan order of an MRI right wrist without IV contrast to assess for carpal tunnel syndrome is considered ""MAY BE APPROPRIATE"". This is because the patient's symptoms and clinical signs suggest carpal tunnel syndrome, and the MRI can help confirm this diagnosis when the initial evaluation (X-rays) is equivocal.",MBA,,,,,
+8 year old Indian male.  MRI left knee without IV contrast for trauma,INSUFFICIENT INFORMATION,0,Empty Response,ICI,,,,,
+"30 year old Chinese female.  Long term volunteer in African community hospital (stays there long term, back home once a year).  No significant past medical history.  Left handed.  Now comes with painful swelling of left wrist for about 1 year, with mild skin discharge.  On examination, dorsal wrist swelling with skin sinus tracts and yellowish-cheesy discharge.  No tenderness.  X-rays shows no gross destructive bone lesion.  MRI arthrography of the left wrist to assess for TB tenosynovitis.  ",USUALLY NOT APPROPRIATE,Ultrasound of the wrist,"1. Relevant information from the patient profile includes: 
+- Age: 30 years old
+- Symptoms: Painful swelling of left wrist for about 1 year, with mild skin discharge, dorsal wrist swelling with skin sinus tracts and yellowish-cheesy discharge
+- Previous Diagnosis: None mentioned, but X-rays show no gross destructive bone lesion
+- Stage of Diagnosis: Next study, after X-rays
+- Other relevant information: Long term volunteer in African community hospital, which may expose her to certain infectious diseases.
+
+2. Referring to the context, the patient's symptoms and history suggest a possible infection, possibly tuberculosis given her exposure in the African community hospital. However, the context does not provide specific imaging recommendations for suspected wrist infections. 
+
+3. The context suggests that MRI is not routinely used in the initial evaluation of chronic wrist pain, and CT arthrography is not routinely used to evaluate suspected wrist infection. US may be used to delineate the location and extent of soft-tissue abscesses after aspiration has been performed. 
+
+4. Based on the scoring criteria, the ordered MRI arthrography of the left wrist is USUALLY NOT APPROPRIATE. An alternative procedure that may be appropriate, based on the context, is an ultrasound of the wrist, especially if aspiration of the abscess is being considered.",UNA,"Aspiration of left wrist (UA, but it is acceptable that radiologists do not fill this in since it's not an imaging modality)
+MRI left wrist without and with IV contrast (MBA, disagreement)
+US left wrist (MBA, disagreement)
+",,,,
+"55 year old Indonesian female.  No significant past medical history.  Former national sprinter and South East Asian games gold medallist.  Now presenting with chronic bilateral hip pain worse on the right, sometimes with locking sensation.  On examination:  pain on internal rotation, adduction and extension of bilateral hips.  No prior imaging. MRI bilateral hips without IV contrast to assess for hip labral tears.",USUALLY APPROPRIATE,MRI hip without IV contrast,"1. Relevant information from the patient profile includes:
+   - Age: 55 years old
+   - Symptoms: Chronic bilateral hip pain, worse on the right, sometimes with locking sensation. Pain on internal rotation, adduction, and extension of bilateral hips.
+   - Previous Diagnosis: None
+   - Stage of Diagnosis: Initial Imaging (No prior imaging)
+
+2. The context provides information on the appropriateness of various imaging procedures for chronic hip pain. The patient's symptoms suggest a possible labral tear, which is a specific condition mentioned in the context.
+
+3. According to the context, for chronic hip pain with a suspicion of a labral tear, the following imaging procedures are recommended:
+   - MR arthrography hip: Usually Appropriate
+   - MRI hip without IV contrast: Usually Appropriate
+   - Image-guided anesthetic +/- corticosteroid injection hip joint or surrounding structures: May Be Appropriate
+   - CT arthrography hip: May Be Appropriate
+
+4. Based on the scoring criteria, the ordered scan (MRI bilateral hips without IV contrast) is USUALLY APPROPRIATE for this patient. This procedure is indicated in the specified clinical scenario (chronic hip pain with suspicion of labral tear) at a favorable risk-benefit ratio for the patient.",UNA,X-ray pelvis and bilateral hips,,,,
+"22 year old Indian male. No significant past medical history.  Marathon runner.  Now presenting with 5 month history of left hip pain, lateral sided.  Will get better on taking voltaren and paracetamol but does not want to take medication long term.  On examination, tender over left hip greater trochanter.  X-rays show no significant abnormality.  MRI left hip with and without IV contrast to assess for trochanteric bursitis.        ",USUALLY NOT APPROPRIATE,MRI hip without IV contrast,"1. Relevant information from the patient profile includes:
+   - Age: 22 years old
+   - Symptoms: 5-month history of left hip pain, lateral sided, tenderness over left hip greater trochanter
+   - Previous Diagnosis: None, X-rays show no significant abnormality
+   - Stage of Diagnosis: Next imaging study after non-diagnostic X-rays
+
+2. According to the context provided, for chronic hip pain with suspicion of noninfectious extra-articular abnormality such as trochanteric bursitis, and with negative or non-diagnostic radiographs, the next imaging study recommended is either an MRI hip without IV contrast or a US hip, both of which are usually appropriate. 
+
+3. The scan ordered, MRI left hip with and without IV contrast, is usually not appropriate for this condition according to the context provided. The use of IV contrast is not supported by relevant literature for routine MRI of the hip. 
+
+4. Based on the scoring criteria, the scan order of MRI left hip with and without IV contrast is USUALLY NOT APPROPRIATE for this patient. An MRI hip without IV contrast or a US hip would be more appropriate imaging procedures for this patient's condition.",UNA,"US left hip
+MRI left hip without IV contrast 
+Image guided anesthetic and or corticosteroid injection of left hip joint or surrounding structures (MBA)",,,,
+"30 year old Vietnamese male.  No significant past medical history.  Office worker, but avid badminton player about three times a week.  Now presenting with 4 month history of left anterior hip/groin pain with clicking.  Describes it as mostly in the background with pain score of 3-4/10, but aggravates on prolonged sitting and also during badminton games.  On examination: no inguinal hernia.  Positive left hip anterior impingement test.  X-rays are unremarkable, with no evidence of hip dysplasia.  MRI arthrography of the left hip to assess for labral tear. ",USUALLY APPROPRIATE,MRI arthrography hip,"1. Relevant information from the patient profile includes:
+   - Age: 30 years old
+   - Symptoms: 4 month history of left anterior hip/groin pain with clicking, aggravated by prolonged sitting and during badminton games
+   - Previous Diagnosis: None, X-rays are unremarkable, with no evidence of hip dysplasia
+   - Stage of Diagnosis: Next imaging study, as X-rays have already been performed and were unremarkable
+
+2. Referring to the reference information given under CONTEXT, the patient's symptoms and negative X-ray results suggest a possible labral tear. The recommended next imaging study for chronic hip pain with negative or nondiagnostic radiographs, when a labral tear is suspected, is either an MR arthrography hip or an MRI hip without IV contrast.
+
+3. The scan order of an MRI arthrography of the left hip aligns with the recommendations given in the CONTEXT. There are no superior imaging procedures or treatments with a more favorable risk-benefit ratio mentioned in the CONTEXT for this specific scenario.
+
+4. Based on the SCORING CRITERIA, the scan order of an MRI arthrography of the left hip is USUALLY APPROPRIATE for this patient's profile.",UA,,,,,
+"27 year old Chinese female.  Avid jogger.  No significantly past medical history other than history of one abortion.  Now presenting with 8 months history of bilateral knee pain, worse on the right.  Pain score about 4-5/10, worse on jogging where it increases to 7-8/10.  No fever, no night pain.  On examination, bilateral knee crepitus, no joint line tenderness, pivot shift negative, anterior and posterior drawer negative, varus/valgus stress negative, small bilateral joint effusions.    X-rays show mild bilateral knee degeneration.  MRI bilateral knees with and without IV contrast to further assess for degenerative changes. ",USUALLY NOT APPROPRIATE,MRI knee without IV contrast,"1. Relevant information from the patient profile includes:
+   - Age: 27 years old
+   - Symptoms: Chronic bilateral knee pain for 8 months, worse on the right, pain score 4-5/10 at rest and 7-8/10 on jogging, bilateral knee crepitus, small bilateral joint effusions
+   - Previous Diagnosis: Mild bilateral knee degeneration on X-rays
+   - Stage of Diagnosis: Next study after initial X-rays
+
+2. According to the reference information, the patient's condition falls under the category of ""Chronic knee pain. Initial knee radiograph demonstrates degenerative changes"". The appropriateness of the ordered scan (MRI bilateral knees with and without IV contrast) is classified as ""Usually Not Appropriate"" for this condition.
+
+3. A superior imaging procedure with a more favorable risk-benefit ratio would be an MRI knee without IV contrast, which is classified as ""May Be Appropriate"" for this condition.
+
+4. Based on the scoring criteria, the ordered scan (MRI bilateral knees with and without IV contrast) is ""Usually Not Appropriate"". An MRI knee without IV contrast would be a more appropriate procedure for this patient.",UNA,"MRI bilateral knees without IV contrast (MBA)
+CT bilateral knees without IV contrast (MBA)
+Image-guided aspiration of bilateral knees (MBA, disagreement)",,,,
+"71 year old Indian male. Retiree. Past medical history of lung cancer post right upper lobectomy, ischemic heart disease post coronary stenting, hypertension.  Community ambulant, unassisted.  Does brisk walking.   Now presenting with few year history of bilateral knee pain, worse on the left.  Pain score 5/10 worse on walking where it is 7/10.  On examination, bilateral knee significant crepitus, small bilateral joint effusions, otherwise unremarkable.  X-rays show severe right and moderate left knee degeneration and small bilateral suprapatellar effusions.  MRI bilateral knees without IV contrast to assess extent of degeneration.  ",MAY BE APPROPRIATE,MRI knee without IV contrast,"1. Relevant information from the patient profile includes:
+   - Age: 71 years old
+   - Symptoms: Bilateral knee pain, worse on the left, with a pain score of 5/10 at rest and 7/10 on walking
+   - Previous Diagnosis: Severe right and moderate left knee degeneration and small bilateral suprapatellar effusions, as shown on X-rays
+   - Stage of Diagnosis: Next study, as initial imaging (X-rays) has already been performed
+
+2. According to the reference information, for a patient with chronic knee pain and initial knee radiograph demonstrating degenerative changes, the following imaging procedures are recommended:
+
+   - MRI knee without IV contrast: May Be Appropriate
+   - Image-guided aspiration knee: May Be Appropriate (Disagreement)
+   - CT knee without IV contrast: May Be Appropriate
+   - MRI knee without and with IV contrast: Usually Not Appropriate
+   - US knee: Usually Not Appropriate
+   - CT arthrography knee: Usually Not Appropriate
+   - CT knee with IV contrast: Usually Not Appropriate
+   - CT knee without and with IV contrast: Usually Not Appropriate
+   - MR arthrography knee: Usually Not Appropriate
+   - Bone scan knee: Usually Not Appropriate
+   - Radiography hip ipsilateral: Usually Not Appropriate
+
+3. The ordered scan, MRI bilateral knees without IV contrast, is listed as ""May Be Appropriate"" for this patient's condition. There are no superior imaging procedures listed in the reference information for this specific patient profile.
+
+4. Based on the scoring criteria, the ordered scan, MRI bilateral knees without IV contrast, is considered MAY BE APPROPRIATE for this patient. This is because the scan may be indicated in this clinical scenario as an alternative to imaging procedures or treatments with a more favorable risk-benefit ratio, or the risk-benefit ratio for patients is equivocal.",MBA,,,,,
+24 year old Indian female.  MRI left shoulder without IV contrast for ?Hill Sachs lesion.  ,INSUFFICIENT INFORMATION,0,Empty Response,ICI ,,,,,
+"16 year old Caucasian female.  Soccer player.  Now presenting with 6 month history of right knee pain.  Had episode of bad right knee sprain 6 months ago after being tackled during soccer game.  Felt a pop and swelling, but treated with ice, compression and over the counter medication.  Since then, has right knee pain, and feeling of instability.  Pain worsens on activity.  No night pain, no fever, no loss of weight/appetitie.  On examination, right knee anterior drawer positive, medial and lateral joint line tenderness.  No joint effusion.  X-rays shows suggestion of old Segond fracture.  MRI right knee without IV contrast to assess for ACL and meniscal injury.  ",USUALLY APPROPRIATE,MRI knee without IV contrast,"1. Relevant information from the patient profile includes:
+   - Age: 16 years old
+   - Symptoms: Chronic right knee pain for 6 months, feeling of instability, pain worsens on activity, positive anterior drawer test, medial and lateral joint line tenderness
+   - Previous Diagnosis: X-ray shows signs of old Segond fracture
+   - Stage of Diagnosis: Next study, after initial X-ray
+
+2. According to the reference information given under CONTEXT, for a patient who is an adult or child greater than or equal to 5 years of age, with chronic knee pain, and initial knee radiograph demonstrating signs of prior osseous injury (ie, Segond fracture), the next imaging procedure recommendations are as follows:
+
+   - MRI knee without IV contrast: Usually Appropriate
+   - CT arthrography knee: May Be Appropriate
+   - CT knee without IV contrast: May Be Appropriate
+   - Image-guided aspiration knee: Usually Not Appropriate
+   - CT knee with IV contrast: Usually Not Appropriate
+   - CT knee without and with IV contrast: Usually Not Appropriate
+   - MR arthrography knee: Usually Not Appropriate
+   - MRI knee without and with IV contrast: Usually Not Appropriate
+   - Bone scan knee: Usually Not Appropriate
+   - US knee: Usually Not Appropriate
+   - Radiography hip ipsilateral: Usually Not Appropriate
+
+3. Based on the patient's symptoms and the context, the ordered scan (MRI right knee without IV contrast) is the most appropriate imaging procedure. It is superior to other imaging procedures in terms of risk-benefit ratio for this patient.
+
+4. Based on the SCORING CRITERIA, the SCAN ORDER of MRI right knee without IV contrast is USUALLY APPROPRIATE for this patient to assess for ACL and meniscal injury.",UA,,,,,
+"28 year old Chinese male.  National bowler.  No significant past medical history. Right handed.  Now presenting with 3 month history of right shoulder pain.  No specific inciting incident.  Pain exacerbated on bowling.  Pain score 6/10.  Affecting bowling ability.  On examination, reduced active abduction.  Empty can test positive.  Neer test positive.  X-rays are unremarkable, with no reduced acromiohumeral interval.  MRI right shoulder without IV contrast to assess for rotator cuff injury.  ",USUALLY APPROPRIATE,MRI shoulder without IV contrast,"1. Relevant information from the patient profile includes:
+   - Age: 28 years old
+   - Symptoms: 3-month history of right shoulder pain, exacerbated on bowling, pain score 6/10, affecting bowling ability
+   - Physical examination: Reduced active abduction, positive Empty can test, positive Neer test
+   - Previous diagnosis: None mentioned
+   - Stage of diagnosis: Initial imaging (X-rays) were unremarkable, no reduced acromiohumeral interval. The scan order is for the next imaging study.
+
+2. According to the context provided, for chronic shoulder pain with suspicion of rotator cuff disorders or subacromial subdeltoid bursitis (no prior surgery), and initial radiographs normal or inconclusive, the appropriateness category for MRI shoulder without IV contrast is ""Usually Appropriate"".
+
+3. There are no superior imaging procedures or treatments with a more favorable risk-benefit ratio mentioned in the context. Other ""Usually Appropriate"" procedures include US shoulder and MR arthrography shoulder.
+
+4. Based on the scoring criteria, the scan order of MRI right shoulder without IV contrast is ""Usually Appropriate"" for this patient.",UA,,,,,
+"53 year old Malay female.  Home maker. Past medical history of diabetes mellitus, hyperlipidemia, left breast fibroadenoma.  Right handed.  Now presenting with 8 month history of left shoulder pain, worsening over time with associated stiffness.  No inciting event. No night pain or fever.  Unable to sleep on left side.  On examination, significant reduced range of motion of left shoulder due to pain and/or stiffness.  X-rays show minimal acromiohumeral degeneration, otherwise unremarakable.  MRI arthrography of the left shoulder to evaluated for adhesive capsulitis.",MAY BE APPROPRIATE,"MRI shoulder without IV contrast, Image-guided anesthetic +/- corticosteroid injection shoulder or surrounding structures","1. Relevant information from the patient profile includes:
+   - Age: 53 years old
+   - Symptoms: 8 month history of left shoulder pain, worsening over time with associated stiffness. Significant reduced range of motion of left shoulder due to pain and/or stiffness.
+   - Previous Diagnosis: Minimal acromiohumeral degeneration on X-rays, otherwise unremarkable.
+   - Stage of Diagnosis: Next imaging study, initial radiographs were normal or inconclusive.
+
+2. According to the context provided, for a patient with chronic shoulder pain suspected of adhesive capsulitis and initial radiographs normal or inconclusive, the following imaging recommendations are given:
+
+   - Image-guided anesthetic +/- corticosteroid injection shoulder or surrounding structures: Usually Appropriate
+   - MRI shoulder without IV contrast: Usually Appropriate
+   - US shoulder: May Be Appropriate (Disagreement)
+   - MR arthrography shoulder: May Be Appropriate
+   - Radiography shoulder additional views: Usually Not Appropriate
+   - MRI shoulder without and with IV contrast: Usually Not Appropriate
+   - Bone scan shoulder: Usually Not Appropriate
+   - CT shoulder with IV contrast: Usually Not Appropriate
+   - CT shoulder without and with IV contrast: Usually Not Appropriate
+   - CT shoulder without IV contrast: Usually Not Appropriate
+   - CT arthrography shoulder: Usually Not Appropriate
+   - FDG-PET/CT skull base to mid-thigh: Usually Not Appropriate
+
+3. The ordered scan, MRI arthrography of the left shoulder, falls under the ""May Be Appropriate"" category. However, there are superior imaging procedures with a more favorable risk-benefit ratio, such as MRI shoulder without IV contrast and Image-guided anesthetic +/- corticosteroid injection shoulder or surrounding structures, which are both classified as ""Usually Appropriate"".
+
+4. Based on the scoring criteria, the ordered scan (MRI arthrography of the left shoulder) is ""May Be Appropriate"". However, considering the risk-benefit ratio, an MRI shoulder without IV contrast or an Image-guided anesthetic +/- corticosteroid injection shoulder or surrounding structures would be more appropriate.",MBA,,,,,
+"41 year old Malay male.  Badminton player, representing club.  Right handed.  History of right shoulder arthroscopic rotator cuff repair 2 years ago.  Now presenting with 8 month history of right shoulder pain, limiting ability to participate in competitions.  Grip strength ok.  No night pain or fever.  On examination, impingement test is positive.  Reduced abduction due to pain.  X-rays show post repair changes but otherwise unremarkable.  MRI right shoulder without and with IV contrast for further assessment.  ",USUALLY NOT APPROPRIATE,"Consider US shoulder, MR arthrography shoulder, MRI shoulder without IV contrast, or CT arthrography shoulder","1. Relevant information from the patient profile includes:
+   - Age: 41 years old
+   - Symptoms: Chronic right shoulder pain for 8 months, positive impingement test, reduced abduction due to pain
+   - Previous Diagnosis: History of right shoulder arthroscopic rotator cuff repair 2 years ago
+   - Stage of Diagnosis: Next study, as initial radiographs (X-rays) were normal or inconclusive
+
+2. According to the context provided, for a patient with chronic shoulder pain, history of prior rotator cuff repair, and initial radiographs normal or inconclusive, the following imaging procedures are recommended:
+   - US shoulder: Usually Appropriate
+   - MR arthrography shoulder: Usually Appropriate
+   - MRI shoulder without IV contrast: Usually Appropriate
+   - CT arthrography shoulder: Usually Appropriate
+   - Image-guided anesthetic +/- corticosteroid injection shoulder or surrounding structures: May Be Appropriate
+   - MRI shoulder without and with IV contrast: Usually Not Appropriate
+
+3. Based on the context, superior imaging procedures with a more favorable risk-benefit ratio include US shoulder, MR arthrography shoulder, MRI shoulder without IV contrast, and CT arthrography shoulder.
+
+4. The ordered scan, MRI right shoulder without and with IV contrast, is classified as ""Usually Not Appropriate"" according to the context provided. Therefore, it is recommended to consider one of the ""Usually Appropriate"" procedures such as US shoulder, MR arthrography shoulder, MRI shoulder without IV contrast, or CT arthrography shoulder for further assessment of this patient's condition.",UNA,"US right shoulder
+MR arthrography right shoulder
+MRI right shoulder without IV contrast
+CT arthrography right shoulder
+Image guided anesthetic and or corticosteroid injection of left shoulder or surrounding structures (MBA)",,,,
+"66 year old Indian female.  Post left total shoulder replacement 1 year ago for avascular necrosis and secondary osteoarthritis.  Past medical history of hypertension, colonic polyps post polypectomy.  Now coming with worsening left shoulder pain and stiffness over 6 months. On examination, limited range of motion of left shoulder due to pain.  No recent imaging.  MRI left shoulder without IV contrast for further assessment. ",USUALLY APPROPRIATE,MRI shoulder without IV contrast,"1. Relevant information from the patient profile includes:
+   - Age: 66 years old
+   - Symptoms: Worsening left shoulder pain and stiffness over 6 months
+   - Previous Diagnosis: Avascular necrosis and secondary osteoarthritis
+   - Treatment: Left total shoulder replacement 1 year ago
+   - Stage of Diagnosis: Next study, as the patient has had a previous diagnosis and treatment, and is now presenting with new symptoms.
+
+2. According to the reference information given under the context, for a symptomatic patient with a primary shoulder arthroplasty (which is the case for our patient), the initial imaging should be radiography of the shoulder. For chronic shoulder pain with initial radiographs demonstrating osteoarthritis, the next imaging study recommended is an MRI shoulder without IV contrast.
+
+3. There are no superior imaging procedures or treatments with a more favorable risk-benefit ratio mentioned in the context for this specific patient profile.
+
+4. Based on the scoring criteria, the scan order of an MRI left shoulder without IV contrast is USUALLY APPROPRIATE. This is because the patient has chronic shoulder pain following a shoulder arthroplasty, and the context recommends an MRI without IV contrast as the next imaging study in such cases.",UNA,X-ray left shoulder,,,,
+"60 year old Chinese male.  Post right total shoulder replacement 2 years ago for osteoarthritis.  Smoker.  Past medical history of chronic obstructive pulmonary disease, left upper lobectomy for lung cancer.  Now complaining of right shoulder pain for past 2 months.  No night pain. No fever.  On examination, pain on range of motion testing. No swelling or erythema or discharging sinus.   Total white blood cell count, CRP and ESR are not elevated.    X-rays show equivocal loosening of implant, but otherwise no fracture or gross destructive bone lesion.  MRI right shoulder without IV contrast to further assess.  ",USUALLY APPROPRIATE,MRI shoulder without IV contrast,"1. Relevant information from the patient profile includes:
+   - Age: 60 years old
+   - Symptoms: Right shoulder pain for the past 2 months, pain on range of motion testing
+   - Previous Diagnosis: Osteoarthritis, underwent right total shoulder replacement 2 years ago
+   - Stage of Diagnosis: Next study, after initial X-rays showed equivocal loosening of implant
+   - Other relevant information: No signs of infection (no fever, normal total white blood cell count, CRP and ESR), smoker, history of chronic obstructive pulmonary disease and lung cancer.
+
+2. According to the reference information given under CONTEXT, for a symptomatic patient with a primary shoulder arthroplasty where infection is excluded and suspected loosening, an MRI shoulder without IV contrast is usually appropriate as additional imaging following radiographs.
+
+3. There are no superior imaging procedures or treatments with a more favorable risk-benefit ratio mentioned in the CONTEXT for this specific patient scenario.
+
+4. Based on the SCORING CRITERIA, the SCAN ORDER of an MRI right shoulder without IV contrast is USUALLY APPROPRIATE for this patient.",UA,,,,,
+"58 year old Indonesian female.  Post left total hip replacement for severe osteoarthritis 6 months ago.  Past medical history of diabetes, hypertension, hyperlipidemia, appendicectomy.  Now presenting with left hip pain, difficulty walking.  No fever.  No night pain.  On examination, pain in left hip on assessing range of motion.  No tenderness.  MRI left hip without IV contrast as initial imaging for this presentation, to assess for cause of left hip pain post total hip replacement.",MAY BE APPROPRIATE,CT hip without IV contrast,"1. Relevant information from the patient profile includes the patient's age (58 years old), symptoms (left hip pain, difficulty walking), previous diagnosis (severe osteoarthritis), and the fact that she had a total hip replacement 6 months ago. This is not the initial imaging for the patient's condition, but rather the next study following the hip replacement.
+
+2. According to the context provided, for a symptomatic patient with a history of hip arthroplasty, the appropriate imaging following radiographs would be a CT hip without IV contrast, which is usually appropriate. An MRI hip without IV contrast may be appropriate.
+
+3. The context does not suggest any superior imaging procedures or treatments with a more favorable risk-benefit ratio.
+
+4. Based on the scoring criteria, the scan order of an MRI left hip without IV contrast is MAY BE APPROPRIATE. This is because, according to the context, this procedure may be indicated in the specified clinical scenarios as an alternative to imaging procedures or treatments with a more favorable risk-benefit ratio. However, a CT hip without IV contrast would be usually appropriate and could be considered as an alternative.",UNA,X-ray left hip,,,,
+34 year old Indian male.  MRI lumbosacral spine without and with IV contrast for ?ankylosing spondylitis.,INSUFFICIENT INFORMATION,0,Empty Response,ICI,,,,,
+"80 year old Caucasian male.  Post right total hip replacement for severe osteoarthritis 3 years ago.  History of hypertension on medications.  Now presenting with 2 day history of right hip pain post fall.  On examination, no obvious hip or limb deformity.  Range of motion assessment is limited by pain.  X-rays show no periprosthetic fracture or loosening.  For MRI right hip without IV contrast for further assessment.",MAY BE APPROPRIATE,MRI hip without IV contrast,"1. Relevant information from the patient profile includes: 
+   - Age: 80 years old
+   - Symptoms: Right hip pain post fall
+   - Previous Diagnosis: Severe osteoarthritis, treated with total hip replacement 3 years ago
+   - Stage of Diagnosis: Additional imaging following radiographs
+
+2. Referring to the context, for a symptomatic hip arthroplasty patient with a history of acute injury and additional imaging following radiographs, an MRI hip without IV contrast is considered ""May Be Appropriate"". 
+
+3. There are no superior imaging procedures or treatments with a more favorable risk-benefit ratio mentioned in the context for this specific patient scenario.
+
+4. Based on the scoring criteria, the scan order of MRI right hip without IV contrast is ""MAY BE APPROPRIATE"" for this patient.",MBA,,,,,
+"67 year old Malay male.  Post left hip bipolar hemiarthroplasty post neck of femur fracture.  Past medical history of poorly controlled diabetes, end stage renal failure on peritoneal dialysis, prior intestinal obstruction post small bowel resection due to adhesions, ischemic heart disease on optimal medical treatment.  Now presenting 1 month post left hip hemiarthroplasty with hip pain and fever for 1 week.  On examination, no obvious discharging skin sinus.  Limited range of motion due to pain.  X-rays show no obvious periprosthetic fracture or loosening, no destructive bone lesion or soft tissue gas.  Total white blood cell count and CRP are elevated.  For MRI of the left hip without IV contrast to assess for implant infection.  ",USUALLY APPROPRIATE,MRI hip without IV contrast,"1. Relevant information from the patient profile includes:
+   - Age: 67 years old
+   - Symptoms: Hip pain and fever for 1 week
+   - Previous Diagnosis: Post left hip bipolar hemiarthroplasty post neck of femur fracture, poorly controlled diabetes, end stage renal failure on peritoneal dialysis, prior intestinal obstruction post small bowel resection due to adhesions, ischemic heart disease on optimal medical treatment
+   - Stage of Diagnosis: Additional imaging following radiographs
+   - Other relevant information: Elevated total white blood cell count and CRP, suggesting possible infection
+
+2. Referring to the context information, the patient is a symptomatic hip arthroplasty patient with a possible infection. The additional imaging following radiographs is being performed to assess for implant infection.
+
+3. According to the reference information, for a symptomatic hip arthroplasty patient where infection is not excluded, an MRI hip without IV contrast is usually appropriate. Other procedures that may be appropriate include Image-guided aspiration hip, WBC scan and sulfur colloid scan hip, US hip, MRI hip without and with IV contrast, and CT hip with IV contrast.
+
+4. Based on the scoring criteria, the ordered scan (MRI of the left hip without IV contrast) is USUALLY APPROPRIATE for this patient. It aligns with the recommended imaging procedures for a symptomatic hip arthroplasty patient where infection is not excluded.",UA,,,,,
+"64 year old Chinese female.  Post right hip bipolar hemiarthroplasty post neck of femur fracture.  Now presenting 3 months after operation due to right lateral hip pain.  Painful to sleep on right hip.  No fever.  On examination, tender over right greater trochanter.  Pain on forced abduction of right hip.  X-rays show no periprosthetic fracture or loosening, no obvious myositis ossificans.  For MRI right hip without IV contrast to assess for trochanteric bursitis.",USUALLY APPROPRIATE,MRI hip without IV contrast,"1. Relevant information from the patient profile includes:
+   - Age: 64 years old
+   - Symptoms: Right lateral hip pain, tender over right greater trochanter, pain on forced abduction of right hip
+   - Previous Diagnosis: Post right hip bipolar hemiarthroplasty post neck of femur fracture
+   - Stage of Diagnosis: Additional imaging following radiographs
+
+2. According to the reference information, for a hip arthroplasty patient with trochanteric pain, suspecting abductor injury, trochanteric bursitis, or other soft tissue abnormality, and requiring additional imaging following radiographs, an MRI hip without IV contrast is usually appropriate.
+
+3. There are no superior imaging procedures or treatments with a more favorable risk-benefit ratio mentioned in the context for this specific patient profile.
+
+4. Based on the scoring criteria, the scan order of an MRI right hip without IV contrast is USUALLY APPROPRIATE for this patient.",UA,,,,,
+"65 year old Malay male.  Post left total knee replacement 4 years ago.  Past medical history of diabetes, hypertension, hyperlipidemia, end stage renal failure on hemodialysis, cataract post intra-ocular lens.  Now severe pain in left knee after slipping and falling 3 days ago. On examination, left knee swollen, limited range of motion due to pain.  No obvious deformity.  X-rays show no obvious periprosthetic fracture or loosening, but there is a large suprapatellar effusion.  MRI left knee without IV contrast to assess for radiographically occult periprosthetic fracture.",MAY BE APPROPRIATE,CT knee without IV contrast,"1. Relevant information from the patient profile includes: 
+- Age: 65 years old
+- Symptoms: Severe pain in left knee after slipping and falling 3 days ago, swollen knee, limited range of motion due to pain
+- Previous diagnosis: Post left total knee replacement 4 years ago, diabetes, hypertension, hyperlipidemia, end stage renal failure on hemodialysis, cataract post intra-ocular lens
+- Stage of diagnosis: Additional imaging following radiographs
+
+2. Referring to the reference information given under CONTEXT, the patient's condition falls under the category of ""Pain after total knee arthroplasty. Suspect periprosthetic or hardware fracture. Additional imaging following radiographs.""
+
+3. According to the table, the appropriate imaging procedures for this condition are CT knee without IV contrast (Usually Appropriate) and MRI knee without IV contrast (May Be Appropriate). 
+
+4. Based on the SCORING CRITERIA, the ordered scan, MRI left knee without IV contrast, is MAY BE APPROPRIATE. However, considering the patient's condition and the risk-benefit ratio, CT knee without IV contrast would be a superior imaging procedure as it is classified as Usually Appropriate for this condition.",MBA,,,,,
+28 year old Bangladeshi male.  MRI left wrist without IV contrast for ?tendon injury.,INSUFFICIENT INFORMATION,0,Empty Response,ICI,,,,,
+"74 year old Indian female.  Post right total knee replacement 1 year ago.  Now presenting with fever, right knee swelling and redness for 4 days.  On examination, right knee moderately swollen, erythematous, tender and warm.  No obvious discharge.  Limited range of motion due to pain.  X-rays show no obvious destructive bone lesion or soft tissue gas or periprosthetic loosening or fracture.  For MRI right knee without and with IV contrast to assess for implant infection. ",MAY BE APPROPRIATE,Image-guided aspiration knee,"1. Relevant information from the patient profile includes the patient's age (74 years old), symptoms (fever, right knee swelling, redness, tenderness, warmth, limited range of motion due to pain), and previous diagnosis (right total knee replacement 1 year ago). The patient is in the stage of diagnosis where additional imaging is needed following radiographs.
+
+2. Referring to the context, the patient's symptoms suggest a suspected infection after total knee arthroplasty. The appropriateness of the ordered scan (MRI right knee without and with IV contrast) falls under the ""May Be Appropriate"" category for this condition.
+
+3. Other imaging procedures that may be appropriate for this condition include Image-guided aspiration knee, US knee, MRI knee without IV contrast, CT knee with IV contrast, 3-phase bone scan knee, and WBC scan and sulfur colloid scan knee.
+
+4. Based on the scoring criteria, the ordered scan (MRI right knee without and with IV contrast) is MAY BE APPROPRIATE for this patient. However, an Image-guided aspiration knee, which is usually appropriate, could be a superior imaging procedure with a more favorable risk-benefit ratio.",MBA,,,,,
+"11 year old Chinese male.  Left distal femur osteosarcoma post chemotherapy and limb salvage surgery 1 year ago.  Functionally independent, community ambulant without assistance. On examination, no obvious limb length discrepancy, no palpable mass at operative site, skin ok.  For MRI left knee and femur without and with IV contrast for surveillance.  ",USUALLY APPROPRIATE,MRI without and with IV contrast,"1. Relevant information from the patient profile includes:
+   - Age: 11 years old
+   - Previous Diagnosis: Left distal femur osteosarcoma
+   - Treatment: Post chemotherapy and limb salvage surgery 1 year ago
+   - Symptoms: No obvious limb length discrepancy, no palpable mass at operative site
+   - Stage of Diagnosis: Surveillance
+
+2. According to the reference information given under the context, for the condition of aggressive primary musculoskeletal tumor surveillance for local recurrence, the appropriateness of the ordered scan (MRI area of interest without and with IV contrast) is ""Usually Appropriate"". 
+
+3. There are no superior imaging procedures or treatments with a more favorable risk-benefit ratio mentioned in the context for this specific patient profile.
+
+4. Based on the scoring criteria, the scan order of MRI left knee and femur without and with IV contrast for surveillance is USUALLY APPROPRIATE for this patient.",UA,,,,,
+"80 year old Chinese female.  Background of hypertension, hyperlipidemia, right breast cancer post simple mastectomy and sentinel node biopsy 20 years ago.  Sedentary.  Now presenting with low back pain for 5 days, no inciting event recalled.  On examination, no obvious step deformity, mild tenderness at L1 region.  Mildly kyphotic.  X-rays show L1 moderate compression fracture, osteopenia, and mild lumbar spondylosis.  MRI lumbar spine without and with IV contrast to further assess compression fracture.",MAY BE APPROPRIATE,MRI lumbar spine without and with IV contrast,"1. Relevant information from the patient profile includes the patient's age (80 years old), symptoms (low back pain for 5 days), previous diagnosis (hypertension, hyperlipidemia, right breast cancer post simple mastectomy and sentinel node biopsy 20 years ago), and the stage of diagnosis (initial imaging). The patient also has a history of osteopenia and mild lumbar spondylosis, and current x-rays show an L1 moderate compression fracture.
+
+2. According to the context, for low back pain with or without radiculopathy in an elderly individual with osteoporosis or chronic steroid use, initial imaging with MRI lumbar spine without IV contrast is usually appropriate. MRI lumbar spine without and with IV contrast is considered may be appropriate. For patients with a history of cancer, MRI without and with IV contrast is considered superior in evaluation of localizing disease.
+
+3. There are no superior imaging procedures or treatments with a more favorable risk-benefit ratio mentioned in the context.
+
+4. Based on the scoring criteria, the scan order of MRI lumbar spine without and with IV contrast is MAY BE APPROPRIATE. This is because the patient is elderly, has osteopenia, and a history of cancer, which aligns with the context where this procedure is considered may be appropriate. However, given the patient's history of cancer, it might be beneficial to further assess the compression fracture and rule out any malignancy.",UA,,,,,
+"13 year old Caucasian female.  No prior medical history.  Does 200 metre sprinting for school.  Now presenting with 3 month history of right knee pain, sometimes waking her up at night.  No fever.  No inciting trauma.  No loss of weight or appetitie.  On examination, mild swelling in right knee.  Otherwise unremarkable examination.  No prior imaging.  MRI right knee with and without IV contrast to assess for any malignancy. ",USUALLY NOT APPROPRIATE,Knee radiograph,"1. Relevant information from the patient profile includes: 
+   - Age: 13 years old
+   - Symptoms: Chronic right knee pain for 3 months, sometimes severe enough to wake her up at night, mild swelling in right knee
+   - Previous Diagnosis: None
+   - Stage of Diagnosis: Initial imaging (no prior imaging has been done)
+
+2. According to the reference information given under CONTEXT, for a patient of this age with chronic knee pain and no prior imaging, the initial imaging procedure recommended is a knee radiograph.
+
+3. The scan ordered, an MRI right knee with and without IV contrast, is not the recommended initial imaging procedure for this patient profile. The risk-benefit ratio for this procedure is not favorable as it involves exposure to IV contrast which carries risks such as allergic reactions and nephrotoxicity. Moreover, the use of MRI may be premature and unnecessary in some patients with chronic knee pain, as it is estimated that approximately 20% of patients with chronic knee pain have had an MRI performed without recent (within the prior year) radiographs.
+
+4. Based on the SCORING CRITERIA, the SCAN ORDER of MRI right knee with and without IV contrast is USUALLY NOT APPROPRIATE for this patient profile. The recommended initial imaging procedure is a knee radiograph. If the radiograph is negative or demonstrates a joint effusion, an MRI without IV contrast may be considered as the next step.",UNA,X-ray right knee,,,,
+55 year old Chinese female.  MRI thoracic and lumbar spine without and with IV contrast for ?pathological vertebral compression fracture.,INSUFFICIENT INFORMATION,0,Empty Response,ICI,,,,,
+"17 year old Malay female.  No prior medical history.  Does Malay dance as co-curricular activity in school. Now presenting with 2 month history of right thigh dull pain, sometimes worse at night.  Affects her ability do dance.  Pain improves on naproxen.  No fever, no loss of weight or appetiite.  On examination: antalgic gait.  No gross mass palpated at right thigh.  Right hip and knee full range of motion.  No limb length discrepancy.  X-rays raise possiblity of osteoid osteoma at right femur shaft.  MRI right thigh without and with IV contrast to confirm finding of osteoid osteoma.",MAY BE APPROPRIATE,CT area of interest without IV contrast,"1. Relevant information from the patient profile includes: 
+- Age: 17 years old
+- Symptoms: 2 month history of right thigh dull pain, sometimes worse at night, pain improves on naproxen, antalgic gait
+- Previous Diagnosis: X-rays raise possibility of osteoid osteoma at right femur shaft
+- Stage of Diagnosis: Next imaging study
+
+2. According to the context provided, for a suspected primary bone tumor where radiographs or clinical presentation suggest osteoid osteoma, the next imaging study recommendations are as follows:
+- CT area of interest without IV contrast: Usually Appropriate
+- CT area of interest without and with IV contrast: May Be Appropriate (Disagreement)
+- MRI area of interest without and with IV contrast: May Be Appropriate
+- MRI area of interest without IV contrast: May Be Appropriate
+- Bone scan whole body with SPECT or SPECT/CT area of interest: May Be Appropriate
+- Bone scan whole body: Usually Not Appropriate
+- CT area of interest with IV contrast: Usually Not Appropriate
+- FDG-PET/CT whole body: Usually Not Appropriate
+- US area of interest: Usually Not Appropriate
+
+3. The context suggests that CT is considered the optimal imaging modality in patients with suspected osteoid osteoma. CT is preferred over MRI when osteoid osteoma is strongly suspected because it is extremely sensitive for detection and precise delineation of the nidus, which is important both for diagnosis and treatment. 
+
+4. Based on the scoring criteria, the scan order of MRI right thigh without and with IV contrast is MAY BE APPROPRIATE. However, considering the context information, a CT scan of the area of interest without IV contrast would be USUALLY APPROPRIATE and could be a superior imaging procedure in this case.",MBA,,,,,
+"31 year old Chinese male.  Special operations task force officer.  No past medical history.  Now presenting due to fall from 2nd storey during rappelling today, landing on right shoulder.  Severe pain and swelling.  On examination, bruising over right shoudler, swelling, inability to assess range of motion due to pain. No prior imaging.  MRI right shoulder without IV contrast to assess traumatic injury.  ",USUALLY APPROPRIATE,"Radiographs of the shoulder as the initial imaging modality. If radiographs are normal, then an MRI without IV contrast could be used to assess for soft tissue injuries.","1. Relevant information from the patient profile includes: 
+- Age: 31 years old
+- Symptoms: Severe pain and swelling in the right shoulder, inability to assess range of motion due to pain
+- Previous diagnosis: None
+- Stage of diagnosis: Initial imaging
+
+2. The context provided indicates that for traumatic shoulder pain, radiographs are the preferred initial study. They can delineate shoulder malalignment and most shoulder fractures. In the setting of normal shoulder radiographs, the most common causes of post-traumatic shoulder pain are soft-tissue injuries such as rotator cuff and labral tears. Noncontrast MRI is a reasonable imaging study in the setting of acute nonlocalized traumatic shoulder pain and noncontributory radiographs. 
+
+3. Based on the context, the superior imaging procedure for this patient would be to start with radiographs of the shoulder to assess for any fractures or dislocations. If the radiographs are normal, an MRI without IV contrast could be used to assess for soft tissue injuries.
+
+4. Based on the scoring criteria, the scan order of an MRI right shoulder without IV contrast is USUALLY APPROPRIATE, but only after initial radiographs have been performed and are normal. If radiographs have not been performed, there is INSUFFICIENT INFORMATION to recommend the appropriateness of the MRI scan. The initial imaging should be radiographs of the shoulder.",UNA,X-ray right shoulder,,,,
+"45 year old Indian male.  Professional weight lifter.  No past medical history.  Was doing benchpress when weight slipped out of hand and hit his right shoulder. Heard snapping sound, felt severe pain.  On examination, marked right shoulder swelling, tender, no redness.  Mild deformity.  X-rays show communited right humeral neck fracture.  No dislocation.  MRI right shoulder without IV contrast for further assessment.  ",USUALLY NOT APPROPRIATE,CT shoulder without IV contrast,"1. Relevant information from the patient profile includes: 
+   - Age: 45 years old
+   - Symptoms: Severe right shoulder pain, swelling, and mild deformity after a weightlifting accident
+   - Previous Diagnosis: X-rays show comminuted right humeral neck fracture
+   - Stage of Diagnosis: Next imaging study
+
+2. According to the context provided, for a patient with traumatic shoulder pain where radiographs show a humeral head or neck fracture, the next imaging study recommended is a CT shoulder without IV contrast, which is usually appropriate. An MRI shoulder without IV contrast is usually not appropriate in this scenario.
+
+3. Based on the context, a superior imaging procedure for this patient would be a CT shoulder without IV contrast.
+
+4. Based on the scoring criteria, the ordered scan (MRI right shoulder without IV contrast) is USUALLY NOT APPROPRIATE for this patient. The recommended procedure would be a CT shoulder without IV contrast.",UNA,CT right shoulder without IV contrast,,,,
+"37 year old Chinese female.  Executive in company.  No prior medical history.  Now presents with lump over right thigh x 3 months.  Family history of gastric cancer.  Lump not painful, not growing. Worried that this may be cancer.  On examination, smooth, non tender, mobile subcutaneous lump at right thigh approximately 2cm in size.  For MRI right thigh without and with IV contrast to assess for lipoma.  ",USUALLY NOT APPROPRIATE,Ultrasound or radiography of the right thigh,"1. Relevant information from the patient profile includes:
+   - Age: 37 years old
+   - Symptoms: Lump over right thigh for 3 months, not painful, not growing
+   - Previous diagnosis: None
+   - Stage of diagnosis: Initial imaging
+
+2. According to the context provided, for a superficial soft tissue mass (which seems to be the case here as the lump is subcutaneous), the initial imaging procedures that are usually appropriate are US area of interest and Radiography area of interest. MRI area of interest without and with IV contrast is usually not appropriate for initial imaging.
+
+3. There are superior imaging procedures for this patient's condition. An ultrasound or radiography of the area of interest would be more appropriate as initial imaging procedures.
+
+4. Based on the scoring criteria, the scan order for MRI right thigh without and with IV contrast is USUALLY NOT APPROPRIATE for this patient at this stage. An appropriate procedure would be an ultrasound or radiography of the right thigh.",UNA,"X-ray right femur/thigh
+US right thigh ",,,,
+19 year old Chinese male. MRI right knee without IV contrast for proximal tibia fracture,INSUFFICIENT INFORMATION,0,Empty Response,ICI,,,,,
+"26 year old Caucasian male.  Works in technology company as quality assurance lead.  No prior medical history. Now presents with right foot lump x 2 months.  Increasing in size.  No fever, no loss of weight or appetitie.  No inciting traumatic event.  No pain, able to walk normally.  On examination, there is a 3cm lump over the dorsum of the mid-forefoot, non tender.  X-rays shows no destructive bone lesion, but the lump shows some calcifications.  Non contrast-enhanced ultrasound shows subcutaneous hypoechoic lesion with mildly irregular margins, and few foci of calcification.  For MRI of right mid and forefoot without IV contrast for further assessment of lump, possibly soft tissue sarcoma.  ",MAY BE APPROPRIATE,MRI without and with IV contrast,"1. Relevant information from the patient profile includes:
+   - Age: 26 years old
+   - Symptoms: Right foot lump for 2 months, increasing in size, no pain, able to walk normally
+   - Previous Diagnosis: None
+   - Stage of Diagnosis: Initial imaging has been done (X-ray and non-contrast-enhanced ultrasound), but the lump is not fully characterized. The scan order is for the next study.
+
+2. According to the reference information, for a soft tissue mass where initial imaging (radiograph and noncontrast-enhanced ultrasound) is non-diagnostic, the next imaging study should be an MRI of the area of interest without and with IV contrast, which is usually appropriate. An MRI without IV contrast may be appropriate. CT scans with or without IV contrast may also be appropriate.
+
+3. The scan order is for an MRI without IV contrast. While this is listed as ""may be appropriate"", an MRI without and with IV contrast is listed as ""usually appropriate"". This suggests that the latter may provide a more comprehensive assessment of the lump.
+
+4. Based on the scoring criteria, the scan order for an MRI of the right mid and forefoot without IV contrast is MAY BE APPROPRIATE. However, an MRI without and with IV contrast would be a superior imaging procedure as it is USUALLY APPROPRIATE in this scenario.",MBA,,,,,
+"18 year old Eurasian male.  Full time national service, in guards battalion.  No prior medical history.  Now presents with severe right foot pain after fast march.  Cannot walk without assistance.  On examination, mildly swollen right foot.  Tender on deep palpation of 2nd and 3rd metatarsals.  No prior imaging.  For MRI of right mid and forefoot without IV contrast to assess for stress fracture.  ",USUALLY NOT APPROPRIATE,Radiography foot or Radiography foot with weightbearing,"1. Relevant information from the patient profile includes:
+   - Age: 18 years old
+   - Symptoms: Severe right foot pain, cannot walk without assistance, tender on deep palpation of 2nd and 3rd metatarsals, mildly swollen right foot
+   - Previous Diagnosis: None
+   - Stage of Diagnosis: Initial Imaging
+
+2. According to the context provided, the patient has acute trauma to the foot. The Ottawa rules are applicable in this case, but they are negative as the patient has pain in the midfoot and forefoot, not the areas specified by the Ottawa rules (navicular and base of the fifth metatarsal). Therefore, the patient's condition falls under the scenario where Ottawa rules are negative but there is suspected pathology in an anatomic area not addressed by Ottawa rules.
+
+3. The context suggests that for this scenario, Radiography foot or Radiography foot with weightbearing are usually appropriate. CT foot without IV contrast may be appropriate but there is disagreement. Other procedures like CT foot with IV contrast, CT foot without and with IV contrast, Fluoroscopy foot, MRI foot without and with IV contrast, MRI foot without IV contrast, and US foot are usually not appropriate.
+
+4. Based on the scoring criteria, the ordered scan, MRI of right mid and forefoot without IV contrast, is usually not appropriate for this patient's condition. A more appropriate procedure would be Radiography foot or Radiography foot with weightbearing.",UNA,X-ray right foot,,,,
+"23 year old Malay male.  Professional soccer player.  Diagnosed with stress fracture of right tibia 3 months ago.  Now pain free for 2 weeks.  On examination, no tendereness at shin.  No deformity.  For MRI of right leg (tibia-fibula) without and with IV contrast to assess suitability to return to play.",USUALLY NOT APPROPRIATE,MRI without IV contrast,"1. Relevant information from the patient profile includes the patient's age (23 years old), previous diagnosis (stress fracture of right tibia), and the stage of diagnosis (follow-up imaging study for ""return-to-play"" evaluation). The patient is a professional soccer player and has been pain-free for 2 weeks. 
+
+2. According to the context provided, for a confirmed stress fracture excluding vertebrae and a follow-up imaging study for ""return-to-play"" evaluation, an MRI of the area of interest without IV contrast is usually appropriate (score 9). However, an MRI of the area of interest without and with IV contrast is usually not appropriate (score 1).
+
+3. There are superior imaging procedures with a more favorable risk-benefit ratio. An MRI without IV contrast is the preferred method for this scenario.
+
+4. Based on the scoring criteria, the scan order of an MRI of the right leg (tibia-fibula) without and with IV contrast is USUALLY NOT APPROPRIATE. An MRI of the right leg (tibia-fibula) without IV contrast would be a more appropriate procedure for this patient.",UNA,"MRI right leg (tibia-fibula) without IV contrast
+CT right leg (tibia-fibula) without IV contrast (MBA)
+DXA total body composition (MBA)
+",,,,
+"69 year old Chinese male.  Past medical history of diabetes, hypertension, hyperlipidemia, peripheral vascular disease post multiple balloon angioplasties, chronic renal disease.  Now presenting with left foot swelling and redness for 2 weeks, painful to walk.  On examination, left foot swelling, erythema, no crepitus.  No prior imaging.  For MRI of the left foot without and with IV contrast to assess for cellulitis and osteomyelitis. ",USUALLY APPROPRIATE,MRI foot without and with IV contrast,"1. Relevant information from the patient profile includes the patient's age (69 years old), symptoms (left foot swelling, erythema, pain on walking), previous diagnosis (diabetes, hypertension, hyperlipidemia, peripheral vascular disease, chronic renal disease), and the stage of diagnosis (initial imaging as no prior imaging has been done).
+
+2. Referring to the reference information, the patient's symptoms and history of diabetes suggest a suspicion of osteomyelitis of the foot in patients with diabetes mellitus. For initial imaging in this condition, radiography of the foot is usually appropriate. For additional imaging following radiographs, MRI of the foot without and with IV contrast is usually appropriate.
+
+3. There are no superior imaging procedures or treatments with a more favorable risk-benefit ratio mentioned in the context.
+
+4. Based on the scoring criteria, the scan order of MRI of the left foot without and with IV contrast is USUALLY APPROPRIATE. However, it is important to note that this is for additional imaging following radiographs. As the patient has not had any prior imaging, an initial radiography of the foot should be considered first.",UNA,X-ray left foot,,,,
+"30 year old Caucasian male.  No prior medical history.  Now coming into emergency room for road traffic accident due to drink driving.  On examination, patient is intoxicated and in cervical collar.  Chest and pelvic compression positive.  Ecchymosis over abdomen in seat-belt injury.  No prior imaging.  For MRI cervical spine without IV contrast to assess for spine fracture and cord injury.  ",USUALLY APPROPRIATE,MRI cervical spine without IV contrast,"1. Relevant information from the patient profile includes: 
+- Age: 30 years old
+- Symptoms: Intoxication, chest and pelvic compression positive, ecchymosis over abdomen in seat-belt injury
+- Previous Diagnosis: None
+- Stage of Diagnosis: Initial Imaging
+
+2. According to the context, for a patient of age greater than or equal to 16 years with suspected acute cervical spine blunt trauma, the appropriateness of the imaging procedures are as follows:
+- MRI cervical spine without IV contrast is usually appropriate for suspected ligamentous injury and for obtunded patients with no traumatic injury identified on cervical spine CT.
+- There is no role for MRA or arteriography in the initial assessment of patients with suspected cervical spine injury.
+- Cervical spine CT is the preferred modality for the initial assessment of cervical spine injury. However, CT is significantly inferior to MRI in identifying many soft-tissue pathologies, such as spinal cord contusion, epidural hematoma, and nerve root avulsions, that can cause neurologic deficits and require surgical intervention.
+
+3. Given the patient's symptoms and the context, the ordered MRI cervical spine without IV contrast seems to be an appropriate imaging procedure. However, a CT scan could also be considered as an initial imaging study.
+
+4. Based on the scoring criteria, the scan order of MRI cervical spine without IV contrast is USUALLY APPROPRIATE for this patient.",UNA,CT cervical spine without IV contrast,,,,
+"41 year old Chinese male.  No prior medical history.  Smoker.  Now coming into emergency room for road traffic accident. Patient was driving company car when rear-ended by a truck.  Car hit road divider.  On examintion, patient is alert, but power in bilateral lower limbs is 2 out of 5.  Slightly lax anal tone on digital rectal examination.  X-rays show T12 chance fracture.  MRI thoracic and lumbar spine without IV contrast to assess for neurologic injury.  ",USUALLY APPROPRIATE,MRI thoracic and lumbar spine without IV contrast,"1. Relevant information from the patient profile includes:
+   - Age: 41 years old
+   - Symptoms: Decreased power in bilateral lower limbs, slightly lax anal tone
+   - Previous Diagnosis: T12 chance fracture detected on X-rays
+   - Stage of Diagnosis: Next imaging study after X-rays
+
+2. According to the context provided, for patients aged 16 years or older with acute thoracic or lumbar spine injury detected on radiographs or noncontrast CT, and presenting with neurologic abnormalities, the next imaging study recommended is an MRI thoracic and lumbar spine without IV contrast. This is classified as ""Usually Appropriate"".
+
+3. There are no superior imaging procedures or treatments with a more favorable risk-benefit ratio mentioned in the context for this specific patient scenario.
+
+4. Based on the scoring criteria, the scan order of an MRI thoracic and lumbar spine without IV contrast is USUALLY APPROPRIATE for this patient.",UA,,,,,
+"48 year old Indian male.  CEO of shipping company.  Recreational cricket player.  Prior history of fatty liver, hyperlipidemia on statins.   Now presenting with low back pain for 3 days post cricket match.  No radiation to groin or lower limbs.  Able to walk.  Urination and bowel motion are ok.  No fever.  On examination, straight leg raise test is positive.  Power in bilateral lower limbs is full.  Digital rectal examination shows good anal tone.  No prior imaging.  For MRI lumbar spine with IV contrast to assess for prolapsed intervertebral disc or muscle strain. ",USUALLY NOT APPROPRIATE,MRI lumbar spine without IV contrast,"1. Relevant information from the patient profile includes: 
+   - Age: 48 years old
+   - Symptoms: Low back pain for 3 days post cricket match, positive straight leg raise test
+   - Previous diagnosis: Fatty liver, hyperlipidemia on statins
+   - Stage of diagnosis: Initial imaging
+   - Other relevant information: No radiation to groin or lower limbs, full power in bilateral lower limbs, good anal tone, able to walk, normal urination and bowel motion, no fever.
+
+2. According to the reference information, the patient's condition can be classified under ""Low back pain with or without radiculopathy. One or more of the following: low-velocity trauma, osteoporosis, elderly individual, or chronic steroid use. Initial imaging."" The patient's low back pain is likely due to low-velocity trauma from playing cricket.
+
+3. The reference information suggests that for this condition, the following imaging procedures are usually appropriate: Radiography lumbar spine, MRI lumbar spine without IV contrast, and CT lumbar spine without IV contrast. MRI lumbar spine without and with IV contrast and CT myelography lumbar spine may be appropriate. However, MRI lumbar spine with IV contrast is usually not appropriate.
+
+4. Based on the scoring criteria, the ordered scan (MRI lumbar spine with IV contrast) is USUALLY NOT APPROPRIATE for this patient's condition. An MRI lumbar spine without IV contrast would be a more appropriate procedure given the patient's symptoms and condition.",UNA,No imaging,,,,
+31 year old Malay female.  MRI left forearm without and with IV contrast for lump.,INSUFFICIENT INFORMATION,0,Empty Response,ICI,,,,,
+"73 year old Malay female.  Past history of cholecystectomy, fatty liver, obesity, hypertension, hyperlipidemia, osteoarthritis of bilateral knees post bilateral total knee replacement.  Now presenting with low back pain for 6 days.  No radiation to groin or lower limbs.  No difficulty passing urine or bowel motion.  On examination, mild step deformity at L2 region.  Power full in bilateral lower limbs.  Good anal tone on digital rectal examination.  No prior imaging.  For MRI lumbar spine without IV contrast to further assess low back pain.",USUALLY APPROPRIATE,MRI lumbar spine without IV contrast,"1. Relevant information from the patient profile includes:
+   - Age: 73 years old
+   - Symptoms: Low back pain for 6 days
+   - Previous Diagnosis: Cholecystectomy, fatty liver, obesity, hypertension, hyperlipidemia, osteoarthritis of bilateral knees post bilateral total knee replacement
+   - Stage of diagnosis: Initial imaging (no prior imaging)
+
+2. Referring to the reference information given under CONTEXT, the patient falls under the category of ""Low back pain with or without radiculopathy. One or more of the following: low-velocity trauma, osteoporosis, elderly individual, or chronic steroid use. Initial imaging."" Given the patient's age and history of osteoarthritis, she may be at risk for osteoporosis, which is a risk factor for spinal fractures that can present as low back pain.
+
+3. According to the table for this category, an MRI lumbar spine without IV contrast is ""Usually Appropriate"" for initial imaging in this scenario. There are no superior imaging procedures or treatments with a more favorable risk-benefit ratio mentioned in the CONTEXT.
+
+4. Based on the SCORING CRITERIA, the SCAN ORDER of an MRI lumbar spine without IV contrast is USUALLY APPROPRIATE for this patient.",UA,,,,,
+"46 year old Caucasian female.  History of systemic lupus erythematosus on follow up with rheumatology.  Now presenting with 5 day history of worsening numbness and tingling in all 4 limbs, feels uncoordinated and more difficult to control continence.  On examination, reduced pinprick sensation in bilateral hands and feets, power in all 4 limbs is 3 to 4 out of 5.  Anal tone is equivocally lax.  No sensory level.  No prior imaging. For MRI whole spine without and with IV contrast to assess for myelopathy.",USUALLY APPROPRIATE,MRI spine area of interest without and with IV contrast,"1. Relevant information from the patient profile includes:
+   - Age: 46 years old
+   - Symptoms: Acute onset of numbness and tingling in all 4 limbs, uncoordinated movements, difficulty controlling continence
+   - Previous diagnosis: Systemic lupus erythematosus
+   - Stage of diagnosis: Initial imaging for suspected myelopathy
+
+2. According to the context provided, for acute onset myelopathy, initial imaging with MRI spine area of interest without and with IV contrast is usually appropriate. This is also supported by the information that MRI is useful for evaluation of the spinal cord when investigating the etiology of acute myelopathy, and it has superior soft-tissue resolution and multiplanar capability, making it ideal for evaluation of the spinal canal and its contents as well as the surrounding osseous and soft-tissue structures.
+
+3. There are no superior imaging procedures or treatments with a more favorable risk-benefit ratio mentioned in the context.
+
+4. Based on the scoring criteria, the scan order of MRI whole spine without and with IV contrast is USUALLY APPROPRIATE for this patient with acute onset myelopathy symptoms.",UA,,,,,
+"73 year old Indian male, with history of end stage diabetic nephropathy on haemodialysis. Complains of lower back pain for the past 2 months with occasional night pain. Associated with radicular pain of left lower limb. no fever. Physical exam reveals mild tenderness at L3-L4 region but otherwise unremarkable. No prior imaging. MRI lumbar spine without and with IV contrast for possible spondylodiscitis.",MAY BE APPROPRIATE,MRI lumbar spine without IV contrast,"1. Relevant information from the patient profile includes the patient's age (73 years old), symptoms (lower back pain for the past 2 months with occasional night pain, radicular pain of left lower limb), and previous diagnosis (end stage diabetic nephropathy on haemodialysis). This is the initial imaging for this patient's condition.
+
+2. According to the reference information, the patient's profile aligns with the description of ""Low back pain with or without radiculopathy. One or more of the following: suspicion of cancer, infection, or immunosuppression. Initial imaging."" The patient's diabetic nephropathy and haemodialysis treatment suggest a state of immunosuppression, and the ordered scan is for possible spondylodiscitis, which is an infection.
+
+3. The reference information suggests that an MRI lumbar spine without and with IV contrast is usually appropriate for this patient's condition. However, given the patient's end stage renal disease and the need for haemodialysis, the use of IV contrast may pose a risk for nephrogenic systemic fibrosis. Therefore, an MRI without IV contrast may be a superior imaging procedure with a more favorable risk-benefit ratio.
+
+4. Based on the scoring criteria, the ordered scan of an MRI lumbar spine without and with IV contrast may be appropriate given the patient's condition. However, considering the patient's renal condition and the potential risks associated with IV contrast, an MRI lumbar spine without IV contrast would be usually appropriate and safer for this patient.",UNA,,,,,
+"70 year old Malay male. History of diabetes, hyperlipidemia and hypertension. Worsening neck pain for past 6 months, no radiculopathy or night pain. No recent trauma. Clinical exam reveals mild midline tenderness over the cervical spine with limited range of motion, but no focal neurological deficit. MRI cervical spine without IV contrast for initial examination. ",MAY BE APPROPRIATE,Radiography cervical spine,"1. Relevant information from the patient profile includes: 
+   - Age: 70 years old
+   - Symptoms: Worsening neck pain for the past 6 months, no radiculopathy or night pain
+   - Previous diagnosis: Diabetes, hyperlipidemia, and hypertension
+   - Stage of diagnosis: Initial imaging
+   - Other relevant information: No recent trauma, mild midline tenderness over the cervical spine with limited range of motion, but no focal neurological deficit.
+
+2. Referring to the reference information given under CONTEXT, the patient's condition aligns with the description: ""Chronic cervical or neck pain. Initial imaging.""
+
+3. According to the table under this description, an MRI cervical spine without IV contrast is categorized as ""May Be Appropriate (Disagreement)"" for initial imaging in chronic cervical or neck pain.
+
+4. Based on the scoring criteria, the scan order of MRI cervical spine without IV contrast for initial examination is ""MAY BE APPROPRIATE"". However, the first-line imaging modality for this condition is Radiography cervical spine, which is categorized as ""Usually Appropriate"".",MBA,,,,,
+"60 year old Chinese female. No past medical history.  Left wrist swelling and redness for 1 week. No trauma.  No fever. On examination, left wrist is warm swollen and tender.  No prior imaging. MRI of the left wrist without and with IV contrast for possible septic arthritis.",USUALLY NOT APPROPRIATE,"Aspiration of the wrist, possibly under fluoroscopy or US guidance, followed by analysis of the aspirate. If further imaging is needed after aspiration, MRI with IV contrast may be considered.","1. Relevant information from the patient profile includes: 
+   - Age: 60 years old
+   - Symptoms: Left wrist swelling and redness for 1 week, no trauma, no fever, wrist is warm, swollen, and tender
+   - Previous diagnosis: None
+   - Stage of diagnosis: Initial imaging
+
+2. According to the reference information, the patient's symptoms suggest a possible infection in the wrist. The context suggests that in cases of suspected septic arthritis, percutaneous aspiration of the wrist is indicated, even when radiographs appear normal. Aspirates should be analyzed by cell count, gram stain, and appropriate cultures. Aspiration can be performed without imaging guidance if the joint is distended, but either fluoroscopy or US may be useful if a specific compartment is to be targeted. 
+
+3. There may be a role for MRI with IV contrast enhancement in the staging of infections (for example, to delineate the location and extent of soft-tissue abscesses) after aspiration has been performed. Especially in chronic cases, MRI with IV contrast may be useful to identify a fluid collection or joint effusion to target for aspiration. However, MRI is usually not appropriate as the next study after radiographs for suspected wrist infections.
+
+4. Based on the scoring criteria, the scan order of MRI of the left wrist without and with IV contrast for possible septic arthritis is USUALLY NOT APPROPRIATE as the initial imaging study. The appropriate procedure would be to perform an aspiration of the wrist, possibly under fluoroscopy or US guidance, followed by analysis of the aspirate. If further imaging is needed after aspiration, MRI with IV contrast may be considered.",UNA,X-ray left wrist,,,,

@@ -1,0 +1,326 @@
+2024-03-11 18:33:10,681:INFO: -------------
+Experiment settings:
+emb_type:openai
+vectorstore:data/multimodal-chroma/descriptions
+chunk_size:512
+chunk_overlap:20
+table_similarity_top_k:4
+text_similarity_top_k:5
+index_name:msk_mri
+description:Combined_retrieval_with_metadata_filter-n=2
+metadata_filter:True
+refine_profile:False
+refine_llm:gpt-4
+n_iterations:2
+synthesizer_llm:gpt-4
+synthesizer_max_tokens:512
+synthesizer_temperature:0
+response_mode:simple_summarize
+synthesize_prompt_path:/mnt/c/Users/QUAN/Desktop/lbp_mri/src/prompts/llama_index/rag_v1.py
+2024-03-11 18:33:10,684:INFO: -------------
+QA PROMPT: system: 
+You are a radiologist expert at providing imaging recommendations for patients with musculoskeletal conditions.
+If you do not know an answer, just say "I dont know", do not make up an answer.
+==========
+TASK: You are given a PATIENT PROFILE and a SCAN ORDER. Your task is to evaluate the appropriateness of the SCAN ORDER based on the PATIENT PROFILE.
+Perform step-by-step the following sequence of reasoning.
+1. Extract from PATIENT PROFILE relevant information for classification of imaging appropriateness. DO NOT make any assumptions from the SCAN ORDER.
+Important information includes AGE, SYMPTOMS, PREVIOUS DIAGNOSIS (IF ANY), which stage of diagnosis (INITIAL IMAGING OR NEXT STUDY).
+2. Refer to the reference information given under CONTEXT to analyse the appropriate imaging recommendations given the patient profile.
+3. Identify there are superior imaging procedures or treatments with a more favorable risk-benefit ratio.
+4. Based on the SCORING CRITERIA, recommend if the SCAN ORDER is USUALLY APPROPRIATE, MAY BE APPROPRIATE, USUALLY NOT APPROPRIATE or there is INSUFFICIENT INFORMATION to recommend the appropriateness.  
+If the scan is not appropriate, recommend an appropriate procedure.
+
+STRICTLY answer based on the given PATIENT PROFILE and CONTEXT. 
+==========
+SCORING CRITERIA:
+- USUALLY APPROPRIATE: The imaging procedure or treatment is indicated in the specified clinical scenarios at a favorable risk-benefit ratio for patients.
+- MAY BE APPROPRIATE: The imaging procedure or treatment may be indicated in the specified clinical scenarios as an alternative to imaging procedures or treatments with a more favorable risk-benefit ratio, or the risk-benefit ratio for patients is equivocal.
+- USUALLY NOT APPROPRIATE: The imaging procedure is unlikely to be recommended in the specified clinical scenarios, or the risk-benefit ratio for patients is likely to be unfavorable
+- INSUFFICIENT INFORMATION: The imaging procedure or treatment is not mentioned under CONTEXT or not enough relevant information from the PATIENT PROFILE to recommend based on information in CONTEXT.
+==========
+CONTEXT:
+
+context_str
+
+Take note for scenarios involving IV CONTRAST there are 3 distinct scan protocols: (1) with IV CONTRAST, (2) without IV CONTRAST, (3) without and with IV CONTRAST. 
+Each of them is different and can have different appropriateness category.
+==========
+
+user: query_str
+assistant: 
+2024-03-11 18:33:10,685:INFO: ------START RUNNING TEST CASES------
+------NUMBER OF ITERATIONS: {n_iters}------
+2024-03-11 18:33:10,685:INFO: Iteration: 1
+2024-03-11 18:33:10,685:INFO: -------------
+REFINE PROMPT: System: You are a radiologist expert. Do not make up additional information.
+=========
+TASK: You are given a PATIENT PROFILE. You need to perform the following information referencing from the PATIENT PROFILE:
+1. Extract relevant information for recommendation of imaging procedure, including age, symptomps, previous diagnosis, stage of diagnosis (INITIAL IMAGING OR NEXT STUDY) and suspected conditions, if any.
+Only return information given inside the PROFILE, do not make up other information.
+2. Return one or more guidelines from the following list of guidelines potentially relevant to the recommendations of imaging procedure given patient profile. If there are no relevant guidelines, return empty list.
+- acute hand and wrist trauma
+- acute hip pain suspected fracture
+- acute trauma to ankle
+- acute trauma to foot
+- acute trauma to knee
+- aggressive primary msk tumour staging and surveillance
+- cervical neck pain radiculopathy
+- chroni extremity joint pain inflammatory arthritis
+- chronic ankle pain
+- chronic elbow pain
+- chronic foot pain
+- chronic hand and wrist pain
+- chronic hip pain
+- chronic knee pain
+- chronic shoulder pain
+- imaging after shoulder arthroplasty
+- imaging after total hip arthroplasty
+- imaging after total knee arthroplasty
+- inflammatory back pain
+- low back pain
+- management of vertebral compression fracture
+- myelopathy
+- osteonecrosis
+- primary bone tumours
+- shoulder pain traumatic
+- soft tissue mass
+- stress fracture including sacrum
+- suspected om foot in dm
+- suspected om septic arthritis soft tissue infection
+- suspected spine infection
+- suspected spine trauma
+=========
+OUTPUT INSTRUCTION:
+Output your answer as follow:
+1. Relevant information:
+2. Relevant guidelines: List of guidelines. Match the exact text given in the list. If no relevant guidelines, return [].
+=========
+
+Human: PATIENT PROFILE: query_str
+2024-03-11 18:38:16,311:INFO: Number of refined tokens: Prompt tokens = 33766, Completion tokens = 7012
+2024-03-11 18:49:20,926:INFO: --------------
+Tokens Consumption: Total: 223020, Prompt: 206089, Completion: 16931, Embeddings: 0
+2024-03-11 18:49:20,927:INFO: ----------
+Test case Completed. Saving Artifacts into /mnt/c/Users/QUAN/Desktop/lbp_mri/artifacts/gpt-4_512_20_Combined_retrieval_with_metadata_filter-n=2_11-03-2024-18-32
+2024-03-11 18:50:11,722:INFO: ------EVALUATION-----
+2024-03-11 18:50:11,722:INFO: Accuracy score: 71.83098591549296
+2024-03-11 18:50:11,726:INFO: gpt_classification        human_gt                  match
+                          INSUFFICIENT INFORMATION  False    10
+INSUFFICIENT INFORMATION  MAY BE APPROPRIATE        False     1
+                          USUALLY APPROPRIATE       False     1
+                          USUALLY NOT APPROPRIATE   False     1
+MAY BE APPROPRIATE        MAY BE APPROPRIATE        True     11
+                          USUALLY NOT APPROPRIATE   False     4
+USUALLY APPROPRIATE       MAY BE APPROPRIATE        False     2
+                          USUALLY APPROPRIATE       True     19
+                          USUALLY NOT APPROPRIATE   False     1
+USUALLY NOT APPROPRIATE   USUALLY NOT APPROPRIATE   True     21
+Name: match, dtype: int64
+2024-03-11 18:50:11,727:INFO: human_gt                  gpt_classification        match
+INSUFFICIENT INFORMATION                            False    10
+MAY BE APPROPRIATE        INSUFFICIENT INFORMATION  False     1
+                          MAY BE APPROPRIATE        True     11
+                          USUALLY APPROPRIATE       False     2
+USUALLY APPROPRIATE       INSUFFICIENT INFORMATION  False     1
+                          USUALLY APPROPRIATE       True     19
+USUALLY NOT APPROPRIATE   INSUFFICIENT INFORMATION  False     1
+                          MAY BE APPROPRIATE        False     4
+                          USUALLY APPROPRIATE       False     1
+                          USUALLY NOT APPROPRIATE   True     21
+Name: match, dtype: int64
+2024-03-11 18:50:11,728:INFO: Iteration: 2
+2024-03-11 19:02:01,081:INFO: --------------
+Tokens Consumption: Total: 445920, Prompt: 412178, Completion: 33742, Embeddings: 0
+2024-03-11 19:02:01,083:INFO: ----------
+Test case Completed. Saving Artifacts into /mnt/c/Users/QUAN/Desktop/lbp_mri/artifacts/gpt-4_512_20_Combined_retrieval_with_metadata_filter-n=2_11-03-2024-18-32
+2024-03-11 19:10:38,406:INFO: ------EVALUATION-----
+2024-03-11 19:10:38,406:INFO: Accuracy score: 67.6056338028169
+2024-03-11 19:10:38,408:INFO: gpt_classification        human_gt                  match
+                          INSUFFICIENT INFORMATION  False    10
+INSUFFICIENT INFORMATION  MAY BE APPROPRIATE        False     1
+                          USUALLY APPROPRIATE       False     3
+                          USUALLY NOT APPROPRIATE   False     1
+MAY BE APPROPRIATE        MAY BE APPROPRIATE        True     11
+                          USUALLY NOT APPROPRIATE   False     3
+USUALLY APPROPRIATE       MAY BE APPROPRIATE        False     2
+                          USUALLY APPROPRIATE       True     17
+                          USUALLY NOT APPROPRIATE   False     3
+USUALLY NOT APPROPRIATE   USUALLY NOT APPROPRIATE   True     20
+Name: match, dtype: int64
+2024-03-11 19:10:38,411:INFO: human_gt                  gpt_classification        match
+INSUFFICIENT INFORMATION                            False    10
+MAY BE APPROPRIATE        INSUFFICIENT INFORMATION  False     1
+                          MAY BE APPROPRIATE        True     11
+                          USUALLY APPROPRIATE       False     2
+USUALLY APPROPRIATE       INSUFFICIENT INFORMATION  False     3
+                          USUALLY APPROPRIATE       True     17
+USUALLY NOT APPROPRIATE   INSUFFICIENT INFORMATION  False     1
+                          MAY BE APPROPRIATE        False     3
+                          USUALLY APPROPRIATE       False     3
+                          USUALLY NOT APPROPRIATE   True     20
+Name: match, dtype: int64
+
+2024-03-11 19:46:50,954:INFO: -------------
+Experiment settings:
+emb_type:openai
+vectorstore:data/multimodal-chroma/descriptions
+chunk_size:512
+chunk_overlap:20
+table_similarity_top_k:4
+text_similarity_top_k:5
+index_name:msk_mri
+description:Combined_retrieval_with_metadata_filter-n=2
+metadata_filter:True
+refine_profile:False
+refine_llm:gpt-4
+n_iterations:2
+synthesizer_llm:gpt-4
+synthesizer_max_tokens:512
+synthesizer_temperature:0
+response_mode:simple_summarize
+synthesize_prompt_path:/mnt/c/Users/QUAN/Desktop/lbp_mri/src/prompts/llama_index/rag_v1.py
+2024-03-11 19:46:50,957:INFO: -------------
+QA PROMPT: system: 
+You are a radiologist expert at providing imaging recommendations for patients with musculoskeletal conditions.
+If you do not know an answer, just say "I dont know", do not make up an answer.
+==========
+TASK: You are given a PATIENT PROFILE and a SCAN ORDER. Your task is to evaluate the appropriateness of the SCAN ORDER based on the PATIENT PROFILE.
+Perform step-by-step the following sequence of reasoning.
+1. Extract from PATIENT PROFILE relevant information for classification of imaging appropriateness. DO NOT make any assumptions from the SCAN ORDER.
+Important information includes AGE, SYMPTOMS, PREVIOUS DIAGNOSIS (IF ANY), which stage of diagnosis (INITIAL IMAGING OR NEXT STUDY).
+2. Refer to the reference information given under CONTEXT to analyse the appropriate imaging recommendations given the patient profile.
+3. Identify there are superior imaging procedures or treatments with a more favorable risk-benefit ratio.
+4. Based on the SCORING CRITERIA, recommend if the SCAN ORDER is USUALLY APPROPRIATE, MAY BE APPROPRIATE, USUALLY NOT APPROPRIATE or there is INSUFFICIENT INFORMATION to recommend the appropriateness.  
+If the scan is not appropriate, recommend an appropriate procedure.
+
+STRICTLY answer based on the given PATIENT PROFILE and CONTEXT. 
+==========
+SCORING CRITERIA:
+- USUALLY APPROPRIATE: The imaging procedure or treatment is indicated in the specified clinical scenarios at a favorable risk-benefit ratio for patients.
+- MAY BE APPROPRIATE: The imaging procedure or treatment may be indicated in the specified clinical scenarios as an alternative to imaging procedures or treatments with a more favorable risk-benefit ratio, or the risk-benefit ratio for patients is equivocal.
+- USUALLY NOT APPROPRIATE: The imaging procedure is unlikely to be recommended in the specified clinical scenarios, or the risk-benefit ratio for patients is likely to be unfavorable
+- INSUFFICIENT INFORMATION: The imaging procedure or treatment is not mentioned under CONTEXT or not enough relevant information from the PATIENT PROFILE to recommend based on information in CONTEXT.
+==========
+CONTEXT:
+
+context_str
+
+Take note for scenarios involving IV CONTRAST there are 3 distinct scan protocols: (1) with IV CONTRAST, (2) without IV CONTRAST, (3) without and with IV CONTRAST. 
+Each of them is different and can have different appropriateness category.
+==========
+
+user: query_str
+assistant: 
+2024-03-11 19:46:50,958:INFO: ------START RUNNING TEST CASES------
+------NUMBER OF ITERATIONS: {n_iters}------
+2024-03-11 19:46:50,958:INFO: Iteration: 1
+2024-03-11 19:46:50,959:INFO: -------------
+REFINE PROMPT: System: You are a radiologist expert. Do not make up additional information.
+=========
+TASK: You are given a PATIENT PROFILE. You need to perform the following information referencing from the PATIENT PROFILE:
+1. Extract relevant information for recommendation of imaging procedure, including age, symptomps, previous diagnosis, stage of diagnosis (INITIAL IMAGING OR NEXT STUDY) and suspected conditions, if any.
+Only return information given inside the PROFILE, do not make up other information.
+2. Return one or more guidelines from the following list of guidelines potentially relevant to the recommendations of imaging procedure given patient profile. If there are no relevant guidelines, return empty list.
+- acute hand and wrist trauma
+- acute hip pain suspected fracture
+- acute trauma to ankle
+- acute trauma to foot
+- acute trauma to knee
+- aggressive primary msk tumour staging and surveillance
+- cervical neck pain radiculopathy
+- chroni extremity joint pain inflammatory arthritis
+- chronic ankle pain
+- chronic elbow pain
+- chronic foot pain
+- chronic hand and wrist pain
+- chronic hip pain
+- chronic knee pain
+- chronic shoulder pain
+- imaging after shoulder arthroplasty
+- imaging after total hip arthroplasty
+- imaging after total knee arthroplasty
+- inflammatory back pain
+- low back pain
+- management of vertebral compression fracture
+- myelopathy
+- osteonecrosis
+- primary bone tumours
+- shoulder pain traumatic
+- soft tissue mass
+- stress fracture including sacrum
+- suspected om foot in dm
+- suspected om septic arthritis soft tissue infection
+- suspected spine infection
+- suspected spine trauma
+=========
+OUTPUT INSTRUCTION:
+Output your answer as follow:
+1. Relevant information:
+2. Relevant guidelines: List of guidelines. Match the exact text given in the list. If no relevant guidelines, return [].
+=========
+
+Human: PATIENT PROFILE: query_str
+2024-03-11 19:53:48,478:INFO: Number of refined tokens: Prompt tokens = 33766, Completion tokens = 6944
+2024-03-11 20:06:49,939:INFO: --------------
+Tokens Consumption: Total: 224024, Prompt: 206831, Completion: 17193, Embeddings: 0
+2024-03-11 20:06:49,940:INFO: ----------
+Test case Completed. Saving Artifacts into /mnt/c/Users/QUAN/Desktop/lbp_mri/artifacts/gpt-4_512_20_Combined_retrieval_with_metadata_filter-n=2_11-03-2024-19-46
+2024-03-11 20:07:42,007:INFO: ------EVALUATION-----
+2024-03-11 20:07:42,008:INFO: Accuracy score: 84.50704225352112
+2024-03-11 20:07:42,012:INFO: gpt_classification        human_gt                  match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True     10
+                          MAY BE APPROPRIATE        False     1
+                          USUALLY APPROPRIATE       False     1
+MAY BE APPROPRIATE        MAY BE APPROPRIATE        True     12
+                          USUALLY APPROPRIATE       False     2
+                          USUALLY NOT APPROPRIATE   False     3
+USUALLY APPROPRIATE       MAY BE APPROPRIATE        False     1
+                          USUALLY APPROPRIATE       True     17
+                          USUALLY NOT APPROPRIATE   False     3
+USUALLY NOT APPROPRIATE   USUALLY NOT APPROPRIATE   True     21
+Name: match, dtype: int64
+2024-03-11 20:07:42,015:INFO: human_gt                  gpt_classification        match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True     10
+MAY BE APPROPRIATE        INSUFFICIENT INFORMATION  False     1
+                          MAY BE APPROPRIATE        True     12
+                          USUALLY APPROPRIATE       False     1
+USUALLY APPROPRIATE       INSUFFICIENT INFORMATION  False     1
+                          MAY BE APPROPRIATE        False     2
+                          USUALLY APPROPRIATE       True     17
+USUALLY NOT APPROPRIATE   MAY BE APPROPRIATE        False     3
+                          USUALLY APPROPRIATE       False     3
+                          USUALLY NOT APPROPRIATE   True     21
+Name: match, dtype: int64
+2024-03-11 20:07:42,016:INFO: Iteration: 2
+2024-03-11 20:20:06,774:INFO: --------------
+Tokens Consumption: Total: 447627, Prompt: 413669, Completion: 33958, Embeddings: 0
+2024-03-11 20:20:06,775:INFO: ----------
+Test case Completed. Saving Artifacts into /mnt/c/Users/QUAN/Desktop/lbp_mri/artifacts/gpt-4_512_20_Combined_retrieval_with_metadata_filter-n=2_11-03-2024-19-46
+2024-03-11 20:20:58,930:INFO: ------EVALUATION-----
+2024-03-11 20:20:58,930:INFO: Accuracy score: 87.32394366197182
+2024-03-11 20:20:58,933:INFO: gpt_classification        human_gt                  match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True     10
+                          MAY BE APPROPRIATE        False     1
+                          USUALLY APPROPRIATE       False     1
+MAY BE APPROPRIATE        MAY BE APPROPRIATE        True     11
+                          USUALLY APPROPRIATE       False     1
+                          USUALLY NOT APPROPRIATE   False     2
+USUALLY APPROPRIATE       MAY BE APPROPRIATE        False     2
+                          USUALLY APPROPRIATE       True     18
+                          USUALLY NOT APPROPRIATE   False     2
+USUALLY NOT APPROPRIATE   USUALLY NOT APPROPRIATE   True     23
+Name: match, dtype: int64
+2024-03-11 20:20:58,936:INFO: human_gt                  gpt_classification        match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True     10
+MAY BE APPROPRIATE        INSUFFICIENT INFORMATION  False     1
+                          MAY BE APPROPRIATE        True     11
+                          USUALLY APPROPRIATE       False     2
+USUALLY APPROPRIATE       INSUFFICIENT INFORMATION  False     1
+                          MAY BE APPROPRIATE        False     1
+                          USUALLY APPROPRIATE       True     18
+USUALLY NOT APPROPRIATE   MAY BE APPROPRIATE        False     2
+                          USUALLY APPROPRIATE       False     2
+                          USUALLY NOT APPROPRIATE   True     23
+Name: match, dtype: int64
+

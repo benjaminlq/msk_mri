@@ -8,7 +8,6 @@ import sys
 import tiktoken
 import yaml
 
-from datetime import datetime
 from langchain.chains import LLMChain
 from langchain.chat_models import ChatOpenAI as LCChatOpenAI
 from langchain.prompts import ChatPromptTemplate as LCChatPromptTemplate
@@ -18,19 +17,20 @@ from llama_index.callbacks import CallbackManager, TokenCountingHandler
 from llama_index.embeddings import OpenAIEmbedding
 from llama_index.indices.query.base import BaseQueryEngine
 from llama_index.llms import OpenAI
-from llama_index.postprocessor.types import BaseNodePostprocessor
+from llama_index.indices.postprocessor.types import BaseNodePostprocessor
 from llama_index.prompts import BasePromptTemplate
 from llama_index.query_engine import RetrieverQueryEngine
 from llama_index.retrievers import VectorIndexRetriever
 
 from tqdm import tqdm
-from typing import Dict, Optional, List, Sequence, Literal, Tuple
+from typing import Dict, Optional, List, Sequence, Literal, Tuple, Callable
 
-from config import EMB_DIR, ARTIFACT_DIR
+from config import EMB_DIR
 from utils.document_utils import load_vectorindex
-from utils.prompt_utils import remove_final_sentence, convert_prompt_to_string, query_wrapper
+from utils.prompt_utils import convert_prompt_to_string, query_wrapper
 from utils.retrieval_utils import extract_guidelines
 from utils.eval_utils import process_result_json, process_result_df
+from .extract import extract_profile_and_scan_order
 
 from prompts.langchain import METADATA_EXTRACT_PROMPT
 from logging import Logger
@@ -133,6 +133,7 @@ def setup_query_engine(
 def run_test_cases(
     testcase_df: pd.DataFrame,
     exp_args: Dict,
+    save_folder: str,
     testcases: Sequence[str] = None,
     patient_profiles: Sequence[str] = None,
     scan_orders: Sequence[str] = None,
@@ -143,8 +144,9 @@ def run_test_cases(
     text_qa_template: Optional[BasePromptTemplate] = None,
     refine_template: Optional[LCChatPromptTemplate] = METADATA_EXTRACT_PROMPT,
     node_postprocessors: Optional[List[BaseNodePostprocessor]] = None,
-    artifact_dir: str = ARTIFACT_DIR,
     emb_folder: str = EMB_DIR,
+    logger: Optional[Callable] = None,
+    n_iters: int = 1
 ) -> Tuple:
     """Run experiment test cases
 
@@ -166,22 +168,10 @@ def run_test_cases(
         emb_folder (str, optional): Local location of embeddings. Defaults to EMB_DIR.
 
     Returns:
-        Tuple: json_responses, result_df, responses
+        Tuple: all_json_responses, all_dfs, all_responses
     """
-    save_folder = os.path.join(
-        artifact_dir, "{}_{}_{}_{}_{}".format(
-            exp_args["synthesizer_llm"],
-            exp_args["chunk_size"],
-            exp_args["chunk_overlap"],
-            exp_args["description"],
-            datetime.now().strftime("%d-%m-%Y-%H-%M")
-        )
-    )
-
-    if not os.path.exists(save_folder):
-        os.makedirs(save_folder)
-
-    logger = get_experiment_logs(exp_args["description"], log_folder=save_folder)
+    if not logger:
+        logger = get_experiment_logs(exp_args["description"], log_folder=save_folder)
     
     if not query_engine:
         token_counter = TokenCountingHandler(
@@ -220,78 +210,96 @@ def run_test_cases(
     with open(os.path.join(save_folder, "settings.yaml"), "w") as f:
         yaml.dump(exp_args, f)
 
-    responses = []
+    all_responses = []
+    all_dfs = []
+    all_json_responses = []
     
     logger.info(
         "-------------\nQA PROMPT: {}".format(convert_prompt_to_string(query_engine._response_synthesizer._text_qa_template))
     )
 
     logger.info(
-        "------START RUNNING TEST CASES---------"
+        "------START RUNNING TEST CASES------\n------NUMBER OF ITERATIONS: {n_iters}------"
     )
+    
+    for iter_no in range(n_iters):
+        responses = []
+        logger.info(f"Iteration: {iter_no+1}")
+    
+        if not (patient_profiles is not None and scan_orders is not None):
+            if not testcases:
+                testcases = testcase_df["Clinical File"]
 
-    if not (patient_profiles is not None and scan_orders is not None):
-        if not testcases:
-            testcases = testcase_df["Clinical File"]
-        patient_profiles = [remove_final_sentence(testcase, True)[0] for testcase in testcases]
-        scan_orders = [remove_final_sentence(testcase, True)[1] for testcase in testcases]
+            extracted_profiles = []
+            for testcase in tqdm(testcase_df["Clinical File"], total = len(testcase_df["Clinical File"])):
+                extracted_profile = extract_profile_and_scan_order(testcase)
+                extracted_profiles.append(extracted_profile)
+                
+            patient_profiles = [extracted_profile[0].strip() for extracted_profile in extracted_profiles]
+            scan_orders = [extracted_profile[1].strip() for extracted_profile in extracted_profiles]
 
-    if exp_args.get("refine_profile") or exp_args.get("metadata_filter"):
-        if not (refined_profiles and relevant_guidelines):
-            logger.info(
-                "-------------\nREFINE PROMPT: {}".format(convert_prompt_to_string(refine_template))
-            )
-            
-            from langchain.callbacks import get_openai_callback
-            refine_chain = LLMChain(
-                llm=LCChatOpenAI(model_name=exp_args.get("refine_llm", "gpt-3.5-turbo-1106"), temperature=0, max_tokens=512),
-                prompt=refine_template)
-            
-            with get_openai_callback() as cb:
-                refined_infos = [extract_guidelines(profile, refine_chain) for profile in tqdm(patient_profiles, total=len(patient_profiles))]
-            print(f"Number of refined tokens: Prompt tokens = {cb.prompt_tokens}, Completion tokens = {cb.completion_tokens}")
-    
-            refined_profiles = [refined_info[0] for refined_info in refined_infos]
-            relevant_guidelines = [refined_info[1] for refined_info in refined_infos]
-    
-    if exp_args.get("refine_profile"):
-        patient_profiles = refined_profiles
-    
-    testcase_df["queries"] = [query_wrapper(query_template, {"profile": patient_profile, "scan_order": scan_order})
-                 for patient_profile, scan_order in zip(patient_profiles, scan_orders)]
+        if exp_args.get("refine_profile") or exp_args.get("metadata_filter"):
+            if not (refined_profiles and relevant_guidelines):
+                logger.info(
+                    "-------------\nREFINE PROMPT: {}".format(convert_prompt_to_string(refine_template, framework="langchain"))
+                )
+                
+                from langchain.callbacks import get_openai_callback
+                refine_chain = LLMChain(
+                    llm=LCChatOpenAI(model_name=exp_args.get("refine_llm", "gpt-4"), temperature=0, max_tokens=512),
+                    prompt=refine_template)
+                
+                with get_openai_callback() as cb:
+                    refined_infos = [extract_guidelines(profile, refine_chain) for profile in tqdm(patient_profiles, total=len(patient_profiles))]
+                    
+                logger.info(f"Number of refined tokens: Prompt tokens = {cb.prompt_tokens}, Completion tokens = {cb.completion_tokens}")
         
-    metadata_filters = relevant_guidelines if exp_args.get("metadata_filter") else [None] * len(testcase_df["queries"])
-    
-    for query, metadata_filter in tqdm(zip(testcase_df["queries"], metadata_filters), total=len(testcase_df["queries"])):
-        input_query = {"str_or_query_bundle": query, "table_filter": metadata_filter, "text_filter": metadata_filter} if metadata_filter is not None else {"str_or_query_bundle": query}
-        response = query_engine.query(**input_query)
-        responses.append(response)
-    
-      
-    logger.info("--------------\nTokens Consumption: Total: {}, Prompt: {}, Completion: {}, Embeddings: {}"
-                .format(token_counter.total_llm_token_count,
-                        token_counter.prompt_llm_token_count,
-                        token_counter.completion_llm_token_count,
-                        token_counter.total_embedding_token_count))
+                refined_profiles = [refined_info[0] for refined_info in refined_infos]
+                relevant_guidelines = [refined_info[1] for refined_info in refined_infos]
+        
+        if exp_args.get("refine_profile"):
+            patient_profiles = refined_profiles
+        
+        testcase_df["queries"] = [query_wrapper(query_template, {"profile": patient_profile, "scan_order": scan_order})
+                    for patient_profile, scan_order in zip(patient_profiles, scan_orders)]
+            
+        metadata_filters = relevant_guidelines if exp_args.get("metadata_filter") else [None] * len(testcase_df["queries"])
+        
+        for query, metadata_filter in tqdm(zip(testcase_df["queries"], metadata_filters), total=len(testcase_df["queries"])):
+            input_query = {"str_or_query_bundle": query, "table_filter": metadata_filter, "text_filter": metadata_filter} if metadata_filter is not None else {"str_or_query_bundle": query}
+            response = query_engine.query(**input_query)
+            responses.append(response)
+        
+        
+        logger.info("--------------\nTokens Consumption: Total: {}, Prompt: {}, Completion: {}, Embeddings: {}"
+                    .format(token_counter.total_llm_token_count,
+                            token_counter.prompt_llm_token_count,
+                            token_counter.completion_llm_token_count,
+                            token_counter.total_embedding_token_count))
 
-    logger.info(f"----------\nTest case Completed. Saving Artifacts into {save_folder}")
-    json_responses = process_result_json(
-        testcase_df, responses=responses, save_path=os.path.join(save_folder, "results.json")
+        logger.info(f"----------\nTest case Completed. Saving Artifacts into {save_folder}")
+        json_responses = process_result_json(
+            testcase_df, responses=responses, save_path=os.path.join(save_folder, f"results_{iter_no+1}.json")
+            )
+
+        result_df = process_result_df(
+            testcase_df, json_responses, save_path=os.path.join(save_folder, f"result_{iter_no+1}.csv")
+            )
+
+        accuracy = result_df["match"].sum() / len(result_df) * 100
+
+        logger.info("------EVALUATION-----")
+        logger.info(f"Accuracy score: {accuracy}")
+        logger.info(
+            str(result_df.groupby(["gpt_classification", "human_gt"])["match"].value_counts())
         )
-
-    result_df = process_result_df(
-        testcase_df, json_responses, save_path=os.path.join(save_folder, "result.csv")
+        
+        logger.info(
+            str(result_df.groupby(["human_gt", "gpt_classification"])["match"].value_counts())
         )
+        
+        all_responses.append(responses)
+        all_dfs.append(result_df)
+        all_json_responses.append(json_responses)
 
-    accuracy = result_df["match"].sum() / len(result_df) * 100
-
-    logger.info("------EVALUATION-----")
-    logger.info(f"Accuracy score: {accuracy}")
-    logger.info(
-        str(result_df.groupby(["gpt_classification", "human_gt"])["match"].value_counts())
-    )
-    logger.info(
-        str(result_df.groupby(["human_gt", "gpt_classification"])["match"].value_counts())
-    )
-
-    return json_responses, result_df, responses
+    return all_json_responses, all_dfs, all_responses

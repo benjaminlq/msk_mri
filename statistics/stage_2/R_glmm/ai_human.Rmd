@@ -145,6 +145,27 @@ tab_model(lmm_v6, lmm_v5, lmm_v4, lmm_v3, lmm_v2, lmm_v1,
 ```
 
 # Models of interests:
+## Final Model
+```{r}
+final_model <- glmer(human_correctness ~ ai_usage + seniority # Fixed
+                 + (1 | participant) + (1 | question_no), # Random
+                data = df, family = binomial,
+                control = glmerControl(
+                    optimizer = "optimx",
+                    optCtrl = list(method = "L-BFGS-B")
+                    )
+                )
+summary(final_model)
+```
+
+```{r}
+report(final_model)
+```
+
+```{r}
+tab_model(final_model, p.style = "scientific" , show.aic = T)
+```
+
 ## Best Model
 
 ```{r}

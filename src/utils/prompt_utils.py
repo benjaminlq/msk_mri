@@ -4,11 +4,11 @@
 from llama_index.schema import  NodeWithScore, TextNode
 
 from llama_index.prompts import PromptTemplate
-from typing import Union, Dict, List, Callable, Tuple
+from typing import Union, Dict, List, Callable, Tuple, Literal
 import tiktoken
 import re
 
-def convert_prompt_to_string(prompt: PromptTemplate) -> str:
+def convert_prompt_to_string(prompt: PromptTemplate, framework: Literal["llama_index", "langchain"] = "llama_index") -> str:
     """Convert prompt template to string
 
     Args:
@@ -17,7 +17,12 @@ def convert_prompt_to_string(prompt: PromptTemplate) -> str:
     Returns:
         str: String Prompt
     """
-    return prompt.format(**{v: v for v in prompt.template_vars})
+    if framework == "llama_index":
+        return prompt.format(**{v: v for v in prompt.template_vars})
+    elif framework == "langchain":
+        return prompt.format(**{v: v for v in prompt.input_variables})
+    else:
+        ValueError("Unsupported Framework")
 
 def generate_query(profile: str, scan: str) -> str:
     """Generate query provided patient profile and scan order

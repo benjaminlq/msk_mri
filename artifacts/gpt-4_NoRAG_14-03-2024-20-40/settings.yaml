@@ -1,0 +1,6 @@
+dataset: data/queries/MSK LLM Fictitious Case Files Full.csv
+description: NoRAG
+n_iterations: 2
+synthesizer_llm: gpt-4
+synthesizer_max_tokens: 512
+synthesizer_temperature: 0
