@@ -39,7 +39,7 @@ def get_argument_parser():
         help="Dimension of embedding vector",
     )
     parser.add_argument(
-        "--chunk_size", "-s", type=int, default=1024,
+        "--chunk_size", "-s", type=int, default=512,
         help="chunk size to split documents",
     )
     parser.add_argument(
@@ -146,4 +146,6 @@ def main():
 if __name__ == "__main__":
     main()
 
-# python ./src/scripts/create_vectorstore.py -e faiss -i ./data/document_sources -m openai -d 1536 -s 512 -v 20 -n vector_idx -x ./data/exclude_pages.json
+# python3 ./src/scripts/db/create_simple.py -e faiss -i ./data/document_sources -m openai -d 1536 -s 512 -v 20 -n msk_mri -x ./data/exclude_pages.json
+
+# python3 ./src/scripts/db/create_simple.py -e simple -i ./data/document_sources -o ./data/emb_store/simple/openai_512_20 -m openai -d 1536 -s 512 -v 20 -n msk_mri -x ./data/exclude_pages.json

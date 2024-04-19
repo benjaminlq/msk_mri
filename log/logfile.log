@@ -401,3 +401,52 @@
 2023-12-08 19:03:02,555:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/faiss/openai_512_20.
 2023-12-08 19:03:23,068:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-faiss/full/tables.
 2023-12-08 19:03:23,192:INFO: faiss VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-faiss/full/texts.
+2024-03-11 17:30:16,073:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2024-03-11 17:30:16,140:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2024-03-11 17:47:29,412:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2024-03-11 17:47:29,462:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2024-03-11 17:48:34,262:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2024-03-11 17:48:34,322:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2024-03-11 18:33:10,612:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2024-03-11 18:33:10,680:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2024-03-11 19:46:50,871:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2024-03-11 19:46:50,953:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2024-03-14 15:45:19,179:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2024-03-14 15:45:19,246:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2024-04-09 14:48:06,614:INFO: Creating Vectorstore with OpenAI Embeddings
+2024-04-09 14:48:06,622:INFO: --- Start generating vectorstore ---
+2024-04-09 14:48:06,625:INFO: Loading documents from ./data/document_sources
+2024-04-09 14:48:39,314:INFO: Loaded 546 documents from ./data/document_sources
+2024-04-09 14:48:39,315:INFO: 395 documents remained after page filtering.
+2024-04-09 14:48:39,316:INFO: Total number of documents to create vector index store: 395
+2024-04-09 14:48:51,607:INFO: Creating simple Vectorstore
+2024-04-09 14:50:23,348:INFO: Persist simple to local directory ./data/emb_store/simple/openai_512_20
+2024-04-09 14:50:28,937:INFO: Successfully created simple vectorstore at ./data/emb_store/simple/openai_512_20
+2024-04-09 14:50:35,729:INFO: simple VectorStore successfully loaded from ./data/emb_store/simple/openai_512_20.
+2024-04-09 14:51:20,865:INFO: simple VectorStore successfully loaded from data/emb_store/simple/openai_512_20.
+2024-04-09 14:52:30,032:INFO: simple VectorStore successfully loaded from data/emb_store/simple/openai_512_20.
+2024-04-09 14:53:43,395:INFO: simple VectorStore successfully loaded from data/emb_store/simple/openai_512_20.
+2024-04-09 14:57:19,687:INFO: simple VectorStore successfully loaded from data/emb_store/simple/openai_512_20.
+2024-04-09 15:10:13,313:INFO: simple VectorStore successfully loaded from data/emb_store/simple/openai_512_20.
+2024-04-09 15:11:34,770:INFO: simple VectorStore successfully loaded from data/emb_store/simple/openai_512_20.
+2024-04-09 15:13:18,862:INFO: simple VectorStore successfully loaded from data/emb_store/simple/openai_512_20.
+2024-04-09 15:14:24,643:INFO: simple VectorStore successfully loaded from data/emb_store/simple/openai_512_20.
+2024-04-09 15:22:15,178:INFO: simple VectorStore successfully loaded from data/emb_store/simple/openai_512_20.
+2024-04-09 15:47:07,691:INFO: simple VectorStore successfully loaded from data/emb_store/simple/openai_512_20.
+2024-04-09 16:04:16,661:INFO: simple VectorStore successfully loaded from data/emb_store/simple/openai_512_20.
+2024-04-09 16:05:29,363:INFO: simple VectorStore successfully loaded from data/emb_store/simple/openai_512_20.
+2024-04-09 16:07:01,485:INFO: simple VectorStore successfully loaded from data/emb_store/simple/openai_512_20.
+2024-04-09 16:58:10,359:INFO: simple VectorStore successfully loaded from data/emb_store/simple/openai_512_20.
+2024-04-09 17:11:40,490:INFO: simple VectorStore successfully loaded from data/emb_store/simple/openai_512_20.
+2024-04-09 17:46:07,475:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2024-04-09 17:46:07,548:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2024-04-09 18:40:04,905:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2024-04-09 18:40:04,967:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2024-04-10 21:16:07,349:INFO: simple VectorStore successfully loaded from data/emb_store/simple/openai_512_20.
+2024-04-10 21:20:42,237:INFO: simple VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/simple/openai_512_20.
+2024-04-10 21:36:48,306:INFO: simple VectorStore successfully loaded from data/emb_store/simple/openai_512_20.
+2024-04-10 21:37:09,006:INFO: simple VectorStore successfully loaded from data/emb_store/simple/openai_512_20.
+2024-04-11 10:30:50,914:INFO: simple VectorStore successfully loaded from data/emb_store/simple/openai_512_20.
+2024-04-11 10:43:19,684:INFO: simple VectorStore successfully loaded from data/emb_store/simple/openai_512_20.
+2024-04-11 10:49:03,738:INFO: simple VectorStore successfully loaded from data/emb_store/simple/openai_512_20.
+2024-04-11 10:59:57,142:INFO: simple VectorStore successfully loaded from data/emb_store/simple/openai_512_20.

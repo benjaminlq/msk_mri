@@ -1,7 +1,6 @@
 """Utility Functions for processing experiment results
 """
-
-from typing import List, Dict, Optional, Union
+from typing import List, Dict, Optional, Union, Any
 from llama_index.response.schema import Response
 import pandas as pd
 import re
@@ -9,19 +8,17 @@ import json
 from tqdm import tqdm
 from copy import deepcopy
 import os
+import numpy as np
 from utils.document_utils import convert_doc_to_dict
 from prompts.langchain import CLASSIFICATION_PROMPT
 from langchain.chains import LLMChain
 from langchain.chat_models import ChatOpenAI as LCChatOpenAI
 from config import MAIN_DIR
 
-with open(os.path.join(MAIN_DIR, "auth", "api_keys.json"), "r") as f:
-    api_keys = json.load(f)
+# with open(os.path.join(MAIN_DIR, "auth", "api_keys.json"), "r") as f:
+#     api_keys = json.load(f)
     
-fixing_chain = LLMChain(
-    llm=LCChatOpenAI(model_name="gpt-3.5-turbo-1106", temperature=0, max_tokens=512, api_key=api_keys["OPENAI_API_KEY"]),
-    prompt=CLASSIFICATION_PROMPT
-)
+# os.environ["OPENAI_API_KEY"] = api_keys["OPENAI_API_KEY"]
 
 def process_result_json(
     testcase_df: pd.DataFrame, responses: List[Response], save_path: Optional[str] = None
@@ -40,6 +37,11 @@ def process_result_json(
     queries = testcase_df["queries"]
     scan_orders = testcase_df["Scan Order"]
     
+    fixing_chain = LLMChain(
+        llm=LCChatOpenAI(model_name="gpt-3.5-turbo-1106", temperature=0, max_tokens=512),
+        prompt=CLASSIFICATION_PROMPT
+    )
+    
     tk = tqdm(zip(queries, responses, scan_orders), total=len(responses))
     for query, response, scan_order in tk:
         testcase_info = {
@@ -49,12 +51,17 @@ def process_result_json(
         }
         answer_query = "Scan Ordered: {}\nAnswer: {}".format(scan_order, testcase_info["result"])
         fixed_answer = fixing_chain(answer_query)
-        try:
-            appropriateness, recommendation = re.findall(
-            #  r"^Appropriateness: ([0-9A-Za-z ]+)\nRecommendation: ([0-9A-Za-z \.]+)$", fixed_answer["text"])[0]
-                r"^[^\n]*Appropriateness: ([^\n]+)\n+[^\n]*Recommendation: ([^\n]+)$", fixed_answer["text"])[0]
-        except:
-            appropriateness, recommendation = "", ""
+        if testcase_info["result"] == "Empty Response":
+            appropriateness = "INSUFFICIENT INFORMATION"
+            recommendation = ""
+        else:
+            try:
+                appropriateness, recommendation = re.findall(
+                #  r"^Appropriateness: ([0-9A-Za-z ]+)\nRecommendation: ([0-9A-Za-z \.]+)$", fixed_answer["text"])[0]
+                    r"^[^\n]*Appropriateness: ([^\n]+)\n+[^\n]*Recommendation: ([^\n]+)$", fixed_answer["text"])[0]
+            except:
+                appropriateness, recommendation = "", ""
+            
         testcase_info["appropriateness"] = appropriateness
         testcase_info["recommendation"] = recommendation
 
@@ -107,3 +114,8 @@ def process_result_df(
         result_df.to_csv(save_path)
 
     return result_df
+
+def majority_voting(
+    predictions: Union[List[Any]]  
+) -> Any:
+    return

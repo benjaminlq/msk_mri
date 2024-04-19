@@ -1,0 +1,144 @@
+2024-04-10 14:49:50,280:INFO: Running experiment: NoRAG.
+Saving all artifacts at /mnt/c/Users/QUAN/Desktop/lbp_mri/artifacts/gpt-4_NoRAG_10-04-2024-14-49
+2024-04-10 14:49:50,284:INFO: -------------
+Experiment settings:
+description:NoRAG
+n_iterations:3
+dataset:data/queries/MSK LLM Fictitious Case Files Full - Reorder.csv
+json_testcases:data/queries/full_testcase_reorder.json
+synthesizer_llm:gpt-4
+synthesizer_max_tokens:512
+synthesizer_temperature:0
+2024-04-10 14:49:50,289:INFO: -------------
+QA PROMPT: system: 
+You are a radiologist expert at providing imaging recommendations for patients with musculoskeletal conditions.
+If you do not know an answer, just say "I dont know", do not make up an answer.
+==========
+TASK: You are given a PATIENT PROFILE and a SCAN ORDER. Your task is to evaluate the appropriateness of the SCAN ORDER based on the PATIENT PROFILE.
+Perform step-by-step the following sequence of reasoning.
+1. Extract from PATIENT PROFILE relevant information for classification of imaging appropriateness. DO NOT make any assumptions from the SCAN ORDER.
+Important information includes AGE, SYMPTOMS, PREVIOUS DIAGNOSIS (IF ANY), which stage of diagnosis (INITIAL IMAGING OR NEXT STUDY).
+2. Identify if there are superior imaging procedures or treatments with a more favorable risk-benefit ratio.
+3. Based on the SCORING CRITERIA, recommend if the SCAN ORDER is USUALLY APPROPRIATE, MAY BE APPROPRIATE, USUALLY NOT APPROPRIATE or there is INSUFFICIENT INFORMATION to recommend the appropriateness.  
+If the scan is not appropriate, recommend an appropriate procedure.
+==========
+SCORING CRITERIA:
+- USUALLY APPROPRIATE: The imaging procedure or treatment is indicated in the specified clinical scenarios at a favorable risk-benefit ratio for patients.
+- MAY BE APPROPRIATE: The imaging procedure or treatment may be indicated in the specified clinical scenarios as an alternative to imaging procedures or treatments with a more favorable risk-benefit ratio, or the risk-benefit ratio for patients is equivocal.
+- USUALLY NOT APPROPRIATE: The imaging procedure is unlikely to be recommended in the specified clinical scenarios, or the risk-benefit ratio for patients is likely to be unfavorable
+- INSUFFICIENT INFORMATION: The imaging procedure or treatment is not mentioned under CONTEXT or not enough relevant information from the PATIENT PROFILE to recommend based on information in CONTEXT.
+
+Take note for scenarios involving IV CONTRAST there are 3 distinct scan protocols: (1) with IV CONTRAST, (2) without IV CONTRAST, (3) without and with IV CONTRAST. 
+Each of them is different and can have different appropriateness category.
+==========
+
+user: query_str
+assistant: 
+2024-04-10 14:49:50,291:INFO: ------START RUNNING TEST CASES---------
+2024-04-10 14:49:50,291:INFO: Loading query file from path data/queries/MSK LLM Fictitious Case Files Full - Reorder.csv
+2024-04-10 14:49:50,355:INFO: Loading test cases from data/queries/full_testcase_reorder.json
+2024-04-10 14:49:50,377:INFO: Iteration: 1
+2024-04-10 15:03:20,178:INFO: --------------
+Tokens Consumption: Total: 58685, Prompt: 39539, Completion: 19146, Embeddings: []
+2024-04-10 15:03:20,179:INFO: ----------
+Test case Completed. Saving Artifacts into /mnt/c/Users/QUAN/Desktop/lbp_mri/artifacts/gpt-4_NoRAG_10-04-2024-14-49
+2024-04-10 15:04:19,375:INFO: ------EVALUATION-----
+2024-04-10 15:04:19,376:INFO: Accuracy score: 40.845070422535215
+2024-04-10 15:04:19,440:INFO: gpt_classification        human_gt                  match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True      1
+MAY BE APPROPRIATE        INSUFFICIENT INFORMATION  False     2
+                          MAY BE APPROPRIATE        True      5
+                          USUALLY APPROPRIATE       False     1
+                          USUALLY NOT APPROPRIATE   False    13
+USUALLY APPROPRIATE       INSUFFICIENT INFORMATION  False     7
+                          MAY BE APPROPRIATE        False     8
+                          USUALLY APPROPRIATE       True     17
+                          USUALLY NOT APPROPRIATE   False     8
+USUALLY NOT APPROPRIATE   MAY BE APPROPRIATE        False     1
+                          USUALLY APPROPRIATE       False     2
+                          USUALLY NOT APPROPRIATE   True      6
+Name: match, dtype: int64
+2024-04-10 15:04:19,442:INFO: human_gt                  gpt_classification        match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True      1
+                          MAY BE APPROPRIATE        False     2
+                          USUALLY APPROPRIATE       False     7
+MAY BE APPROPRIATE        MAY BE APPROPRIATE        True      5
+                          USUALLY APPROPRIATE       False     8
+                          USUALLY NOT APPROPRIATE   False     1
+USUALLY APPROPRIATE       MAY BE APPROPRIATE        False     1
+                          USUALLY APPROPRIATE       True     17
+                          USUALLY NOT APPROPRIATE   False     2
+USUALLY NOT APPROPRIATE   MAY BE APPROPRIATE        False    13
+                          USUALLY APPROPRIATE       False     8
+                          USUALLY NOT APPROPRIATE   True      6
+Name: match, dtype: int64
+2024-04-10 15:04:19,443:INFO: Iteration: 2
+2024-04-10 15:18:05,334:INFO: --------------
+Tokens Consumption: Total: 117320, Prompt: 79078, Completion: 38242, Embeddings: []
+2024-04-10 15:18:05,335:INFO: ----------
+Test case Completed. Saving Artifacts into /mnt/c/Users/QUAN/Desktop/lbp_mri/artifacts/gpt-4_NoRAG_10-04-2024-14-49
+2024-04-10 15:19:02,095:INFO: ------EVALUATION-----
+2024-04-10 15:19:02,096:INFO: Accuracy score: 45.07042253521127
+2024-04-10 15:19:02,100:INFO: gpt_classification        human_gt                  match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True      2
+MAY BE APPROPRIATE        INSUFFICIENT INFORMATION  False     1
+                          MAY BE APPROPRIATE        True      3
+                          USUALLY APPROPRIATE       False     2
+                          USUALLY NOT APPROPRIATE   False     8
+USUALLY APPROPRIATE       INSUFFICIENT INFORMATION  False     7
+                          MAY BE APPROPRIATE        False    10
+                          USUALLY APPROPRIATE       True     16
+                          USUALLY NOT APPROPRIATE   False     8
+USUALLY NOT APPROPRIATE   MAY BE APPROPRIATE        False     1
+                          USUALLY APPROPRIATE       False     2
+                          USUALLY NOT APPROPRIATE   True     11
+Name: match, dtype: int64
+2024-04-10 15:19:02,104:INFO: human_gt                  gpt_classification        match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True      2
+                          MAY BE APPROPRIATE        False     1
+                          USUALLY APPROPRIATE       False     7
+MAY BE APPROPRIATE        MAY BE APPROPRIATE        True      3
+                          USUALLY APPROPRIATE       False    10
+                          USUALLY NOT APPROPRIATE   False     1
+USUALLY APPROPRIATE       MAY BE APPROPRIATE        False     2
+                          USUALLY APPROPRIATE       True     16
+                          USUALLY NOT APPROPRIATE   False     2
+USUALLY NOT APPROPRIATE   MAY BE APPROPRIATE        False     8
+                          USUALLY APPROPRIATE       False     8
+                          USUALLY NOT APPROPRIATE   True     11
+Name: match, dtype: int64
+2024-04-10 15:19:02,105:INFO: Iteration: 3
+2024-04-10 15:43:41,363:INFO: --------------
+Tokens Consumption: Total: 175903, Prompt: 118617, Completion: 57286, Embeddings: []
+2024-04-10 15:43:41,364:INFO: ----------
+Test case Completed. Saving Artifacts into /mnt/c/Users/QUAN/Desktop/lbp_mri/artifacts/gpt-4_NoRAG_10-04-2024-14-49
+2024-04-10 15:44:35,811:INFO: ------EVALUATION-----
+2024-04-10 15:44:35,811:INFO: Accuracy score: 43.66197183098591
+2024-04-10 15:44:35,815:INFO: gpt_classification        human_gt                  match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True      2
+MAY BE APPROPRIATE        INSUFFICIENT INFORMATION  False     2
+                          MAY BE APPROPRIATE        True      3
+                          USUALLY NOT APPROPRIATE   False    13
+USUALLY APPROPRIATE       INSUFFICIENT INFORMATION  False     5
+                          MAY BE APPROPRIATE        False     9
+                          USUALLY APPROPRIATE       True     18
+                          USUALLY NOT APPROPRIATE   False     6
+USUALLY NOT APPROPRIATE   INSUFFICIENT INFORMATION  False     1
+                          MAY BE APPROPRIATE        False     2
+                          USUALLY APPROPRIATE       False     2
+                          USUALLY NOT APPROPRIATE   True      8
+Name: match, dtype: int64
+2024-04-10 15:44:35,817:INFO: human_gt                  gpt_classification        match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True      2
+                          MAY BE APPROPRIATE        False     2
+                          USUALLY APPROPRIATE       False     5
+                          USUALLY NOT APPROPRIATE   False     1
+MAY BE APPROPRIATE        MAY BE APPROPRIATE        True      3
+                          USUALLY APPROPRIATE       False     9
+                          USUALLY NOT APPROPRIATE   False     2
+USUALLY APPROPRIATE       USUALLY APPROPRIATE       True     18
+                          USUALLY NOT APPROPRIATE   False     2
+USUALLY NOT APPROPRIATE   MAY BE APPROPRIATE        False    13
+                          USUALLY APPROPRIATE       False     6
+                          USUALLY NOT APPROPRIATE   True      8
+Name: match, dtype: int64

@@ -1,0 +1,19 @@
+chunk_overlap: 20
+chunk_size: 512
+dataset: data/queries/MSK LLM Fictitious Case Files Full - Reorder.csv
+description: Combined_retrieval_with_metadata_filter-n=3
+emb_type: openai
+index_name: msk_mri
+json_testcases: data/queries/full_testcase_reorder.json
+metadata_filter: true
+n_iterations: 3
+refine_llm: gpt-4
+refine_profile: false
+response_mode: simple_summarize
+synthesize_prompt_path: /mnt/c/Users/QUAN/Desktop/lbp_mri/src/prompts/llama_index/rag_v1.py
+synthesizer_llm: gpt-4
+synthesizer_max_tokens: 512
+synthesizer_temperature: 0
+table_similarity_top_k: 4
+text_similarity_top_k: 5
+vectorstore: data/multimodal-chroma/descriptions
