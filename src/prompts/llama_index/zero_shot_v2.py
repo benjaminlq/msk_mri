@@ -44,4 +44,3 @@ messages = [
 ]
 
 CHAT_PROMPT_TEMPLATE = ChatPromptTemplate(messages)
-

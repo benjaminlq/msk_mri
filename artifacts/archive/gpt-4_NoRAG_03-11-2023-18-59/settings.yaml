@@ -1,0 +1,4 @@
+description: NoRAG
+synthesizer_llm: gpt-4
+synthesizer_max_tokens: 512
+synthesizer_temperature: 0

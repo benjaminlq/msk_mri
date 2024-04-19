@@ -1,0 +1,205 @@
+2024-04-11 10:59:38,134:INFO: Running experiment: base_rau_rag-n=5-k=3.
+Saving all artifacts at /mnt/c/Users/QUAN/Desktop/lbp_mri/artifacts/gpt-4_512_20_base_rau_rag-n=5-k=3_11-04-2024-10-59
+2024-04-11 10:59:57,143:INFO: Loading query file from path data/queries/MSK LLM Fictitious Case Files Full.csv
+2024-04-11 10:59:57,224:INFO: Loading test cases from ./data/queries/full_testcase.json
+2024-04-11 10:59:57,232:INFO: -------------
+Experiment settings:
+store_type:simple
+db_directory:data/emb_store/simple/openai_512_20
+chunk_size:512
+chunk_overlap:20
+similarity_top_k:3
+index_name:msk_mri
+description:base_rau_rag-n=5-k=3
+n_iterations:5
+dataset:data/queries/MSK LLM Fictitious Case Files Full.csv
+json_testcases:./data/queries/full_testcase.json
+synthesizer_llm:gpt-4
+synthesizer_max_tokens:512
+synthesizer_temperature:0
+response_mode:compact
+2024-04-11 10:59:57,234:INFO: -------------
+QA PROMPT: Context information is below.
+---------------------
+context_str
+---------------------
+Given the context information and not prior knowledge, answer the query.
+Query: query_str
+Answer: 
+2024-04-11 10:59:57,234:INFO: ------START RUNNING TEST CASES------
+------NUMBER OF ITERATIONS: 5------
+2024-04-11 10:59:57,234:INFO: Iteration: 1
+2024-04-11 11:05:29,221:INFO: --------------
+Tokens Consumption: Total: 103024, Prompt: 97144, Completion: 5880, Embeddings: 0
+2024-04-11 11:05:29,222:INFO: ----------
+Test case Completed. Saving Artifacts into /mnt/c/Users/QUAN/Desktop/lbp_mri/artifacts/gpt-4_512_20_base_rau_rag-n=5-k=3_11-04-2024-10-59
+2024-04-11 11:06:20,832:INFO: ------EVALUATION-----
+2024-04-11 11:06:20,832:INFO: Accuracy score: 49.29577464788733
+2024-04-11 11:06:20,881:INFO: gpt_classification        human_gt                  match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True      1
+                          MAY BE APPROPRIATE        False     1
+MAY BE APPROPRIATE        INSUFFICIENT INFORMATION  False     1
+                          MAY BE APPROPRIATE        True      5
+                          USUALLY APPROPRIATE       False     2
+                          USUALLY NOT APPROPRIATE   False     2
+USUALLY APPROPRIATE       INSUFFICIENT INFORMATION  False     7
+                          MAY BE APPROPRIATE        False     6
+                          USUALLY APPROPRIATE       True     18
+                          USUALLY NOT APPROPRIATE   False    14
+USUALLY NOT APPROPRIATE   INSUFFICIENT INFORMATION  False     1
+                          MAY BE APPROPRIATE        False     2
+                          USUALLY NOT APPROPRIATE   True     11
+Name: match, dtype: int64
+2024-04-11 11:06:20,883:INFO: human_gt                  gpt_classification        match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True      1
+                          MAY BE APPROPRIATE        False     1
+                          USUALLY APPROPRIATE       False     7
+                          USUALLY NOT APPROPRIATE   False     1
+MAY BE APPROPRIATE        INSUFFICIENT INFORMATION  False     1
+                          MAY BE APPROPRIATE        True      5
+                          USUALLY APPROPRIATE       False     6
+                          USUALLY NOT APPROPRIATE   False     2
+USUALLY APPROPRIATE       MAY BE APPROPRIATE        False     2
+                          USUALLY APPROPRIATE       True     18
+USUALLY NOT APPROPRIATE   MAY BE APPROPRIATE        False     2
+                          USUALLY APPROPRIATE       False    14
+                          USUALLY NOT APPROPRIATE   True     11
+Name: match, dtype: int64
+2024-04-11 11:06:20,884:INFO: Iteration: 2
+2024-04-11 11:11:43,999:INFO: --------------
+Tokens Consumption: Total: 205986, Prompt: 194288, Completion: 11698, Embeddings: 0
+2024-04-11 11:11:43,999:INFO: ----------
+Test case Completed. Saving Artifacts into /mnt/c/Users/QUAN/Desktop/lbp_mri/artifacts/gpt-4_512_20_base_rau_rag-n=5-k=3_11-04-2024-10-59
+2024-04-11 11:12:36,323:INFO: ------EVALUATION-----
+2024-04-11 11:12:36,323:INFO: Accuracy score: 46.478873239436616
+2024-04-11 11:12:36,325:INFO: gpt_classification        human_gt                  match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True      1
+MAY BE APPROPRIATE        INSUFFICIENT INFORMATION  False     1
+                          MAY BE APPROPRIATE        True      5
+                          USUALLY APPROPRIATE       False     2
+                          USUALLY NOT APPROPRIATE   False     3
+USUALLY APPROPRIATE       INSUFFICIENT INFORMATION  False     6
+                          MAY BE APPROPRIATE        False     7
+                          USUALLY APPROPRIATE       True     18
+                          USUALLY NOT APPROPRIATE   False    15
+USUALLY NOT APPROPRIATE   INSUFFICIENT INFORMATION  False     2
+                          MAY BE APPROPRIATE        False     2
+                          USUALLY NOT APPROPRIATE   True      9
+Name: match, dtype: int64
+2024-04-11 11:12:36,327:INFO: human_gt                  gpt_classification        match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True      1
+                          MAY BE APPROPRIATE        False     1
+                          USUALLY APPROPRIATE       False     6
+                          USUALLY NOT APPROPRIATE   False     2
+MAY BE APPROPRIATE        MAY BE APPROPRIATE        True      5
+                          USUALLY APPROPRIATE       False     7
+                          USUALLY NOT APPROPRIATE   False     2
+USUALLY APPROPRIATE       MAY BE APPROPRIATE        False     2
+                          USUALLY APPROPRIATE       True     18
+USUALLY NOT APPROPRIATE   MAY BE APPROPRIATE        False     3
+                          USUALLY APPROPRIATE       False    15
+                          USUALLY NOT APPROPRIATE   True      9
+Name: match, dtype: int64
+2024-04-11 11:12:36,328:INFO: Iteration: 3
+2024-04-11 11:17:55,445:INFO: --------------
+Tokens Consumption: Total: 308991, Prompt: 291432, Completion: 17559, Embeddings: 0
+2024-04-11 11:17:55,446:INFO: ----------
+Test case Completed. Saving Artifacts into /mnt/c/Users/QUAN/Desktop/lbp_mri/artifacts/gpt-4_512_20_base_rau_rag-n=5-k=3_11-04-2024-10-59
+2024-04-11 11:18:42,944:INFO: ------EVALUATION-----
+2024-04-11 11:18:42,944:INFO: Accuracy score: 47.88732394366197
+2024-04-11 11:18:42,948:INFO: gpt_classification        human_gt                  match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True      1
+MAY BE APPROPRIATE        INSUFFICIENT INFORMATION  False     2
+                          MAY BE APPROPRIATE        True      6
+                          USUALLY APPROPRIATE       False     2
+                          USUALLY NOT APPROPRIATE   False     3
+USUALLY APPROPRIATE       INSUFFICIENT INFORMATION  False     6
+                          MAY BE APPROPRIATE        False     6
+                          USUALLY APPROPRIATE       True     18
+                          USUALLY NOT APPROPRIATE   False    15
+USUALLY NOT APPROPRIATE   INSUFFICIENT INFORMATION  False     1
+                          MAY BE APPROPRIATE        False     2
+                          USUALLY NOT APPROPRIATE   True      9
+Name: match, dtype: int64
+2024-04-11 11:18:42,954:INFO: human_gt                  gpt_classification        match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True      1
+                          MAY BE APPROPRIATE        False     2
+                          USUALLY APPROPRIATE       False     6
+                          USUALLY NOT APPROPRIATE   False     1
+MAY BE APPROPRIATE        MAY BE APPROPRIATE        True      6
+                          USUALLY APPROPRIATE       False     6
+                          USUALLY NOT APPROPRIATE   False     2
+USUALLY APPROPRIATE       MAY BE APPROPRIATE        False     2
+                          USUALLY APPROPRIATE       True     18
+USUALLY NOT APPROPRIATE   MAY BE APPROPRIATE        False     3
+                          USUALLY APPROPRIATE       False    15
+                          USUALLY NOT APPROPRIATE   True      9
+Name: match, dtype: int64
+2024-04-11 11:18:42,954:INFO: Iteration: 4
+2024-04-11 11:23:57,643:INFO: --------------
+Tokens Consumption: Total: 411793, Prompt: 388576, Completion: 23217, Embeddings: 0
+2024-04-11 11:23:57,644:INFO: ----------
+Test case Completed. Saving Artifacts into /mnt/c/Users/QUAN/Desktop/lbp_mri/artifacts/gpt-4_512_20_base_rau_rag-n=5-k=3_11-04-2024-10-59
+2024-04-11 11:24:48,188:INFO: ------EVALUATION-----
+2024-04-11 11:24:48,189:INFO: Accuracy score: 47.88732394366197
+2024-04-11 11:24:48,191:INFO: gpt_classification        human_gt                  match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True      1
+MAY BE APPROPRIATE        INSUFFICIENT INFORMATION  False     2
+                          MAY BE APPROPRIATE        True      6
+                          USUALLY APPROPRIATE       False     2
+                          USUALLY NOT APPROPRIATE   False     3
+USUALLY APPROPRIATE       INSUFFICIENT INFORMATION  False     6
+                          MAY BE APPROPRIATE        False     6
+                          USUALLY APPROPRIATE       True     18
+                          USUALLY NOT APPROPRIATE   False    15
+USUALLY NOT APPROPRIATE   INSUFFICIENT INFORMATION  False     1
+                          MAY BE APPROPRIATE        False     2
+                          USUALLY NOT APPROPRIATE   True      9
+Name: match, dtype: int64
+2024-04-11 11:24:48,192:INFO: human_gt                  gpt_classification        match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True      1
+                          MAY BE APPROPRIATE        False     2
+                          USUALLY APPROPRIATE       False     6
+                          USUALLY NOT APPROPRIATE   False     1
+MAY BE APPROPRIATE        MAY BE APPROPRIATE        True      6
+                          USUALLY APPROPRIATE       False     6
+                          USUALLY NOT APPROPRIATE   False     2
+USUALLY APPROPRIATE       MAY BE APPROPRIATE        False     2
+                          USUALLY APPROPRIATE       True     18
+USUALLY NOT APPROPRIATE   MAY BE APPROPRIATE        False     3
+                          USUALLY APPROPRIATE       False    15
+                          USUALLY NOT APPROPRIATE   True      9
+Name: match, dtype: int64
+2024-04-11 11:24:48,193:INFO: Iteration: 5
+2024-04-11 11:30:03,842:INFO: --------------
+Tokens Consumption: Total: 514938, Prompt: 485720, Completion: 29218, Embeddings: 0
+2024-04-11 11:30:03,842:INFO: ----------
+Test case Completed. Saving Artifacts into /mnt/c/Users/QUAN/Desktop/lbp_mri/artifacts/gpt-4_512_20_base_rau_rag-n=5-k=3_11-04-2024-10-59
+2024-04-11 11:30:53,577:INFO: ------EVALUATION-----
+2024-04-11 11:30:53,578:INFO: Accuracy score: 46.478873239436616
+2024-04-11 11:30:53,581:INFO: gpt_classification        human_gt                  match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True      1
+MAY BE APPROPRIATE        INSUFFICIENT INFORMATION  False     2
+                          MAY BE APPROPRIATE        True      5
+                          USUALLY APPROPRIATE       False     2
+                          USUALLY NOT APPROPRIATE   False     3
+USUALLY APPROPRIATE       INSUFFICIENT INFORMATION  False     7
+                          MAY BE APPROPRIATE        False     7
+                          USUALLY APPROPRIATE       True     18
+                          USUALLY NOT APPROPRIATE   False    15
+USUALLY NOT APPROPRIATE   MAY BE APPROPRIATE        False     2
+                          USUALLY NOT APPROPRIATE   True      9
+Name: match, dtype: int64
+2024-04-11 11:30:53,584:INFO: human_gt                  gpt_classification        match
+INSUFFICIENT INFORMATION  INSUFFICIENT INFORMATION  True      1
+                          MAY BE APPROPRIATE        False     2
+                          USUALLY APPROPRIATE       False     7
+MAY BE APPROPRIATE        MAY BE APPROPRIATE        True      5
+                          USUALLY APPROPRIATE       False     7
+                          USUALLY NOT APPROPRIATE   False     2
+USUALLY APPROPRIATE       MAY BE APPROPRIATE        False     2
+                          USUALLY APPROPRIATE       True     18
+USUALLY NOT APPROPRIATE   MAY BE APPROPRIATE        False     3
+                          USUALLY APPROPRIATE       False    15
+                          USUALLY NOT APPROPRIATE   True      9
+Name: match, dtype: int64

@@ -219,7 +219,7 @@ def run_test_cases(
     )
 
     logger.info(
-        "------START RUNNING TEST CASES------\n------NUMBER OF ITERATIONS: {n_iters}------"
+        f"------START RUNNING TEST CASES------\n------NUMBER OF ITERATIONS: {n_iters}------"
     )
     
     for iter_no in range(n_iters):

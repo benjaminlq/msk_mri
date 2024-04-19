@@ -1,0 +1,64 @@
+2023-11-03 18:59:40,432:INFO: -------------
+Experiment settings:
+description:NoRAG
+synthesizer_llm:gpt-4
+synthesizer_max_tokens:512
+synthesizer_temperature:0
+2023-11-03 18:59:40,438:INFO: -------------
+QA PROMPT: system: 
+You are a radiologist expert at providing imaging recommendations for patients with musculoskeletal conditions.
+If you do not know an answer, just say "I dont know", do not make up an answer.
+==========
+TASK: You are given a PATIENT PROFILE and a SCAN ORDER. Your task is to evaluate the appropriateness of the SCAN ORDER based on the PATIENT PROFILE.
+Perform step-by-step the following sequence of reasoning.
+1. Extract from PATIENT PROFILE relevant information for classification of imaging appropriateness. DO NOT make any assumptions from the SCAN ORDER.
+Important information includes AGE, SYMPTOMS, PREVIOUS DIAGNOSIS (IF ANY), which stage of diagnosis (INITIAL IMAGING OR NEXT STUDY).
+2. Identify if there are superior imaging procedures or treatments with a more favorable risk-benefit ratio.
+3. Based on the SCORING CRITERIA, recommend if the SCAN ORDER is USUALLY APPROPRIATE, MAY BE APPROPRIATE, USUALLY NOT APPROPRIATE or there is INSUFFICIENT INFORMATION to recommend the appropriateness.  
+If the scan is not appropriate, recommend an appropriate procedure.
+==========
+SCORING CRITERIA:
+- USUALLY APPROPRIATE: The imaging procedure or treatment is indicated in the specified clinical scenarios at a favorable risk-benefit ratio for patients.
+- MAY BE APPROPRIATE: The imaging procedure or treatment may be indicated in the specified clinical scenarios as an alternative to imaging procedures or treatments with a more favorable risk-benefit ratio, or the risk-benefit ratio for patients is equivocal.
+- USUALLY NOT APPROPRIATE: The imaging procedure is unlikely to be recommended in the specified clinical scenarios, or the risk-benefit ratio for patients is likely to be unfavorable
+- INSUFFICIENT INFORMATION: The imaging procedure or treatment is not mentioned under CONTEXT or not enough relevant information from the PATIENT PROFILE to recommend based on information in CONTEXT.
+
+Take note for scenarios involving IV CONTRAST there are 3 distinct scan protocols: (1) with IV CONTRAST, (2) without IV CONTRAST, (3) without and with IV CONTRAST. 
+Each of them is different and can have different appropriateness category.
+==========
+
+user: query_str
+assistant: 
+2023-11-03 18:59:40,441:INFO: ------START RUNNING TEST CASES---------
+2023-11-03 19:36:03,886:INFO: --------------
+Tokens Consumption: Total: 58510, Prompt: 39889, Completion: 18621, Embeddings: []
+2023-11-03 19:36:03,889:INFO: ----------
+Test case Completed. Saving Artifacts into /mnt/c/Users/QUAN/Desktop/lbp_mri/artifacts/gpt-4_NoRAG_03-11-2023-18-59
+2023-11-03 19:47:46,423:INFO: ------EVALUATION-----
+2023-11-03 19:47:46,424:INFO: Accuracy score: 38.028169014084504
+2023-11-03 19:47:46,515:INFO: gpt_classification       human_gt                  match
+MAY BE APPROPRIATE       INSUFFICIENT INFORMATION  False     2
+                         MAY BE APPROPRIATE        True      3
+                         USUALLY APPROPRIATE       False     2
+                         USUALLY NOT APPROPRIATE   False    10
+USUALLY APPROPRIATE      INSUFFICIENT INFORMATION  False     8
+                         MAY BE APPROPRIATE        False    10
+                         USUALLY APPROPRIATE       True     17
+                         USUALLY NOT APPROPRIATE   False    10
+USUALLY NOT APPROPRIATE  MAY BE APPROPRIATE        False     1
+                         USUALLY APPROPRIATE       False     1
+                         USUALLY NOT APPROPRIATE   True      7
+Name: match, dtype: int64
+2023-11-03 19:47:46,517:INFO: human_gt                  gpt_classification       match
+INSUFFICIENT INFORMATION  MAY BE APPROPRIATE       False     2
+                          USUALLY APPROPRIATE      False     8
+MAY BE APPROPRIATE        MAY BE APPROPRIATE       True      3
+                          USUALLY APPROPRIATE      False    10
+                          USUALLY NOT APPROPRIATE  False     1
+USUALLY APPROPRIATE       MAY BE APPROPRIATE       False     2
+                          USUALLY APPROPRIATE      True     17
+                          USUALLY NOT APPROPRIATE  False     1
+USUALLY NOT APPROPRIATE   MAY BE APPROPRIATE       False    10
+                          USUALLY APPROPRIATE      False    10
+                          USUALLY NOT APPROPRIATE  True      7
+Name: match, dtype: int64

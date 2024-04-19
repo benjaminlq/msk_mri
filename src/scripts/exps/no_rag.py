@@ -42,7 +42,9 @@ def get_argument_parser():
     parser.add_argument(
         "--dataset", type=str, default=os.path.join(DATA_DIR, "queries", "MSK LLM Fictitious Case Files Full.csv"), help="path to query dataset"
     )
-    
+    parser.add_argument(
+        "--json_testcases", "-j", type=str, default=None, help="Path to json files containing patient profiles and scan orders lists"
+    )
     # Response Synthesizer Settings
     parser.add_argument(
         "--synthesizer_llm", "-m", type=str, default="gpt-4", help="LLM used to synthesize responses"
@@ -66,6 +68,7 @@ def main():
         description=args.description,
         n_iterations = args.n_iterations,
         dataset = args.dataset,
+        json_testcases = args.json_testcases,
         
         # Generation
         synthesizer_llm = args.synthesizer_llm,
@@ -88,6 +91,10 @@ def main():
         os.makedirs(save_folder)
 
     logger = get_experiment_logs(exp_args["description"], log_folder=save_folder)
+    logger.info(
+        "Running experiment: {}.\nSaving all artifacts at {}"
+        .format(exp_args["description"], save_folder)
+    )
 
     logger.info("-------------\nExperiment settings:\n{}".format("\n".join([f"{k}:{v}" for k, v in exp_args.items()])))
     with open(os.path.join(save_folder, "settings.yaml"), "w") as f:
@@ -102,13 +109,29 @@ def main():
             usecols = ['ACR scenario', 'Appropriateness Category', 'Scan Order', 'Difficulty', 'Clinical File']
             )
 
-    extracted_profiles = []
-    for testcase in tqdm(testcase_df["Clinical File"], total = len(testcase_df["Clinical File"])):
-        extracted_profile = extract_profile_and_scan_order(testcase)
-        extracted_profiles.append(extracted_profile)
-        
-    patient_profiles = [extracted_profile[0].strip() for extracted_profile in extracted_profiles]
-    scan_orders = [extracted_profile[1].strip() for extracted_profile in extracted_profiles]
+    if exp_args["json_testcases"]:
+        logger.info("Loading test cases from {}".format(exp_args["json_testcases"]))
+        with open(exp_args["json_testcases"], "r") as f:
+            test_case_json = json.load(f)
+        patient_profiles = test_case_json["patient_profiles"]
+        scan_orders = test_case_json["scan_orders"]
+
+    else:
+        logger.info("Cannot find existing test cases. Performing extraction from scratch")
+        extracted_profiles = []
+        for testcase in tqdm(testcase_df["Clinical File"], total = len(testcase_df["Clinical File"])):
+            extracted_profile = extract_profile_and_scan_order(testcase)
+            extracted_profiles.append(extracted_profile)
+            
+        patient_profiles = [extracted_profile[0].strip() for extracted_profile in extracted_profiles]
+        scan_orders = [extracted_profile[1].strip() for extracted_profile in extracted_profiles]
+
+        test_case_json = {
+            "patient_profiles": patient_profiles, "scan_orders": scan_orders
+        }
+        with open(os.path.join(DATA_DIR, "queries", "full_testcase_{}.json".format(exp_args["description"])), "w") as f:
+            json.dump(test_case_json, f)
+        logger.info("Saving test cases to {}".format(os.path.join(DATA_DIR, "queries", "full_testcase_{}.json".format(exp_args["description"]))))    
 
     token_counter = TokenCountingHandler(
         tokenizer=tiktoken.encoding_for_model(exp_args["synthesizer_llm"]).encode
@@ -159,7 +182,7 @@ def main():
         for query, response, scan_order in tk:
             testcase_info = {
                 "question": query,
-                "result": response.response,
+                "result": response,
             }
             answer_query = "Scan Ordered: {}\nAnswer: {}".format(scan_order, testcase_info["result"])
             fixed_answer = fixing_chain(answer_query)
