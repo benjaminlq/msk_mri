@@ -40,14 +40,14 @@ def filter_by_pages(
 
     return filtered_list
 
-def convert_doc_to_dict(doc: Union[Document, NodeWithScore, Dict]) -> Dict:
+def convert_doc_to_dict(doc: Union[TextNode, NodeWithScore, Dict]) -> Dict:
     if isinstance(doc, NodeWithScore):
         json_doc = {
             "page_content": doc.text,
             "metadata": doc.metadata,
             "score": doc.score
             } 
-    elif isinstance(doc, Document):
+    elif isinstance(doc, TextNode):
         json_doc = {
             "page_content": doc.text,
             "metadata": doc.metadata,
@@ -59,6 +59,8 @@ def convert_doc_to_dict(doc: Union[Document, NodeWithScore, Dict]) -> Dict:
             "metadata": doc["metadata"],
             "score": "None"
         }
+    else:
+        Exception("Invalid Document Type")
     return json_doc
 
 def generate_vectorindex(

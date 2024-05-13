@@ -9,7 +9,7 @@ __pycache__/
 # Keys
 auth/
 models/
-data/multimodal-chroma-textwindow/
+data/emb_store/multimodal-chroma-textwindow/
 
 # Distribution / packaging
 .Python

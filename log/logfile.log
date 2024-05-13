@@ -450,3 +450,27 @@
 2024-04-11 10:43:19,684:INFO: simple VectorStore successfully loaded from data/emb_store/simple/openai_512_20.
 2024-04-11 10:49:03,738:INFO: simple VectorStore successfully loaded from data/emb_store/simple/openai_512_20.
 2024-04-11 10:59:57,142:INFO: simple VectorStore successfully loaded from data/emb_store/simple/openai_512_20.
+2024-04-28 11:07:18,934:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/tables.
+2024-04-28 11:07:19,193:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/multimodal-chroma/descriptions/texts.
+2024-04-30 17:06:27,807:INFO: Processing documents from provided list.
+2024-04-30 17:06:27,812:INFO: 920 documents remained after page filtering.
+2024-04-30 17:06:27,813:INFO: Total number of documents to create vector index store: 920
+2024-04-30 17:06:27,816:INFO: Creating chroma Vectorstore
+2024-04-30 17:51:53,330:INFO: Processing documents from provided list.
+2024-04-30 17:51:53,332:INFO: 920 documents remained after page filtering.
+2024-04-30 17:51:53,333:INFO: Total number of documents to create vector index store: 920
+2024-04-30 17:51:53,336:INFO: Creating chroma Vectorstore
+2024-04-30 17:51:59,328:INFO: Successfully created chroma vectorstore at /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/finetune/FreeText-Chunk_size=512-K=5/db
+2024-04-30 17:54:30,152:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/finetune/FreeText-Chunk_size=512-K=5/db.
+2024-04-30 20:33:06,637:INFO: Processing documents from provided list.
+2024-04-30 20:33:06,654:INFO: 1827 documents remained after page filtering.
+2024-04-30 20:33:06,656:INFO: Total number of documents to create vector index store: 1827
+2024-04-30 20:33:06,683:INFO: Creating chroma Vectorstore
+2024-04-30 20:33:31,589:INFO: Successfully created chroma vectorstore at /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/finetune/FreeText-Chunk_size=256/db
+2024-04-30 20:33:31,864:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/finetune/FreeText-Chunk_size=256/db.
+2024-04-30 20:36:06,244:INFO: Processing documents from provided list.
+2024-04-30 20:36:06,248:INFO: 532 documents remained after page filtering.
+2024-04-30 20:36:06,249:INFO: Total number of documents to create vector index store: 532
+2024-04-30 20:36:06,251:INFO: Creating chroma Vectorstore
+2024-04-30 20:36:19,906:INFO: Successfully created chroma vectorstore at /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/finetune/FreeText-Chunk_size=1024/db
+2024-04-30 20:36:20,105:INFO: chroma VectorStore successfully loaded from /mnt/c/Users/QUAN/Desktop/lbp_mri/data/emb_store/finetune/FreeText-Chunk_size=1024/db.
