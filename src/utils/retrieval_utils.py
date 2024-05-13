@@ -1,14 +1,20 @@
 """Utility Functions for retrieval
 """
 
-from llama_index.embeddings.base import BaseEmbedding
 from config import GUIDELINES
+from copy import deepcopy
 from langchain.chains import LLMChain
 from llama_index.embeddings.base import BaseEmbedding
+from llama_index.retrievers import BaseRetriever
+from llama_index.schema import Document, MetadataMode
+from logging import Logger
 from textdistance import levenshtein
-from typing import Union, List, Literal, Sequence, Tuple
-from typing import Union, List, Literal, Sequence, Tuple
+from typing import Optional, Union, List, Literal, Sequence, Tuple
+# from .experiment_utils import get_experiment_logs
+
 import numpy as np
+import os
+import pandas as pd
 import re
 
 def calculate_emb_distance(
@@ -127,3 +133,127 @@ def extract_guidelines(
                 relevant_guidelines.append(extracted_guideline)
                 
     return profile, relevant_guidelines
+
+def chroma_retrieval_with_metadata_filtering(
+    query: str, 
+    retriever: Optional[BaseRetriever] = None,
+    filter_list: Optional[List] = None
+):
+    """
+
+    Args:
+        query (str): _description_
+        retriever (Optional[BaseRetriever], optional): _description_. Defaults to None.
+        filter_list (Optional[List], optional): _description_. Defaults to None.
+
+    Returns:
+        _type_: _description_
+    """
+    if not retriever:
+        return []
+    
+    if not filter_list:
+        retriever._kwargs = {}
+    else:
+        retriever._kwargs["where"] = {"condition": {"$in": filter_list}}
+    return retriever.retrieve(query)
+
+def retrieval_analysis(
+    testcase_df: pd.DataFrame,
+    testcases: Sequence[str] = None,
+    metadata_filters: Optional[Sequence[List[str]]] = None,
+    table_retriever: Optional[BaseRetriever] = None,
+    text_retriever: Optional[BaseRetriever] = None,
+    save_folder: Optional[str] = None,
+    logger: Optional[Logger] = None
+):
+    retrieved_table_nodes = [] # List (testcases) of List of documents
+    retrieved_text_nodes = []
+    
+    if not os.path.exists(save_folder):
+        os.makedirs(save_folder, exist_ok=True)
+        
+    if not logger:
+        logger = get_experiment_logs(
+            save_folder.split("/")[-1], log_folder=save_folder
+        )
+        
+    if testcases is not None:
+        testcase_df["queries"] = testcases
+        
+    if not metadata_filters:
+        
+        for test_case in testcases:
+            retrieved_table_nodes.append(
+                chroma_retrieval_with_metadata_filtering(test_case, table_retriever)
+                )
+            retrieved_text_nodes.append(
+                chroma_retrieval_with_metadata_filtering(test_case, text_retriever)
+                )
+        
+    else:
+        for test_case, filter_list in zip(testcases, metadata_filters):
+            retrieved_table_nodes.append(
+                chroma_retrieval_with_metadata_filtering(test_case, table_retriever, filter_list=filter_list)
+                )
+            retrieved_text_nodes.append(
+                chroma_retrieval_with_metadata_filtering(test_case, text_retriever, filter_list=filter_list)
+                )
+          
+    table_top_k = table_retriever.similarity_top_k if table_retriever else 0 
+    text_top_k = text_retriever.similarity_top_k if text_retriever else 0
+    
+    logger.info(f"Successfully loaded table database k={table_top_k} and text database k={text_top_k}")
+
+    description_df = deepcopy(testcase_df)
+    retrieved_tables, retrieved_texts = extract_retrieved_content(
+        testcases,
+        retrieved_table_nodes=retrieved_table_nodes, retrieved_text_nodes=retrieved_text_nodes,
+        table_top_k=table_top_k, text_top_k=text_top_k
+    )
+    
+    for idx, tables in enumerate(retrieved_tables):
+        description_df[f"Table_{idx+1}"] = [table["content"] for table in tables]
+    for idx, texts in enumerate(retrieved_texts):
+        description_df[f"Text_{idx+1}"] = [text["content"] for text in texts]
+    description_df.to_csv(os.path.join(save_folder, "table_text.csv"))
+                
+    return
+
+    
+def extract_retrieved_content(
+    testcases: str,
+    retrieved_table_nodes: List[Document], retrieved_text_nodes: List[Document], 
+    table_top_k: int = 0, text_top_k: int = 0, 
+) -> Tuple[List[List[str]], List[List[str]]]:
+    
+    retrieved_tables = [[] for _ in range(table_top_k)]
+    retrieved_texts = [[] for _ in range(text_top_k)]
+    
+    for case_idx in range(len(testcases)):
+        case_table_nodes = retrieved_table_nodes[case_idx]
+        case_text_nodes = retrieved_text_nodes[case_idx]
+        
+        for node_idx, node_info_list in enumerate(retrieved_tables):
+            if node_idx > len(case_table_nodes):
+                node_info = {
+                    "content": np.nan, "file_name": np.nan, "score": np.nan
+                }
+            else:
+                node = case_table_nodes[node_idx]
+                node_info = {
+                    "content": node.get_content(MetadataMode.EMBED) + "\n\nScore: {}".format(node.score),
+                    "file_name": node.metadata["file_name"], "score": node.score
+                }
+            node_info_list.append(node_info)
+        
+        for node_idx, node_info_list in enumerate(retrieved_texts):
+            if node_idx > len(case_text_nodes):
+                node_info = np.nan
+            else:
+                node = case_text_nodes[node_idx]
+                node_info = node.get_content(MetadataMode.EMBED) + "\n\nScore: {}".format(node.score)
+            node_info_list.append(node_info)
+    
+    return retrieved_tables, retrieved_texts
+
